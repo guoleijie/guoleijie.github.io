@@ -147,23 +147,24 @@
   <meta name="keywords" content="Hexo, NexT" />
 
 
-<meta name="description" content="一个30岁又起航的程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Just Do IT">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="该工具类中用到了BASE64，需要借助第三方类库：javabase64-1.3.1.jar 注意： RSA加密明文最大长度117字节，解密要求密文最大长度为128字节，所以在加密和解密的过程中需要分块进行。 RSA加密对明文的长度是有限制的，如果加密数据过大会抛出如下异常： 1234Exception in thread &quot;main&quot; javax.crypto.IllegalBlockSizeEx">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java使用RSA加密解密及签名校验">
+<meta property="og:url" content="http://yoursite.com/2017/02/28/Java使用RSA加密解密及签名校验/index.html">
 <meta property="og:site_name" content="Just Do IT">
-<meta property="og:description" content="一个30岁又起航的程序猿">
+<meta property="og:description" content="该工具类中用到了BASE64，需要借助第三方类库：javabase64-1.3.1.jar 注意： RSA加密明文最大长度117字节，解密要求密文最大长度为128字节，所以在加密和解密的过程中需要分块进行。 RSA加密对明文的长度是有限制的，如果加密数据过大会抛出如下异常： 1234Exception in thread &quot;main&quot; javax.crypto.IllegalBlockSizeEx">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-04-05T03:30:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Just Do IT">
-<meta name="twitter:description" content="一个30岁又起航的程序猿">
+<meta name="twitter:title" content="Java使用RSA加密解密及签名校验">
+<meta name="twitter:description" content="该工具类中用到了BASE64，需要借助第三方类库：javabase64-1.3.1.jar 注意： RSA加密明文最大长度117字节，解密要求密文最大长度为128字节，所以在加密和解密的过程中需要分块进行。 RSA加密对明文的长度是有限制的，如果加密数据过大会抛出如下异常： 1234Exception in thread &quot;main&quot; javax.crypto.IllegalBlockSizeEx">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/02/28/Java使用RSA加密解密及签名校验/"/>
 
 
 
@@ -172,7 +173,7 @@
     sidebar: "",
   };
 </script>
-  <title>Just Do IT</title>
+  <title>Java使用RSA加密解密及签名校验 | Just Do IT</title>
   
 
 
@@ -219,8 +220,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -297,734 +297,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/28/将自己的代码上传到maven中央库/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="GuoLeijie">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Just Do IT">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/28/将自己的代码上传到maven中央库/" itemprop="url">将自己的代码上传到maven中央库</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-28T07:53:31+08:00">2018-02-28</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/opensource/" itemprop="url" rel="index"><span itemprop="name">opensource</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/26/阿里Java代码规约插件/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="GuoLeijie">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Just Do IT">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/26/阿里Java代码规约插件/" itemprop="url">阿里Java代码规约插件</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-26T12:21:26+08:00">2018-02-26</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>###概述</p>
-<p>2017年10月14日杭州云栖大会，Java代码规约扫描插件全球首发仪式正式启动，规范正式以插件形式公开走向业界，引领Java语言的规范之路。目前，插件已在云效公有云产品中集成，立即体验！（云效&gt;公有云&gt;设置-&gt;测试服务-&gt;阿里巴巴Java代码规约）。</p>
-<p>链接: <a href="https://github.com/alibaba/p3c" target="_blank" rel="external">插件地址</a></p>
-<p>###开始安装</p>
-<ul>
-<li>选择你开发的平台: eclipse 就选eclipse, idea 直接去idea的 插件搜索 alibaba 即可安装</li>
-</ul>
-<p><img src="media/15196189571629/15196191080234.jpg" alt=""></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/11/pm2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="GuoLeijie">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Just Do IT">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/11/pm2/" itemprop="url">PM2 - 业界标准的任务执行器</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-11T19:55:16+08:00">2018-02-11</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="PM2-业界标准的任务执行器"><a href="#PM2-业界标准的任务执行器" class="headerlink" title="PM2 - 业界标准的任务执行器"></a>PM2 - 业界标准的任务执行器</h1><p><strong>一. 命令</strong></p>
-<ol>
-<li><p>运行应用</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 start helloworld.js</div></pre></td></tr></table></figure>
-<p> pm2会注册一个名为helloworld的应用。这个应用运行在frok模式下，该模式下pm2不进行负载均衡，而是简单地fork该应用。</p>
-</li>
-<li><p>显示应用详细信息</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 show 0</div></pre></td></tr></table></figure>
-<p> 可以得到id为0的应用的相关信息。</p>
-</li>
-<li><p>监控pm2下运行的应用列表</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 monit</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<ol>
-<li><p>查看应用日志信息</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 logs</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<ol>
-<li><p>无缝重启应用</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 reload all</div></pre></td></tr></table></figure>
-<p> 这个命令可以确保应用能完成重启，并且无停机时间。pm2 会将请求放入队列，等待重启后的应用再次响应请求。</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//细粒度重启单个应用</div><div class="line">pm2 reload helloworld</div></pre></td></tr></table></figure>
-</li>
-<li><p>多节点负载模式启动应用</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 start helloworld.js -i 3</div></pre></td></tr></table></figure>
-<p> pm2充当控制主进程与3个工作进程之间的轮询调度器，因此可以并行处理3个请求。</p>
-</li>
-<li><p>增加、减少工作节点</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 scale helloworld 2</div></pre></td></tr></table></figure>
-<p> 工作节点由3个减少为2个。</p>
-</li>
-</ol>
-<p>二. PM2的编程接口</p>
-<ol>
-<li><p>pm2”生态”系统文件生成</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 ecosystem</div></pre></td></tr></table></figure>
-<p> 该命令会生成一个ecosystem.json文件，文件中包含了pm2集群的骨架。</p>
- <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">module</span>.<span class="keyword">exports</span> = &#123;</div><div class="line">  <span class="comment">/**</span></div><div class="line"><span class="comment">   * Application configuration section</span></div><div class="line"><span class="comment">   * http://pm2.keymetrics.io/docs/usage/application-declaration/</span></div><div class="line"><span class="comment">   */</span></div><div class="line">  apps : [</div><div class="line"></div><div class="line"></div><div class="line">    <span class="comment">// First application</span></div><div class="line">    &#123;</div><div class="line">      name      : <span class="string">'API'</span>,</div><div class="line">      script    : <span class="string">'app.js'</span>,</div><div class="line">      env: &#123;</div><div class="line">        COMMON_VARIABLE: <span class="string">'true'</span></div><div class="line">      &#125;,</div><div class="line">      env_production : &#123;</div><div class="line">        NODE_ENV: <span class="string">'production'</span></div><div class="line">      &#125;</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    <span class="comment">// Second application</span></div><div class="line">    &#123;</div><div class="line">      name      : <span class="string">'WEB'</span>,</div><div class="line">      script    : <span class="string">'web.js'</span></div><div class="line">    &#125;</div><div class="line">  ],</div><div class="line"></div><div class="line">  <span class="comment">/**</span></div><div class="line"><span class="comment">   * Deployment section</span></div><div class="line"><span class="comment">   * http://pm2.keymetrics.io/docs/usage/deployment/</span></div><div class="line"><span class="comment">   */</span></div><div class="line">  deploy : &#123;</div><div class="line">    production : &#123;</div><div class="line">      user : <span class="string">'node'</span>,</div><div class="line">      host : <span class="string">'212.83.163.1'</span>,</div><div class="line">      ref  : <span class="string">'origin/master'</span>,</div><div class="line">      repo : <span class="string">'git@github.com:repo.git'</span>,</div><div class="line">      path : <span class="string">'/var/www/production'</span>,</div><div class="line">      <span class="string">'post-deploy'</span> : <span class="string">'npm install &amp;&amp; pm2 reload ecosystem.config.js --env production'</span></div><div class="line">    &#125;,</div><div class="line">    dev : &#123;</div><div class="line">      user : <span class="string">'node'</span>,</div><div class="line">      host : <span class="string">'212.83.163.1'</span>,</div><div class="line">      ref  : <span class="string">'origin/master'</span>,</div><div class="line">      repo : <span class="string">'git@github.com:repo.git'</span>,</div><div class="line">      path : <span class="string">'/var/www/development'</span>,</div><div class="line">      <span class="string">'post-deploy'</span> : <span class="string">'npm install &amp;&amp; pm2 reload ecosystem.config.js --env dev'</span>,</div><div class="line">      env  : &#123;</div><div class="line">        NODE_ENV: <span class="string">'dev'</span></div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<p> | 字段名 | 字段含义 | 示例 |<br> | :-: | :-: | :-: |<br> | name | 应用名称 |   |<br> | Script | 应用的启动脚本 |  |<br> | env | 由pm2注入系统的环境变量 |  |<br> | env_\<environment\> | 在deploy键的配置下定义了两套环境 | Production,dev |</environment\></p>
-</li>
-</ol>
-<ol>
-<li><p>应用配置安装</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 deploy ecosystem.json production setup</div></pre></td></tr></table></figure>
-</li>
-<li><p>应用部署</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 deploy ecosystem.json production</div></pre></td></tr></table></figure>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/15/区块链应用-健康医疗/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="GuoLeijie">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Just Do IT">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/15/区块链应用-健康医疗/" itemprop="url">区块链应用-健康医疗</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-15T15:50:11+08:00">2017-12-15</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>当今行业中，区块链，人工智能，大数据是非常火热的。2016年12月底，我开始从事<strong>区块链</strong>方向的研究。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/27/Spring-JDBC详解/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="GuoLeijie">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Just Do IT">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/27/Spring-JDBC详解/" itemprop="url">Spring JDBC详解</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-27T09:51:11+08:00">2017-09-27</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>#Spring JDBC详解</p>
-<p><center>《Spring JDBC详解》</center><br>本文旨在讲述Spring JDBC模块的用法。Spring JDBC模块是Spring框架的基础模块之一。</p>
-<h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><p>在Spring JDBC模块中，所有的类可以被分到四个单独的包：</p>
-<ul>
-<li>core<br>即核心包，它包含了JDBC的核心功能。此包内有很多重要的类，包括：JdbcTemplate类、SimpleJdbcInsert类，SimpleJdbcCall类，以及NamedParameterJdbcTemplate类。</li>
-<li>datasource<br>即数据源包，访问数据源的实用工具类。它有多种数据源的实现，可以在JavaEE容器外部测试JDBC代码。</li>
-<li>object<br>即对象包，以面向对象的方式访问数据库。它允许执行查询并返回结果作为业务对象。它可以在数据表的列和业务对象的属性之间映射查询结果。</li>
-<li>support<br>即支持包，是core包和object包的支持类。例如提供了异常转换功能的SQLException类。</li>
-</ul>
-<p>##二、配置<br>下面我们以MySQL数据库为例，开始简单的数据源配置：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Configuration</span></div><div class="line"><span class="meta">@ComponentScan</span>(<span class="string">"com.ch.myalbumjdbc"</span>)</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringJdbcConfig</span> </span>&#123;</div><div class="line">    <span class="meta">@Bean</span></div><div class="line">    <span class="function"><span class="keyword">public</span> DataSource <span class="title">mysqlDataSource</span><span class="params">()</span> </span>&#123;</div><div class="line">        DriverManagerDataSource dataSource = <span class="keyword">new</span> DriverManagerDataSource();</div><div class="line">        dataSource.setDriverClassName(<span class="string">"com.mysql.jdbc.Driver"</span>);</div><div class="line">        dataSource.setUrl(<span class="string">"jdbc:mysql://localhost:3306/springjdbc"</span>);</div><div class="line">        dataSource.setUsername(<span class="string">"guest_user"</span>);</div><div class="line">        dataSource.setPassword(<span class="string">"guest_password"</span>);</div><div class="line"></div><div class="line"></div><div class="line">        <span class="keyword">return</span> dataSource;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>或者，您还可以利用嵌入式数据库进行开发或测试，比如用HSQL嵌入式数据库进行快速配置并创建实例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Bean</span></div><div class="line"><span class="function"><span class="keyword">public</span> DataSource <span class="title">dataSource</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> EmbeddedDatabaseBuilder()</div><div class="line">        .setType(EmbeddedDatabaseType.HSQL)</div><div class="line">        .addScript(<span class="string">"classpath:jdbc/schema.sql"</span>)</div><div class="line">        .addScript(<span class="string">"classpath:jdbc/test-data.sql"</span>).build();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>最后，也可以使用XML配置来实现前面的注释配置的效果：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"dataSource"</span> <span class="attr">class</span>=<span class="string">"org.apache.commons.dbcp.BasicDataSource"</span> </span></div><div class="line"><span class="tag">  <span class="attr">destroy-method</span>=<span class="string">"close"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"driverClassName"</span> <span class="attr">value</span>=<span class="string">"com.mysql.jdbc.Driver"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"url"</span> <span class="attr">value</span>=<span class="string">"jdbc:mysql://localhost:3306/springjdbc"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"username"</span> <span class="attr">value</span>=<span class="string">"guest_user"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">value</span>=<span class="string">"guest_password"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>##三、JdbcTemplate的使用和运行查询</p>
-<ul>
-<li>基本的查询<br>JDBC模板是Spring JDBC模块中主要的API，它提供了常见的数据库访问功能：<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> result = jdbcTemplate.queryForObject(<span class="string">"SELECT COUNT(*) FROM EMPLOYEE"</span>, Integer.class);</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>下面是简单的插入功能：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">addEmplyee</span><span class="params">(<span class="keyword">int</span> id)</span> </span>&#123;</div><div class="line">    <span class="keyword">return</span> jdbcTemplate.update(<span class="string">"INSERT INTO EMPLOYEE VALUES (?, ?, ?, ?)"</span>, <span class="number">5</span>, <span class="string">"Bill"</span>, <span class="string">"Gates"</span>, <span class="string">"USA"</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>注意提供参数的标准语法——使用“？”字符。下面，让我们看看替代语法。</p>
-<ul>
-<li>查询与命名参数<br>要获得命名参数的支持，我们需要使用Spring JDBC提供的其它JDBC模板——NamedParameterJdbcTemplate。<br>此类封装了JbdcTemplate，并提供了使用“？”来替代指定参数的传统语法。它使用传递的参数来替换占位符“？”，以执行传参的查询：<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">SqlParameterSource namedParameters = <span class="keyword">new</span> MapSqlParameterSource().addValue(<span class="string">"id"</span>, <span class="number">1</span>);</div><div class="line"><span class="keyword">return</span> namedParameterJdbcTemplate.queryForObject(</div><div class="line">		<span class="string">"SELECT FIRST_NAME FROM EMPLOYEE WHERE ID = :id"</span>, namedParameters, String.class);</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>请注意，我们使用的是MapSqlParameterSource来提供值的命名参数。<br>下面是使用bean类的属性来确定命名参数简单例子</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Employee employee = <span class="keyword">new</span> Employee();</div><div class="line">employee.setFirstName(<span class="string">"James"</span>);</div><div class="line"></div><div class="line">String SELECT_BY_ID = <span class="string">"SELECT COUNT(*) FROM EMPLOYEE WHERE FIRST_NAME = :firstName"</span>;</div><div class="line"></div><div class="line">SqlParameterSource namedParameters = <span class="keyword">new</span> BeanPropertySqlParameterSource(employee);</div><div class="line"><span class="keyword">return</span> namedParameterJdbcTemplate.queryForObject(SELECT_BY_ID, namedParameters, Integer.class);</div></pre></td></tr></table></figure>
-<p>请注意，我们是怎样利用BeanPropertySqlParameterSource的实现来替代指定的命名参数。</p>
-<ul>
-<li>把查询结果映射到java对象<br>还有一个非常有用的功能是把查询结果映射到Java对象——通过实现RowMapper接口。<br>例如，对于查询返回的每一行结果，Spring会使用该行映射来填充Java bean<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">EmployeeRowMapper</span> <span class="keyword">implements</span> <span class="title">RowMapper</span>&lt;<span class="title">Employee</span>&gt; </span>&#123;</div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> Employee <span class="title">mapRow</span><span class="params">(ResultSet rs, <span class="keyword">int</span> rowNum)</span> <span class="keyword">throws</span> SQLException </span>&#123;</div><div class="line">        Employee employee = <span class="keyword">new</span> Employee();</div><div class="line"></div><div class="line"></div><div class="line">        employee.setId(rs.getInt(<span class="string">"ID"</span>));</div><div class="line">        employee.setFirstName(rs.getString(<span class="string">"FIRST_NAME"</span>));</div><div class="line">        employee.setLastName(rs.getString(<span class="string">"LAST_NAME"</span>));</div><div class="line">        employee.setAddress(rs.getString(<span class="string">"ADDRESS"</span>));</div><div class="line"></div><div class="line"></div><div class="line">        <span class="keyword">return</span> employee;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
 
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -1056,9 +331,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/02/28/Java使用RSA加密解密及签名校验/" itemprop="url">Java使用RSA加密解密及签名校验</a></h1>
+          <h1 class="post-title" itemprop="name headline">Java使用RSA加密解密及签名校验</h1>
         
 
         <div class="post-meta">
@@ -1125,9 +398,7 @@
       
 
       
-        
-          
-            <p>该工具类中用到了BASE64，需要借助第三方类库：javabase64-1.3.1.jar</p>
+        <p>该工具类中用到了BASE64，需要借助第三方类库：javabase64-1.3.1.jar</p>
 <p><strong>注意：</strong></p>
 <p><strong>RSA加密明文最大长度117字节，解密要求密文最大长度为128字节，所以在加密和解密的过程中需要分块进行。</strong></p>
 <p><strong>RSA加密对明文的长度是有限制的，如果加密数据过大会抛出如下异常：</strong></p>
@@ -1139,8 +410,6 @@
 <p><strong>RSATester.java–测试类</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> com.ljq.test;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.Map;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RSATester</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">static</span> String publicKey;</div><div class="line">    <span class="keyword">static</span> String privateKey;</div><div class="line"></div><div class="line">    <span class="keyword">static</span> &#123;</div><div class="line">        <span class="keyword">try</span> &#123;</div><div class="line">            Map&lt;String, Object&gt; keyMap = RSAUtils.genKeyPair();</div><div class="line">            publicKey = RSAUtils.getPublicKey(keyMap);</div><div class="line">            privateKey = RSAUtils.getPrivateKey(keyMap);</div><div class="line">            System.err.println(<span class="string">"公钥: \n\r"</span> + publicKey);</div><div class="line">            System.err.println(<span class="string">"私钥： \n\r"</span> + privateKey);</div><div class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</div><div class="line">            e.printStackTrace();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line">        test();</div><div class="line">        testSign();</div><div class="line">        testHttpSign();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line">        System.err.println(<span class="string">"公钥加密——私钥解密"</span>);</div><div class="line">        String source = <span class="string">"这是一行没有任何意义的文字，你看完了等于没看，不是吗？"</span>;</div><div class="line">        System.out.println(<span class="string">"\r加密前文字：\r\n"</span> + source);</div><div class="line">        <span class="keyword">byte</span>[] data = source.getBytes();</div><div class="line">        <span class="keyword">byte</span>[] encodedData = RSAUtils.encryptByPublicKey(data, publicKey);</div><div class="line">        System.out.println(<span class="string">"加密后文字：\r\n"</span> + <span class="keyword">new</span> String(encodedData));</div><div class="line">        <span class="keyword">byte</span>[] decodedData = RSAUtils.decryptByPrivateKey(encodedData, privateKey);</div><div class="line">        String target = <span class="keyword">new</span> String(decodedData);</div><div class="line">        System.out.println(<span class="string">"解密后文字: \r\n"</span> + target);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">testSign</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line">        System.err.println(<span class="string">"私钥加密——公钥解密"</span>);</div><div class="line">        String source = <span class="string">"这是一行测试RSA数字签名的无意义文字"</span>;</div><div class="line">        System.out.println(<span class="string">"原文字：\r\n"</span> + source);</div><div class="line">        <span class="keyword">byte</span>[] data = source.getBytes();</div><div class="line">        <span class="keyword">byte</span>[] encodedData = RSAUtils.encryptByPrivateKey(data, privateKey);</div><div class="line">        System.out.println(<span class="string">"加密后：\r\n"</span> + <span class="keyword">new</span> String(encodedData));</div><div class="line">        <span class="keyword">byte</span>[] decodedData = RSAUtils.decryptByPublicKey(encodedData, publicKey);</div><div class="line">        String target = <span class="keyword">new</span> String(decodedData);</div><div class="line">        System.out.println(<span class="string">"解密后: \r\n"</span> + target);</div><div class="line">        System.err.println(<span class="string">"私钥签名——公钥验证签名"</span>);</div><div class="line">        String sign = RSAUtils.sign(encodedData, privateKey);</div><div class="line">        System.err.println(<span class="string">"签名:\r"</span> + sign);</div><div class="line">        <span class="keyword">boolean</span> status = RSAUtils.verify(encodedData, publicKey, sign);</div><div class="line">        System.err.println(<span class="string">"验证结果:\r"</span> + status);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">testHttpSign</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line">        String param = <span class="string">"id=1&amp;name=张三"</span>;</div><div class="line">        <span class="keyword">byte</span>[] encodedData = RSAUtils.encryptByPrivateKey(param.getBytes(), privateKey);</div><div class="line">        System.out.println(<span class="string">"加密后："</span> + encodedData);</div><div class="line">        </div><div class="line">        <span class="keyword">byte</span>[] decodedData = RSAUtils.decryptByPublicKey(encodedData, publicKey);</div><div class="line">        System.out.println(<span class="string">"解密后："</span> + <span class="keyword">new</span> String(decodedData));</div><div class="line">        </div><div class="line">        String sign = RSAUtils.sign(encodedData, privateKey);</div><div class="line">        System.err.println(<span class="string">"签名："</span> + sign);</div><div class="line">        </div><div class="line">        <span class="keyword">boolean</span> status = RSAUtils.verify(encodedData, publicKey, sign);</div><div class="line">        System.err.println(<span class="string">"签名验证结果："</span> + status);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
 
@@ -1160,12 +429,28 @@
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/27/Spring-JDBC详解/" rel="prev" title="Spring JDBC详解">
+                Spring JDBC详解 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1175,14 +460,19 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -1407,6 +697,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.5"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.5"></script>
+
+
 
   
 
