@@ -144,26 +144,28 @@
 
 
   
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JVM调优," />
 
 
-<meta name="description" content="一个30岁又起航的程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Just Do IT">
-<meta property="og:url" content="http://yoursite.com/categories/opensource/index.html">
+<meta name="description" content="jstack可以定位到线程堆栈，根据堆栈信息我们可以定位到具体代码，所以它在JVM性能调优中使用得非常多。下面我们来一个实例找出某个Java进程中最耗费CPU的Java线程并定位堆栈信息，用到的命令有ps、top、printf、jstack、grep。  首先确定进程的 ID ，可以使用 jps -v 或者 top 命令直接查看  1ps -ef | grep mule  查看该进程中哪个线程占用">
+<meta name="keywords" content="JVM调优">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JVM调优之六 - 找到长时间占用cpu的线程所在程序">
+<meta property="og:url" content="http://yoursite.com/2017/09/27/JVM调优之六-找到长时间占用cpu的线程所在程序/index.html">
 <meta property="og:site_name" content="Just Do IT">
-<meta property="og:description" content="一个30岁又起航的程序猿">
+<meta property="og:description" content="jstack可以定位到线程堆栈，根据堆栈信息我们可以定位到具体代码，所以它在JVM性能调优中使用得非常多。下面我们来一个实例找出某个Java进程中最耗费CPU的Java线程并定位堆栈信息，用到的命令有ps、top、printf、jstack、grep。  首先确定进程的 ID ，可以使用 jps -v 或者 top 命令直接查看  1ps -ef | grep mule  查看该进程中哪个线程占用">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-07-20T16:06:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Just Do IT">
-<meta name="twitter:description" content="一个30岁又起航的程序猿">
+<meta name="twitter:title" content="JVM调优之六 - 找到长时间占用cpu的线程所在程序">
+<meta name="twitter:description" content="jstack可以定位到线程堆栈，根据堆栈信息我们可以定位到具体代码，所以它在JVM性能调优中使用得非常多。下面我们来一个实例找出某个Java进程中最耗费CPU的Java线程并定位堆栈信息，用到的命令有ps、top、printf、jstack、grep。  首先确定进程的 ID ，可以使用 jps -v 或者 top 命令直接查看  1ps -ef | grep mule  查看该进程中哪个线程占用">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/opensource/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/27/JVM调优之六-找到长时间占用cpu的线程所在程序/"/>
 
 
 
@@ -172,7 +174,7 @@
     sidebar: "",
   };
 </script>
-  <title>分类: opensource | Just Do IT</title>
+  <title>JVM调优之六 - 找到长时间占用cpu的线程所在程序 | Just Do IT</title>
   
 
 
@@ -219,7 +221,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -297,59 +299,179 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>opensource<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/27/JVM调优之六-找到长时间占用cpu的线程所在程序/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="GuoLeijie">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Just Do IT">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/02/28/将自己的代码上传到maven中央库/" itemprop="url">
-              
-                <span itemprop="name">将自己的代码上传到maven中央库</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">JVM调优之六 - 找到长时间占用cpu的线程所在程序</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-28T07:53:31+08:00"
-              content="2018-02-28" >
-          02-28
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-27T09:51:11+08:00">2017-09-27</time>
+            
 
-    </header>
-  </article>
+            
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>jstack可以定位到线程堆栈，根据堆栈信息我们可以定位到具体代码，所以它在JVM性能调优中使用得非常多。下面我们来一个实例找出某个Java进程中最耗费CPU的Java线程并定位堆栈信息，用到的命令有ps、top、printf、jstack、grep。</p>
+<ol>
+<li>首先确定进程的 ID ，可以使用 jps -v 或者 top 命令直接查看</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep mule</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>查看该进程中哪个线程占用大量 CPU，执行 top -Hp [PID] 结果如下：</li>
+</ol>
+<p>可以发现编号为 350xx 的共有 9 个线程占用了 100% 的 CPU，好，接下来咱们随便取一个线程 ID ，假设我们想看编号为 35053 这个线程。</p>
+<p>首先将 35053 转成 16 进制是 88ED （可以用在线工具转换)<br>也可以使用linux命令行工具<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">printf "%x\n" 21742</span><br></pre></td></tr></table></figure></p>
+<p>得到21742的十六进制值为54ee，下面会用到。</p>
+<p>OK，下一步终于轮到jstack上场了，它用来输出进程21711的堆栈信息，然后根据线程ID的十六进制值grep，如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root@ubuntu:/# jstack 21711 | grep 54ee</span><br><span class="line">"PollIntervalRetrySchedulerThread" prio=10 tid=0x00007f950043e000 nid=0x54ee in Object.wait()</span><br></pre></td></tr></table></figure>
+<p>可以看到CPU消耗在PollIntervalRetrySchedulerThread这个类的Object.wait()，我找了下我的代码，定位到下面的代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Idle wait</span></span><br><span class="line">getLog().info(<span class="string">"Thread ["</span> + getName() + <span class="string">"] is idle waiting..."</span>);</span><br><span class="line">schedulerThreadState = PollTaskSchedulerThreadState.IdleWaiting;</span><br><span class="line"><span class="keyword">long</span> now = System.currentTimeMillis();</span><br><span class="line"><span class="keyword">long</span> waitTime = now + getIdleWaitTime();</span><br><span class="line"><span class="keyword">long</span> timeUntilContinue = waitTime - now;</span><br><span class="line"><span class="keyword">synchronized</span>(sigLock) &#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>(!halted.get()) &#123;</span><br><span class="line">      sigLock.wait(timeUntilContinue);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; </span><br><span class="line">  <span class="keyword">catch</span> (InterruptedException ignore) &#123;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>它是轮询任务的空闲等待代码，上面的sigLock.wait(timeUntilContinue)就对应了前面的Object.wait()。</p>
+<p>本人已经试验过，就是这么查找线程</p>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JVM调优/" rel="tag"># JVM调优</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/27/Spring-JDBC详解/" rel="next" title="Spring JDBC详解">
+                <i class="fa fa-chevron-left"></i> Spring JDBC详解
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/15/区块链应用-健康医疗/" rel="prev" title="区块链应用-健康医疗">
+                区块链应用-健康医疗 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -587,6 +709,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.5"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.5"></script>
+
+
 
   
 

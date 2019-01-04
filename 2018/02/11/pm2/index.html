@@ -149,14 +149,14 @@
 
 <meta name="description" content="PM2 - 业界标准的任务执行器一. 命令  运行应用  1pm2 start helloworld.js  pm2会注册一个名为helloworld的应用。这个应用运行在frok模式下，该模式下pm2不进行负载均衡，而是简单地fork该应用。  显示应用详细信息  1pm2 show 0  可以得到id为0的应用的相关信息。  监控pm2下运行的应用列表  1pm2 monit    查看应用日">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PM2 - 业界标准的任务执行器">
+<meta property="og:title" content="PM2 - 业界标准的任务执行器2">
 <meta property="og:url" content="http://yoursite.com/2018/02/11/pm2/index.html">
 <meta property="og:site_name" content="Just Do IT">
 <meta property="og:description" content="PM2 - 业界标准的任务执行器一. 命令  运行应用  1pm2 start helloworld.js  pm2会注册一个名为helloworld的应用。这个应用运行在frok模式下，该模式下pm2不进行负载均衡，而是简单地fork该应用。  显示应用详细信息  1pm2 show 0  可以得到id为0的应用的相关信息。  监控pm2下运行的应用列表  1pm2 monit    查看应用日">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-24T11:39:48.000Z">
+<meta property="og:updated_time" content="2018-07-21T11:53:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PM2 - 业界标准的任务执行器">
+<meta name="twitter:title" content="PM2 - 业界标准的任务执行器2">
 <meta name="twitter:description" content="PM2 - 业界标准的任务执行器一. 命令  运行应用  1pm2 start helloworld.js  pm2会注册一个名为helloworld的应用。这个应用运行在frok模式下，该模式下pm2不进行负载均衡，而是简单地fork该应用。  显示应用详细信息  1pm2 show 0  可以得到id为0的应用的相关信息。  监控pm2下运行的应用列表  1pm2 monit    查看应用日">
 
 
@@ -173,7 +173,7 @@
     sidebar: "",
   };
 </script>
-  <title>PM2 - 业界标准的任务执行器 | Just Do IT</title>
+  <title>PM2 - 业界标准的任务执行器2 | Just Do IT</title>
   
 
 
@@ -331,7 +331,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">PM2 - 业界标准的任务执行器</h1>
+          <h1 class="post-title" itemprop="name headline">PM2 - 业界标准的任务执行器2</h1>
         
 
         <div class="post-meta">
@@ -383,52 +383,52 @@
         <h1 id="PM2-业界标准的任务执行器"><a href="#PM2-业界标准的任务执行器" class="headerlink" title="PM2 - 业界标准的任务执行器"></a>PM2 - 业界标准的任务执行器</h1><p><strong>一. 命令</strong></p>
 <ol>
 <li><p>运行应用</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 start helloworld.js</div></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 start helloworld.js</span><br></pre></td></tr></table></figure>
 <p> pm2会注册一个名为helloworld的应用。这个应用运行在frok模式下，该模式下pm2不进行负载均衡，而是简单地fork该应用。</p>
 </li>
 <li><p>显示应用详细信息</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 show 0</div></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 show 0</span><br></pre></td></tr></table></figure>
 <p> 可以得到id为0的应用的相关信息。</p>
 </li>
 <li><p>监控pm2下运行的应用列表</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 monit</div></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 monit</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<ol>
+<ol start="4">
 <li><p>查看应用日志信息</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 logs</div></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 logs</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<ol>
+<ol start="5">
 <li><p>无缝重启应用</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 reload all</div></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 reload all</span><br></pre></td></tr></table></figure>
 <p> 这个命令可以确保应用能完成重启，并且无停机时间。pm2 会将请求放入队列，等待重启后的应用再次响应请求。</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//细粒度重启单个应用</div><div class="line">pm2 reload helloworld</div></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//细粒度重启单个应用</span><br><span class="line">pm2 reload helloworld</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>多节点负载模式启动应用</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 start helloworld.js -i 3</div></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 start helloworld.js -i 3</span><br></pre></td></tr></table></figure>
 <p> pm2充当控制主进程与3个工作进程之间的轮询调度器，因此可以并行处理3个请求。</p>
 </li>
 <li><p>增加、减少工作节点</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 scale helloworld 2</div></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 scale helloworld 2</span><br></pre></td></tr></table></figure>
 <p> 工作节点由3个减少为2个。</p>
 </li>
 </ol>
 <p>二. PM2的编程接口</p>
 <ol>
 <li><p>pm2”生态”系统文件生成</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 ecosystem</div></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 ecosystem</span><br></pre></td></tr></table></figure>
 <p> 该命令会生成一个ecosystem.json文件，文件中包含了pm2集群的骨架。</p>
- <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">module</span>.<span class="keyword">exports</span> = &#123;</div><div class="line">  <span class="comment">/**</span></div><div class="line"><span class="comment">   * Application configuration section</span></div><div class="line"><span class="comment">   * http://pm2.keymetrics.io/docs/usage/application-declaration/</span></div><div class="line"><span class="comment">   */</span></div><div class="line">  apps : [</div><div class="line"></div><div class="line"></div><div class="line">    <span class="comment">// First application</span></div><div class="line">    &#123;</div><div class="line">      name      : <span class="string">'API'</span>,</div><div class="line">      script    : <span class="string">'app.js'</span>,</div><div class="line">      env: &#123;</div><div class="line">        COMMON_VARIABLE: <span class="string">'true'</span></div><div class="line">      &#125;,</div><div class="line">      env_production : &#123;</div><div class="line">        NODE_ENV: <span class="string">'production'</span></div><div class="line">      &#125;</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">    <span class="comment">// Second application</span></div><div class="line">    &#123;</div><div class="line">      name      : <span class="string">'WEB'</span>,</div><div class="line">      script    : <span class="string">'web.js'</span></div><div class="line">    &#125;</div><div class="line">  ],</div><div class="line"></div><div class="line">  <span class="comment">/**</span></div><div class="line"><span class="comment">   * Deployment section</span></div><div class="line"><span class="comment">   * http://pm2.keymetrics.io/docs/usage/deployment/</span></div><div class="line"><span class="comment">   */</span></div><div class="line">  deploy : &#123;</div><div class="line">    production : &#123;</div><div class="line">      user : <span class="string">'node'</span>,</div><div class="line">      host : <span class="string">'212.83.163.1'</span>,</div><div class="line">      ref  : <span class="string">'origin/master'</span>,</div><div class="line">      repo : <span class="string">'git@github.com:repo.git'</span>,</div><div class="line">      path : <span class="string">'/var/www/production'</span>,</div><div class="line">      <span class="string">'post-deploy'</span> : <span class="string">'npm install &amp;&amp; pm2 reload ecosystem.config.js --env production'</span></div><div class="line">    &#125;,</div><div class="line">    dev : &#123;</div><div class="line">      user : <span class="string">'node'</span>,</div><div class="line">      host : <span class="string">'212.83.163.1'</span>,</div><div class="line">      ref  : <span class="string">'origin/master'</span>,</div><div class="line">      repo : <span class="string">'git@github.com:repo.git'</span>,</div><div class="line">      path : <span class="string">'/var/www/development'</span>,</div><div class="line">      <span class="string">'post-deploy'</span> : <span class="string">'npm install &amp;&amp; pm2 reload ecosystem.config.js --env dev'</span>,</div><div class="line">      env  : &#123;</div><div class="line">        NODE_ENV: <span class="string">'dev'</span></div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<p> | 字段名 | 字段含义 | 示例 |<br> | :-: | :-: | :-: |<br> | name | 应用名称 |   |<br> | Script | 应用的启动脚本 |  |<br> | env | 由pm2注入系统的环境变量 |  |<br> | env_\<environment\> | 在deploy键的配置下定义了两套环境 | Production,dev |</environment\></p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">module</span>.<span class="keyword">exports</span> = &#123;</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * Application configuration section</span></span><br><span class="line"><span class="comment">   * http://pm2.keymetrics.io/docs/usage/application-declaration/</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  apps : [</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">// First application</span></span><br><span class="line">    &#123;</span><br><span class="line">      name      : <span class="string">'API'</span>,</span><br><span class="line">      script    : <span class="string">'app.js'</span>,</span><br><span class="line">      env: &#123;</span><br><span class="line">        COMMON_VARIABLE: <span class="string">'true'</span></span><br><span class="line">      &#125;,</span><br><span class="line">      env_production : &#123;</span><br><span class="line">        NODE_ENV: <span class="string">'production'</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Second application</span></span><br><span class="line">    &#123;</span><br><span class="line">      name      : <span class="string">'WEB'</span>,</span><br><span class="line">      script    : <span class="string">'web.js'</span></span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * Deployment section</span></span><br><span class="line"><span class="comment">   * http://pm2.keymetrics.io/docs/usage/deployment/</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  deploy : &#123;</span><br><span class="line">    production : &#123;</span><br><span class="line">      user : <span class="string">'node'</span>,</span><br><span class="line">      host : <span class="string">'212.83.163.1'</span>,</span><br><span class="line">      ref  : <span class="string">'origin/master'</span>,</span><br><span class="line">      repo : <span class="string">'git@github.com:repo.git'</span>,</span><br><span class="line">      path : <span class="string">'/var/www/production'</span>,</span><br><span class="line">      <span class="string">'post-deploy'</span> : <span class="string">'npm install &amp;&amp; pm2 reload ecosystem.config.js --env production'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    dev : &#123;</span><br><span class="line">      user : <span class="string">'node'</span>,</span><br><span class="line">      host : <span class="string">'212.83.163.1'</span>,</span><br><span class="line">      ref  : <span class="string">'origin/master'</span>,</span><br><span class="line">      repo : <span class="string">'git@github.com:repo.git'</span>,</span><br><span class="line">      path : <span class="string">'/var/www/development'</span>,</span><br><span class="line">      <span class="string">'post-deploy'</span> : <span class="string">'npm install &amp;&amp; pm2 reload ecosystem.config.js --env dev'</span>,</span><br><span class="line">      env  : &#123;</span><br><span class="line">        NODE_ENV: <span class="string">'dev'</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p> | 字段名 | 字段含义 | 示例 |<br> | :-: | :-: | :-: |<br> | name | 应用名称 |   |<br> | Script | 应用的启动脚本 |  |<br> | env | 由pm2注入系统的环境变量 |  |<br> | env_\&lt;environment> | 在deploy键的配置下定义了两套环境 | Production,dev |</p>
 </li>
 </ol>
-<ol>
+<ol start="2">
 <li><p>应用配置安装</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 deploy ecosystem.json production setup</div></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 deploy ecosystem.json production setup</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>应用部署</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pm2 deploy ecosystem.json production</div></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 deploy ecosystem.json production</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 
@@ -544,7 +544,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -567,6 +567,19 @@
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
               
             </nav>
           
