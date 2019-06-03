@@ -8,12 +8,12 @@
   
     <meta name="keywords" content="JUST DO IT">
   
-  <meta name="description" content="#谈谈高并发系统的限流 ##缓存缓存比较好理解，在大型高并发系统中，如果没有缓存数据库将分分钟被爆，系统也会瞬间瘫痪。使用缓存不单单能够提升系统访问速度、提高并发访问量，也是保护数据库、保护系统的有效方式。大型网站一般主要是“读”，缓存的使用很容易被想到。在大型“写”系统中，缓存也常常扮演者非常重要的角色。比如累积一些数据批量写入，内存里面的缓存队列（生产消费），以及HBase写数据的机制等等也都">
+  <meta name="description" content="谈谈高并发系统的限流缓存缓存比较好理解，在大型高并发系统中，如果没有缓存数据库将分分钟被爆，系统也会瞬间瘫痪。使用缓存不单单能够提升系统访问速度、提高并发访问量，也是保护数据库、保护系统的有效方式。大型网站一般主要是“读”，缓存的使用很容易被想到。在大型“写”系统中，缓存也常常扮演者非常重要的角色。比如累积一些数据批量写入，内存里面的缓存队列（生产消费），以及HBase写数据的机制等等也都是通过缓">
 <meta property="og:type" content="article">
 <meta property="og:title" content="并发系统限流">
 <meta property="og:url" content="http://yoursite.com/2018/07/26/并发限流设计/index.html">
 <meta property="og:site_name" content="Just Do IT">
-<meta property="og:description" content="#谈谈高并发系统的限流 ##缓存缓存比较好理解，在大型高并发系统中，如果没有缓存数据库将分分钟被爆，系统也会瞬间瘫痪。使用缓存不单单能够提升系统访问速度、提高并发访问量，也是保护数据库、保护系统的有效方式。大型网站一般主要是“读”，缓存的使用很容易被想到。在大型“写”系统中，缓存也常常扮演者非常重要的角色。比如累积一些数据批量写入，内存里面的缓存队列（生产消费），以及HBase写数据的机制等等也都">
+<meta property="og:description" content="谈谈高并发系统的限流缓存缓存比较好理解，在大型高并发系统中，如果没有缓存数据库将分分钟被爆，系统也会瞬间瘫痪。使用缓存不单单能够提升系统访问速度、提高并发访问量，也是保护数据库、保护系统的有效方式。大型网站一般主要是“读”，缓存的使用很容易被想到。在大型“写”系统中，缓存也常常扮演者非常重要的角色。比如累积一些数据批量写入，内存里面的缓存队列（生产消费），以及HBase写数据的机制等等也都是通过缓">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/.com//15700-20170501174030523-1951024870.png">
 <meta property="og:image" content="http://yoursite.com/.com//15700-20170501174035742-980730808.png">
@@ -21,10 +21,10 @@
 <meta property="og:image" content="http://yoursite.com/.com//15700-20170501174041070-1981680853.png">
 <meta property="og:image" content="http://yoursite.com/.com//15700-20170501174043054-94751454.png">
 <meta property="og:image" content="http://yoursite.com/.com//15700-20170501174044304-50454988.png">
-<meta property="og:updated_time" content="2018-08-08T21:11:18.000Z">
+<meta property="og:updated_time" content="2019-06-03T02:54:22.843Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="并发系统限流">
-<meta name="twitter:description" content="#谈谈高并发系统的限流 ##缓存缓存比较好理解，在大型高并发系统中，如果没有缓存数据库将分分钟被爆，系统也会瞬间瘫痪。使用缓存不单单能够提升系统访问速度、提高并发访问量，也是保护数据库、保护系统的有效方式。大型网站一般主要是“读”，缓存的使用很容易被想到。在大型“写”系统中，缓存也常常扮演者非常重要的角色。比如累积一些数据批量写入，内存里面的缓存队列（生产消费），以及HBase写数据的机制等等也都">
+<meta name="twitter:description" content="谈谈高并发系统的限流缓存缓存比较好理解，在大型高并发系统中，如果没有缓存数据库将分分钟被爆，系统也会瞬间瘫痪。使用缓存不单单能够提升系统访问速度、提高并发访问量，也是保护数据库、保护系统的有效方式。大型网站一般主要是“读”，缓存的使用很容易被想到。在大型“写”系统中，缓存也常常扮演者非常重要的角色。比如累积一些数据批量写入，内存里面的缓存队列（生产消费），以及HBase写数据的机制等等也都是通过缓">
 <meta name="twitter:image" content="http://yoursite.com/.com//15700-20170501174030523-1951024870.png">
   
   
@@ -139,14 +139,13 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <p>#谈谈高并发系统的限流</p>
-<p>##缓存<br>缓存比较好理解，在大型高并发系统中，如果没有缓存数据库将分分钟被爆，系统也会瞬间瘫痪。使用缓存不单单能够提升系统访问速度、提高并发访问量，也是保护数据库、保护系统的有效方式。大型网站一般主要是“读”，缓存的使用很容易被想到。在大型“写”系统中，缓存也常常扮演者非常重要的角色。比如累积一些数据批量写入，内存里面的缓存队列（生产消费），以及HBase写数据的机制等等也都是通过缓存提升系统的吞吐量或者实现系统的保护措施。甚至消息中间件，你也可以认为是一种分布式的数据缓存。</p>
-<p>##降级<br>服务降级是当服务器压力剧增的情况下，根据当前业务情况及流量对一些服务和页面有策略的降级，以此释放服务器资源以保证核心任务的正常运行。降级往往会指定不同的级别，面临不同的异常等级执行不同的处理。根据服务方式：可以拒接服务，可以延迟服务，也有时候可以随机服务。根据服务范围：可以砍掉某个功能，也可以砍掉某些模块。总之服务降级需要根据不同的业务需求采用不同的降级策略。主要的目的就是服务虽然有损但是总比没有好。</p>
-<p>##限流<br>限流可以认为服务降级的一种，限流就是限制系统的输入和输出流量已达到保护系统的目的。一般来说系统的吞吐量是可以被测算的，为了保证系统的稳定运行，一旦达到的需要限制的阈值，就需要限制流量并采取一些措施以完成限制流量的目的。比如：延迟处理，拒绝处理，或者部分拒绝处理等等。</p>
-<p>##限流的算法<br>常见的限流算法有：计数器、漏桶和令牌桶算法。</p>
-<p>###计数器<br>计数器是最简单粗暴的算法。比如某个服务最多只能每秒钟处理100个请求。我们可以设置一个1秒钟的滑动窗口，窗口中有10个格子，每个格子100毫秒，每100毫秒移动一次，每次移动都需要记录当前服务请求的次数。内存中需要保存10次的次数。可以用数据结构LinkedList来实现。格子每次移动的时候判断一次，当前访问次数和LinkedList中最后一个相差是否超过100，如果超过就需要限流了。<br><img src="/.com//15700-20170501174030523-1951024870.png" alt><br>很明显，当滑动窗口的格子划分的越多，那么滑动窗口的滚动就越平滑，限流的统计就会越精确。<br>示例代码如下：</p>
+            <h1 id="谈谈高并发系统的限流"><a href="#谈谈高并发系统的限流" class="headerlink" title="谈谈高并发系统的限流"></a>谈谈高并发系统的限流</h1><h2 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h2><p>缓存比较好理解，在大型高并发系统中，如果没有缓存数据库将分分钟被爆，系统也会瞬间瘫痪。使用缓存不单单能够提升系统访问速度、提高并发访问量，也是保护数据库、保护系统的有效方式。大型网站一般主要是“读”，缓存的使用很容易被想到。在大型“写”系统中，缓存也常常扮演者非常重要的角色。比如累积一些数据批量写入，内存里面的缓存队列（生产消费），以及HBase写数据的机制等等也都是通过缓存提升系统的吞吐量或者实现系统的保护措施。甚至消息中间件，你也可以认为是一种分布式的数据缓存。</p>
+<h2 id="降级"><a href="#降级" class="headerlink" title="降级"></a>降级</h2><p>服务降级是当服务器压力剧增的情况下，根据当前业务情况及流量对一些服务和页面有策略的降级，以此释放服务器资源以保证核心任务的正常运行。降级往往会指定不同的级别，面临不同的异常等级执行不同的处理。根据服务方式：可以拒接服务，可以延迟服务，也有时候可以随机服务。根据服务范围：可以砍掉某个功能，也可以砍掉某些模块。总之服务降级需要根据不同的业务需求采用不同的降级策略。主要的目的就是服务虽然有损但是总比没有好。</p>
+<h2 id="限流"><a href="#限流" class="headerlink" title="限流"></a>限流</h2><p>限流可以认为服务降级的一种，限流就是限制系统的输入和输出流量已达到保护系统的目的。一般来说系统的吞吐量是可以被测算的，为了保证系统的稳定运行，一旦达到的需要限制的阈值，就需要限制流量并采取一些措施以完成限制流量的目的。比如：延迟处理，拒绝处理，或者部分拒绝处理等等。</p>
+<h2 id="限流的算法"><a href="#限流的算法" class="headerlink" title="限流的算法"></a>限流的算法</h2><p>常见的限流算法有：计数器、漏桶和令牌桶算法。</p>
+<h3 id="计数器"><a href="#计数器" class="headerlink" title="计数器"></a>计数器</h3><p>计数器是最简单粗暴的算法。比如某个服务最多只能每秒钟处理100个请求。我们可以设置一个1秒钟的滑动窗口，窗口中有10个格子，每个格子100毫秒，每100毫秒移动一次，每次移动都需要记录当前服务请求的次数。内存中需要保存10次的次数。可以用数据结构LinkedList来实现。格子每次移动的时候判断一次，当前访问次数和LinkedList中最后一个相差是否超过100，如果超过就需要限流了。<br><img src="/.com//15700-20170501174030523-1951024870.png" alt><br>很明显，当滑动窗口的格子划分的越多，那么滑动窗口的滚动就越平滑，限流的统计就会越精确。<br>示例代码如下：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.LinkedList;</span><br><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.atomic.AtomicLong;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Counter</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 服务访问次数，可以放在Redis中，实现分布式系统的访问计数</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  AtomicLong counter = <span class="keyword">new</span> AtomicLong();</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 使用LinkedList来记录滑动窗口的10个格子。</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  LinkedList&lt;Long&gt; ll = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    Counter counter = <span class="keyword">new</span> Counter();</span><br><span class="line">    counter.doCheck();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">doCheck</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    Random random = <span class="keyword">new</span> Random();</span><br><span class="line">    <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">      <span class="comment">//每100毫秒随机增加20以下的请求量</span></span><br><span class="line">      counter.addAndGet(random.nextInt(<span class="number">20</span>));</span><br><span class="line">      ll.addLast(counter.longValue());</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (ll.size() &gt; <span class="number">10</span>) &#123;</span><br><span class="line">        ll.removeFirst();</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="comment">//比较最后一个和第一个，两者相差一秒</span></span><br><span class="line">      System.out.println(<span class="string">"ll.peekLast():"</span> + ll.peekLast() + <span class="string">",ll.peekFirst():"</span> + ll.peekFirst());</span><br><span class="line">      <span class="keyword">if</span> ((ll.peekLast() - ll.peekFirst()) &gt; <span class="number">100</span>) &#123;</span><br><span class="line">        <span class="comment">//To limit rate</span></span><br><span class="line">        System.out.println(<span class="string">"进入限流程序"</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        Thread.sleep(<span class="number">100</span>);</span><br><span class="line">      &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>###漏桶算法<br>漏桶算法即leaky bucket是一种非常常用的限流算法，可以用来实现流量整形（Traffic Shaping）和流量控制（Traffic Policing）。贴了一张维基百科上示意图帮助大家理解：<br><img src="/.com//15700-20170501174035742-980730808.png" alt></p>
+<h3 id="漏桶算法"><a href="#漏桶算法" class="headerlink" title="漏桶算法"></a>漏桶算法</h3><p>漏桶算法即leaky bucket是一种非常常用的限流算法，可以用来实现流量整形（Traffic Shaping）和流量控制（Traffic Policing）。贴了一张维基百科上示意图帮助大家理解：<br><img src="/.com//15700-20170501174035742-980730808.png" alt></p>
 <p>漏桶算法的主要概念如下：</p>
 <ul>
 <li>一个固定容量的漏桶，按照常量固定速率流出水滴；</li>
@@ -155,7 +154,7 @@
 <li>如果流入水滴超出了桶的容量，则流入的水滴溢出了（被丢弃），而漏桶容量是不变的。</li>
 </ul>
 <p>漏桶算法比较好实现，在单机系统中可以使用队列来实现（.Net中TPL DataFlow可以较好的处理类似的问题，你可以在<a href="http://www.cnblogs.com/haoxinyue/archive/2013/03/01/2938959.html" target="_blank" rel="noopener">这里</a>找到相关的介绍），在分布式环境中消息中间件或者Redis都是可选的方案。</p>
-<p>###令牌桶算法<br>令牌桶算法是一个存放固定容量令牌（token）的桶，按照固定速率往桶里添加令牌。令牌桶算法基本可以用下面的几个概念来描述：</p>
+<h3 id="令牌桶算法"><a href="#令牌桶算法" class="headerlink" title="令牌桶算法"></a>令牌桶算法</h3><p>令牌桶算法是一个存放固定容量令牌（token）的桶，按照固定速率往桶里添加令牌。令牌桶算法基本可以用下面的几个概念来描述：</p>
 <ul>
 <li>令牌将按照固定的速率被放入令牌桶中。比如每秒放10个。</li>
 <li>桶中最多存放b个令牌，当桶满时，新添加的令牌被丢弃或拒绝。</li>
@@ -163,12 +162,9 @@
 <li>如果桶中的令牌不足n个，则不会删除令牌，且该数据包将被限流（要么丢弃，要么缓冲区等待）。<br>如下图：<br><img src="/.com//15700-20170501174039289-1061185254.png" alt></li>
 </ul>
 <p>令牌算法是根据放令牌的速率去控制输出的速率，也就是上图的to network的速率。to network我们可以理解为消息的处理程序，执行某段业务或者调用某个RPC。</p>
-<p>###漏桶和令牌桶的比较</p>
-<p>令牌桶可以在运行时控制和调整数据处理的速率，处理某时的突发流量。放令牌的频率增加可以提升整体数据处理的速度，而通过每次获取令牌的个数增加或者放慢令牌的发放速度和降低整体数据处理速度。而漏桶不行，因为它的流出速率是固定的，程序处理速度也是固定的。</p>
+<h3 id="漏桶和令牌桶的比较"><a href="#漏桶和令牌桶的比较" class="headerlink" title="漏桶和令牌桶的比较"></a>漏桶和令牌桶的比较</h3><p>令牌桶可以在运行时控制和调整数据处理的速率，处理某时的突发流量。放令牌的频率增加可以提升整体数据处理的速度，而通过每次获取令牌的个数增加或者放慢令牌的发放速度和降低整体数据处理速度。而漏桶不行，因为它的流出速率是固定的，程序处理速度也是固定的。</p>
 <p>整体而言，令牌桶算法更优，但是实现更为复杂一些。</p>
-<p>##限流算法实现</p>
-<p>###Guava</p>
-<p>Guava是一个Google开源项目，包含了若干被Google的Java项目广泛依赖的核心库，其中的RateLimiter提供了令牌桶算法实现：平滑突发限流(SmoothBursty)和平滑预热限流(SmoothWarmingUp)实现。</p>
+<h2 id="限流算法实现"><a href="#限流算法实现" class="headerlink" title="限流算法实现"></a>限流算法实现</h2><h3 id="Guava"><a href="#Guava" class="headerlink" title="Guava"></a>Guava</h3><p>Guava是一个Google开源项目，包含了若干被Google的Java项目广泛依赖的核心库，其中的RateLimiter提供了令牌桶算法实现：平滑突发限流(SmoothBursty)和平滑预热限流(SmoothWarmingUp)实现。</p>
 <ol>
 <li><p>常规速率：</p>
 <p> 创建一个限流器，设置每秒放置的令牌数：2个。返回的RateLimiter对象可以保证1秒内不会给超过2个令牌，并且是固定速率的放置。达到平滑输出的效果</p>
@@ -192,8 +188,7 @@
 </ol>
 <p>输出结果如下图，由于设置了缓冲的时间是3秒，令牌桶一开始并不会0.5秒给一个消息，而是形成一个平滑线性下降的坡度，频率越来越高，在3秒钟之内达到原本设置的频率，以后就以固定的频率输出。图中红线圈出来的3次累加起来正好是3秒左右。这种功能适合系统刚启动需要一点时间来“热身”的场景。</p>
 <pre><code>![](并发限流设计/15700-20170501174044882-556744286.png )
-</code></pre><p>###Nginx</p>
-<p>对于Nginx接入层限流可以使用Nginx自带了两个模块：连接数限流模块ngx_http_limit_conn_module和漏桶算法实现的请求限流模块ngx_http_limit_req_module。</p>
+</code></pre><h3 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h3><p>对于Nginx接入层限流可以使用Nginx自带了两个模块：连接数限流模块ngx_http_limit_conn_module和漏桶算法实现的请求限流模块ngx_http_limit_req_module。</p>
 <ol>
 <li><p>ngx_http_limit_conn_module</p>
 <p> 我们经常会遇到这种情况，服务器流量异常，负载过大等等。对于大流量恶意的攻击访问，会带来带宽的浪费，服务器压力，影响业务，往往考虑对同一个ip的连接数，并发数进行限制。ngx_http_limit_conn_module 模块来实现该需求。该模块可以根据定义的键来限制每个键值的连接数，如同一个IP来源的连接数。并不是所有的连接都会被该模块计数，只有那些正在被处理的请求（这些请求的头信息已被完全读入）所在的连接才会被计数。</p>
@@ -227,9 +222,8 @@
 如下图，设置了桶的个数为5个。一共10个请求，第一个请求马上被处理。第2-6个被存放在桶中。由于桶满了，没有设置nodelay因此，余下的4个请求被丢弃。
 
 ![](并发限流设计/15700-20170501174046554-1796027351.png)
-</code></pre><p>##分布式限流实现-Reids</p>
-<p>###可行性分析<br>最快捷且有效的方式是使用RateLimiter实现，但是这很容易踩到一个坑，单节点模式下，使用RateLimiter进行限流一点问题都没有。但是…线上是分布式系统，布署了多个节点，而且多个节点最终调用的是同一个短信服务商接口。虽然我们对单个节点能做到将QPS限制在400/s，但是多节点条件下，如果每个节点均是400/s，那么到服务商那边的总请求就是节点数x400/s，于是限流效果失效。使用该方案对单节点的阈值控制是难以适应分布式环境的</p>
-<p>###Reids<br>使用redis进行限流，其很好地解决了分布式环境下多实例所导致的并发问题。因为使用redis设置的计时器和计数器均是全局唯一的，不管多少个节点，它们使用的都是同样的计时器和计数器，因此可以做到非常精准的流控。同时，这种方案编码并不复杂，可能需要的代码不超过10行。</p>
+</code></pre><h2 id="分布式限流实现-Reids"><a href="#分布式限流实现-Reids" class="headerlink" title="分布式限流实现-Reids"></a>分布式限流实现-Reids</h2><h3 id="可行性分析"><a href="#可行性分析" class="headerlink" title="可行性分析"></a>可行性分析</h3><p>最快捷且有效的方式是使用RateLimiter实现，但是这很容易踩到一个坑，单节点模式下，使用RateLimiter进行限流一点问题都没有。但是…线上是分布式系统，布署了多个节点，而且多个节点最终调用的是同一个短信服务商接口。虽然我们对单个节点能做到将QPS限制在400/s，但是多节点条件下，如果每个节点均是400/s，那么到服务商那边的总请求就是节点数x400/s，于是限流效果失效。使用该方案对单节点的阈值控制是难以适应分布式环境的</p>
+<h3 id="Reids"><a href="#Reids" class="headerlink" title="Reids"></a>Reids</h3><p>使用redis进行限流，其很好地解决了分布式环境下多实例所导致的并发问题。因为使用redis设置的计时器和计数器均是全局唯一的，不管多少个节点，它们使用的都是同样的计时器和计数器，因此可以做到非常精准的流控。同时，这种方案编码并不复杂，可能需要的代码不超过10行。</p>
 <ul>
 <li><p>实施方案 </p>
 <p>  根据可行性分析可知，整个系统采取redis限流处理是成本最低且最高效的。 </p>
@@ -258,7 +252,7 @@
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年08月09日 05:11</p>
+        <p>最后更新： 2019年06月03日 10:54</p>
         <p>原始链接： <a class="post-url" href="/2018/07/26/并发限流设计/" title="并发系统限流">http://yoursite.com/2018/07/26/并发限流设计/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -336,6 +330,12 @@
 </article>
 
 
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#谈谈高并发系统的限流"><span class="post-toc-text">谈谈高并发系统的限流</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#缓存"><span class="post-toc-text">缓存</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#降级"><span class="post-toc-text">降级</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#限流"><span class="post-toc-text">限流</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#限流的算法"><span class="post-toc-text">限流的算法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#计数器"><span class="post-toc-text">计数器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#漏桶算法"><span class="post-toc-text">漏桶算法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#令牌桶算法"><span class="post-toc-text">令牌桶算法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#漏桶和令牌桶的比较"><span class="post-toc-text">漏桶和令牌桶的比较</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#限流算法实现"><span class="post-toc-text">限流算法实现</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Guava"><span class="post-toc-text">Guava</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Nginx"><span class="post-toc-text">Nginx</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#分布式限流实现-Reids"><span class="post-toc-text">分布式限流实现-Reids</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#可行性分析"><span class="post-toc-text">可行性分析</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Reids"><span class="post-toc-text">Reids</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+    
 
 <nav id="article-nav">
   
