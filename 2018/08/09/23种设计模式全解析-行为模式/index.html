@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>Just Do IT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="JUST DO IT">
+  
+  <meta name="description" content="第三种设计模式——行为型模式，共11种：策略模式、模板方法模式、观察者模式、迭代子模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。 先来张图，看看这11中模式的关系： 第一类：通过父类与子类的关系进行实现。第二类：两个类之间。第三类：类的状态。第四类：通过中间类  ###13、策略模式（strategy） 策略模式定义了一系列算法，并将每个算法封装起来，使他们">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Just Do IT">
+<meta property="og:url" content="http://guoleijie.github.io/2018/08/09/23种设计模式全解析-行为模式/index.html">
+<meta property="og:site_name" content="Just Do IT">
+<meta property="og:description" content="第三种设计模式——行为型模式，共11种：策略模式、模板方法模式、观察者模式、迭代子模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。 先来张图，看看这11中模式的关系： 第一类：通过父类与子类的关系进行实现。第二类：两个类之间。第三类：类的状态。第四类：通过中间类  ###13、策略模式（strategy） 策略模式定义了一系列算法，并将每个算法封装起来，使他们">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://guoleijie.github.io/.com//1354264672_7575.png">
+<meta property="og:image" content="http://guoleijie.github.io/.com//1354268408_3835.png">
+<meta property="og:image" content="http://guoleijie.github.io/.com//1354283441_1858.png">
+<meta property="og:image" content="http://guoleijie.github.io/.com//1354285683_8317.png">
+<meta property="og:updated_time" content="2019-06-03T05:59:53.408Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Just Do IT">
+<meta name="twitter:description" content="第三种设计模式——行为型模式，共11种：策略模式、模板方法模式、观察者模式、迭代子模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。 先来张图，看看这11中模式的关系： 第一类：通过父类与子类的关系进行实现。第二类：两个类之间。第三类：类的状态。第四类：通过中间类  ###13、策略模式（strategy） 策略模式定义了一系列算法，并将每个算法封装起来，使他们">
+<meta name="twitter:image" content="http://guoleijie.github.io/.com//1354264672_7575.png">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">JUST DO IT</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        JUST DO IT
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        重新起航的老码农
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="MinHow" target="_blank" href="//minhow.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/guoleijie">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-23种设计模式全解析-行为模式" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <p>第三种设计模式——行为型模式，共11种：策略模式、模板方法模式、观察者模式、迭代子模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。</p>
+<p>先来张图，看看这11中模式的关系：</p>
+<p>第一类：通过父类与子类的关系进行实现。第二类：两个类之间。第三类：类的状态。第四类：通过中间类</p>
+<p><img src="/.com//1354264672_7575.png" alt></p>
+<p>###13、策略模式（strategy）</p>
+<p>策略模式定义了一系列算法，并将每个算法封装起来，使他们可以相互替换，且算法的变化不会影响到使用算法的客户。需要设计一个接口，为一系列实现类提供统一的方法，多个实现类实现该接口，设计一个抽象类（可有可无，属于辅助类），提供辅助函数，关系图如下：</p>
+<p><img src="/.com//1354268408_3835.png" alt></p>
+<p>图中ICalculator提供同意的方法，<br>AbstractCalculator是辅助类，提供辅助方法，接下来，依次实现下每个类：</p>
+<p>首先统一接口：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">ICalculator</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">calculate</span><span class="params">(String exp)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>辅助类：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">AbstractCalculator</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">int</span>[] split(String exp,String opt)&#123;</span><br><span class="line">		String array[] = exp.split(opt);</span><br><span class="line">		<span class="keyword">int</span> arrayInt[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>];</span><br><span class="line">		arrayInt[<span class="number">0</span>] = Integer.parseInt(array[<span class="number">0</span>]);</span><br><span class="line">		arrayInt[<span class="number">1</span>] = Integer.parseInt(array[<span class="number">1</span>]);</span><br><span class="line">		<span class="keyword">return</span> arrayInt;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>三个实现类：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Plus</span> <span class="keyword">extends</span> <span class="title">AbstractCalculator</span> <span class="keyword">implements</span> <span class="title">ICalculator</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">calculate</span><span class="params">(String exp)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> arrayInt[] = split(exp,<span class="string">"\\+"</span>);</span><br><span class="line">		<span class="keyword">return</span> arrayInt[<span class="number">0</span>]+arrayInt[<span class="number">1</span>];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Minus</span> <span class="keyword">extends</span> <span class="title">AbstractCalculator</span> <span class="keyword">implements</span> <span class="title">ICalculator</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">calculate</span><span class="params">(String exp)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> arrayInt[] = split(exp,<span class="string">"-"</span>);</span><br><span class="line">		<span class="keyword">return</span> arrayInt[<span class="number">0</span>]-arrayInt[<span class="number">1</span>];</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Multiply</span> <span class="keyword">extends</span> <span class="title">AbstractCalculator</span> <span class="keyword">implements</span> <span class="title">ICalculator</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">calculate</span><span class="params">(String exp)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> arrayInt[] = split(exp,<span class="string">"\\*"</span>);</span><br><span class="line">		<span class="keyword">return</span> arrayInt[<span class="number">0</span>]*arrayInt[<span class="number">1</span>];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>简单的测试类：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StrategyTest</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		String exp = <span class="string">"2+8"</span>;</span><br><span class="line">		ICalculator cal = <span class="keyword">new</span> Plus();</span><br><span class="line">		<span class="keyword">int</span> result = cal.calculate(exp);</span><br><span class="line">		System.out.println(result);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输出：10</p>
+<p>策略模式的决定权在用户，系统本身提供不同算法的实现，新增或者删除算法，对各种算法做封装。因此，策略模式多用在算法决策系统中，外部用户只需要决定用哪个算法即可。</p>
+<p>###14、模板方法模式（Template Method）</p>
+<p>解释一下模板方法模式，就是指：一个抽象类中，有一个主方法，再定义1…n个方法，可以是抽象的，也可以是实际的方法，定义一个类，继承该抽象类，重写抽象方法，通过调用抽象类，实现对子类的调用，先看个关系图：</p>
+<p><img src="/.com//1354283441_1858.png" alt></p>
+<p>就是在AbstractCalculator类中定义一个主方法calculate，calculate()调用spilt()等，Plus和Minus分别继承AbstractCalculator类，通过对AbstractCalculator的调用实现对子类的调用，看下面的例子：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">AbstractCalculator</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/*主方法，实现对本类其它方法的调用*/</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">int</span> <span class="title">calculate</span><span class="params">(String exp,String opt)</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> array[] = split(exp,opt);</span><br><span class="line">		<span class="keyword">return</span> calculate(array[<span class="number">0</span>],array[<span class="number">1</span>]);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/*被子类重写的方法*/</span></span><br><span class="line">	<span class="function"><span class="keyword">abstract</span> <span class="keyword">public</span> <span class="keyword">int</span> <span class="title">calculate</span><span class="params">(<span class="keyword">int</span> num1,<span class="keyword">int</span> num2)</span></span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">int</span>[] split(String exp,String opt)&#123;</span><br><span class="line">		String array[] = exp.split(opt);</span><br><span class="line">		<span class="keyword">int</span> arrayInt[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>];</span><br><span class="line">		arrayInt[<span class="number">0</span>] = Integer.parseInt(array[<span class="number">0</span>]);</span><br><span class="line">		arrayInt[<span class="number">1</span>] = Integer.parseInt(array[<span class="number">1</span>]);</span><br><span class="line">		<span class="keyword">return</span> arrayInt;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Plus</span> <span class="keyword">extends</span> <span class="title">AbstractCalculator</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">calculate</span><span class="params">(<span class="keyword">int</span> num1,<span class="keyword">int</span> num2)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> num1 + num2;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>测试类：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StrategyTest</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		String exp = <span class="string">"8+8"</span>;</span><br><span class="line">		AbstractCalculator cal = <span class="keyword">new</span> Plus();</span><br><span class="line">		<span class="keyword">int</span> result = cal.calculate(exp, <span class="string">"\\+"</span>);</span><br><span class="line">		System.out.println(result);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>我跟踪下这个小程序的执行过程：首先将exp和”\+”做参数，调用AbstractCalculator类里的calculate(String,String)方法，在calculate(String,String)里调用同类的split()，之后再调用calculate(int ,int)方法，从这个方法进入到子类中，执行完return num1 + num2后，将值返回到AbstractCalculator类，赋给result，打印出来。正好验证了我们开头的思路。</p>
+<p>###15、观察者模式（Observer）</p>
+<p>包括这个模式在内的接下来的四个模式，都是类和类之间的关系，不涉及到继承，学的时候应该 记得归纳，记得本文最开始的那个图。观察者模式很好理解，类似于邮件订阅和RSS订阅，当我们浏览一些博客或wiki时，经常会看到RSS图标，就这的意思是，当你订阅了该文章，如果后续有更新，会及时通知你。其实，简单来讲就一句话：当一个对象变化时，其它依赖该对象的对象都会收到通知，并且随着变化！对象之间是一种一对多的关系。先来看看关系图：</p>
+<p><img src="/.com//1354285683_8317.png" alt></p>
+<p>我解释下这些类的作用：MySubject类就是我们的主对象，Observer1和Observer2是依赖于MySubject的对象，当MySubject变化时，Observer1和Observer2必然变化。AbstractSubject类中定义着需要监控的对象列表，可以对其进行修改：增加或删除被监控对象，且当MySubject变化时，负责通知在列表内存在的对象。我们看实现代码：</p>
+<p>一个Observer接口：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Observer</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>两个实现类：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Observer1</span> <span class="keyword">implements</span> <span class="title">Observer</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"observer1 has received!"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Observer2</span> <span class="keyword">implements</span> <span class="title">Observer</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"observer2 has received!"</span>);</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Subject接口及实现类：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Subject</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/*增加观察者*/</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(Observer observer)</span></span>;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/*删除观察者*/</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">del</span><span class="params">(Observer observer)</span></span>;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/*通知所有的观察者*/</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">notifyObservers</span><span class="params">()</span></span>;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/*自身的操作*/</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">operation</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">AbstractSubject</span> <span class="keyword">implements</span> <span class="title">Subject</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">	<span class="keyword">private</span> Vector&lt;Observer&gt; vector = <span class="keyword">new</span> Vector&lt;Observer&gt;();</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(Observer observer)</span> </span>&#123;</span><br><span class="line">		vector.add(observer);</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">del</span><span class="params">(Observer observer)</span> </span>&#123;</span><br><span class="line">		vector.remove(observer);</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">notifyObservers</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		Enumeration&lt;Observer&gt; enumo = vector.elements();</span><br><span class="line">		<span class="keyword">while</span>(enumo.hasMoreElements())&#123;</span><br><span class="line">			enumo.nextElement().update();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MySubject</span> <span class="keyword">extends</span> <span class="title">AbstractSubject</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">operation</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"update self!"</span>);</span><br><span class="line">		notifyObservers();</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>测试类：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ObserverTest</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Subject sub = <span class="keyword">new</span> MySubject();</span><br><span class="line">		sub.add(<span class="keyword">new</span> Observer1());</span><br><span class="line">		sub.add(<span class="keyword">new</span> Observer2());</span><br><span class="line">		</span><br><span class="line">		sub.operation();</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<p>update self!
+observer1 has received!
+observer2 has received!</p>
+<p>###16、迭代子模式（Iterator）</p>
+<p>顾名思义，迭代器模式就是顺序访问聚集中的对象，一般来说，集合中非常常见，如果对集合类比较熟悉的话，理解本模式会十分轻松。这句话包含两层意思：一是需要遍历的对象，即聚集对象，二是迭代器对象，用于对聚集对象进行遍历访问。我们看下关系图：</p>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2019年06月03日 13:59</p>
+        <p>原始链接： <a class="post-url" href="/2018/08/09/23种设计模式全解析-行为模式/" title>http://guoleijie.github.io/2018/08/09/23种设计模式全解析-行为模式/</a></p>
+        <footer>
+            <a href="http://guoleijie.github.io">
+                <img src="/images/logo.png" alt="GuoLeijie">
+                GuoLeijie
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://guoleijie.github.io/2018/08/09/23种设计模式全解析-行为模式/&title=Just Do IT&pic=http://guoleijie.github.ioimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://guoleijie.github.io/2018/08/09/23种设计模式全解析-行为模式/&title=Just Do IT&source=重新起航的老码农" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://guoleijie.github.io/2018/08/09/23种设计模式全解析-行为模式/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Just Do IT&url=http://guoleijie.github.io/2018/08/09/23种设计模式全解析-行为模式/&via=http://guoleijie.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://guoleijie.github.io/2018/08/09/23种设计模式全解析-行为模式/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtklEQVR42u3awW5bIRAF0Pz/T7tSV5Va43sHeImqw8qKY5jzLDF4mK+veLx+j3ev//zL359av5usu57nwMDDw8Mbhf5urHnJDPmjaf9zvRYeHh7ebV6eDFrYekPPN/08Hjw8PLyfw1tv0LPDNB4eHt7/zWtDzEsV6xnw8PDwfiYvKSK0xYW2VLETz4FaCx4eHt6kMjC8AHv+9aP3e3h4eHijIuw6JbQljPxo/toYeHh4eDd4bSE1CXr/6iufP0oYeHh4eNd4bWk1Cf3Gsb5uC8PDw8M7yms38dnVVNJw0CaA6AIMDw8P7zIvD739VI5sL8A+JCo8PDy8C7yzoSQpJN/0k8dXdEbg4eHhXeC1gJzRznO4fIyHh4d3jZf8yG8XaGdumxKiSzU8PDy8o7xZiLMyQXHZv3GF9vZ7w8PDw7vGmx2O2+27bUFIxj9iwMPDw7vAS7bvnVJFngDa0A/UWvDw8PBGvATWllNnRY12ROkKDw8P7wJvVq6dXU0lh+9Zs0JRwsDDw8Pb5q032QTQLn/gG8gfMR4eHt4FXvvzPoHNLvuHdZT2dwMeHh7eNq/9Md8er2fB5at/WAUPDw/vGm9/O97f+s+mlgKAh4eHN+qDagPNi7xJoXanKBw1HODh4eE9wpsVI04doPMScHRthoeHh3eBl4Q1Y+eFifbKLW9rwMPDw7vBy7fvZCOekWZzRgd9PDw8vAd57QJtS0GbVNr0hoeHh3eD9ypH20bQlnfbBFAXIPDw8PC2eWcDypdJGgjyVNQ2b+Hh4eHt85JAbzQBnJrtwwx4eHh413hJMsjTxqlixCx1RW/g4eHhPcibHZp3rtny+d9WXPDw8PC+iZe0BbRFinzOvJCBh4eH9wwvn3Rnu5+VhtewD4kEDw8P7wJv5wIsf1j5gTt/iMcaCPDw8PBS3i/AlNpP5FFmbAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2018/10/15/Hyperledger-Python打造淘宝/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          (no title)
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2018/08/09/23种设计模式全解析-结构模式/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title"></span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2019 GuoLeijie<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://guoleijie.github.io",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 0
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            
+        </div>
+        <div id="sidebar-menu-box-tags">
+            
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>

@@ -3,22 +3,22 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>区块链应用-健康医疗 | Just Do IT</title>
+  <title>Just Do IT</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="JUST DO IT">
   
-  <meta name="description" content="当今行业中，区块链，人工智能，大数据是非常火热的。2016年12月底，我开始从事区块链方向的研究。">
+  <meta name="description" content="1、Hyperledger Fabric及相关应用程序简介Hyperledger Fabric 是一个开源的区块链框架，可以用来创建私有区块链（许可区块链）业务网络，在网络中每个成员的身份和角色都被其他成员所知。 我们要构建的区块链网络将以 Fabric 作为后端，客户端应用程序作为前端。目前软件开发工具包（SDK）支持使用 Node.js 和 Java 来构建客户端应用程序，未来很快就会支持 P">
 <meta property="og:type" content="article">
-<meta property="og:title" content="区块链应用-健康医疗">
-<meta property="og:url" content="http://guoleijie.github.io/2017/12/15/区块链应用-健康医疗/index.html">
+<meta property="og:title" content="Just Do IT">
+<meta property="og:url" content="http://guoleijie.github.io/2018/10/15/Hyperledger-Python打造淘宝/index.html">
 <meta property="og:site_name" content="Just Do IT">
-<meta property="og:description" content="当今行业中，区块链，人工智能，大数据是非常火热的。2016年12月底，我开始从事区块链方向的研究。">
+<meta property="og:description" content="1、Hyperledger Fabric及相关应用程序简介Hyperledger Fabric 是一个开源的区块链框架，可以用来创建私有区块链（许可区块链）业务网络，在网络中每个成员的身份和角色都被其他成员所知。 我们要构建的区块链网络将以 Fabric 作为后端，客户端应用程序作为前端。目前软件开发工具包（SDK）支持使用 Node.js 和 Java 来构建客户端应用程序，未来很快就会支持 P">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-12-16T14:19:35.000Z">
+<meta property="og:updated_time" content="2019-06-03T05:59:23.328Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="区块链应用-健康医疗">
-<meta name="twitter:description" content="当今行业中，区块链，人工智能，大数据是非常火热的。2016年12月底，我开始从事区块链方向的研究。">
+<meta name="twitter:title" content="Just Do IT">
+<meta name="twitter:description" content="1、Hyperledger Fabric及相关应用程序简介Hyperledger Fabric 是一个开源的区块链框架，可以用来创建私有区块链（许可区块链）业务网络，在网络中每个成员的身份和角色都被其他成员所知。 我们要构建的区块链网络将以 Fabric 作为后端，客户端应用程序作为前端。目前软件开发工具包（SDK）支持使用 Node.js 和 Java 来构建客户端应用程序，未来很快就会支持 P">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -103,41 +103,27 @@
     </div>
 </header>
       <div class="outer">
-        <section id="main" class="body-wrap"><article id="post-区块链应用-健康医疗" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main" class="body-wrap"><article id="post-Hyperledger-Python打造淘宝" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="post-title" itemprop="name">
-      区块链应用-健康医疗
-    </h1>
-    <div class="post-title-bar">
-      <ul>
-          
-        <li>
-          <i class="fa fa-calendar"></i>  2017-12-15
-        </li>
-        <li>
-          <i class="fa fa-eye"></i>
-          <span id="busuanzi_value_page_pv"></span>
-        </li>
-      </ul>
-    </div>
-  
-
-          
-      </header>
     
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <p>当今行业中，区块链，人工智能，大数据是非常火热的。2016年12月底，我开始从事<strong>区块链</strong>方向的研究。</p>
+            <h2 id="1、Hyperledger-Fabric及相关应用程序简介"><a href="#1、Hyperledger-Fabric及相关应用程序简介" class="headerlink" title="1、Hyperledger Fabric及相关应用程序简介"></a>1、Hyperledger Fabric及相关应用程序简介</h2><p><strong>Hyperledger Fabric</strong> 是一个开源的区块链框架，可以用来创建私有区块链（许可区块链）业务网络，在网络中每个成员的身份和角色都被其他成员所知。</p>
+<p>我们要构建的区块链网络将以 Fabric 作为后端，客户端应用程序作为前端。目前软件开发工具包（SDK）支持使用 Node.js 和 Java 来构建客户端应用程序，未来很快就会支持 Python 和 Golang。</p>
+<p>保交所 生成CSR，私钥  to RootCA</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: 申请证书</span><br><span class="line">保交所-&gt;保交所:生成CSR，私钥</span><br><span class="line">保交所-&gt;RootCA:申请证书</span><br><span class="line">RootCA-&gt;保交所:返回证书信息</span><br></pre></td></tr></table></figure>
+
+<p>模块：<br>CA证书：</p>
+<p>key：</p>
+<p>证书：</p>
+<p>中间证书:</p>
+<p>AdminCert：<br>    安装合约、创建通道、</p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2017年12月16日 22:19</p>
-        <p>原始链接： <a class="post-url" href="/2017/12/15/区块链应用-健康医疗/" title="区块链应用-健康医疗">http://guoleijie.github.io/2017/12/15/区块链应用-健康医疗/</a></p>
+        <p>最后更新： 2019年06月03日 13:59</p>
+        <p>原始链接： <a class="post-url" href="/2018/10/15/Hyperledger-Python打造淘宝/" title>http://guoleijie.github.io/2018/10/15/Hyperledger-Python打造淘宝/</a></p>
         <footer>
             <a href="http://guoleijie.github.io">
                 <img src="/images/logo.png" alt="GuoLeijie">
@@ -163,7 +149,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://guoleijie.github.io/2017/12/15/区块链应用-健康医疗/&title=《区块链应用-健康医疗》 — Just Do IT&pic=http://guoleijie.github.ioimages/logo.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://guoleijie.github.io/2018/10/15/Hyperledger-Python打造淘宝/&title=Just Do IT&pic=http://guoleijie.github.ioimages/logo.png" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -173,22 +159,22 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://guoleijie.github.io/2017/12/15/区块链应用-健康医疗/&title=《区块链应用-健康医疗》 — Just Do IT&source=重新起航的老码农" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://guoleijie.github.io/2018/10/15/Hyperledger-Python打造淘宝/&title=Just Do IT&source=重新起航的老码农" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://guoleijie.github.io/2017/12/15/区块链应用-健康医疗/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://guoleijie.github.io/2018/10/15/Hyperledger-Python打造淘宝/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《区块链应用-健康医疗》 — Just Do IT&url=http://guoleijie.github.io/2017/12/15/区块链应用-健康医疗/&via=http://guoleijie.github.io" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Just Do IT&url=http://guoleijie.github.io/2018/10/15/Hyperledger-Python打造淘宝/&via=http://guoleijie.github.io" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://guoleijie.github.io/2017/12/15/区块链应用-健康医疗/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://guoleijie.github.io/2018/10/15/Hyperledger-Python打造淘宝/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -198,7 +184,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACrklEQVR42u3a22oDMQwFwPz/T7fQp0JJeo4l9wLjp5Bs1x4XVlrJj0c83j7G58+fx9drvl6Z3K29Zm3g4eHhHS392UgW8QyZLzrfrHzNeHh4eLd5eTDIw8Pr5SYblF/z9Hs8PDy8X+Xl6XIbVM4CAx4eHt5/4bXlg7NEud1uPDw8vJ/n5Y/p3Ud8nohfr7Xg4eHhxbyzBtjvfr7e38PDw8M76qq/fuAWSe3LGdvgUawWDw8P7wKvnTJZaPtrskFJSCjeGPDw8PDGvK1i7lYgycsKxVx4eHh4q7ytesakFNvWE4oWGh4eHt413lZRtU2m22/qteHh4eGt8tpiQf5obtP05FhAsk2POQMPDw8vyJbzUuxu4aA9JnVYOMbDw8O7xtsq6eaJ7+TYQXEHPDw8vGu8pLjQItv750evFt4b8PDw8Aa8ZLK2DNHeMwktNQYPDw/vAi956OcBY+txnx8g+IaNh4eHd4GX/PFZeeKseJEXZ3MqHh4e3i5vt4Vf5+9lQaE+soCHh4d3mZcXHfJkN19iu63R3fDw8PAu8JIUuU1n22Nbk5JEfXgLDw8Pb5XXpsV5GSIJAJMi72HmjoeHhzfgtQFggpwvOg8eeHh4eDd4SSqct6/ywwdtWtwet8LDw8O7x5u/5M9T562tHMU9PDw8vJjXNv63GmbJ5wkMDw8P72d47ct/3vpqtyP5NWnU4eHh4d3gtQ2weSBpw0A7Cx4eHt5t3ls52sbYWQDI5y3+Y3h4eHhLvEnDPm9ZtY2rvGCxfDALDw8PL+ZNgkGLbAFt0SHq7+Hh4eEt8dpm1dmy5ml3XvLAw8PD+wu8PCuvH99lAl2sEA8PD+9P8pJEPClttLBoRjw8PLxrvK1ixFn9OJ99+QABHh4e3hFvtwE2b/y3x78e84GHh4eXXvMOXMiccV2YP1YAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtklEQVR42u3aSW7DQAwEQP//084lhwCJ5OYyhgOUToEXeUqHIdOcxyO+nj+u36/8vu6/lf99dZ/lCw8PD2+w9GSh1aVcfab6bvXh4uHh4Z3mXe2o+WdyXl5+qvfEw8PD+0zes3jdY6qdMB4eHt5/5OXlISkeyYObFCo8PDy8c7zqRpxv/ZPW/P6RLWcteHh4eJ0u95Fs/Z/w95H5Hh4eHt54qp5suNXmOLnbfJ3f98HDw8M7wMs33Co1aamrTXl1nXh4eHjneJNQYKu/nTTxhcMKeHh4eEu8XrObN9N5pJuHxYUAFw8PD2+Vlw/pk/FY791J2YhiCDw8PLxVXjUU6LXO+fh//uv1fAIPDw9vMyDIN/G8CT4RCi/M9/Dw8PCKvCQ8TUpITsrD2UlcgoeHh3eC1/uZHD/q9OMHGoUReHh4eKu8ydafvFs9etULcwtFAg8PD2/M68UBk0BhAsuPKeDh4eGd4JXrxoEDW9WWOm/x8fDw8M7xkh/Iw4gq/uCv4OHh4R3m9UZQ99+alJNe6bo8OoCHh4e3yquO/JOF5g8rH2jlv4KHh4f3Hl4enk4GY8nS8wLzYg14eHh4x3hb4OrdkjKQN+uXhQEPDw9vlZcvNG98q3FDNf5YGIPh4eHhHeAlN8ob62rEkIOjMoaHh4f3Fl51AFZdSq8YJGFu9NTx8PDwlni9jbvXHFdHZUkcfInEw8PDO8ZLFt0D5MOwaixSnozh4eHhjXmT0VQerfZii8KI6+r+eHh4eAd4vT22V2YmcW318Y1KCB4eHt6486ze7v5b1SNcvcMEeHh4eO/hzbf4rRj3sXvh4eHhfQAvH+H3YtlqvPsipMDDw8P7MN5khJbfuRo04+Hh4b2Ht3W0tHf8NI8b7l+/LAx4eHh4q7zef/T5CH+yrOoDWgss8PDw8P5+/Qukn+QpyQsMtAAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -214,19 +200,20 @@
 </article>
 
 
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Hyperledger-Fabric及相关应用程序简介"><span class="post-toc-text">1、Hyperledger Fabric及相关应用程序简介</span></a></li></ol>
+        </nav>
+    </aside>
+    
 
 <nav id="article-nav">
   
-    <a href="/2018/07/26/并发限流设计/" id="article-nav-newer" class="article-nav-link-wrap">
-
-      <span class="article-nav-title">
-        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
-        
-          并发系统限流
-        
-      </span>
-    </a>
   
+    <a href="/2018/08/09/23种设计模式全解析-行为模式/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title"></span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
   
 </nav>
 
