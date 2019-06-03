@@ -84,7 +84,7 @@
                 <div id="header-description">
                     
                     <h3>
-                        一个30岁才重新起航的老码农
+                        重新起航的老码农
                     </h3>
                     
                 </div>
@@ -137,17 +137,19 @@
 <ol>
 <li>首先确定进程的 ID ，可以使用 jps -v 或者 top 命令直接查看</li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep mule</span><br></pre></td></tr></table></figure>
+<p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep mule</span><br></pre></td></tr></table></figure></p>
 <ol start="2">
 <li>查看该进程中哪个线程占用大量 CPU，执行 top -Hp [PID] 结果如下：</li>
 </ol>
 <p>可以发现编号为 350xx 的共有 9 个线程占用了 100% 的 CPU，好，接下来咱们随便取一个线程 ID ，假设我们想看编号为 35053 这个线程。</p>
-<p>首先将 35053 转成 16 进制是 88ED （可以用在线工具转换)<br>也可以使用linux命令行工具<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">printf "%x\n" 21742</span><br></pre></td></tr></table></figure></p>
+<p>首先将 35053 转成 16 进制是 88ED （可以用在线工具转换)
+也可以使用linux命令行工具
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">printf "%x\n" 21742</span><br></pre></td></tr></table></figure></p>
 <p>得到21742的十六进制值为54ee，下面会用到。</p>
 <p>OK，下一步终于轮到jstack上场了，它用来输出进程21711的堆栈信息，然后根据线程ID的十六进制值grep，如下：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root@ubuntu:/# jstack 21711 | grep 54ee</span><br><span class="line">"PollIntervalRetrySchedulerThread" prio=10 tid=0x00007f950043e000 nid=0x54ee in Object.wait()</span><br></pre></td></tr></table></figure>
+<p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root@ubuntu:/# jstack 21711 | grep 54ee</span><br><span class="line">"PollIntervalRetrySchedulerThread" prio=10 tid=0x00007f950043e000 nid=0x54ee in Object.wait()</span><br></pre></td></tr></table></figure></p>
 <p>可以看到CPU消耗在PollIntervalRetrySchedulerThread这个类的Object.wait()，我找了下我的代码，定位到下面的代码：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Idle wait</span></span><br><span class="line">getLog().info(<span class="string">"Thread ["</span> + getName() + <span class="string">"] is idle waiting..."</span>);</span><br><span class="line">schedulerThreadState = PollTaskSchedulerThreadState.IdleWaiting;</span><br><span class="line"><span class="keyword">long</span> now = System.currentTimeMillis();</span><br><span class="line"><span class="keyword">long</span> waitTime = now + getIdleWaitTime();</span><br><span class="line"><span class="keyword">long</span> timeUntilContinue = waitTime - now;</span><br><span class="line"><span class="keyword">synchronized</span>(sigLock) &#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>(!halted.get()) &#123;</span><br><span class="line">      sigLock.wait(timeUntilContinue);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; </span><br><span class="line">  <span class="keyword">catch</span> (InterruptedException ignore) &#123;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Idle wait</span></span><br><span class="line">getLog().info(<span class="string">"Thread ["</span> + getName() + <span class="string">"] is idle waiting..."</span>);</span><br><span class="line">schedulerThreadState = PollTaskSchedulerThreadState.IdleWaiting;</span><br><span class="line"><span class="keyword">long</span> now = System.currentTimeMillis();</span><br><span class="line"><span class="keyword">long</span> waitTime = now + getIdleWaitTime();</span><br><span class="line"><span class="keyword">long</span> timeUntilContinue = waitTime - now;</span><br><span class="line"><span class="keyword">synchronized</span>(sigLock) &#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>(!halted.get()) &#123;</span><br><span class="line">      sigLock.wait(timeUntilContinue);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; </span><br><span class="line">  <span class="keyword">catch</span> (InterruptedException ignore) &#123;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>它是轮询任务的空闲等待代码，上面的sigLock.wait(timeUntilContinue)就对应了前面的Object.wait()。</p>
 <p>本人已经试验过，就是这么查找线程</p>
 
