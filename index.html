@@ -1,253 +1,695 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>郭磊劼 - 技术与创新的探索者</title>
-    <meta name="description" content="郭磊劼的个人主页 - 专注于金融科技、AI应用和全栈开发">
-    <meta name="keywords" content="郭磊劼,金融科技,AI,全栈开发,区块链">
-    <link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="郭磊劼 | 金融科技探索者">
+<meta property="og:description" content="专注于金融科技、AI应用和全栈开发。用技术构建价值，用创新驱动未来。">
+<title>郭磊劼 - 金融科技探索者</title>
+<link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body {
+  font-size: 16px;
+  font-family: 'LXGW WenKai', 'Noto Sans SC', sans-serif;
+  background: #e8e4dc;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* 进度条 */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #c0392b;
+  width: 0%;
+  z-index: 200;
+  transition: width .1s;
+}
+
+/* 导航栏 */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid #e8e4df;
+  padding: 0 32px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.04);
+}
+
+.nav-logo {
+  font-family: 'ZCOOL KuaiLe', 'Noto Sans SC', sans-serif;
+  font-size: 22px;
+  color: #c0392b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: .7;
+  transition: .2s;
+  padding: 6px 4px;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+  color: #c0392b;
+}
+
+/* Hero 区域 */
+.hero {
+  padding: 76px 32px 28px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-title h1 {
+  font-family: 'ZCOOL KuaiLe', sans-serif;
+  font-size: clamp(22px, 4vw, 34px);
+  line-height: 1.45;
+  margin-bottom: 10px;
+}
+
+.red { color: #c0392b; }
+.blue { color: #2874a6; }
+
+.hero-tagline-pill {
+  display: inline-block;
+  font-size: 14px;
+  color: #c0392b;
+  font-weight: 700;
+  background: rgba(192, 57, 43, 0.08);
+  padding: 7px 18px;
+  border-radius: 20px;
+}
+
+/* 轮播图 */
+.caro-root {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caro-outer {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.caro-track {
+  display: flex;
+  gap: 14px;
+  transition: transform .44s cubic-bezier(.25, .46, .45, .94);
+}
+
+.c-card {
+  flex: 0 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.13);
+  transition: transform .44s;
+  position: relative;
+  background: white;
+  padding: 20px;
+  min-width: 240px;
+}
+
+.c-card:hover {
+  transform: translateY(-4px);
+}
+
+.c-card-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.c-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.c-card-desc {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.caro-arrow {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #ddd;
+  background: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  color: #555;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .2s;
+}
+
+.caro-arrow:hover {
+  border-color: #c0392b;
+  color: #c0392b;
+  transform: scale(1.08);
+}
+
+.caro-dots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.cdot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+  transition: all .25s;
+  border: none;
+  padding: 0;
+}
+
+.cdot.active {
+  background: #c0392b;
+  width: 18px;
+  border-radius: 3px;
+}
+
+/* 统计数据 */
+.hero-stats-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.stat-panel {
+  background: #fff;
+  border: 1.5px solid #e8e4df;
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+
+.stat-panel-title {
+  font-size: 11px;
+  font-weight: 800;
+  color: #c0392b;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #444;
+  line-height: 1.55;
+}
+
+.sico {
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+.stat-item strong {
+  color: #1a1a1a;
+}
+
+/* CTA 按钮 */
+.hero-cta {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #c0392b;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: #a93226;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(192, 57, 43, 0.3);
+}
+
+.btn-secondary {
+  background: white;
+  color: #c0392b;
+  border: 2px solid #c0392b;
+  padding: 10px 26px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background: rgba(192, 57, 43, 0.05);
+  transform: translateY(-2px);
+}
+
+/* 项目展示 */
+.projects {
+  padding: 40px 32px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'ZCOOL KuaiLe', sans-serif;
+  font-size: 28px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1.5px solid #e8e4df;
+  transition: all .3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #c0392b;
+}
+
+.project-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.project-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: rgba(192, 57, 43, 0.08);
+  color: #c0392b;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* 联系方式 */
+.contact {
+  padding: 40px 32px;
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-desc {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background: #1a1a1a;
+  color: #999;
+  padding: 32px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer a {
+  color: #c0392b;
+  text-decoration: none;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  nav {
+    padding: 0 20px;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .hero {
+    padding: 76px 20px 28px;
+  }
+  
+  .hero-stats-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .projects {
+    padding: 40px 20px;
+  }
+  
+  .contact {
+    padding: 40px 20px;
+  }
+  
+  .caro-root {
+    max-width: 100%;
+  }
+}
+
+/* 动画 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+</style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">GLJ</a>
-            <div class="nav-links">
-                <a href="#about">关于</a>
-                <a href="#skills">技能</a>
-                <a href="#projects">项目</a>
-                <a href="#contact">联系</a>
-            </div>
+
+<!-- 进度条 -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- 导航栏 -->
+<nav>
+  <a href="#" class="nav-logo">💻 郭磊劼</a>
+  <div class="nav-links">
+    <a href="#about">关于</a>
+    <a href="#projects">项目</a>
+    <a href="#contact">联系</a>
+  </div>
+</nav>
+
+<!-- Hero 区域 -->
+<section class="hero" id="about">
+  <div class="hero-title">
+    <h1>你好，我是<span class="red">郭磊劼</span></h1>
+    <div class="hero-tagline-pill">🚀 金融科技 · AI应用 · 全栈开发</div>
+  </div>
+
+  <!-- 轮播图 -->
+  <div class="caro-root">
+    <button class="caro-arrow" id="caroPrev">←</button>
+    <div class="caro-outer">
+      <div class="caro-track" id="caroTrack">
+        <div class="c-card">
+          <div class="c-card-icon">🤖</div>
+          <div class="c-card-title">AI 助手平台</div>
+          <div class="c-card-desc">基于大语言模型的智能助手，自动化工作流编排</div>
         </div>
-    </nav>
+        <div class="c-card">
+          <div class="c-card-icon">💰</div>
+          <div class="c-card-title">金融科技系统</div>
+          <div class="c-card-desc">实时数据处理、风险管理和智能分析</div>
+        </div>
+        <div class="c-card">
+          <div class="c-card-icon">🚀</div>
+          <div class="c-card-title">开源工具集</div>
+          <div class="c-card-desc">提升开发效率的命令行工具和自动化脚本</div>
+        </div>
+      </div>
+    </div>
+    <button class="caro-arrow" id="caroNext">→</button>
+  </div>
 
-    <div class="container">
-        <!-- Hero Section -->
-        <header class="hero" id="home">
-            <div class="hero-content">
-                <div class="avatar">GLJ</div>
-                <h1 class="name">郭磊劼</h1>
-                <div class="typing-text">
-                    <span class="text-item active">金融科技探索者</span>
-                    <span class="text-item">AI应用开发者</span>
-                    <span class="text-item">全栈工程师</span>
-                    <span class="text-item">终身学习者</span>
-                </div>
-                <p class="tagline">用技术构建价值，用创新驱动未来</p>
-                <div class="social-links">
-                    <a href="https://github.com/guoleijie" target="_blank" rel="noopener noreferrer" class="social-link">
-                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        GitHub
-                    </a>
-                </div>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">查看项目</a>
-                    <a href="#contact" class="btn btn-secondary">联系我</a>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-                <span>向下滚动</span>
-            </div>
-        </header>
+  <!-- 轮播指示器 -->
+  <div class="caro-dots">
+    <button class="cdot active" data-index="0"></button>
+    <button class="cdot" data-index="1"></button>
+    <button class="cdot" data-index="2"></button>
+  </div>
 
-        <!-- About Section -->
-        <section class="section" id="about">
-            <h2 class="section-title">关于我</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>👋 你好！我是郭磊劼，一名对技术充满热情的开发者。</p>
-                    <p>🎓 我相信技术的力量可以改变世界，致力于用代码构建有价值的产品。</p>
-                    <p>💡 专注于金融科技、人工智能和全栈开发领域，持续学习新技术，不断突破自我。</p>
-                    <p>🌟 在工作之余，我喜欢探索新技术，参与开源项目，分享知识和经验。</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">年开发经验</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">20+</div>
-                        <div class="stat-label">完成项目</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">∞</div>
-                        <div class="stat-label">学习热情</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <!-- 统计数据 -->
+  <div class="hero-stats-row">
+    <div class="stat-panel">
+      <div class="stat-panel-title">📊 开发数据</div>
+      <div class="stat-item">
+        <span class="sico">⏱️</span>
+        <div><strong>5+ 年</strong> 开发经验</div>
+      </div>
+      <div class="stat-item">
+        <span class="sico">🎯</span>
+        <div><strong>20+</strong> 完成项目</div>
+      </div>
+      <div class="stat-item">
+        <span class="sico">🌟</span>
+        <div><strong>∞</strong> 学习热情</div>
+      </div>
+    </div>
+    <div class="stat-panel">
+      <div class="stat-panel-title">💡 技术栈</div>
+      <div class="stat-item">
+        <span class="sico">⚛️</span>
+        <div><strong>React / Vue</strong> - 前端框架</div>
+      </div>
+      <div class="stat-item">
+        <span class="sico">🐍</span>
+        <div><strong>Python / Node.js</strong> - 后端开发</div>
+      </div>
+      <div class="stat-item">
+        <span class="sico">🤖</span>
+        <div><strong>LLM / RAG</strong> - AI 应用</div>
+      </div>
+    </div>
+  </div>
 
-        <!-- Skills Section -->
-        <section class="section" id="skills">
-            <h2 class="section-title">技能栈</h2>
-            <div class="skills-category">
-                <h3 class="category-title">前端开发</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">⚛️</div>
-                        <h4 class="skill-title">React / Vue</h4>
-                        <p class="skill-desc">现代前端框架，构建响应式应用</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">📱</div>
-                        <h4 class="skill-title">TypeScript</h4>
-                        <p class="skill-desc">类型安全的JavaScript开发</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">🎨</div>
-                        <h4 class="skill-title">CSS / Tailwind</h4>
-                        <p class="skill-desc">现代UI设计和样式方案</p>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-category">
-                <h3 class="category-title">后端开发</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">🟢</div>
-                        <h4 class="skill-title">Node.js</h4>
-                        <p class="skill-desc">服务端JavaScript开发</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">🐍</div>
-                        <h4 class="skill-title">Python</h4>
-                        <p class="skill-desc">数据处理和AI应用开发</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">🗄️</div>
-                        <h4 class="skill-title">数据库</h4>
-                        <p class="skill-desc">PostgreSQL, MongoDB, Redis</p>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-category">
-                <h3 class="category-title">AI & 新技术</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">🤖</div>
-                        <h4 class="skill-title">LLM 应用</h4>
-                        <p class="skill-desc">大语言模型应用开发</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">🔗</div>
-                        <h4 class="skill-title">区块链</h4>
-                        <p class="skill-desc">智能合约和DApp开发</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">☁️</div>
-                        <h4 class="skill-title">云服务</h4>
-                        <p class="skill-desc">Docker, Kubernetes, CI/CD</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <!-- CTA 按钮 -->
+  <div class="hero-cta">
+    <a href="#projects" class="btn-primary">查看项目</a>
+    <a href="#contact" class="btn-secondary">联系我</a>
+  </div>
+</section>
 
-        <!-- Projects Section -->
-        <section class="section" id="projects">
-            <h2 class="section-title">精选项目</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">🤖 AI 助手平台</h3>
-                        <div class="project-tags">
-                            <span class="tag">AI</span>
-                            <span class="tag">LLM</span>
-                            <span class="tag">Python</span>
-                        </div>
-                    </div>
-                    <p class="project-desc">基于大语言模型的智能助手平台，支持多种AI能力集成，自动化工作流编排。</p>
-                    <div class="project-footer">
-                        <a href="https://github.com/guoleijie" target="_blank" rel="noopener noreferrer" class="project-link">
-                            查看代码 →
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">💰 金融科技系统</h3>
-                        <div class="project-tags">
-                            <span class="tag">FinTech</span>
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                        </div>
-                    </div>
-                    <p class="project-desc">现代化的金融交易系统，支持实时数据处理、风险管理和智能分析。</p>
-                    <div class="project-footer">
-                        <a href="https://github.com/guoleijie" target="_blank" rel="noopener noreferrer" class="project-link">
-                            查看详情 →
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">🚀 开源工具集</h3>
-                        <div class="project-tags">
-                            <span class="tag">Open Source</span>
-                            <span class="tag">CLI</span>
-                            <span class="tag">DevTools</span>
-                        </div>
-                    </div>
-                    <p class="project-desc">提升开发效率的命令行工具集合，包括代码生成、自动化脚本等。</p>
-                    <div class="project-footer">
-                        <a href="https://github.com/guoleijie" target="_blank" rel="noopener noreferrer" class="project-link">
-                            GitHub →
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="section-cta">
-                <a href="https://github.com/guoleijie?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                    查看更多项目 →
-                </a>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="section contact" id="contact">
-            <h2 class="section-title">联系我</h2>
-            <p class="contact-text">欢迎交流技术、合作项目或只是打个招呼 👋</p>
-            <div class="contact-methods">
-                <div class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>GitHub</h3>
-                    <p>通过 Issues 或 Discussions 联系我</p>
-                    <a href="https://github.com/guoleijie" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                        访问 GitHub
-                    </a>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">💼</div>
-                    <h3>合作咨询</h3>
-                    <p>项目合作或技术咨询</p>
-                    <a href="https://github.com/guoleijie/guoleijie.github.io/issues/new" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                        发起讨论
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content">
-                <p>© 2026 郭磊劼 · 用 ❤️ 和 ☕ 构建</p>
-                <p class="footer-quote">"代码改变世界，创新驱动未来"</p>
-            </div>
-        </footer>
+<!-- 项目展示 -->
+<section class="projects" id="projects">
+  <h2 class="section-title">🚀 精选项目</h2>
+  <div class="projects-grid">
+    <div class="project-card fade-in-up">
+      <div class="project-icon">🤖</div>
+      <h3 class="project-title">AI 助手平台</h3>
+      <p class="project-desc">基于大语言模型的智能助手平台，支持多种AI能力集成，自动化工作流编排。</p>
+      <div class="project-tags">
+        <span class="tag">AI</span>
+        <span class="tag">LLM</span>
+        <span class="tag">Python</span>
+      </div>
     </div>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" title="返回顶部">
-        ↑
-    </button>
+    <div class="project-card fade-in-up">
+      <div class="project-icon">💰</div>
+      <h3 class="project-title">金融科技系统</h3>
+      <p class="project-desc">现代化的金融交易系统，支持实时数据处理、风险管理和智能分析。</p>
+      <div class="project-tags">
+        <span class="tag">FinTech</span>
+        <span class="tag">React</span>
+        <span class="tag">Node.js</span>
+      </div>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="project-card fade-in-up">
+      <div class="project-icon">🚀</div>
+      <h3 class="project-title">开源工具集</h3>
+      <p class="project-desc">提升开发效率的命令行工具集合，包括代码生成、自动化脚本等。</p>
+      <div class="project-tags">
+        <span class="tag">Open Source</span>
+        <span class="tag">CLI</span>
+        <span class="tag">DevTools</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 联系方式 -->
+<section class="contact" id="contact">
+  <h2 class="section-title">📬 联系我</h2>
+  <p class="contact-desc">欢迎交流技术、合作项目或只是打个招呼 👋</p>
+  <div class="hero-cta">
+    <a href="https://github.com/guoleijie" target="_blank" rel="noopener noreferrer" class="btn-primary">访问 GitHub</a>
+    <a href="https://github.com/guoleijie/guoleijie.github.io/issues/new" target="_blank" rel="noopener noreferrer" class="btn-secondary">发起讨论</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 郭磊劼 · 用 ❤️ 和 ☕ 构建</p>
+  <p style="margin-top: 8px; opacity: 0.7;">"代码改变世界，创新驱动未来"</p>
+</footer>
+
+<script>
+// 进度条
+window.addEventListener('scroll', () => {
+  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById('progressBar').style.width = scrolled + '%';
+});
+
+// 轮播图
+const track = document.getElementById('caroTrack');
+const cards = track.querySelectorAll('.c-card');
+const prevBtn = document.getElementById('caroPrev');
+const nextBtn = document.getElementById('caroNext');
+const dots = document.querySelectorAll('.cdot');
+
+let currentIndex = 0;
+const cardWidth = 254; // 240px + 14px gap
+
+function updateCarousel() {
+  const offset = -currentIndex * cardWidth;
+  track.style.transform = `translateX(${offset}px)`;
+  
+  // 更新指示器
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentIndex);
+  });
+}
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % cards.length;
+  updateCarousel();
+});
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+  updateCarousel();
+});
+
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    currentIndex = index;
+    updateCarousel();
+  });
+});
+
+// 自动轮播
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % cards.length;
+  updateCarousel();
+}, 5000);
+
+// 平滑滚动
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+// 滚动动画
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.animationPlayState = 'running';
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.fade-in-up').forEach(el => {
+  el.style.animationPlayState = 'paused';
+  observer.observe(el);
+});
+</script>
+
 </body>
 </html>
