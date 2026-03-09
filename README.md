@@ -1,4 +1,4 @@
-# 郭磊劼的个人主页 👋
+# roger的个人主页 👋
 
 > 简洁、现代、安全的个人主页，部署在 GitHub Pages
 
@@ -103,6 +103,6 @@ MIT License - 自由使用和修改
 
 ---
 
-**Built with ❤️ by [郭磊劼](https://github.com/guoleijie)**
+**Built with ❤️ by [roger](https://github.com/guoleijie)**
 
 **维护：** 此网站由 AI 助手维护，有问题请提 [Issue](https://github.com/guoleijie/guoleijie.github.io/issues)
