@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c0392b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='16 18 22 12 16 6'></polyline><polyline points='8 6 2 12 8 18'></polyline></svg>">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:title" content="roger | 金融科技探索者">
 <meta property="og:description" content="专注于金融科技、AI应用和全栈开发。用技术构建价值，用创新驱动未来。">
 <title>roger - 金融科技探索者</title>
 <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
 
@@ -453,6 +454,51 @@ footer a {
 .fade-in-up {
   animation: fadeInUp 0.6s ease-out;
 }
+
+/* Lucide 图标样式 */
+.icon {
+  width: 1em;
+  height: 1em;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-large {
+  width: 48px;
+  height: 48px;
+  stroke-width: 1.5;
+  margin-bottom: 12px;
+  color: #c0392b;
+}
+
+.icon-medium {
+  width: 40px;
+  height: 40px;
+  stroke-width: 1.5;
+  margin-bottom: 12px;
+  color: #c0392b;
+}
+
+.icon-small {
+  width: 17px;
+  height: 17px;
+  stroke-width: 2;
+  flex-shrink: 0;
+  color: #c0392b;
+}
+
+.icon-tiny {
+  width: 14px;
+  height: 14px;
+  stroke-width: 2;
+  vertical-align: middle;
+}
+
 </style>
 </head>
 <body>
@@ -462,7 +508,7 @@ footer a {
 
 <!-- 导航栏 -->
 <nav>
-  <a href="#" class="nav-logo">💻 roger</a>
+  <a href="#" class="nav-logo"><i data-lucide="code-2" class="icon"></i> roger</a>
   <div class="nav-links">
     <a href="#about">关于</a>
     <a href="#projects">项目</a>
@@ -474,7 +520,7 @@ footer a {
 <section class="hero" id="about">
   <div class="hero-title">
     <h1>你好，我是<span class="red">roger</span></h1>
-    <div class="hero-tagline-pill">🚀 金融科技 · AI应用 · 全栈开发</div>
+    <div class="hero-tagline-pill"><i data-lucide="rocket" class="icon-tiny"></i> 金融科技 · AI应用 · 全栈开发</div>
   </div>
 
   <!-- 轮播图 -->
@@ -483,17 +529,17 @@ footer a {
     <div class="caro-outer">
       <div class="caro-track" id="caroTrack">
         <div class="c-card">
-          <div class="c-card-icon">🤖</div>
+          <i data-lucide="bot" class="icon-large"></i>
           <div class="c-card-title">AI 助手平台</div>
           <div class="c-card-desc">基于大语言模型的智能助手，自动化工作流编排</div>
         </div>
         <div class="c-card">
-          <div class="c-card-icon">💰</div>
+          <i data-lucide="trending-up" class="icon-large"></i>
           <div class="c-card-title">金融科技系统</div>
           <div class="c-card-desc">实时数据处理、风险管理和智能分析</div>
         </div>
         <div class="c-card">
-          <div class="c-card-icon">🚀</div>
+          <i data-lucide="package" class="icon-large"></i>
           <div class="c-card-title">开源工具集</div>
           <div class="c-card-desc">提升开发效率的命令行工具和自动化脚本</div>
         </div>
@@ -512,32 +558,32 @@ footer a {
   <!-- 统计数据 -->
   <div class="hero-stats-row">
     <div class="stat-panel">
-      <div class="stat-panel-title">📊 开发数据</div>
+      <div class="stat-panel-title"><i data-lucide="bar-chart-3" class="icon-tiny"></i> 开发数据</div>
       <div class="stat-item">
-        <span class="sico">⏱️</span>
-        <div><strong>5+ 年</strong> 开发经验</div>
+        <i data-lucide="clock" class="icon-small"></i>
+        <div><strong>18 年</strong> 开发经验</div>
       </div>
       <div class="stat-item">
-        <span class="sico">🎯</span>
+        <i data-lucide="target" class="icon-small"></i>
         <div><strong>20+</strong> 完成项目</div>
       </div>
       <div class="stat-item">
-        <span class="sico">🌟</span>
+        <i data-lucide="sparkles" class="icon-small"></i>
         <div><strong>∞</strong> 学习热情</div>
       </div>
     </div>
     <div class="stat-panel">
-      <div class="stat-panel-title">💡 技术栈</div>
+      <div class="stat-panel-title"><i data-lucide="lightbulb" class="icon-tiny"></i> 技术栈</div>
       <div class="stat-item">
-        <span class="sico">⚛️</span>
+        <i data-lucide="atom" class="icon-small"></i>
         <div><strong>React / Vue</strong> - 前端框架</div>
       </div>
       <div class="stat-item">
-        <span class="sico">🐍</span>
+        <i data-lucide="terminal" class="icon-small"></i>
         <div><strong>Python / Node.js</strong> - 后端开发</div>
       </div>
       <div class="stat-item">
-        <span class="sico">🤖</span>
+        <i data-lucide="cpu" class="icon-small"></i>
         <div><strong>LLM / RAG</strong> - AI 应用</div>
       </div>
     </div>
@@ -552,10 +598,10 @@ footer a {
 
 <!-- 项目展示 -->
 <section class="projects" id="projects">
-  <h2 class="section-title">🚀 精选项目</h2>
+  <h2 class="section-title"><i data-lucide="rocket" class="icon-tiny"></i> 精选项目</h2>
   <div class="projects-grid">
     <div class="project-card fade-in-up">
-      <div class="project-icon">🤖</div>
+      <i data-lucide="bot" class="icon-medium"></i>
       <h3 class="project-title">AI 助手平台</h3>
       <p class="project-desc">基于大语言模型的智能助手平台，支持多种AI能力集成，自动化工作流编排。</p>
       <div class="project-tags">
@@ -566,7 +612,7 @@ footer a {
     </div>
 
     <div class="project-card fade-in-up">
-      <div class="project-icon">💰</div>
+      <i data-lucide="trending-up" class="icon-medium"></i>
       <h3 class="project-title">金融科技系统</h3>
       <p class="project-desc">现代化的金融交易系统，支持实时数据处理、风险管理和智能分析。</p>
       <div class="project-tags">
@@ -577,7 +623,7 @@ footer a {
     </div>
 
     <div class="project-card fade-in-up">
-      <div class="project-icon">🚀</div>
+      <i data-lucide="package" class="icon-medium"></i>
       <h3 class="project-title">开源工具集</h3>
       <p class="project-desc">提升开发效率的命令行工具集合，包括代码生成、自动化脚本等。</p>
       <div class="project-tags">
@@ -591,8 +637,8 @@ footer a {
 
 <!-- 联系方式 -->
 <section class="contact" id="contact">
-  <h2 class="section-title">📬 联系我</h2>
-  <p class="contact-desc">欢迎交流技术、合作项目或只是打个招呼 👋</p>
+  <h2 class="section-title"><i data-lucide="mail" class="icon-tiny"></i> 联系我</h2>
+  <p class="contact-desc">欢迎交流技术、合作项目或只是打个招呼 <i data-lucide="hand" class="icon-tiny"></i></p>
   <div class="hero-cta">
     <a href="https://github.com/guoleijie" target="_blank" rel="noopener noreferrer" class="btn-primary">访问 GitHub</a>
     <a href="https://github.com/guoleijie/guoleijie.github.io/issues/new" target="_blank" rel="noopener noreferrer" class="btn-secondary">发起讨论</a>
@@ -601,7 +647,7 @@ footer a {
 
 <!-- Footer -->
 <footer>
-  <p>© 2026 roger · 用 ❤️ 和 ☕ 构建</p>
+  <p>© 2026 roger · 用 <i data-lucide="heart" class="icon-tiny"></i> 和 <i data-lucide="coffee" class="icon-tiny"></i> 构建</p>
   <p style="margin-top: 8px; opacity: 0.7;">"代码改变世界，创新驱动未来"</p>
 </footer>
 
@@ -689,6 +735,9 @@ document.querySelectorAll('.fade-in-up').forEach(el => {
   el.style.animationPlayState = 'paused';
   observer.observe(el);
 });
+
+// 初始化 Lucide 图标
+lucide.createIcons();
 </script>
 
 </body>
