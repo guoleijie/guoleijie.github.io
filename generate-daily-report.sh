@@ -33,19 +33,23 @@ cat > "$REPORT_FILE" << 'EOF'
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+    <!-- 进度条 -->
+    <div class="progress-bar"></div>
+
     <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="/" class="logo">
-                <i data-lucide="zap"></i>
-                <span>梦醒</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/">首页</a></li>
-                <li><a href="/blog/">博客</a></li>
-                <li><a href="/blog/DATES/">DATES</a></li>
-            </ul>
-        </div>
+    <nav>
+        <a href="/" class="nav-logo">
+            <i data-lucide="code-2" class="icon"></i>
+            <span>梦醒</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle">
+            <i data-lucide="menu"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/">首页</a></li>
+            <li><a href="/blog/">博客</a></li>
+            <li><a href="/blog/DATES/">DATES</a></li>
+        </ul>
     </nav>
 
     <!-- 日报内容 -->
@@ -108,8 +112,8 @@ cat > "$REPORT_FILE" << 'EOF'
             <h2><i data-lucide="target"></i> 明日计划</h2>
 
             <div class="task-list">
-                <div class="task-item todo">
-                    <span class="priority high">高</span>
+                <div class="task-item">
+                    <span class="priority">高</span>
                     <span class="task-name">待定</span>
                     <span class="task-time">--</span>
                 </div>

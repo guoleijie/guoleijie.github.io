@@ -12,6 +12,41 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// 移动端菜单切换
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // 点击链接后关闭菜单
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+    });
+  });
+
+  // 点击页面其他地方关闭菜单
+  document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+      navLinks.classList.remove('active');
+    }
+  });
+}
+
+// 页面滚动进度
+const progressBar = document.querySelector('.progress-bar');
+if (progressBar) {
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    progressBar.style.width = progress + '%';
+  });
+}
+
 // 返回顶部
 let backToTopBtn = null;
 
@@ -27,11 +62,11 @@ window.addEventListener('scroll', () => {
         width: 48px;
         height: 48px;
         border-radius: 50%;
-        background: #3b82f6;
+        background: #c0392b;
         color: white;
         border: none;
         cursor: pointer;
-        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        box-shadow: 0 4px 12px rgba(192, 57, 43, 0.3);
         z-index: 999;
         display: flex;
         align-items: center;
