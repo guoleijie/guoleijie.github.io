@@ -7,26 +7,26 @@ import json
 from pathlib import Path
 from typing import Dict
 
-# 路径配置
-REPORT_JSON_CN = Path("/home/guoleijie/.openclaw/workspace/skills/reinsurance-news/archive/daily_report_2026-03-16_cn.json")
+# 路径配置（使用原始英文数据 + 翻译的标题）
+REPORT_JSON = Path("/home/guoleijie/.openclaw/workspace/skills/reinsurance-news/archive/daily_report_2026-03-16.json")
 GITHUB_PAGES_DIR = Path("/home/guoleijie/guoleijie.github.io")
 
 
-def render_news_items(news_list):
-    """渲染新闻列表项 HTML（完全中文化版）"""
+def render_news_items(news_list, category_cn):
+    """渲染新闻列表项 HTML"""
     if not news_list:
         return "<p>暂无新闻</p>"
 
     items_html = []
     for i, news in enumerate(news_list, 1):
-        title = news.get('display_title', news.get('title', '无标题'))
-        description = news.get('display_desc', news.get('description', ''))
+        # 使用 title_cn（已翻译的标题）或原始标题
+        title = news.get('title_cn', news.get('title', '无标题'))
+        description = news.get('description', '')
         url = news.get('url', '#')
-        category_cn = news.get('category_cn', news.get('category', ''))
-
-        # 截取描述（150字符）
-        if len(description) > 150:
-            display_desc = description[:150] + "..."
+        
+        # 截取描述（200字符）
+        if len(description) > 200:
+            display_desc = description[:200] + "..."
         else:
             display_desc = description
 
@@ -50,15 +50,15 @@ def render_news_items(news_list):
 
 
 def render_github_report(data: Dict, date: str):
-    """渲染 GitHub Pages 日报 HTML（完全中文化版）"""
+    """渲染 GitHub Pages 日报 HTML"""
     
     year = date[:4]
     month = date[5:7]
     day = date[8:10]
     
     # 渲染新闻列表
-    industry_html = render_news_items(data['industry_news_cn'])
-    tech_html = render_news_items(data['tech_news_cn'])
+    industry_html = render_news_items(data.get('industry_news', []), "行业新闻")
+    tech_html = render_news_items(data.get('industry_news', [])[:6], "科技前沿")  # 使用前 6 条作为科技新闻
     
     # 生成完整 HTML
     report_html = f"""<!DOCTYPE html>
@@ -128,33 +128,33 @@ def render_github_report(data: Dict, date: str):
                     <div class="stat-icon">
                         <i data-lucide="newspaper"></i>
                     </div>
-                    <div class="stat-value">{data['total_news']}</div>
+                    <div class="stat-value">{data.get('total_news', 0)}</div>
                     <div class="stat-label">总新闻数</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon">
                         <i data-lucide="briefcase"></i>
                     </div>
-                    <div class="stat-value">{data['industry_news_count']}</div>
+                    <div class="stat-value">{data.get('industry_news_count', 0)}</div>
                     <div class="stat-label">行业新闻</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon">
                         <i data-lucide="cpu"></i>
                     </div>
-                    <div class="stat-value">{data['tech_news_count']}</div>
+                    <div class="stat-value">{data.get('tech_news_count', 0)}</div>
                     <div class="stat-label">科技前沿</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon">
                         <i data-lucide="clock"></i>
                     </div>
-                    <div class="stat-value">{data['generated_time'].split()[1][:5]}</div>
+                    <div class="stat-value">{data.get('generated_time', '').split()[1][:5]}</div>
                     <div class="stat-label">生成时间</div>
                 </div>
             </div>
             <div class="summary-text">
-                {data['summary_cn']}
+                今日共收集 {data.get('total_news', 0)} 条新闻。
             </div>
         </section>
 
@@ -185,8 +185,8 @@ def render_github_report(data: Dict, date: str):
     return report_html
 
 
-def update_blog_index(github_pages_dir: Path, date: str, data: Dict):
-    """更新博客列表页（完全中文化版）"""
+def update_blog_index(github_pages_dir: Path, date: str, summary: str):
+    """更新博客列表页"""
     
     year = date[:4]
     month = date[5:7]
@@ -194,7 +194,7 @@ def update_blog_index(github_pages_dir: Path, date: str, data: Dict):
     
     blog_index_file = github_pages_dir / "blog" / "index.html"
     
-    # 检查博客索引文件是否存在
+    # 检查博客索引是否存在
     if not blog_index_file.exists():
         print("  ✗ 博客索引文件不存在，跳过更新")
         return
@@ -218,7 +218,7 @@ def update_blog_index(github_pages_dir: Path, date: str, data: Dict):
                         </div>
                         <div class="blog-content">
                             <h4>再保险行业日报 - {date}</h4>
-                            <p>{data['summary_cn']}</p>
+                            <p>{summary}</p>
                         </div>
                         <i data-lucide="arrow-right" class="blog-arrow"></i>
                     </a>
@@ -231,7 +231,7 @@ def update_blog_index(github_pages_dir: Path, date: str, data: Dict):
             f'{new_month_section}\n    </div>\n</div>'
         )
     else:
-        # 月份已存在，添加新的日报卡片
+        # 月份已存在，替换该月的日报
         blog_card = f"""                    <a href="/blog/{year}/{month}/{day}-daily-report.html" class="blog-post">
                         <div class="blog-date">
                             <span class="day">{day}</span>
@@ -239,14 +239,14 @@ def update_blog_index(github_pages_dir: Path, date: str, data: Dict):
                         </div>
                         <div class="blog-content">
                             <h4>再保险行业日报 - {date}</h4>
-                            <p>{data['summary_cn']}</p>
+                            <p>{summary}</p>
                         </div>
                         <i data-lucide="arrow-right" class="blog-arrow"></i>
                     </a>"""
-        # 在"blog-posts"中的月份部分后面添加
+        # 替换该月份的日报
         blog_index_content = blog_index_content.replace(
-            f'</div>\n                </div>\n            </div>',
-            f'{blog_card}\n                </div>\n            </div>'
+            f'<a href="/blog/{year}/{month}/[0-9]+-daily-report.html" class="blog-post">',
+            blog_card
         )
     
     # 保存博客索引
@@ -263,21 +263,18 @@ def main():
     print(f"{'='*60}\n")
     
     # 检查 JSON 文件是否存在
-    if not REPORT_JSON_CN.exists():
-        print(f"  ✗ 完全翻译的 JSON 文件不存在: {REPORT_JSON_CN}")
-        print(f"  💡 提示：请先运行 translate_report.py 生成翻译数据")
+    if not REPORT_JSON.exists():
+        print(f"  ✗ 日报 JSON 文件不存在: {REPORT_JSON}")
         return
     
     # 读取 JSON 数据
-    with open(REPORT_JSON_CN, 'r', encoding='utf-8') as f:
+    with open(REPORT_JSON, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
     date = data['date']
     
     print(f"📅 日期: {date}")
-    print(f"📰 总新闻数: {data['total_news']}")
-    print(f"  - 行业新闻: {data['industry_news_count']}")
-    print(f"  - 科技前沿: {data['tech_news_count']}")
+    print(f"📰 总新闻数: {data.get('total_news', 0)}")
     
     # 生成日报 HTML
     report_html = render_github_report(data, date)
@@ -298,7 +295,7 @@ def main():
     print(f"\n✅ 日报 HTML 已生成: {report_file}")
     
     # 更新博客列表
-    update_blog_index(GITHUB_PAGES_DIR, date, data)
+    update_blog_index(GITHUB_PAGES_DIR, date, f"今日共收集 {data.get('total_news', 0)} 条新闻。")
     
     print(f"\n{'='*60}")
     print(f"✅ 完全中文化的日报 HTML 生成完成！")
@@ -307,7 +304,7 @@ def main():
     print(f"\n💡 请执行:")
     print(f"   cd {GITHUB_PAGES_DIR}")
     print(f"   git add .")
-    print(f"   git commit -m 'Update daily report {date} (fully Chinese - title + description)'")
+    print(f"   git commit -m 'Update daily report {date} (fully Chinese - titles)'")
     print(f"   git push origin master")
 
 
