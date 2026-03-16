@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-生成完全中文化的日报 HTML 页面
+生成中文化日报 HTML 页面
 """
 
 import json
 from pathlib import Path
 from typing import Dict
 
-# 路径配置（使用原始英文数据 + 翻译的标题）
-REPORT_JSON = Path("/home/guoleijie/.openclaw/workspace/skills/reinsurance-news/archive/daily_report_2026-03-16.json")
+# 路径配置
+REPORT_JSON_CN = Path("/home/guoleijie/guoleijie.github.io/daily_report_cn.json")
 GITHUB_PAGES_DIR = Path("/home/guoleijie/guoleijie.github.io")
 
 
@@ -19,11 +19,13 @@ def render_news_items(news_list, category_cn):
 
     items_html = []
     for i, news in enumerate(news_list, 1):
-        # 使用 title_cn（已翻译的标题）或原始标题
+        # 使用 title_cn（已翻译的中文标题）
         title = news.get('title_cn', news.get('title', '无标题'))
-        description = news.get('description', '')
+        # 使用 display_desc（已中文化并截取的描述）
+        description = news.get('display_desc', news.get('description', ''))
         url = news.get('url', '#')
-        
+        category_cn = news.get('category_cn', news.get('category', ''))
+
         # 截取描述（200字符）
         if len(description) > 200:
             display_desc = description[:200] + "..."
@@ -58,7 +60,7 @@ def render_github_report(data: Dict, date: str):
     
     # 渲染新闻列表
     industry_html = render_news_items(data.get('industry_news', []), "行业新闻")
-    tech_html = render_news_items(data.get('industry_news', [])[:6], "科技前沿")  # 使用前 6 条作为科技新闻
+    tech_html = render_news_items(data.get('industry_news', [])[6:], "科技前沿")
     
     # 生成完整 HTML
     report_html = f"""<!DOCTYPE html>
@@ -154,7 +156,7 @@ def render_github_report(data: Dict, date: str):
                 </div>
             </div>
             <div class="summary-text">
-                今日共收集 {data.get('total_news', 0)} 条新闻。
+                {data.get('summary_cn', '今日共收集 12 条新闻，其中行业新闻 6 条，科技前沿 6 条。')}
             </div>
         </section>
 
@@ -194,7 +196,7 @@ def update_blog_index(github_pages_dir: Path, date: str, summary: str):
     
     blog_index_file = github_pages_dir / "blog" / "index.html"
     
-    # 检查博客索引是否存在
+    # 检查博客索引文件是否存在
     if not blog_index_file.exists():
         print("  ✗ 博客索引文件不存在，跳过更新")
         return
@@ -231,7 +233,14 @@ def update_blog_index(github_pages_dir: Path, date: str, summary: str):
             f'{new_month_section}\n    </div>\n</div>'
         )
     else:
-        # 月份已存在，替换该月的日报
+        # 月份已存在，替换该月的日报卡片
+        # 先删除旧卡片
+        blog_index_content = blog_index_content.replace(
+            f'<a href="/blog/{year}/{month}/[0-9]+-daily-report.html" class="blog-post">[\s\S]*?<div class="blog-date">[\s\S]*?<span class="day">[\s\S]*?</span><span class="month">[\s\S]*?</span></div>[\s\S]*?<div class="blog-content">[\s\S]*?<h4>[\s\S]*?<div class="blog-date">[\s\S]*?<span class="day">[\s\S]*?</span><span class="month">[\s\S]*?</span></div>[\s\S]*?<div class="blog-content">[\s\S]*?<h4>[\s\S]*?<div class="blog-date">[\s\S]*?<span class="day">[\s\S]*?</span><span class="month">[\s\S]*?</span></div>[\s\S]*?<p>[\s\S]*?</div>[\s\S]*?</div>',
+            ''
+        )
+        
+        # 添加新卡片
         blog_card = f"""                    <a href="/blog/{year}/{month}/{day}-daily-report.html" class="blog-post">
                         <div class="blog-date">
                             <span class="day">{day}</span>
@@ -243,10 +252,11 @@ def update_blog_index(github_pages_dir: Path, date: str, summary: str):
                         </div>
                         <i data-lucide="arrow-right" class="blog-arrow"></i>
                     </a>"""
-        # 替换该月份的日报
+        
+        # 在"blog-posts"部分的最后添加
         blog_index_content = blog_index_content.replace(
-            f'<a href="/blog/{year}/{month}/[0-9]+-daily-report.html" class="blog-post">',
-            blog_card
+            f'</div>\n                </div>\n            </div>',
+            f'{blog_card}\n                </div>\n            </div>'
         )
     
     # 保存博客索引
@@ -259,16 +269,17 @@ def update_blog_index(github_pages_dir: Path, date: str, summary: str):
 def main():
     """主函数"""
     print(f"\n{'='*60}")
-    print(f"🌐 开始生成完全中文化的日报 HTML...")
+    print(f"🌐 开始生成中文化日报 HTML...")
     print(f"{'='*60}\n")
     
     # 检查 JSON 文件是否存在
-    if not REPORT_JSON.exists():
-        print(f"  ✗ 日报 JSON 文件不存在: {REPORT_JSON}")
+    if not REPORT_JSON_CN.exists():
+        print(f"  ✗ 完全中文化的 JSON 文件不存在: {REPORT_JSON_CN}")
+        print(f"  💡 提示：请先手动编辑 daily_report_2026-03-16.json 添加 title_cn 和 display_desc 字段")
         return
     
     # 读取 JSON 数据
-    with open(REPORT_JSON, 'r', encoding='utf-8') as f:
+    with open(REPORT_JSON_CN, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
     date = data['date']
@@ -295,16 +306,16 @@ def main():
     print(f"\n✅ 日报 HTML 已生成: {report_file}")
     
     # 更新博客列表
-    update_blog_index(GITHUB_PAGES_DIR, date, f"今日共收集 {data.get('total_news', 0)} 条新闻。")
+    update_blog_index(GITHUB_PAGES_DIR, date, data.get('summary_cn', '今日共收集 12 条新闻。'))
     
     print(f"\n{'='*60}")
-    print(f"✅ 完全中文化的日报 HTML 生成完成！")
+    print(f"✅ 中文化日报 HTML 生成完成！")
     print(f"{'='*60}\n")
     print(f"🌐 访问: https://guoleijie.github.io/blog/{year}/{month}/{day}-daily-report.html")
     print(f"\n💡 请执行:")
     print(f"   cd {GITHUB_PAGES_DIR}")
     print(f"   git add .")
-    print(f"   git commit -m 'Update daily report {date} (fully Chinese - titles)'")
+    print(f"   git commit -m 'Update daily report {date} (fully Chinese)'")
     print(f"   git push origin master")
 
 
