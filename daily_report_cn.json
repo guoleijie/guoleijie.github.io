@@ -1,0 +1,108 @@
+{
+  "date": "2026-03-16",
+  "generated_time": "2026-03-16 06:00:35",
+  "total_news": 12,
+  "industry_news_count": 6,
+  "tech_news_count": 6,
+  "industry_news": [
+    {
+      "title_cn": "TradingView 上的 Acceswire 新闻",
+      "title": "News by Acceswire on TradingView, 2026-03-15 - TradingView",
+      "display_title": "TradingView 上的 Acceswire 新闻",
+      "display_desc": "Acceswire、Dow Jones Newswires 登录读取独家新闻的入口。CoinMarketCal HyperGPT - Unibase & HyperGPT 相关新闻...",
+      "url": "https://www.tradingview.com/news/reuters.com,2026-03-15:newsml_ACS8wz4Ya:0/",
+      "category": "industry"
+    },
+    {
+      "title_cn": "今日值得关注的比特币股票",
+      "title": "Bitcoin Stocks To Follow Today - March 15th - MarketBeat",
+      "display_title": "今日值得关注的比特币股票",
+      "display_desc": "美国造船业复苏：3 只股票值得关注。代码揭晓：Pre-IPO 权限接入 \"Next Elon Musk\" 公司...",
+      "url": "https://www.marketbeat.com/instant-alerts/bitcoin-stocks-to-follow-today-march-15th-2026-03-15/",
+      "category": "industry"
+    },
+    {
+      "title_cn": "阿拉斯加液化天然气在最终投资决策前需要更多收购承诺",
+      "title": "Alaska LNG needs more offtake commitments before final investment decision, CEO says - TradingView",
+      "display_title": "阿拉斯加液化天然气在最终投资决策前需要更多收购承诺",
+      "display_desc": "路透社相关新闻。诺扎国际医院股东批准股票分红、塞科装备财年利润 600 万里亚尔、阿联酋联合浮息财年利润 6040 万里亚尔...",
+      "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L1N40300L:0-alaska-lng-needs-more-offtake-commitments-before-final-investment-decision-ceo-says/",
+      "category": "industry"
+    },
+    {
+      "title_cn": "今年银行股被重创。我们的两家名字应该能挺过风暴",
+      "title": "Bank stocks have been crushed this year. 2 of our names should weather the storm - CNBC",
+      "display_title": "今年银行股被重创。我们的两家名字应该能挺过风暴",
+      "display_desc": "Poonawala，覆盖高盛，补充道：\"这确实增加了相对于一周或一个月前假设的下行风险概率。\" 作为更传统的货币中心银行，富国银行更容易面临借贷风险...",
+      "url": "https://www.cnbc.com/2026/03/15/bank-stocks-have-been-crushed-this-year-2-of-our-names-should-weather-the-storm.html",
+      "category": "industry"
+    },
+    {
+      "title_cn": "为不可预测投保：在全球动荡中保障运营",
+      "title": "Insuring The Unpredictable: Securing Operations in Times of Global Unrest - Law.com",
+      "display_title": "为不可预测投保：在全球动荡中保障运营",
+      "display_desc": "登录访问您的账户和订阅。报道和专家法律技术分析，重点关注法律部门、律师事务所和科技公司需要了解的内容...",
+      "url": "https://www.law.com/international-edition/2026/03/15/insuring-the-unpredictable-securing-operations-in-times-of-global-unrest/",
+      "category": "industry"
+    },
+    {
+      "title_cn": "全球前瞻：管道中的价格压力",
+      "title": "Global week ahead: Price pressure in the pipeline - CNBC",
+      "display_title": "全球前瞻：管道中的价格压力",
+      "display_desc": "* 美联储、欧洲央行和英国央行将在未来几天做出政策决定。英国收益率跟随相同路径，10年期收益率达到至少六个月来的最高水平，推动市场为 82% 的英格兰银行加息概率...",
+      "url": "https://www.cnbc.com/2026/03/15/global-week-ahead-price-pressure-in-the-pipeline.html",
+      "category": "industry"
+    }
+  ],
+  "tech_news": [
+    {
+      "title_cn": "富国银行 AI 负责人分享在银行评估技术对员工数量的影响时保持需求的策略",
+      "title": "Wells Fargo's head of AI shares his playbook for staying in demand as banks weigh what tech means for head count - Business Insider",
+      "display_title": "富国银行 AI 负责人分享在银行评估技术对员工数量的影响时保持需求的策略",
+      "display_desc": "\"你无法否认事情，\" Van Beurden 说，富国银行帮助高盛面对银行规模大小的每家机构都面临的一个问题：在 AI 时代，技术对员工数量意味着什么？",
+      "url": "https://www.businessinsider.com/wells-fargo-ai-saul-van-beurden-jobs-banks-2026-3",
+      "category": "tech"
+    },
+    {
+      "title_cn": "Ripple 收购 AFSL 以加强澳大利亚支付业务",
+      "title": "Ripple Targets AFSL to Bolster Australian Payments - FinTech Magazine",
+      "display_title": "Ripple 收购 AFSL 以加强澳大利亚支付业务",
+      "display_desc": "区块链领导者 Ripple 宣布有意收购 BC Payments Australia，这一举措将把传统轨道与数字资产基础设施整合。Ripple 已宣布打算在亚太地区扩展其监管足迹...",
+      "url": "https://fintechmagazine.com/news/ripple-targets-afsl-to-bolster-australian-payments",
+      "category": "tech"
+    },
+    {
+      "title_cn": "值得关注的加密货币股票 - 3月13日",
+      "title": "Cryptocurrency Stocks To Watch Now – March 13th - Defense World",
+      "display_title": "值得关注的加密货币股票 - 3月13日",
+      "display_desc": "Galaxy Digital、Bitfarms、HIVE Digital Technologies、Digi Power X 和 Soluna 是根据 MarketBeat 股票筛选工具今天值得关注的五只加密货币股票。",
+      "url": "https://www.defenseworld.net/2026/03/15/cryptocurrency-stocks-to-watch-now-march-13th.html",
+      "category": "tech"
+    },
+    {
+      "title_cn": "Superloop 的 AI 推进继续进行计费系统项目",
+      "title": "Superloop's AI push continues with billing system project - iTnews",
+      "display_title": "Superloop 的 AI 推进继续进行计费系统项目",
+      "display_desc": "## Superloop 的 AI 推进继续进行计费系统项目 ## Adobe 解决美国终止费用、订阅取消诉讼 ## Meta 计划大规模裁员 ## 上下文工程成为企业 AI 的\"下一个战场\"## Coles Group CTO 一年后离开...",
+      "url": "https://www.itnews.com.au/news/superloops-ai-push-continues-with-billing-system-project-624262",
+      "category": "tech"
+    },
+    {
+      "title_cn": "Neura Robotics 和高通建立战略合作，推进物理 AI 和认知机器人技术",
+      "title": "Neura Robotics and Qualcomm enter strategic collaboration to advance physical AI and cognitive robotics - Robotics & Automation News",
+      "display_title": "Neura Robotics 和高通建立战略合作，推进物理 AI 和认知机器人技术",
+      "display_desc": "此次合作汇集了高通技术在 AI 计算、连接和机器人平台方面的领导地位，以及 Neura 在深度机器人系统和具身 AI 软件方面的专长，共享加速可扩展的、现实世界机器人智能的目标...",
+      "url": "https://roboticsandautomationnews.com/2026/03/15/neura-robotics-and-qualcomm-enter-strategic-collaboration-to-advance-physical-ai-and-cognitive-robotics/99677/",
+      "category": "tech"
+    },
+    {
+      "title_cn": "Rita McGrath：战略中心化如何在数字世界释放创新",
+      "title": "Rita McGrath: How Strategic Centering Unlocks Innovation In A Digital World - Forbes",
+      "display_title": "Rita McGrath：战略中心化如何在数字世界释放创新",
+      "display_desc": "Rita McGrath：如何在数字世界释放创新。2026年3月13日，下午1:06 美国东部标准时间收购.com最新 CEO：从高盛到打造\"商业界的迪士尼\"...",
+      "url": "https://www.forbes.com/sites/stevedenning/2026/03/15/rita-mcgrath-how-strategic-centering-unlocks-innovation-in-a-digital-world/",
+      "category": "tech"
+    }
+  ],
+  "summary_cn": "今日共收集 12 条新闻，其中行业新闻 6 条，科技前沿 6 条。"
+}

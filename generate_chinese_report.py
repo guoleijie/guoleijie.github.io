@@ -24,6 +24,12 @@ def render_news_items(news_list):
         url = news.get('url', '#')
         category_cn = news.get('category_cn', news.get('category', ''))
 
+        # 截取描述（150字符）
+        if len(description) > 150:
+            display_desc = description[:150] + "..."
+        else:
+            display_desc = description
+
         # 新闻卡片
         item_html = f"""<div class="news-item">
   <div class="news-number">{i}.</div>
@@ -32,7 +38,7 @@ def render_news_items(news_list):
       <a href="{url}" target="_blank">{title}</a>
       <i data-lucide="external-link" class="news-link-icon"></i>
     </div>
-    <div class="news-description">{description}</div>
+    <div class="news-description">{display_desc}</div>
   </div>
   <div class="news-meta">
     <span class="news-category">{category_cn}</span>
@@ -259,7 +265,7 @@ def main():
     # 检查 JSON 文件是否存在
     if not REPORT_JSON_CN.exists():
         print(f"  ✗ 完全翻译的 JSON 文件不存在: {REPORT_JSON_CN}")
-        print(f"  💡 提示：请先运行 convert_report_to_chinese.py 生成翻译数据")
+        print(f"  💡 提示：请先运行 translate_report.py 生成翻译数据")
         return
     
     # 读取 JSON 数据
