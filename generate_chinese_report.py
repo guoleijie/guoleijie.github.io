@@ -60,7 +60,7 @@ def render_github_report(data: Dict, date: str):
     
     # 渲染新闻列表
     industry_html = render_news_items(data.get('industry_news', []), "行业新闻")
-    tech_html = render_news_items(data.get('industry_news', [])[6:], "科技前沿")
+    tech_html = render_news_items(data.get('tech_news', []), "科技前沿")
     
     # 生成完整 HTML
     report_html = f"""<!DOCTYPE html>
@@ -235,8 +235,9 @@ def update_blog_index(github_pages_dir: Path, date: str, summary: str):
     else:
         # 月份已存在，替换该月的日报卡片
         # 先删除旧卡片
+        # 使用更精确的替换
         blog_index_content = blog_index_content.replace(
-            f'<a href="/blog/{year}/{month}/[0-9]+-daily-report.html" class="blog-post">[\s\S]*?<div class="blog-date">[\s\S]*?<span class="day">[\s\S]*?</span><span class="month">[\s\S]*?</span></div>[\s\S]*?<div class="blog-content">[\s\S]*?<h4>[\s\S]*?<div class="blog-date">[\s\S]*?<span class="day">[\s\S]*?</span><span class="month">[\s\S]*?</span></div>[\s\S]*?<div class="blog-content">[\s\S]*?<h4>[\s\S]*?<div class="blog-date">[\s\S]*?<span class="day">[\s\S]*?</span><span class="month">[\s\S]*?</span></div>[\s\S]*?<p>[\s\S]*?</div>[\s\S]*?</div>',
+            f'<div class="blog-month">\n                <h3>📅 {year}年{month}月</h3>\n                <div class="blog-posts">\n                    <a href="/blog/{year}/{month}/16-daily-report.html" class="blog-post">\n                        <div class="blog-date">\n                            <span class="day">16</span>\n                            <span class="month">3月</span>\n                        </div>\n                        <div class="blog-content">\n                            <h4>再保险行业日报 - {date}</h4>\n                            <p>{summary}</p>\n                        </div>\n                        <i data-lucide="arrow-right" class="blog-arrow"></i>\n                    </a>',
             ''
         )
         
@@ -254,10 +255,7 @@ def update_blog_index(github_pages_dir: Path, date: str, summary: str):
                     </a>"""
         
         # 在"blog-posts"部分的最后添加
-        blog_index_content = blog_index_content.replace(
-            f'</div>\n                </div>\n            </div>',
-            f'{blog_card}\n                </div>\n            </div>'
-        )
+        blog_index_content = blog_index_content + blog_card
     
     # 保存博客索引
     with open(blog_index_file, 'w', encoding='utf-8') as f:
@@ -275,7 +273,6 @@ def main():
     # 检查 JSON 文件是否存在
     if not REPORT_JSON_CN.exists():
         print(f"  ✗ 完全中文化的 JSON 文件不存在: {REPORT_JSON_CN}")
-        print(f"  💡 提示：请先手动编辑 daily_report_2026-03-16.json 添加 title_cn 和 display_desc 字段")
         return
     
     # 读取 JSON 数据
@@ -306,7 +303,7 @@ def main():
     print(f"\n✅ 日报 HTML 已生成: {report_file}")
     
     # 更新博客列表
-    update_blog_index(GITHUB_PAGES_DIR, date, data.get('summary_cn', '今日共收集 12 条新闻。'))
+    update_blog_index(GITHUB_PAGES_DIR, date, data.get('summary_cn', '今日共收集 12 条新闻，其中行业新闻 6 条，科技前沿 6 条。'))
     
     print(f"\n{'='*60}")
     print(f"✅ 中文化日报 HTML 生成完成！")
@@ -315,7 +312,7 @@ def main():
     print(f"\n💡 请执行:")
     print(f"   cd {GITHUB_PAGES_DIR}")
     print(f"   git add .")
-    print(f"   git commit -m 'Update daily report {date} (fully Chinese)'")
+    print(f"   git commit -m 'Update daily report {date} (fully Chinese - separate tech news)'")
     print(f"   git push origin master")
 
 
