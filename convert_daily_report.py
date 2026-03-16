@@ -24,7 +24,6 @@ def render_news_items(news_list):
         title = news.get('title', '无标题')
         description = news.get('description', '')
         url = news.get('url', '#')
-        relevance = news.get('relevance', 0)
 
         # 截取描述（200字符）
         if len(description) > 200:
@@ -34,10 +33,13 @@ def render_news_items(news_list):
 
         item_html = f"""
 <div class="news-item">
-  <div class="news-title">{i}. {title}</div>
-  <div class="news-description">{display_desc}</div>
-  <div class="news-meta">
-    <span class="news-url"><a href="{url}" target="_blank">阅读原文 →</a></span>
+  <div class="news-number">{i}.</div>
+  <div class="news-content">
+    <div class="news-title">
+      <a href="{url}" target="_blank">{title}</a>
+      <i data-lucide="external-link" class="news-link-icon"></i>
+    </div>
+    <div class="news-description">{display_desc}</div>
   </div>
 </div>"""
         items_html.append(item_html)
