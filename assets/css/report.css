@@ -100,16 +100,40 @@ nav {
 /* 移动端菜单按钮 */
 .menu-toggle {
   display: none;
-  background: none;
-  border: none;
+  background: rgba(192, 57, 43, 0.15);
+  border: 2px solid #c0392b;
   cursor: pointer;
-  padding: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1001;
+  min-width: 44px;
+  min-height: 44px;
+  flex-shrink: 0;
+  position: relative;
 }
 
-.menu-toggle i {
+/* 汉堡菜单图标作为 fallback */
+.menu-toggle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 2px;
+  background: #c0392b;
+  box-shadow: 0 -6px 0 #c0392b, 0 6px 0 #c0392b;
+  border-radius: 2px;
+}
+
+.menu-toggle i,
+.menu-toggle svg {
   width: 24px;
   height: 24px;
-  color: var(--text-primary);
+  color: #c0392b;
+  display: block;
+  position: relative;
+  z-index: 1;
 }
 
 /* 日报容器 */
@@ -641,7 +665,9 @@ nav {
   }
 
   .menu-toggle {
-    display: block;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-links {
