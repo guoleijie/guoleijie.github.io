@@ -83,6 +83,45 @@ nav {
   color: #c0392b;
 }
 
+/* 移动端菜单按钮 */
+.menu-toggle {
+  display: none;
+  background: rgba(192, 57, 43, 0.15);
+  border: 2px solid #c0392b;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1001;
+  min-width: 44px;
+  min-height: 44px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* 汉堡菜单图标作为 fallback */
+.menu-toggle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 2px;
+  background: #c0392b;
+  box-shadow: 0 -6px 0 #c0392b, 0 6px 0 #c0392b;
+  border-radius: 2px;
+}
+
+.menu-toggle i,
+.menu-toggle svg {
+  width: 24px;
+  height: 24px;
+  color: #c0392b;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
 /* Hero 区域 */
 .hero {
   padding: 76px 32px 28px;
@@ -411,11 +450,45 @@ footer a {
 /* 响应式 */
 @media (max-width: 768px) {
   nav {
-    padding: 0 20px;
+    padding: 0 16px;
+    height: 60px;
   }
-  
+
+  .menu-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
   .nav-links {
-    display: none;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid #e8e4df;
+    padding: 16px;
+    flex-direction: column;
+    gap: 16px;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .nav-links a {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+  .nav-links a:hover {
+    background: #e8e4dc;
   }
   
   .hero {
@@ -509,7 +582,10 @@ footer a {
 <!-- 导航栏 -->
 <nav>
   <a href="#" class="nav-logo"><i data-lucide="code-2" class="icon"></i> roger</a>
-  <div class="nav-links">
+  <button class="menu-toggle" id="menuToggle">
+    <i data-lucide="menu"></i>
+  </button>
+  <div class="nav-links" id="navLinks">
     <a href="#about">关于</a>
     <a href="#projects">项目</a>
     <a href="/blog/">日报</a>
@@ -739,6 +815,30 @@ document.querySelectorAll('.fade-in-up').forEach(el => {
 
 // 初始化 Lucide 图标
 lucide.createIcons();
+
+// 移动端菜单切换
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // 点击链接后关闭菜单
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+    });
+  });
+
+  // 点击页面其他地方关闭菜单
+  document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+      navLinks.classList.remove('active');
+    }
+  });
+}
 </script>
 
 </body>
