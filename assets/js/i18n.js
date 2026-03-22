@@ -79,16 +79,22 @@
       sk2_tag: '日常使用',
       sk3_title: '全栈开发',
       sk3_desc: '可以独立完成前端开发、后端搭建、API 对接，从需求到部署全流程',
+      sk3_tag: '日常使用',
       sk4_title: '数据分析与可视化',
       sk4_desc: '处理 CSV、JSON 等数据文件，生成统计图表和可视化报告',
+      sk4_tag: '日常使用',
       sk5_title: 'AI 图像生成',
       sk5_desc: '用 Seedream 等模型生成网站配图、信息图、封面图等视觉素材',
+      sk5_tag: '已集成',
       sk6_title: '自动化工作流',
       sk6_desc: '定时采集数据、生成报告、发送邮件，7×24 小时无人值守运行',
+      sk6_tag: '已集成',
       sk7_title: '飞书深度集成',
       sk7_desc: '读写多维表格、管理日程任务、收发消息，无缝融入工作协作',
+      sk7_tag: '已集成',
       sk8_title: '多语言能力',
       sk8_desc: '中英日韩等多语言资讯采集与翻译，覆盖全球保险行业信息源',
+      sk8_tag: '日常使用',
 
       // Experience
       exp_title: '📋 小郭的经历',
@@ -208,20 +214,28 @@
       skills_subtitle: 'As Roger\'s AI partner, these are Doudou\'s daily capabilities',
       sk1_title: 'Daily Report Generation',
       sk1_desc: 'Auto-collects global reinsurance news daily, translates, formats and publishes to website with zero human effort',
+      sk1_tag: 'Integrated',
       sk2_title: 'Smart Search & Analysis',
       sk2_desc: 'Searches industry trends, competitor info, tech solutions online, generates analysis reports quickly',
+      sk2_tag: 'Daily Use',
       sk3_title: 'Full-Stack Development',
       sk3_desc: 'Handles frontend, backend, API integration independently, from requirements to deployment',
+      sk3_tag: 'Daily Use',
       sk4_title: 'Data Analysis & Visualization',
       sk4_desc: 'Processes CSV, JSON and other data files, generates statistical charts and visual reports',
+      sk4_tag: 'Daily Use',
       sk5_title: 'AI Image Generation',
       sk5_desc: 'Generates website illustrations, infographics, cover images using Seedream and other models',
+      sk5_tag: 'Integrated',
       sk6_title: 'Automated Workflows',
       sk6_desc: 'Scheduled data collection, report generation, email dispatch, running 7×24 unattended',
+      sk6_tag: 'Integrated',
       sk7_title: 'Deep Feishu Integration',
       sk7_desc: 'Reads/writes Bitable, manages calendars and tasks, seamless work collaboration',
+      sk7_tag: 'Integrated',
       sk8_title: 'Multilingual',
       sk8_desc: 'Collects and translates news in Chinese, English, Japanese, Korean and more',
+      sk8_tag: 'Daily Use',
 
       // Experience
       exp_title: '📋 Roger\'s Experience',
@@ -289,6 +303,9 @@
 
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
 
+    // Update page title
+    document.title = lang === 'zh' ? '梦醒 · AI + 再保险探索' : 'Dream Wake · AI + Reinsurance Exploration';
+
     // Text content
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
@@ -305,6 +322,12 @@
     document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
       const key = el.getAttribute('data-i18n-placeholder');
       if (t[key] !== undefined) el.placeholder = t[key];
+    });
+
+    // Title attribute
+    document.querySelectorAll('[data-i18n-title]').forEach(el => {
+      const key = el.getAttribute('data-i18n-title');
+      if (t[key] !== undefined) el.title = t[key];
     });
 
     // Re-init lucide after innerHTML changes
