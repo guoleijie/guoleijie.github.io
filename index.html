@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta name="theme-color" content="#c0392b">
   <meta name="description" content="18年深耕保险科技，用 AI 重新定义再保险行业知识获取方式。每日再保险日报、行业趋势洞察、区块链+AI实践。">
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Ma+Shan+Zheng&display=swap');
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -667,7 +667,7 @@
         <a href="#about">关于</a>
       </div>
       <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.add('open')">
-        <iconify-icon icon="mdi:menu"></iconify-icon>
+        <i data-lucide="menu" style="width:24px;height:24px;"></i>
       </button>
     </div>
   </nav>
@@ -675,7 +675,7 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
     <button class="mobile-close" onclick="document.getElementById('mobileMenu').classList.remove('open')">
-      <iconify-icon icon="mdi:close"></iconify-icon>
+      <i data-lucide="x" style="width:28px;height:28px;"></i>
     </button>
     <a href="#hero" onclick="closeMobile()">首页</a>
     <a href="#milestone" onclick="closeMobile()">里程碑</a>
@@ -695,21 +695,21 @@
     <div class="deco-circle"></div>
 
     <div class="hero-content">
-      <div class="hero-badge"><iconify-icon icon="mdi:sparkles" style="color: #e67e22; width:16px; height:16px; vertical-align: middle;"></iconify-icon> AI + 再保险，我们一起探索</div>
+      <div class="hero-badge">✨ AI + 再保险，我们一起探索</div>
       <h1><span class="highlight">AI + 再保险</span>，我们一起探索的边界</h1>
       <p class="subtitle">18年深耕保险科技，用 AI 重新定义行业知识获取方式</p>
       <div class="hero-buttons">
         <a href="/blog/2026/03/22-daily-report.html" class="btn btn-primary">
-          <iconify-icon icon="mdi:newspaper-variant-outline" style="color: #2874a6"></iconify-icon> 查看日报
+          <i data-lucide="newspaper" style="width:18px;height:18px;"></i> 查看日报
         </a>
         <a href="#ai-explore" class="btn btn-outline">
-          <iconify-icon icon="mdi:compass" style="color: #c0392b"></iconify-icon> 了解更多
+          <i data-lucide="compass" style="width:18px;height:18px;"></i> 了解更多
         </a>
       </div>
       <div class="hero-tags">
-        <span><iconify-icon icon="mdi:link-variant" style="color: #c0392b; width:16px; height:16px; vertical-align: middle;"></iconify-icon> 区块链</span>
-        <span><iconify-icon icon="mdi:robot-outline" style="color: #2874a6; width:16px; height:16px; vertical-align: middle;"></iconify-icon> AI</span>
-        <span><iconify-icon icon="mdi:chart-bar" style="color: #38a169; width:16px; height:16px; vertical-align: middle;"></iconify-icon> 再保险</span>
+        <span>🔒 区块链</span>
+        <span>🤖 AI</span>
+        <span>📊 再保险</span>
       </div>
     </div>
 
@@ -724,26 +724,20 @@
     <div class="stats-inner">
       <div class="stat-item">
         <div class="stat-icon">
-          <img src="/assets/images/doudou-logo.png" alt="豆豆" style="width:32px;height:32px;object-fit:contain;">
+          <img src="/assets/images/doudou-logo.png" alt="豆豆" style="width:28px;height:28px;border-radius:50%;">
         </div>
         <div class="stat-label">7×24 AI 全天候运转</div>
       </div>
       <div class="stat-item">
-        <div class="stat-icon">
-          <iconify-icon icon="mdi:newspaper-variant-outline" style="color: #2874a6; width:28px; height:28px;"></iconify-icon>
-        </div>
+        <div class="stat-icon">📰</div>
         <div class="stat-label">每日再保险日报</div>
       </div>
       <div class="stat-item">
-        <div class="stat-icon">
-          <iconify-icon icon="mdi:link-variant" style="color: #c0392b; width:28px; height:28px;"></iconify-icon>
-        </div>
+        <div class="stat-icon">🔗</div>
         <div class="stat-label">区块链 + 再保险实践者</div>
       </div>
       <div class="stat-item">
-        <div class="stat-icon">
-          <iconify-icon icon="mdi:earth" style="color: #38a169; width:28px; height:28px;"></iconify-icon>
-        </div>
+        <div class="stat-icon">🌏</div>
         <div class="stat-label">国际再保险平台架构师</div>
       </div>
     </div>
@@ -752,20 +746,20 @@
   <!-- ===== MILESTONE ===== -->
   <section class="milestone-section" id="milestone">
     <div class="milestone-inner">
-      <div class="milestone-badge"><iconify-icon icon="mdi:party-popper" style="color: #c0392b; width:16px; height:16px; vertical-align: middle;"></iconify-icon> 里程碑 · 2026.03.22</div>
+      <div class="milestone-badge">🎉 里程碑 · 2026.03.22</div>
       <div class="milestone-image-wrapper">
         <img src="/assets/images/milestone-celebration.png" alt="豆豆庆祝网站上线">
       </div>
       <div class="milestone-text">
-        <h2><iconify-icon icon="mdi:dog" style="color: #e67e22; width:22px; height:22px; vertical-align: middle;"></iconify-icon><iconify-icon icon="mdi:rocket-launch-outline" style="color: #c0392b; width:22px; height:22px; vertical-align: middle;"></iconify-icon> 从零到上线，我们一起做到了！</h2>
+        <h2>🐕🚀 从零到上线，我们一起做到了！</h2>
         <p>从第一个像素到最后一行代码，这个网站是<strong>小郭</strong>和<strong>豆豆</strong>一起完成的。经过 5 轮设计迭代，从深色科技风到明亮温暖风，从空页面到日报系统完整上线 — 今天，我们庆祝这个里程碑！</p>
-        <p>日报是豆豆写的，图片是豆豆画的，代码也是豆豆写的。小郭负责方向把控、需求定义和最终验收。这就是人机协作的力量</p>
+        <p>日报是豆豆写的，图片是豆豆画的，代码也是豆豆写的。小郭负责方向把控、需求定义和最终验收。这就是人机协作的力量 💪</p>
       </div>
       <div class="milestone-meta">
-        <div class="milestone-meta-item"><iconify-icon icon="mdi:sync" style="color: #2874a6; width:14px; height:14px; vertical-align: middle;"></iconify-icon> <strong>5轮</strong> 设计迭代</div>
-        <div class="milestone-meta-item"><iconify-icon icon="mdi:newspaper-variant-outline" style="color: #2874a6; width:14px; height:14px; vertical-align: middle;"></iconify-icon> <strong>6期</strong> 日报已发布</div>
-        <div class="milestone-meta-item"><iconify-icon icon="mdi:palette-outline" style="color: #8e44ad; width:14px; height:14px; vertical-align: middle;"></iconify-icon> <strong>AI生成</strong> 视觉素材</div>
-        <div class="milestone-meta-item"><iconify-icon icon="mdi:tools" style="color: #e67e22; width:14px; height:14px; vertical-align: middle;"></iconify-icon> <strong>全栈</strong> 前后端开发</div>
+        <div class="milestone-meta-item">🔄 <strong>5轮</strong> 设计迭代</div>
+        <div class="milestone-meta-item">📰 <strong>6期</strong> 日报已发布</div>
+        <div class="milestone-meta-item">🎨 <strong>AI生成</strong> 视觉素材</div>
+        <div class="milestone-meta-item">🛠️ <strong>全栈</strong> 前后端开发</div>
       </div>
     </div>
   </section>
@@ -773,13 +767,13 @@
   <!-- ===== DAILY REPORTS ===== -->
   <section class="section" id="reports">
     <div class="section-inner">
-      <h2 class="section-title"><iconify-icon icon="mdi:newspaper-variant-outline" style="color: #2874a6; width:24px; height:24px; vertical-align: middle;"></iconify-icon> 每日行业日报</h2>
+      <h2 class="section-title">📰 每日行业日报</h2>
       <p class="section-desc">每日自动采集、翻译、整理全球再保险行业资讯</p>
       <div class="reports-grid">
 
         <a href="/blog/2026/03/22-daily-report.html" class="report-card">
           <div class="report-date">
-            <iconify-icon icon="mdi:calendar" style="color: #e67e22"></iconify-icon> 2026年3月22日
+            <i data-lucide="calendar" style="width:14px;height:14px;"></i> 2026年3月22日
           </div>
           <h3>再保险日报 · 第6期 | 2026年03月22日（周日）</h3>
           <ul class="report-summary">
@@ -787,12 +781,12 @@
             <li>重大理赔事件跟踪与影响分析</li>
             <li>监管政策更新与行业前瞻</li>
           </ul>
-          <span class="report-link">阅读全文 <iconify-icon icon="mdi:arrow-right" style="color: #c0392b"></iconify-icon></span>
+          <span class="report-link">阅读全文 <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span>
         </a>
 
         <a href="/blog/2026/03/21-daily-report.html" class="report-card">
           <div class="report-date">
-            <iconify-icon icon="mdi:calendar" style="color: #e67e22"></iconify-icon> 2026年3月21日
+            <i data-lucide="calendar" style="width:14px;height:14px;"></i> 2026年3月21日
           </div>
           <h3>再保险日报 · 第5期 | 2026年03月21日（周六）</h3>
           <ul class="report-summary">
@@ -800,12 +794,12 @@
             <li>AI 技术在风险管理中的新应用</li>
             <li>亚太地区再保险发展报告</li>
           </ul>
-          <span class="report-link">阅读全文 <iconify-icon icon="mdi:arrow-right" style="color: #c0392b"></iconify-icon></span>
+          <span class="report-link">阅读全文 <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span>
         </a>
 
         <a href="/blog/2026/03/20-daily-report.html" class="report-card">
           <div class="report-date">
-            <iconify-icon icon="mdi:calendar" style="color: #e67e22"></iconify-icon> 2026年3月20日
+            <i data-lucide="calendar" style="width:14px;height:14px;"></i> 2026年3月20日
           </div>
           <h3>再保险日报 · 第4期 | 2026年03月20日（周五）</h3>
           <ul class="report-summary">
@@ -813,13 +807,13 @@
             <li>保险公司数字化转型案例</li>
             <li>区块链在再保险结算中的应用</li>
           </ul>
-          <span class="report-link">阅读全文 <iconify-icon icon="mdi:arrow-right" style="color: #c0392b"></iconify-icon></span>
+          <span class="report-link">阅读全文 <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span>
         </a>
 
       </div>
       <div style="text-align:center; margin-top:32px;">
         <a href="/blog/index.html" class="btn btn-outline">
-          <iconify-icon icon="mdi:view-grid" style="color: #2874a6"></iconify-icon> 查看全部日报
+          <i data-lucide="layout-grid" style="width:18px;height:18px;"></i> 查看全部日报
         </a>
       </div>
     </div>
@@ -828,34 +822,34 @@
   <!-- ===== AI EXPLORE ===== -->
   <section class="section ai-section" id="ai-explore">
     <div class="section-inner">
-      <h2 class="section-title"><iconify-icon icon="mdi:robot-outline" style="color: #2874a6; width:24px; height:24px; vertical-align: middle;"></iconify-icon> AI 如何改变再保险</h2>
+      <h2 class="section-title">🤖 AI 如何改变再保险</h2>
       <p class="section-desc">从信息获取到趋势洞察，AI 正在重新定义保险科技的工作方式</p>
       <div class="ai-grid">
 
         <div class="ai-card">
-          <div class="ai-card-icon"><iconify-icon icon="mdi:newspaper-variant-outline" style="color: #2874a6; width:36px; height:36px;"></iconify-icon></div>
+          <div class="ai-card-icon">📰</div>
           <h3>智能日报生成</h3>
           <p>每日自动采集、翻译、整理全球再保险资讯，零人工参与。从数十个信息源中筛选关键内容，生成结构化行业日报。</p>
           <a href="#reports" class="ai-card-link">
-            查看效果 <iconify-icon icon="mdi:arrow-right" style="color: #c0392b"></iconify-icon>
+            查看效果 <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
           </a>
         </div>
 
         <div class="ai-card">
-          <div class="ai-card-icon"><iconify-icon icon="mdi:chart-bar" style="color: #38a169; width:36px; height:36px;"></iconify-icon></div>
+          <div class="ai-card-icon">📊</div>
           <h3>行业趋势洞察</h3>
           <p>AI 识别关键趋势，将海量信息转化为可行动的洞察。追踪市场变化、监管动态、技术革新，让决策更快更准。</p>
           <a href="#reports" class="ai-card-link">
-            了解更多 <iconify-icon icon="mdi:arrow-right" style="color: #c0392b"></iconify-icon>
+            了解更多 <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
           </a>
         </div>
 
         <div class="ai-card">
-          <div class="ai-card-icon"><iconify-icon icon="mdi:handshake-outline" style="color: #e67e22; width:36px; height:36px;"></iconify-icon></div>
+          <div class="ai-card-icon">🤝</div>
           <h3>区块链 + AI</h3>
           <p>将区块链的可信数据与 AI 的智能分析深度融合。在再保险登记交易、智能合约、数据共享中实现信任与效率的统一。</p>
           <a href="#about" class="ai-card-link">
-            了解实践 <iconify-icon icon="mdi:arrow-right" style="color: #c0392b"></iconify-icon>
+            了解实践 <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
           </a>
         </div>
 
@@ -867,62 +861,62 @@
   <section class="skills-section" id="skills">
     <div class="section-inner">
       <div class="section-header">
-        <h2 class="section-title"><iconify-icon icon="mdi:tools" style="color: #e67e22; width:24px; height:24px; vertical-align: middle;"></iconify-icon> 我能做什么</h2>
+        <h2 class="section-title">🛠️ 我能做什么</h2>
         <p class="section-desc">作为 AI 助手，这些是我每天都在用的能力</p>
       </div>
       <div class="skills-grid">
 
         <div class="skill-card">
-          <div class="skill-icon-wrap" style="background: rgba(40,116,166,0.08)"><iconify-icon icon="mdi:newspaper-variant-outline" style="color: #2874a6"></iconify-icon></div>
+          <div class="skill-icon-wrap"><i data-lucide="newspaper"></i></div>
           <h3>每日日报生成</h3>
           <p>每天自动采集全球再保险行业资讯，翻译、整理、排版，零人工参与发布到网站</p>
           <span class="skill-tag">已集成</span>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon-wrap" style="background: rgba(40,116,166,0.08)"><iconify-icon icon="mdi:magnify" style="color: #2874a6"></iconify-icon></div>
+          <div class="skill-icon-wrap"><i data-lucide="search"></i></div>
           <h3>智能搜索与分析</h3>
           <p>联网搜索行业动态、竞品信息、技术方案，快速生成分析报告</p>
           <span class="skill-tag">日常使用</span>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon-wrap" style="background: rgba(192,57,43,0.08)"><iconify-icon icon="mdi:code-braces" style="color: #c0392b"></iconify-icon></div>
+          <div class="skill-icon-wrap"><i data-lucide="code-2"></i></div>
           <h3>全栈开发</h3>
           <p>可以独立完成前端开发、后端搭建、API 对接，从需求到部署全流程</p>
           <span class="skill-tag">日常使用</span>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon-wrap" style="background: rgba(56,161,105,0.08)"><iconify-icon icon="mdi:chart-bar" style="color: #38a169"></iconify-icon></div>
+          <div class="skill-icon-wrap"><i data-lucide="bar-chart-3"></i></div>
           <h3>数据分析与可视化</h3>
           <p>处理 CSV、JSON 等数据文件，生成统计图表和可视化报告</p>
           <span class="skill-tag">日常使用</span>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon-wrap" style="background: rgba(142,68,173,0.08)"><iconify-icon icon="mdi:image-outline" style="color: #8e44ad"></iconify-icon></div>
+          <div class="skill-icon-wrap"><i data-lucide="image"></i></div>
           <h3>AI 图像生成</h3>
           <p>用 Seedream 等模型生成网站配图、信息图、封面图等视觉素材</p>
           <span class="skill-tag">已集成</span>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon-wrap" style="background: rgba(40,116,166,0.08)"><iconify-icon icon="mdi:workflow" style="color: #2874a6"></iconify-icon></div>
+          <div class="skill-icon-wrap"><i data-lucide="workflow"></i></div>
           <h3>自动化工作流</h3>
           <p>定时采集数据、生成报告、发送邮件，7×24 小时无人值守运行</p>
           <span class="skill-tag">已集成</span>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon-wrap" style="background: rgba(230,126,34,0.08)"><iconify-icon icon="mdi:message-text" style="color: #e67e22"></iconify-icon></div>
+          <div class="skill-icon-wrap"><i data-lucide="message-square"></i></div>
           <h3>飞书深度集成</h3>
           <p>读写多维表格、管理日程任务、收发消息，无缝融入工作协作</p>
           <span class="skill-tag">已集成</span>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon-wrap" style="background: rgba(40,116,166,0.08)"><iconify-icon icon="mdi:earth" style="color: #2874a6"></iconify-icon></div>
+          <div class="skill-icon-wrap"><i data-lucide="globe"></i></div>
           <h3>多语言能力</h3>
           <p>中英日韩等多语言资讯采集与翻译，覆盖全球保险行业信息源</p>
           <span class="skill-tag">日常使用</span>
@@ -936,7 +930,7 @@
   <section class="experience-section" id="experience">
     <div class="section-inner">
       <div class="section-header">
-        <h2 class="section-title"><iconify-icon icon="mdi:clipboard-text-outline" style="color: #c0392b; width:24px; height:24px; vertical-align: middle;"></iconify-icon> 我的经历</h2>
+        <h2 class="section-title">📋 我的经历</h2>
       </div>
       <div class="timeline">
 
@@ -1032,21 +1026,21 @@
             <div class="about-avatar">
               <img src="/assets/images/doudou-logo.png" alt="豆豆">
             </div>
-            <span class="about-avatar-name">豆豆 <iconify-icon icon="mdi:dog" style="color: #e67e22; width:16px; height:16px; vertical-align: middle;"></iconify-icon></span>
+            <span class="about-avatar-name">豆豆 🐕</span>
           </div>
         </div>
-        <h2 class="section-title"><iconify-icon icon="mdi:hand-wave" style="color: #e67e22; width:24px; height:24px; vertical-align: middle;"></iconify-icon> 关于我们</h2>
+        <h2 class="section-title">👋 关于我们</h2>
         <div class="about-text">
           <p><strong>小郭</strong> — 18年深耕保险科技的架构师，完成过国际再保险登记交易平台（区块链 + 再保险），AI 时代的新探索者。负责方向把控、需求定义和最终验收。</p>
-          <p><strong>豆豆</strong> <iconify-icon icon="mdi:dog" style="color: #e67e22; width:16px; height:16px; vertical-align: middle;"></iconify-icon> — 小郭的 AI 搭档，一只来自火星的卷毛小狗。负责日报撰写、图片生成、代码开发和自动化工作流，7×24 小时运转，从不抱怨。</p>
-          <p>这个网站就是我们的协作成果 — 人提出方向，AI 全力输出。人机协作，探索 AI + 再保险的无限可能</p>
+          <p><strong>豆豆</strong> 🐕 — 小郭的 AI 搭档，一只来自火星的卷毛小狗。负责日报撰写、图片生成、代码开发和自动化工作流，7×24 小时运转，从不抱怨。</p>
+          <p>这个网站就是我们的协作成果 — 人提出方向，AI 全力输出。人机协作，探索 AI + 再保险的无限可能 🤝</p>
         </div>
         <div class="about-contacts">
           <a href="mailto:roger_g@126.com" class="contact-btn">
-            <iconify-icon icon="mdi:email-outline" style="color: #c0392b"></iconify-icon> roger_g@126.com
+            <i data-lucide="mail" style="width:18px;height:18px;"></i> roger_g@126.com
           </a>
           <a href="https://github.com/guoleijie" target="_blank" class="contact-btn">
-            <iconify-icon icon="mdi:github" style="color: #333"></iconify-icon> GitHub
+            <i data-lucide="github" style="width:18px;height:18px;"></i> GitHub
           </a>
         </div>
       </div>
@@ -1055,16 +1049,17 @@
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p>© 2026 梦醒 · 小郭 & 豆豆 共同构建 · <iconify-icon icon="mdi:dog" style="color: #e67e22; width:14px; height:14px; vertical-align: middle;"></iconify-icon></p>
+    <p>© 2026 梦醒 · 小郭 & 豆豆 共同构建 · 用 AI 连接世界 🐕</p>
     <div class="footer-links">
       <a href="https://github.com/guoleijie" target="_blank">
-        <iconify-icon icon="mdi:github" style="color: #333"></iconify-icon> GitHub
+        <i data-lucide="github" style="width:16px;height:16px;"></i> GitHub
       </a>
     </div>
   </footer>
 
   <script>
-    // Iconify auto-renders, no init needed
+    // Initialize Lucide icons
+    lucide.createIcons();
 
     // Navbar scroll effect
     window.addEventListener('scroll', function() {
