@@ -131,6 +131,8 @@
 
       // About
       about_title: '👋 关于我们',
+      about_name_xiaoguo: '小郭',
+      about_name_doudou: '豆豆 🐕',
       about_p1: '<strong>小郭</strong> — 18年深耕保险科技的架构师，完成过国际再保险登记交易平台（区块链 + 再保险），AI 时代的新探索者。负责方向把控、需求定义和最终验收。',
       about_p2: '<strong>豆豆</strong> 🐕 — 小郭的 AI 搭档，一只来自火星的卷毛小狗。负责日报撰写、图片生成、代码开发和自动化工作流，7×24 小时运转，从不抱怨。',
       about_p3: '这个网站就是我们的协作成果 — 人提出方向，AI 全力输出。人机协作，探索 AI + 再保险的无限可能 🤝',
@@ -272,6 +274,8 @@
 
       // About
       about_title: '👋 About Us',
+      about_name_xiaoguo: 'Roger',
+      about_name_doudou: 'Doudou 🐕',
       about_p1: '<strong>Roger</strong> — An architect with 18 years of deep experience in InsurTech, who has delivered an international reinsurance registration and trading platform (blockchain + reinsurance). A new explorer in the AI era. Responsible for direction, requirements definition and final acceptance.',
       about_p2: '<strong>Doudou</strong> 🐕 — Roger\'s AI partner, a curly-haired puppy from Mars. Handles daily report writing, image generation, coding and automated workflows. Running 7×24, never complains.',
       about_p3: 'This website is the result of our collaboration — humans set the direction, AI delivers at full power. Human-AI collaboration, exploring the infinite possibilities of AI + Reinsurance 🤝',
