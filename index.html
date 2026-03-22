@@ -501,22 +501,22 @@
       padding: 80px 24px;
       background: var(--bg-section);
     }
-    .timeline {
+    .experience-timeline {
       position: relative;
       max-width: 800px; margin: 0 auto;
       padding-left: 36px;
     }
-    .timeline::before {
+    .experience-timeline::before {
       content: ''; position: absolute; left: 10px; top: 0; bottom: 0;
       width: 3px; background: var(--accent-primary);
       border-radius: 3px;
     }
-    .timeline-item {
+    .experience-timeline-item {
       position: relative;
       margin-bottom: 40px;
     }
-    .timeline-item:last-child { margin-bottom: 0; }
-    .timeline-item::before {
+    .experience-timeline-item:last-child { margin-bottom: 0; }
+    .experience-timeline-item::before {
       content: ''; position: absolute;
       left: -31px; top: 6px;
       width: 12px; height: 12px; border-radius: 50%;
@@ -551,7 +551,7 @@
       padding: 3px 12px; border-radius: 50px;
     }
 
-    /* ========== MILESTONE TIMELINE ========== */
+    /* ========== MILESTONE HORIZONTAL ========== */
     .milestone-section {
       background: var(--bg-primary);
       padding: 80px 24px;
@@ -559,12 +559,12 @@
       overflow: hidden;
     }
     .milestone-inner {
-      max-width: 960px;
+      max-width: 1120px;
       margin: 0 auto;
     }
     .milestone-header {
       text-align: center;
-      margin-bottom: 56px;
+      margin-bottom: 36px;
     }
     .milestone-header h2 {
       font-family: 'Long Cang', sans-serif;
@@ -575,74 +575,68 @@
       color: var(--text-secondary);
       font-size: 1rem;
     }
-    .timeline {
+    .milestone-track-wrapper {
       position: relative;
-      max-width: 820px;
-      margin: 0 auto;
-      padding-left: 0;
+      overflow: hidden;
+      margin: 0 -24px;
+      padding: 0 24px;
     }
-    .timeline::before {
+    .milestone-track-wrapper::before,
+    .milestone-track-wrapper::after {
       content: '';
       position: absolute;
-      left: 50%;
       top: 0;
       bottom: 0;
-      width: 3px;
-      background: var(--accent-primary);
-      transform: translateX(-50%);
-      border-radius: 3px;
+      width: 60px;
+      z-index: 5;
+      pointer-events: none;
     }
-    .tl-item {
-      position: relative;
-      width: 45%;
-      margin-bottom: 48px;
-      opacity: 0;
-      animation: fadeInUp 0.6s ease-out forwards;
+    .milestone-track-wrapper::before {
+      left: 0;
+      background: linear-gradient(to right, var(--bg-primary), transparent);
     }
-    .tl-item:nth-child(1) { animation-delay: 0.1s; margin-left: 0; }
-    .tl-item:nth-child(2) { animation-delay: 0.2s; margin-left: auto; }
-    .tl-item:nth-child(3) { animation-delay: 0.3s; margin-left: 0; }
-    .tl-item:nth-child(4) { animation-delay: 0.4s; margin-left: auto; }
-    .tl-item:nth-child(5) { animation-delay: 0.5s; margin-left: 0; }
-    .tl-item:last-child { margin-bottom: 0; }
-    .tl-item::before {
-      content: '';
-      position: absolute;
-      top: 20px;
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      background: #fff;
-      border: 3px solid var(--accent-primary);
-      box-shadow: 0 0 0 4px rgba(192,57,43,0.15);
-      z-index: 2;
+    .milestone-track-wrapper::after {
+      right: 0;
+      background: linear-gradient(to left, var(--bg-primary), transparent);
     }
-    .tl-item:nth-child(odd)::before { right: -32px; }
-    .tl-item:nth-child(even)::before { left: -32px; }
-    .tl-card {
+    .milestone-track {
+      display: flex;
+      gap: 24px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+      padding: 16px 4px 24px;
+      scrollbar-width: none;
+    }
+    .milestone-track::-webkit-scrollbar { display: none; }
+    .milestone-card {
+      flex: 0 0 280px;
+      scroll-snap-align: start;
       background: var(--bg-card);
       border-radius: var(--radius);
       overflow: hidden;
       box-shadow: var(--shadow);
       transition: all var(--transition);
       border: 1px solid var(--border);
+      cursor: pointer;
     }
-    .tl-card:hover {
-      transform: translateY(-4px);
+    .milestone-card:hover {
+      transform: translateY(-6px);
       box-shadow: var(--shadow-hover);
       border-color: var(--accent-primary);
     }
-    .tl-card-img {
+    .milestone-card-img {
       width: 100%;
-      height: 180px;
+      height: 160px;
       object-fit: cover;
     }
-    .tl-card-body {
-      padding: 20px 24px;
+    .milestone-card-body {
+      padding: 20px;
     }
-    .tl-date {
+    .milestone-card-date {
       font-family: 'ZCOOL KuaiLe', sans-serif;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       color: var(--accent-primary);
       font-weight: 700;
       margin-bottom: 6px;
@@ -650,19 +644,70 @@
       align-items: center;
       gap: 6px;
     }
-    .tl-title {
+    .milestone-card-date i {
+      width: 14px;
+      height: 14px;
+    }
+    .milestone-card-title {
       font-family: 'ZCOOL KuaiLe', sans-serif;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       font-weight: 700;
       color: var(--text-primary);
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       line-height: 1.4;
     }
-    .tl-desc {
-      font-size: 0.88rem;
+    .milestone-card-desc {
+      font-size: 0.85rem;
       color: var(--text-secondary);
-      line-height: 1.8;
+      line-height: 1.7;
     }
+    .milestone-dots {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .milestone-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--border);
+      cursor: pointer;
+      transition: all var(--transition);
+      border: none;
+      padding: 0;
+    }
+    .milestone-dot.active {
+      background: var(--accent-primary);
+      width: 24px;
+      border-radius: 4px;
+    }
+    .milestone-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1.5px solid var(--border);
+      background: var(--bg-card);
+      cursor: pointer;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: var(--text-secondary);
+      box-shadow: var(--shadow);
+      transition: all var(--transition);
+    }
+    .milestone-arrow:hover {
+      border-color: var(--accent-primary);
+      color: var(--accent-primary);
+      transform: translateY(-50%) scale(1.08);
+    }
+    .milestone-arrow-left { left: 8px; }
+    .milestone-arrow-right { right: 8px; }
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -686,11 +731,10 @@
       .skills-grid { grid-template-columns: repeat(2, 1fr); }
       .stats-inner { grid-template-columns: repeat(2, 1fr); }
       .hero h1 { font-size: 2rem; }
-      /* Timeline: on tablet, stack to left */
-      .timeline::before { left: 20px; }
-      .tl-item { width: calc(100% - 50px); margin-left: 50px !important; }
-      .tl-item::before { left: -37px !important; right: auto !important; }
-      .tl-item:nth-child(odd)::before, .tl-item:nth-child(even)::before { left: -37px; }
+      /* Experience timeline: on tablet, stack to left */
+      .experience-timeline::before { left: 20px; }
+      /* Milestone horizontal: smaller cards on tablet */
+      .milestone-card { flex: 0 0 240px; }
     }
     @media (max-width: 640px) {
       .nav-links { display: none; }
@@ -808,63 +852,64 @@
         <h2>🚀 里程碑</h2>
         <p>从第一行代码到今天的全面升级，记录我们的每一步</p>
       </div>
-      <div class="timeline">
+      <div class="milestone-track-wrapper">
+        <button class="milestone-arrow milestone-arrow-left" id="msPrev">←</button>
+        <button class="milestone-arrow milestone-arrow-right" id="msNext">→</button>
+        <div class="milestone-track" id="msTrack">
 
-        <div class="tl-item">
-          <div class="tl-card">
-            <img src="/assets/images/milestone-v1-launch.png" alt="V1.0 首版上线" class="tl-card-img">
-            <div class="tl-card-body">
-              <div class="tl-date"><i data-lucide="rocket" style="width:14px;height:14px;"></i> 2026.03.09</div>
-              <h3 class="tl-title">V1.0 首版上线</h3>
-              <p class="tl-desc">从零开始，豆豆用 AI 搭建了第一个版本的网站，包括基础首页和个人简介。第一次把代码推送到 GitHub Pages。</p>
+          <div class="milestone-card">
+            <img src="/assets/images/milestone-v1-launch.png" alt="V1.0" class="milestone-card-img">
+            <div class="milestone-card-body">
+              <div class="milestone-card-date"><i data-lucide="rocket" style="width:14px;height:14px;"></i> 2026.03.09</div>
+              <h3 class="milestone-card-title">V1.0 首版上线</h3>
+              <p class="milestone-card-desc">豆豆用 AI 搭建第一个版本网站，包括首页和个人简介。首次推送到 GitHub Pages。</p>
             </div>
           </div>
-        </div>
 
-        <div class="tl-item">
-          <div class="tl-card">
-            <img src="/assets/images/hero-banner-light.png" alt="风格改版" class="tl-card-img">
-            <div class="tl-card-body">
-              <div class="tl-date"><i data-lucide="palette" style="width:14px;height:14px;"></i> 2026.03.10</div>
-              <h3 class="tl-title">风格改版</h3>
-              <p class="tl-desc">参考 sanwan.ai 的设计风格，全面调整配色和字体，引入 Lucide 图标库，确定明亮温暖的视觉方向。</p>
+          <div class="milestone-card">
+            <img src="/assets/images/hero-banner-light.png" alt="风格改版" class="milestone-card-img">
+            <div class="milestone-card-body">
+              <div class="milestone-card-date"><i data-lucide="palette" style="width:14px;height:14px;"></i> 2026.03.10</div>
+              <h3 class="milestone-card-title">风格改版</h3>
+              <p class="milestone-card-desc">参考 sanwan.ai 风格，全面调整配色和字体，引入 Lucide 图标，确定明亮温暖方向。</p>
             </div>
           </div>
-        </div>
 
-        <div class="tl-item">
-          <div class="tl-card">
-            <img src="/assets/images/milestone-daily-report.png" alt="日报系统上线" class="tl-card-img">
-            <div class="tl-card-body">
-              <div class="tl-date"><i data-lucide="newspaper" style="width:14px;height:14px;"></i> 2026.03.16</div>
-              <h3 class="tl-title">日报系统上线</h3>
-              <p class="tl-desc">上线每日再保险行业日报自动生成功能，从信息采集、翻译、整理到发布全流程 AI 自动化。</p>
+          <div class="milestone-card">
+            <img src="/assets/images/milestone-daily-report.png" alt="日报系统" class="milestone-card-img">
+            <div class="milestone-card-body">
+              <div class="milestone-card-date"><i data-lucide="newspaper" style="width:14px;height:14px;"></i> 2026.03.16</div>
+              <h3 class="milestone-card-title">日报系统上线</h3>
+              <p class="milestone-card-desc">每日再保险行业日报自动生成，从采集、翻译到发布全流程 AI 自动化。</p>
             </div>
           </div>
-        </div>
 
-        <div class="tl-item">
-          <div class="tl-card">
-            <img src="/assets/images/daily-report-light.png" alt="品牌确立" class="tl-card-img">
-            <div class="tl-card-body">
-              <div class="tl-date"><i data-lucide="bookmark" style="width:14px;height:14px;"></i> 2026.03.18</div>
-              <h3 class="tl-title">品牌确立</h3>
-              <p class="tl-desc">网站命名为「梦醒」，日报持续迭代优化，移动端适配完善，开始形成稳定的内容输出节奏。</p>
+          <div class="milestone-card">
+            <img src="/assets/images/daily-report-light.png" alt="品牌确立" class="milestone-card-img">
+            <div class="milestone-card-body">
+              <div class="milestone-card-date"><i data-lucide="bookmark" style="width:14px;height:14px;"></i> 2026.03.18</div>
+              <h3 class="milestone-card-title">品牌确立</h3>
+              <p class="milestone-card-desc">网站命名「梦醒」，日报持续迭代，移动端适配完善，稳定内容输出节奏。</p>
             </div>
           </div>
-        </div>
 
-        <div class="tl-item">
-          <div class="tl-card">
-            <img src="/assets/images/milestone-celebration.png" alt="V2.0 全面升级" class="tl-card-img">
-            <div class="tl-card-body">
-              <div class="tl-date"><i data-lucide="sparkles" style="width:14px;height:14px;"></i> 2026.03.22</div>
-              <h3 class="tl-title">V2.0 全面升级</h3>
-              <p class="tl-desc">经过 5 轮设计迭代，新增豆豆专属 Logo、技能展示、经历时间线、里程碑板块。关于我改为「关于我们」，全面体现人机协作理念。</p>
+          <div class="milestone-card">
+            <img src="/assets/images/milestone-celebration.png" alt="V2.0" class="milestone-card-img">
+            <div class="milestone-card-body">
+              <div class="milestone-card-date"><i data-lucide="sparkles" style="width:14px;height:14px;"></i> 2026.03.22</div>
+              <h3 class="milestone-card-title">V2.0 全面升级</h3>
+              <p class="milestone-card-desc">5轮设计迭代，新增豆豆Logo、技能展示、经历时间线、里程碑板块。</p>
             </div>
           </div>
-        </div>
 
+        </div>
+      </div>
+      <div class="milestone-dots">
+        <button class="milestone-dot active" data-idx="0"></button>
+        <button class="milestone-dot" data-idx="1"></button>
+        <button class="milestone-dot" data-idx="2"></button>
+        <button class="milestone-dot" data-idx="3"></button>
+        <button class="milestone-dot" data-idx="4"></button>
       </div>
     </div>
   </section>
@@ -1037,9 +1082,9 @@
       <div class="section-header">
         <h2 class="section-title">📋 我的经历</h2>
       </div>
-      <div class="timeline">
+      <div class="experience-timeline">
 
-        <div class="timeline-item">
+        <div class="experience-timeline-item">
           <div class="timeline-year">2018 - 至今</div>
           <div class="timeline-company">国际再保险平台</div>
           <div class="timeline-role">技术架构负责人</div>
@@ -1051,7 +1096,7 @@
           </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="experience-timeline-item">
           <div class="timeline-year">2017 - 2018</div>
           <div class="timeline-company">区块链医疗数据平台</div>
           <div class="timeline-role">技术负责人</div>
@@ -1063,7 +1108,7 @@
           </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="experience-timeline-item">
           <div class="timeline-year">2017</div>
           <div class="timeline-company">健康险业务平台</div>
           <div class="timeline-role">技术负责人</div>
@@ -1075,7 +1120,7 @@
           </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="experience-timeline-item">
           <div class="timeline-year">2016</div>
           <div class="timeline-company">保险科技基础设施建设</div>
           <div class="timeline-role">架构师</div>
@@ -1087,7 +1132,7 @@
           </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="experience-timeline-item">
           <div class="timeline-year">2013 - 2016</div>
           <div class="timeline-company">国际保险核心系统</div>
           <div class="timeline-role">技术负责人（15人团队）</div>
@@ -1099,7 +1144,7 @@
           </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="experience-timeline-item">
           <div class="timeline-year">2009 - 2013</div>
           <div class="timeline-company">保险核心产品研发</div>
           <div class="timeline-role">高级软件工程师</div>
@@ -1165,6 +1210,35 @@
   <script>
     // Initialize Lucide icons
     lucide.createIcons();
+
+    // Milestone horizontal slider
+    (function() {
+      const track = document.getElementById('msTrack');
+      const dots = document.querySelectorAll('.milestone-dot');
+      const prevBtn = document.getElementById('msPrev');
+      const nextBtn = document.getElementById('msNext');
+      if (!track) return;
+      const cards = track.querySelectorAll('.milestone-card');
+      const cardWidth = 304; // card width + gap
+      let currentIndex = 0;
+
+      function scrollTo(idx) {
+        currentIndex = Math.max(0, Math.min(idx, cards.length - 1));
+        track.scrollTo({ left: currentIndex * cardWidth, behavior: 'smooth' });
+        updateDots();
+      }
+      function updateDots() {
+        const scrollLeft = track.scrollLeft;
+        const nearest = Math.round(scrollLeft / cardWidth);
+        dots.forEach((d, i) => d.classList.toggle('active', i === nearest));
+      }
+      prevBtn.addEventListener('click', () => scrollTo(currentIndex - 1));
+      nextBtn.addEventListener('click', () => scrollTo(currentIndex + 1));
+      dots.forEach(d => d.addEventListener('click', () => scrollTo(+d.dataset.idx)));
+      track.addEventListener('scroll', updateDots, { passive: true });
+      // Touch hint: auto-scroll to first on load
+      setTimeout(() => scrollTo(0), 300);
+    })();
 
     // Navbar scroll effect
     window.addEventListener('scroll', function() {
