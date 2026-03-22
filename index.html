@@ -386,8 +386,26 @@
       width: 80px; height: 80px; border-radius: 50%;
       background: var(--bg-card);
       display: flex; align-items: center; justify-content: center;
-      font-size: 2.2rem; margin: 0 auto 24px;
+      font-size: 2.2rem; margin: 0 auto;
       box-shadow: 0 4px 20px rgba(192,57,43,0.2);
+      overflow: hidden;
+    }
+    .about-avatar img {
+      width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
+    }
+    .about-avatars {
+      display: flex; align-items: center; justify-content: center;
+      gap: 16px; margin-bottom: 24px;
+    }
+    .about-avatar-item {
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+    }
+    .about-avatar-name {
+      font-size: 0.88rem; font-weight: 700; color: var(--text-primary);
+    }
+    .about-avatar-plus {
+      font-size: 1.5rem; font-weight: 700; color: var(--accent-primary);
+      margin-bottom: 20px;
     }
     .about-text p {
       font-size: 1.02rem; color: var(--text-secondary);
@@ -996,14 +1014,26 @@
   <section class="section about-section" id="about">
     <div class="section-inner">
       <div class="about-content">
-        <div class="about-avatar">
-          <img src="/assets/images/doudou-logo.png" alt="豆豆" style="width:60px;height:60px;border-radius:50%;">
+        <div class="about-avatars">
+          <div class="about-avatar-item">
+            <div class="about-avatar">
+              <img src="/assets/images/xiaoguo-cartoon.jpg" alt="小郭">
+            </div>
+            <span class="about-avatar-name">小郭</span>
+          </div>
+          <div class="about-avatar-plus">+</div>
+          <div class="about-avatar-item">
+            <div class="about-avatar">
+              <img src="/assets/images/doudou-logo.png" alt="豆豆">
+            </div>
+            <span class="about-avatar-name">豆豆 🐕</span>
+          </div>
         </div>
-        <h2 class="section-title">👋 关于我</h2>
+        <h2 class="section-title">👋 关于我们</h2>
         <div class="about-text">
-          <p>你好，我是 <strong>小郭</strong>，一个在保险科技领域摸爬滚打了18年的架构师。旁边这位是 <strong>豆豆</strong> 🐕，我的 AI 搭档。</p>
-          <p>完成过国际再保险登记交易平台的建设（区块链 + 再保险），现在正在探索 AI 能为这个行业带来什么。</p>
-          <p>这个网站是我们俩一起搭的 — 日报是豆豆写的，图片是豆豆画的，代码也是豆豆写的。我负责提需求和方向把控，豆豆负责全力输出。人机协作，就是我们的工作方式 🤝</p>
+          <p><strong>小郭</strong> — 18年深耕保险科技的架构师，完成过国际再保险登记交易平台（区块链 + 再保险），AI 时代的新探索者。负责方向把控、需求定义和最终验收。</p>
+          <p><strong>豆豆</strong> 🐕 — 小郭的 AI 搭档，一只来自火星的卷毛小狗。负责日报撰写、图片生成、代码开发和自动化工作流，7×24 小时运转，从不抱怨。</p>
+          <p>这个网站就是我们的协作成果 — 人提出方向，AI 全力输出。人机协作，探索 AI + 再保险的无限可能 🤝</p>
         </div>
         <div class="about-contacts">
           <a href="mailto:roger_g@126.com" class="contact-btn">
