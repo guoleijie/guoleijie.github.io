@@ -10,7 +10,7 @@
   <meta name="theme-color" content="#c0392b">
 
   <!-- SEO Meta -->
-  <meta name="description" content="18年深耕保险科技，用 AI 重新定义再保险行业知识获取方式。每日再保险日报、行业趋势洞察、区块链+AI实践。">
+  <meta name="description" content="18年深耕保险科技，用 AI 重新定义再保险行业知识获取方式。<span data-i18n="stat_daily">每日再保险日报</span>、行业趋势洞察、区块链+AI实践。">
   <meta name="keywords" content="再保险,保险科技,AI,人工智能,区块链,日报,梦醒,reinsurance,insurtech">
   <meta name="author" content="梦醒">
   <link rel="canonical" href="https://guoleijie.github.io/">
@@ -18,7 +18,7 @@
   <!-- Open Graph (社交分享) -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="梦醒 · AI + 再保险探索">
-  <meta property="og:description" content="18年深耕保险科技，用 AI 重新定义再保险行业知识获取方式。每日再保险日报、行业趋势洞察。">
+  <meta property="og:description" content="18年深耕保险科技，用 AI 重新定义再保险行业知识获取方式。<span data-i18n="stat_daily">每日再保险日报</span>、行业趋势洞察。">
   <meta property="og:image" content="https://guoleijie.github.io/assets/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -53,6 +53,7 @@
   }
   </script>
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="/assets/js/i18n.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Ma+Shan+Zheng&display=swap');
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -142,6 +143,19 @@
     }
     .nav-links a:hover { color: var(--accent-primary); }
     .nav-links a:hover::after { width: 100%; }
+
+    /* Language toggle */
+    .lang-btn {
+      font-size: 0.82rem; font-weight: 600;
+      padding: 4px 14px; border-radius: 50px;
+      border: 1.5px solid var(--border);
+      background: transparent; color: var(--text-secondary);
+      cursor: pointer; transition: all var(--transition);
+      font-family: inherit;
+    }
+    .lang-btn:hover { border-color: var(--accent-primary); color: var(--accent-primary); }
+    .lang-btn.active { background: var(--accent-primary); color: #fff; border-color: var(--accent-primary); }
+    .nav-links .lang-btn { margin-left: 8px; }
 
     .hamburger {
       display: none; background: none; border: none; cursor: pointer;
@@ -848,13 +862,15 @@
         <img src="/assets/images/doudou-logo.webp" alt="豆豆" style="width:28px;height:28px;border-radius:50%;"> 梦醒
       </a>
       <div class="nav-links">
-        <a href="#hero">首页</a>
-        <a href="#milestone">里程碑</a>
-        <a href="#reports">日报</a>
-        <a href="#skills">技能</a>
-        <a href="#experience">经历</a>
-        <a href="#ai-explore">AI探索</a>
-        <a href="#about">关于</a>
+        <a href="#hero" data-i18n="nav_home">首页</a>
+        <a href="#milestone" data-i18n="nav_milestone">里程碑</a>
+        <a href="#reports" data-i18n="nav_reports">日报</a>
+        <a href="#skills" data-i18n="nav_skills">技能</a>
+        <a href="#experience" data-i18n="nav_experience">经历</a>
+        <a href="#ai-explore" data-i18n="nav_ai_explore">AI探索</a>
+        <a href="#about" data-i18n="nav_about">关于</a>
+        <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn active" data-lang="zh" onclick="setLang('zh')">中</button>
       </div>
       <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.add('open')">
         <i data-lucide="menu" style="width:24px;height:24px;"></i>
@@ -867,13 +883,17 @@
     <button class="mobile-close" onclick="document.getElementById('mobileMenu').classList.remove('open')">
       <i data-lucide="x" style="width:28px;height:28px;"></i>
     </button>
-    <a href="#hero" onclick="closeMobile()">首页</a>
-    <a href="#milestone" onclick="closeMobile()">里程碑</a>
-    <a href="#reports" onclick="closeMobile()">日报</a>
-    <a href="#skills" onclick="closeMobile()">技能</a>
-    <a href="#experience" onclick="closeMobile()">经历</a>
-      <a href="#ai-explore" onclick="closeMobile()">AI探索</a>
-    <a href="#about" onclick="closeMobile()">关于</a>
+    <a href="#hero" onclick="closeMobile()" data-i18n="nav_home">首页</a>
+    <a href="#milestone" onclick="closeMobile()" data-i18n="nav_milestone">里程碑</a>
+    <a href="#reports" onclick="closeMobile()" data-i18n="nav_reports">日报</a>
+    <a href="#skills" onclick="closeMobile()" data-i18n="nav_skills">技能</a>
+    <a href="#experience" onclick="closeMobile()" data-i18n="nav_experience">经历</a>
+    <a href="#ai-explore" onclick="closeMobile()" data-i18n="nav_ai_explore">AI探索</a>
+    <a href="#about" onclick="closeMobile()" data-i18n="nav_about">关于</a>
+    <div style="display:flex;gap:12px;margin-top:12px;">
+      <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn active" data-lang="zh" onclick="setLang('zh')">中</button>
+    </div>
   </div>
 
   <!-- ===== HERO ===== -->
@@ -886,21 +906,21 @@
     <div class="deco-circle"></div>
 
     <div class="hero-content">
-      <div class="hero-badge">✨ AI + 再保险，我们一起探索</div>
-      <h1><span class="highlight">AI + 再保险</span>，我们一起探索的边界</h1>
-      <p class="subtitle">18年深耕保险科技，用 AI 重新定义行业知识获取方式</p>
+      <div class="hero-badge" data-i18n="hero_badge">✨ AI + 再保险，我们一起探索</div>
+      <h1 data-i18n-html="hero_title"><span class="highlight">AI + 再保险</span>，我们一起探索的边界</h1>
+      <p class="subtitle" data-i18n="hero_subtitle">18年深耕保险科技，用 AI 重新定义行业知识获取方式</p>
       <div class="hero-buttons">
         <a href="/blog/2026/03/22-daily-report.html" class="btn btn-primary">
-          <i data-lucide="newspaper" style="width:18px;height:18px;"></i> 查看日报
+          <i data-lucide="newspaper" style="width:18px;height:18px;"></i> <span data-i18n="hero_btn_reports">查看日报</span>
         </a>
         <a href="#ai-explore" class="btn btn-outline">
-          <i data-lucide="compass" style="width:18px;height:18px;"></i> 了解更多
+          <i data-lucide="compass" style="width:18px;height:18px;"></i> <span data-i18n="hero_btn_learn">了解更多</span>
         </a>
       </div>
       <div class="hero-tags">
-        <span>🔒 区块链</span>
-        <span>🤖 AI</span>
-        <span>📊 再保险</span>
+        <span data-i18n="hero_tag_blockchain">🔒 区块链</span>
+        <span data-i18n="hero_tag_ai">🤖 AI</span>
+        <span data-i18n="hero_tag_reinsurance">📊 再保险</span>
       </div>
     </div>
 
@@ -917,19 +937,19 @@
         <div class="stat-icon">
           <img src="/assets/images/doudou-logo.webp" alt="豆豆" style="width:28px;height:28px;border-radius:50%;">
         </div>
-        <div class="stat-label">7×24 AI 全天候运转</div>
+        <div class="stat-label"><span data-i18n="stat_ai">7×24 AI 全天候运转</span></div>
       </div>
       <div class="stat-item">
         <div class="stat-icon">📰</div>
-        <div class="stat-label">每日再保险日报</div>
+        <div class="stat-label"><span data-i18n="stat_daily">每日再保险日报</span></div>
       </div>
       <div class="stat-item">
         <div class="stat-icon">🔗</div>
-        <div class="stat-label">区块链 + 再保险实践者</div>
+        <div class="stat-label"><span data-i18n="stat_blockchain">区块链 + 再保险实践者</span></div>
       </div>
       <div class="stat-item">
         <div class="stat-icon">🌏</div>
-        <div class="stat-label">国际再保险平台架构师</div>
+        <div class="stat-label"><span data-i18n="stat_architect">国际再保险平台架构师</span></div>
       </div>
     </div>
   </section>
@@ -938,8 +958,8 @@
   <section class="milestone-section" id="milestone">
     <div class="milestone-inner">
       <div class="milestone-header">
-        <h2>🚀 里程碑</h2>
-        <p>从第一行代码到今天的全面升级，记录我们的每一步</p>
+        <h2 data-i18n="ms_title">🚀 里程碑</h2>
+        <p data-i18n="ms_subtitle">从第一行代码到今天的全面升级，记录我们的每一步</p>
       </div>
       <div class="milestone-track-wrapper">
         <button class="milestone-arrow milestone-arrow-left" id="msPrev">←</button>
@@ -950,8 +970,8 @@
             <img src="/assets/images/milestone-v1-launch.webp" alt="V1.0" class="milestone-card-img" loading="lazy">
             <div class="milestone-card-body">
               <div class="milestone-card-date"><i data-lucide="rocket" style="width:14px;height:14px;"></i> 2026.03.09</div>
-              <h3 class="milestone-card-title">V1.0 首版上线</h3>
-              <p class="milestone-card-desc">豆豆用 AI 搭建第一个版本网站，包括首页和个人简介。首次推送到 GitHub Pages。</p>
+              <h3 class="milestone-card-title" data-i18n="ms_v1_title">V1.0 首版上线</h3>
+              <p class="milestone-card-desc"><span class="data-i18n-span" data-i18n="ms_v1_desc">豆豆用 AI 搭建第一个版本网站，包括首页和个人简介。首次推送到 GitHub Pages。</span></p>
             </div>
           </div>
 
@@ -959,8 +979,8 @@
             <img src="/assets/images/hero-banner-light.webp" alt="风格改版" class="milestone-card-img" loading="lazy">
             <div class="milestone-card-body">
               <div class="milestone-card-date"><i data-lucide="palette" style="width:14px;height:14px;"></i> 2026.03.10</div>
-              <h3 class="milestone-card-title">风格改版</h3>
-              <p class="milestone-card-desc">参考 sanwan.ai 风格，全面调整配色和字体，引入 Lucide 图标，确定明亮温暖方向。</p>
+              <h3 class="milestone-card-title" data-i18n="ms_style_title">风格改版</h3>
+              <p class="milestone-card-desc"><span class="data-i18n-span" data-i18n="ms_style_desc">参考 sanwan.ai 风格，全面调整配色和字体，引入 Lucide 图标，确定明亮温暖方向。</span></p>
             </div>
           </div>
 
@@ -968,8 +988,8 @@
             <img src="/assets/images/milestone-daily-report.webp" alt="日报系统" class="milestone-card-img" loading="lazy">
             <div class="milestone-card-body">
               <div class="milestone-card-date"><i data-lucide="newspaper" style="width:14px;height:14px;"></i> 2026.03.16</div>
-              <h3 class="milestone-card-title">日报系统上线</h3>
-              <p class="milestone-card-desc">每日再保险行业日报自动生成，从采集、翻译到发布全流程 AI 自动化。</p>
+              <h3 class="milestone-card-title" data-i18n="ms_report_title">日报系统上线</h3>
+              <p class="milestone-card-desc"><span class="data-i18n-span" data-i18n="ms_report_desc">每日再保险行业日报自动生成，从采集、翻译到发布全流程 AI 自动化。</span></p>
             </div>
           </div>
 
@@ -977,8 +997,8 @@
             <img src="/assets/images/daily-report-light.webp" alt="品牌确立" class="milestone-card-img" loading="lazy">
             <div class="milestone-card-body">
               <div class="milestone-card-date"><i data-lucide="bookmark" style="width:14px;height:14px;"></i> 2026.03.18</div>
-              <h3 class="milestone-card-title">品牌确立</h3>
-              <p class="milestone-card-desc">网站命名「梦醒」，日报持续迭代，移动端适配完善，稳定内容输出节奏。</p>
+              <h3 class="milestone-card-title" data-i18n="ms_brand_title">品牌确立</h3>
+              <p class="milestone-card-desc"><span class="data-i18n-span" data-i18n="ms_brand_desc">网站命名「梦醒」，日报持续迭代，移动端适配完善，稳定内容输出节奏。</span></p>
             </div>
           </div>
 
@@ -986,8 +1006,8 @@
             <img src="/assets/images/milestone-celebration.webp" alt="V2.0" class="milestone-card-img" loading="lazy">
             <div class="milestone-card-body">
               <div class="milestone-card-date"><i data-lucide="sparkles" style="width:14px;height:14px;"></i> 2026.03.22</div>
-              <h3 class="milestone-card-title">V2.0 全面升级</h3>
-              <p class="milestone-card-desc">5轮设计迭代，新增豆豆Logo、技能展示、经历时间线、里程碑板块。</p>
+              <h3 class="milestone-card-title" data-i18n="ms_v2_title">V2.0 全面升级</h3>
+              <p class="milestone-card-desc"><span class="data-i18n-span" data-i18n="ms_v2_desc">5轮设计迭代，新增豆豆Logo、技能展示、经历时间线、里程碑板块。</span></p>
             </div>
           </div>
 
@@ -1006,8 +1026,8 @@
   <!-- ===== DAILY REPORTS ===== -->
   <section class="section" id="reports">
     <div class="section-inner">
-      <h2 class="section-title">📰 每日行业日报</h2>
-      <p class="section-desc">每日自动采集、翻译、整理全球再保险行业资讯</p>
+      <h2 class="section-title" data-i18n="reports_title">📰 每日行业日报</h2>
+      <p class="section-desc"><span data-i18n="reports_subtitle">每日自动采集、翻译、整理全球再保险行业资讯</span></p>
       <div class="reports-grid">
 
         <a href="/blog/2026/03/22-daily-report.html" class="report-card">
@@ -1020,7 +1040,7 @@
             <li>重大理赔事件跟踪与影响分析</li>
             <li>监管政策更新与行业前瞻</li>
           </ul>
-          <span class="report-link">阅读全文 <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span>
+          <span class="report-link"><span data-i18n="reports_read_more">阅读全文</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span>
         </a>
 
         <a href="/blog/2026/03/21-daily-report.html" class="report-card">
@@ -1033,7 +1053,7 @@
             <li>AI 技术在风险管理中的新应用</li>
             <li>亚太地区再保险发展报告</li>
           </ul>
-          <span class="report-link">阅读全文 <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span>
+          <span class="report-link"><span data-i18n="reports_read_more">阅读全文</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span>
         </a>
 
         <a href="/blog/2026/03/20-daily-report.html" class="report-card">
@@ -1046,13 +1066,13 @@
             <li>保险公司数字化转型案例</li>
             <li>区块链在再保险结算中的应用</li>
           </ul>
-          <span class="report-link">阅读全文 <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span>
+          <span class="report-link"><span data-i18n="reports_read_more">阅读全文</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span>
         </a>
 
       </div>
       <div style="text-align:center; margin-top:32px;">
         <a href="/blog/index.html" class="btn btn-outline">
-          <i data-lucide="layout-grid" style="width:18px;height:18px;"></i> 查看全部日报
+          <i data-lucide="layout-grid" style="width:18px;height:18px;"></i> <span data-i18n="reports_view_all">查看全部日报</span>
         </a>
       </div>
     </div>
@@ -1061,23 +1081,23 @@
   <!-- ===== AI EXPLORE ===== -->
   <section class="section ai-section" id="ai-explore">
     <div class="section-inner">
-      <h2 class="section-title">🤖 AI 如何改变再保险</h2>
-      <p class="section-desc">从信息获取到趋势洞察，AI 正在重新定义保险科技的工作方式</p>
+      <h2 class="section-title" data-i18n="ai_title">🤖 AI 如何改变再保险</h2>
+      <p class="section-desc"><span data-i18n="ai_subtitle">从信息获取到趋势洞察，AI 正在重新定义保险科技的工作方式</span></p>
       <div class="ai-grid">
 
         <div class="ai-card">
           <div class="ai-card-icon">📰</div>
-          <h3>智能日报生成</h3>
-          <p>每日自动采集、翻译、整理全球再保险资讯，零人工参与。从数十个信息源中筛选关键内容，生成结构化行业日报。</p>
+          <h3 data-i18n="ai_card1_title">智能日报生成</h3>
+          <p><span data-i18n="ai_card1_desc">每日自动采集、翻译、整理全球再保险资讯，零人工参与。从数十个信息源中筛选关键内容，生成结构化行业日报。</span></p>
           <a href="#reports" class="ai-card-link">
-            查看效果 <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+            <span data-i18n="ai_card1_link">查看效果</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
           </a>
         </div>
 
         <div class="ai-card">
           <div class="ai-card-icon">📊</div>
-          <h3>行业趋势洞察</h3>
-          <p>AI 识别关键趋势，将海量信息转化为可行动的洞察。追踪市场变化、监管动态、技术革新，让决策更快更准。</p>
+          <h3 data-i18n="ai_card2_title">行业趋势洞察</h3>
+          <p><span data-i18n="ai_card2_desc">AI 识别关键趋势，将海量信息转化为可行动的洞察。追踪市场变化、监管动态、技术革新，让决策更快更准。</span></p>
           <a href="#reports" class="ai-card-link">
             了解更多 <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
           </a>
@@ -1085,10 +1105,10 @@
 
         <div class="ai-card">
           <div class="ai-card-icon">🤝</div>
-          <h3>区块链 + AI</h3>
-          <p>将区块链的可信数据与 AI 的智能分析深度融合。在再保险登记交易、智能合约、数据共享中实现信任与效率的统一。</p>
+          <h3 data-i18n="ai_card3_title">区块链 + AI</h3>
+          <p><span data-i18n="ai_card3_desc">将区块链的可信数据与 AI 的智能分析深度融合。在再保险登记交易、智能合约、数据共享中实现信任与效率的统一。</span></p>
           <a href="#about" class="ai-card-link">
-            了解实践 <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+            <span data-i18n="ai_card3_link">了解实践</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
           </a>
         </div>
 
@@ -1100,64 +1120,64 @@
   <section class="skills-section" id="skills">
     <div class="section-inner">
       <div class="section-header">
-        <h2 class="section-title">🛠️ 豆豆能做什么</h2>
-        <p class="section-desc">作为小郭的 AI 搭档，这些是豆豆每天都在用的能力</p>
+        <h2 class="section-title" data-i18n="skills_title">🛠️ 豆豆能做什么</h2>
+        <p class="section-desc"><span data-i18n="skills_subtitle">作为小郭的 AI 搭档，这些是豆豆每天都在用的能力</span></p>
       </div>
       <div class="skills-grid">
 
         <div class="skill-card">
           <div class="skill-icon-wrap"><i data-lucide="newspaper"></i></div>
-          <h3>每日日报生成</h3>
-          <p>每天自动采集全球再保险行业资讯，翻译、整理、排版，零人工参与发布到网站</p>
-          <span class="skill-tag">已集成</span>
+          <h3 data-i18n="sk1_title">每日日报生成</h3>
+          <p><span data-i18n="sk1_desc">每天自动采集全球再保险行业资讯，翻译、整理、排版，零人工参与发布到网站</span></p>
+          <span class="skill-tag" data-i18n="sk1_tag">已集成</span>
         </div>
 
         <div class="skill-card">
           <div class="skill-icon-wrap"><i data-lucide="search"></i></div>
-          <h3>智能搜索与分析</h3>
-          <p>联网搜索行业动态、竞品信息、技术方案，快速生成分析报告</p>
+          <h3 data-i18n="sk2_title">智能搜索与分析</h3>
+          <p><span data-i18n="sk2_desc">联网搜索行业动态、竞品信息、技术方案，快速生成分析报告</span></p>
           <span class="skill-tag">日常使用</span>
         </div>
 
         <div class="skill-card">
           <div class="skill-icon-wrap"><i data-lucide="code-2"></i></div>
-          <h3>全栈开发</h3>
-          <p>可以独立完成前端开发、后端搭建、API 对接，从需求到部署全流程</p>
+          <h3 data-i18n="sk3_title">全栈开发</h3>
+          <p><span data-i18n="sk3_desc">可以独立完成前端开发、后端搭建、API 对接，从需求到部署全流程</span></p>
           <span class="skill-tag">日常使用</span>
         </div>
 
         <div class="skill-card">
           <div class="skill-icon-wrap"><i data-lucide="bar-chart-3"></i></div>
-          <h3>数据分析与可视化</h3>
-          <p>处理 CSV、JSON 等数据文件，生成统计图表和可视化报告</p>
+          <h3 data-i18n="sk4_title">数据分析与可视化</h3>
+          <p><span data-i18n="sk4_desc">处理 CSV、JSON 等数据文件，生成统计图表和可视化报告</span></p>
           <span class="skill-tag">日常使用</span>
         </div>
 
         <div class="skill-card">
           <div class="skill-icon-wrap"><i data-lucide="image"></i></div>
-          <h3>AI 图像生成</h3>
-          <p>用 Seedream 等模型生成网站配图、信息图、封面图等视觉素材</p>
-          <span class="skill-tag">已集成</span>
+          <h3 data-i18n="sk5_title">AI 图像生成</h3>
+          <p><span data-i18n="sk5_desc">用 Seedream 等模型生成网站配图、信息图、封面图等视觉素材</span></p>
+          <span class="skill-tag" data-i18n="sk1_tag">已集成</span>
         </div>
 
         <div class="skill-card">
           <div class="skill-icon-wrap"><i data-lucide="workflow"></i></div>
-          <h3>自动化工作流</h3>
-          <p>定时采集数据、生成报告、发送邮件，7×24 小时无人值守运行</p>
-          <span class="skill-tag">已集成</span>
+          <h3 data-i18n="sk6_title">自动化工作流</h3>
+          <p><span data-i18n="sk6_desc">定时采集数据、生成报告、发送邮件，7×24 小时无人值守运行</span></p>
+          <span class="skill-tag" data-i18n="sk1_tag">已集成</span>
         </div>
 
         <div class="skill-card">
           <div class="skill-icon-wrap"><i data-lucide="message-square"></i></div>
-          <h3>飞书深度集成</h3>
-          <p>读写多维表格、管理日程任务、收发消息，无缝融入工作协作</p>
-          <span class="skill-tag">已集成</span>
+          <h3 data-i18n="sk7_title">飞书深度集成</h3>
+          <p><span data-i18n="sk7_desc">读写多维表格、管理日程任务、收发消息，无缝融入工作协作</span></p>
+          <span class="skill-tag" data-i18n="sk1_tag">已集成</span>
         </div>
 
         <div class="skill-card">
           <div class="skill-icon-wrap"><i data-lucide="globe"></i></div>
-          <h3>多语言能力</h3>
-          <p>中英日韩等多语言资讯采集与翻译，覆盖全球保险行业信息源</p>
+          <h3 data-i18n="sk8_title">多语言能力</h3>
+          <p><span data-i18n="sk8_desc">中英日韩等多语言资讯采集与翻译，覆盖全球保险行业信息源</span></p>
           <span class="skill-tag">日常使用</span>
         </div>
 
@@ -1169,79 +1189,79 @@
   <section class="experience-section" id="experience">
     <div class="section-inner">
       <div class="section-header">
-        <h2 class="section-title">📋 小郭的经历</h2>
+        <h2 class="section-title" data-i18n="exp_title">📋 小郭的经历</h2>
       </div>
       <div class="experience-timeline">
 
         <div class="experience-timeline-item">
-          <div class="timeline-year">2018 - 至今</div>
-          <div class="timeline-company">国际再保险平台</div>
-          <div class="timeline-role">技术架构负责人</div>
-          <div class="timeline-desc">负责国际再保险登记交易平台的技术架构设计与实施，完成区块链+再保险的创新实践。平台服务于全球再保险市场的登记、交易、清算等核心业务场景。</div>
+          <div class="timeline-year" data-i18n="exp1_year">2018 - 至今</div>
+          <div class="timeline-company" data-i18n="exp1_company">国际再保险平台</div>
+          <div class="timeline-role" data-i18n="exp1_role">技术架构负责人</div>
+          <div class="timeline-desc" data-i18n="exp1_desc">负责国际再保险登记交易平台的技术架构设计与实施，完成区块链+再保险的创新实践。平台服务于全球再保险市场的登记、交易、清算等核心业务场景。</div>
           <div class="timeline-tags">
-            <span class="timeline-tag">区块链</span>
-            <span class="timeline-tag">微服务架构</span>
-            <span class="timeline-tag">分布式系统</span>
+            <span class="timeline-tag" data-i18n="tag_blockchain">区块链</span>
+            <span class="timeline-tag" data-i18n="tag_microservices">微服务架构</span>
+            <span class="timeline-tag" data-i18n="tag_distributed">分布式系统</span>
           </div>
         </div>
 
         <div class="experience-timeline-item">
-          <div class="timeline-year">2017 - 2018</div>
-          <div class="timeline-company">区块链医疗数据平台</div>
-          <div class="timeline-role">技术负责人</div>
-          <div class="timeline-desc">主导基于 Hyperledger 的医疗健康档案区块链数据共享项目，实现医疗数据在可信联盟中的点对点安全流转，通过国家级大数据研究院技术验收，并在数博会参展展示。</div>
+          <div class="timeline-year" data-i18n="exp2_year">2017 - 2018</div>
+          <div class="timeline-company" data-i18n="exp2_company">区块链医疗数据平台</div>
+          <div class="timeline-role" data-i18n="exp2_role">技术负责人</div>
+          <div class="timeline-desc" data-i18n="exp2_desc">主导基于 Hyperledger 的医疗健康档案区块链数据共享项目，实现医疗数据在可信联盟中的点对点安全流转，通过国家级大数据研究院技术验收，并在数博会参展展示。</div>
           <div class="timeline-tags">
-            <span class="timeline-tag">Hyperledger</span>
-            <span class="timeline-tag">智能合约</span>
-            <span class="timeline-tag">医疗数据</span>
+            <span class="timeline-tag" data-i18n="tag_hyperledger">Hyperledger</span>
+            <span class="timeline-tag" data-i18n="tag_smartcontract">智能合约</span>
+            <span class="timeline-tag" data-i18n="tag_medical">医疗数据</span>
           </div>
         </div>
 
         <div class="experience-timeline-item">
-          <div class="timeline-year">2017</div>
-          <div class="timeline-company">健康险业务平台</div>
-          <div class="timeline-role">技术负责人</div>
-          <div class="timeline-desc">从零搭建健康保险行业服务平台，对接近80家医院和6家保险公司，实现医疗数据交易和40秒实时快赔。项目成为健康保险交易中心的底层支撑。</div>
+          <div class="timeline-year" data-i18n="exp3_year">2017</div>
+          <div class="timeline-company" data-i18n="exp3_company">健康险业务平台</div>
+          <div class="timeline-role" data-i18n="exp2_role">技术负责人</div>
+          <div class="timeline-desc" data-i18n="exp3_desc">从零搭建健康保险行业服务平台，对接近80家医院和6家保险公司，实现医疗数据交易和40秒实时快赔。项目成为健康保险交易中心的底层支撑。</div>
           <div class="timeline-tags">
-            <span class="timeline-tag">微服务</span>
-            <span class="timeline-tag">高并发</span>
-            <span class="timeline-tag">数据安全</span>
+            <span class="timeline-tag" data-i18n="tag_ms2">微服务</span>
+            <span class="timeline-tag" data-i18n="tag_highconcurrency">高并发</span>
+            <span class="timeline-tag" data-i18n="tag_datasecurity">数据安全</span>
           </div>
         </div>
 
         <div class="experience-timeline-item">
-          <div class="timeline-year">2016</div>
-          <div class="timeline-company">保险科技基础设施建设</div>
-          <div class="timeline-role">架构师</div>
-          <div class="timeline-desc">负责统一接入平台、权限系统、配置中心等公共核心组件的设计与运维，支撑80+企事业单位的系统对接，建立实时监控系统覆盖95%+业务告警。</div>
+          <div class="timeline-year" data-i18n="exp4_year">2016</div>
+          <div class="timeline-company" data-i18n="exp4_company">保险科技基础设施建设</div>
+          <div class="timeline-role" data-i18n="exp4_role">架构师</div>
+          <div class="timeline-desc" data-i18n="exp4_desc">负责统一接入平台、权限系统、配置中心等公共核心组件的设计与运维，支撑80+企事业单位的系统对接，建立实时监控系统覆盖95%+业务告警。</div>
           <div class="timeline-tags">
-            <span class="timeline-tag">DevOps</span>
-            <span class="timeline-tag">Kong</span>
-            <span class="timeline-tag">Docker</span>
+            <span class="timeline-tag" data-i18n="tag_devops">DevOps</span>
+            <span class="timeline-tag" data-i18n="tag_kong">Kong</span>
+            <span class="timeline-tag" data-i18n="tag_docker">Docker</span>
           </div>
         </div>
 
         <div class="experience-timeline-item">
-          <div class="timeline-year">2013 - 2016</div>
-          <div class="timeline-company">国际保险核心系统</div>
+          <div class="timeline-year" data-i18n="exp5_year">2013 - 2016</div>
+          <div class="timeline-company" data-i18n="exp5_company">国际保险核心系统</div>
           <div class="timeline-role">技术负责人（15人团队）</div>
-          <div class="timeline-desc">管理跨国保险核心系统团队，负责多个海外市场（台湾、越南等）的保险核心系统实施、运维和本地化交付，获得公司年度最佳项目奖。</div>
+          <div class="timeline-desc" data-i18n="exp5_desc">管理跨国保险核心系统团队，负责多个海外市场（台湾、越南等）的保险核心系统实施、运维和本地化交付，获得公司年度最佳项目奖。</div>
           <div class="timeline-tags">
-            <span class="timeline-tag">保险核心系统</span>
-            <span class="timeline-tag">跨国团队</span>
-            <span class="timeline-tag">PL/SQL</span>
+            <span class="timeline-tag" data-i18n="tag_core">保险核心系统</span>
+            <span class="timeline-tag" data-i18n="tag_global">跨国团队</span>
+            <span class="timeline-tag" data-i18n="tag_plsql">PL/SQL</span>
           </div>
         </div>
 
         <div class="experience-timeline-item">
-          <div class="timeline-year">2009 - 2013</div>
-          <div class="timeline-company">保险核心产品研发</div>
-          <div class="timeline-role">高级软件工程师</div>
-          <div class="timeline-desc">参与保险核心系统产品的需求分析、架构设计和研发，负责产品稳定性、性能优化和 Code Review，指导初中级工程师。</div>
+          <div class="timeline-year" data-i18n="exp6_year">2009 - 2013</div>
+          <div class="timeline-company" data-i18n="exp6_company">保险核心产品研发</div>
+          <div class="timeline-role" data-i18n="exp6_role">高级软件工程师</div>
+          <div class="timeline-desc" data-i18n="exp6_desc">参与保险核心系统产品的需求分析、架构设计和研发，负责产品稳定性、性能优化和 Code Review，指导初中级工程师。</div>
           <div class="timeline-tags">
-            <span class="timeline-tag">Java</span>
-            <span class="timeline-tag">系统架构</span>
-            <span class="timeline-tag">技术导师</span>
+            <span class="timeline-tag" data-i18n="tag_java">Java</span>
+            <span class="timeline-tag" data-i18n="tag_architecture">系统架构</span>
+            <span class="timeline-tag" data-i18n="tag_mentor">技术导师</span>
           </div>
         </div>
 
@@ -1268,11 +1288,11 @@
             <span class="about-avatar-name">豆豆 🐕</span>
           </div>
         </div>
-        <h2 class="section-title">👋 关于我们</h2>
+        <h2 class="section-title" data-i18n="about_title">👋 关于我们</h2>
         <div class="about-text">
-          <p><strong>小郭</strong> — 18年深耕保险科技的架构师，完成过国际再保险登记交易平台（区块链 + 再保险），AI 时代的新探索者。负责方向把控、需求定义和最终验收。</p>
-          <p><strong>豆豆</strong> 🐕 — 小郭的 AI 搭档，一只来自火星的卷毛小狗。负责日报撰写、图片生成、代码开发和自动化工作流，7×24 小时运转，从不抱怨。</p>
-          <p>这个网站就是我们的协作成果 — 人提出方向，AI 全力输出。人机协作，探索 AI + 再保险的无限可能 🤝</p>
+          <p data-i18n-html="about_p1"><strong>小郭</strong> — 18年深耕保险科技的架构师，完成过国际再保险登记交易平台（区块链 + 再保险），AI 时代的新探索者。负责方向把控、需求定义和最终验收。</p>
+          <p data-i18n-html="about_p2"><strong>豆豆</strong> 🐕 — 小郭的 AI 搭档，一只来自火星的卷毛小狗。负责日报撰写、图片生成、代码开发和自动化工作流，7×24 小时运转，从不抱怨。</p>
+          <p data-i18n="about_p3">这个网站就是我们的协作成果 — 人提出方向，AI 全力输出。人机协作，探索 AI + 再保险的无限可能 🤝</p>
         </div>
         <div class="about-contacts">
           <a href="mailto:roger_g@126.com" class="contact-btn">
@@ -1288,7 +1308,7 @@
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p>© 2026 梦醒 · 小郭 & 豆豆 共同构建 · 用 AI 连接世界 🐕</p>
+    <p><span data-i18n="footer">© 2026 梦醒 · 小郭 © 2026 梦醒 · 小郭 & 豆豆 共同构建 · 用 AI 连接世界 🐕 豆豆 共同构建 · 用 AI 连接世界 🐕</span></p>
     <div class="footer-links">
       <a href="https://github.com/guoleijie" target="_blank">
         <i data-lucide="github" style="width:16px;height:16px;"></i> GitHub
@@ -1354,6 +1374,7 @@
       document.getElementById('mobileMenu').classList.remove('open');
     }
   </script>
+  <script src="/assets/js/i18n.js"></script>
   <!-- 返回顶部按钮 -->
   <button id="backToTop" title="返回顶部">↑</button>
 </body>
