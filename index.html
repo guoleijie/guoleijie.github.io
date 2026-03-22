@@ -823,6 +823,19 @@
       .btn { padding: 11px 22px; font-size: 0.9rem; }
       .skills-grid { grid-template-columns: 1fr; }
       .skills-section, .experience-section { padding: 56px 20px; }
+      /* Experience timeline mobile fix */
+      .experience-timeline { padding-left: 32px; }
+      .experience-timeline::before { left: 8px; }
+      .experience-timeline-item::before {
+        left: -28px;
+        width: 10px; height: 10px;
+        border-width: 2px;
+        box-shadow: 0 0 0 2px var(--accent-primary);
+        top: 5px;
+      }
+      .experience-timeline-item { margin-bottom: 32px; }
+      .timeline-desc { line-height: 1.7; margin-bottom: 10px; }
+      .timeline-tag { font-size: 0.7rem; padding: 2px 10px; }
     }
   </style>
 </head>
