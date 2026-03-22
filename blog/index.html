@@ -3,127 +3,401 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>日报归档 | 梦醒</title>
-    <link rel="stylesheet" href="/assets/css/report.css">
+    <title>每日行业日报 | 梦醒</title>
+    <meta name="description" content="AI 自动采集全球再保险行业资讯，每日更新。涵盖行业动态、科技前沿、政策法规。">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg-main: #faf8f4;
+            --bg-card: #ffffff;
+            --bg-section: #f5f3ee;
+            --accent-red: #c0392b;
+            --accent-blue: #2874a6;
+            --text-primary: #333333;
+            --text-secondary: #666666;
+            --text-light: #999999;
+            --border: #e8e4de;
+            --shadow: 0 2px 12px rgba(0,0,0,0.05);
+            --shadow-hover: 0 8px 24px rgba(0,0,0,0.1);
+            --radius: 14px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background: var(--bg-main);
+            color: var(--text-primary);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        a { color: inherit; text-decoration: none; }
+
+        /* ========== NAV ========== */
+        .nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        .nav.scrolled {
+            border-bottom-color: var(--border);
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+        .nav-inner {
+            max-width: 1120px; margin: 0 auto;
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 14px 24px;
+        }
+        .nav-logo {
+            display: flex; align-items: center; gap: 8px;
+            font-family: 'ZCOOL KuaiLe', sans-serif;
+            font-size: 1.25rem; font-weight: 700; color: var(--text-primary);
+        }
+        .nav-logo img {
+            width: 28px; height: 28px; border-radius: 50%;
+        }
+        .nav-links { display: flex; gap: 32px; list-style: none; }
+        .nav-links a {
+            font-size: 0.95rem; color: var(--text-secondary);
+            transition: color var(--transition);
+            position: relative;
+        }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: -4px; left: 0; width: 0;
+            height: 2px; background: var(--accent-red);
+            transition: width var(--transition);
+        }
+        .nav-links a:hover { color: var(--accent-red); }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-links a.active { color: var(--accent-red); font-weight: 500; }
+        .nav-links a.active::after { width: 100%; }
+
+        .hamburger {
+            display: none; background: none; border: none; cursor: pointer;
+            color: var(--text-primary); padding: 4px;
+        }
+
+        /* ========== CELEBRATION BANNER ========== */
+        .celebration-banner {
+            background: linear-gradient(135deg, #c0392b 0%, #e74c3c 50%, #f39c12 100%);
+            color: white; text-align: center;
+            padding: 16px 20px;
+            font-family: 'ZCOOL KuaiLe', sans-serif;
+        }
+        .celebration-banner .banner-title {
+            font-size: 1.1rem;
+        }
+        .celebration-banner .banner-sub {
+            font-size: 0.85rem; opacity: 0.9; margin-top: 4px;
+        }
+
+        /* ========== PAGE HEADER ========== */
+        .page-header {
+            text-align: center;
+            padding: 80px 24px 40px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .page-header h1 {
+            font-family: 'ZCOOL KuaiLe', sans-serif;
+            font-size: 2.2rem;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        .page-header .subtitle {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+        }
+
+        /* ========== REPORT LIST ========== */
+        .report-list-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px 60px;
+        }
+
+        .month-group {
+            margin-bottom: 36px;
+        }
+        .month-group h3 {
+            font-family: 'ZCOOL KuaiLe', sans-serif;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            padding-left: 4px;
+        }
+
+        .report-card {
+            display: flex;
+            align-items: center;
+            background: var(--bg-card);
+            border-radius: 12px;
+            border-left: 3px solid var(--accent-red);
+            box-shadow: var(--shadow);
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            transition: transform var(--transition), box-shadow var(--transition);
+            text-decoration: none;
+            color: inherit;
+            gap: 16px;
+        }
+        .report-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .report-date {
+            display: flex; flex-direction: column; align-items: center;
+            min-width: 52px; text-align: center;
+        }
+        .report-date .day {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-red);
+            line-height: 1.2;
+        }
+        .report-date .month {
+            font-size: 0.78rem;
+            color: var(--text-light);
+        }
+
+        .report-info {
+            flex: 1;
+            min-width: 0;
+        }
+        .report-info h4 {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+            line-height: 1.5;
+        }
+        .report-info p {
+            font-size: 0.82rem;
+            color: var(--text-light);
+        }
+
+        .report-arrow {
+            color: var(--text-light);
+            flex-shrink: 0;
+            transition: transform var(--transition), color var(--transition);
+        }
+        .report-card:hover .report-arrow {
+            transform: translateX(3px);
+            color: var(--accent-red);
+        }
+
+        /* ========== FOOTER ========== */
+        .site-footer {
+            background: var(--bg-section);
+            padding: 24px;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+        }
+        .site-footer p { margin-bottom: 8px; }
+        .site-footer a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+        .site-footer a:hover { color: var(--accent-red); }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%; left: 0; right: 0;
+                background: rgba(255,255,255,0.97);
+                backdrop-filter: blur(16px);
+                flex-direction: column;
+                gap: 0;
+                border-bottom: 1px solid var(--border);
+                box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            }
+            .nav-links.open { display: flex; }
+            .nav-links li {
+                border-bottom: 1px solid var(--border);
+            }
+            .nav-links li:last-child { border-bottom: none; }
+            .nav-links a {
+                display: block;
+                padding: 14px 24px;
+                font-size: 1rem;
+            }
+            .nav-links a::after { display: none; }
+            .hamburger { display: block; }
+
+            .page-header { padding-top: 70px; }
+            .page-header h1 { font-size: 1.7rem; }
+
+            .report-card {
+                padding: 14px 16px;
+                gap: 12px;
+            }
+            .report-info h4 { font-size: 0.88rem; }
+        }
+    </style>
 </head>
 <body>
-    <!-- 进度条 -->
-    <div class="progress-bar"></div>
 
     <!-- 导航栏 -->
-    <nav>
-        <a href="/" class="nav-logo">
-          <img src="/assets/images/doudou-logo.png" alt="豆豆" style="width:28px;height:28px;border-radius:50%;">
-          <span>梦醒</span>
-        </a>
-        <button class="menu-toggle" id="menuToggle">
-            <i data-lucide="menu"></i>
-        </button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="/">首页</a></li>
-            <li><a href="/blog/index.html">日报</a></li>
-            <li><a href="/#ai-explore">AI探索</a></li>
-            <li><a href="/#about">关于</a></li>
-        </ul>
+    <nav class="nav" id="mainNav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">
+                <img src="/assets/images/doudou-logo.png" alt="豆豆">
+                <span>梦醒</span>
+            </a>
+            <button class="hamburger" id="menuToggle" aria-label="菜单">
+                <i data-lucide="menu" style="width:24px;height:24px;"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">首页</a></li>
+                <li><a href="/blog/index.html" class="active">日报</a></li>
+                <li><a href="/#skills">技能</a></li>
+                <li><a href="/#experience">经历</a></li>
+                <li><a href="/#about">关于</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- 博客列表 -->
-    <div class="blog-list-container">
-        <header class="report-header">
-            <h1>📝 博客列表</h1>
-            <p style="color: var(--text-secondary); margin-top: 8px; font-size: 14px;">
-                工作日志、技术分享、学习笔记
-            </p>
-        </header>
+    <!-- 庆祝横幅 -->
+    <div class="celebration-banner" style="margin-top: 56px;">
+        <div class="banner-title">🎉 网站全新改版上线！</div>
+        <div class="banner-sub">由 AI 助手豆豆全程设计、开发、部署 — 从配色到内容，AI 驱动的个人知识平台</div>
+    </div>
 
-        <section class="blog-list">
-            <!-- 2026年03月 -->
-            <div class="blog-month">
+    <!-- 页面标题 -->
+    <header class="page-header">
+        <h1>📰 每日行业日报</h1>
+        <p class="subtitle">AI 自动采集 · 全球再保险资讯 · 每日更新</p>
+    </header>
+
+    <!-- 日报列表 -->
+    <div class="report-list-container">
+        <section>
+            <div class="month-group">
                 <h3>📅 2026年03月</h3>
-                <div class="blog-posts">
-                    <a href="/blog/2026/03/22-daily-report.html" class="blog-post">
-                        <div class="blog-date">
-                            <span class="day">22</span>
-                            <span class="month">03月</span>
-                        </div>
-                        <div class="blog-content">
-                            <h4>再保险行业日报 第6期 | 2026年03月22日（周日）</h4>
-                            <p>共 11 条新闻：5 条行业新闻，6 条科技前沿</p>
-                        </div>
-                        <i data-lucide="arrow-right" class="blog-arrow"></i>
-                    </a>
-                    <a href="/blog/2026/03/21-daily-report.html" class="blog-post">
-                        <div class="blog-date">
-                            <span class="day">21</span>
-                            <span class="month">03月</span>
-                        </div>
-                        <div class="blog-content">
-                            <h4>再保险行业日报 第5期 | 2026年03月21日（周六）</h4>
-                            <p>共 10 条新闻：5 条行业新闻，5 条科技前沿</p>
-                        </div>
-                        <i data-lucide="arrow-right" class="blog-arrow"></i>
-                    </a>
-                    <a href="/blog/2026/03/20-daily-report.html" class="blog-post">
-                        <div class="blog-date">
-                            <span class="day">20</span>
-                            <span class="month">03月</span>
-                        </div>
-                        <div class="blog-content">
-                            <h4>再保险行业日报 第4期 | 2026年03月20日（周五）</h4>
-                            <p>共 7 条新闻：3 条行业新闻，4 条科技前沿</p>
-                        </div>
-                        <i data-lucide="arrow-right" class="blog-arrow"></i>
-                    </a>
-                    <a href="/blog/2026/03/19-daily-report.html" class="blog-post">
-                        <div class="blog-date">
-                            <span class="day">19</span>
-                            <span class="month">03月</span>
-                        </div>
-                        <div class="blog-content">
-                            <h4>再保险行业日报 第3期 | 2026年03月19日（周四）</h4>
-                            <p>共 15 条新闻：9 条行业新闻，6 条科技前沿</p>
-                        </div>
-                        <i data-lucide="arrow-right" class="blog-arrow"></i>
-                    </a>
-                    <a href="/blog/2026/03/18-daily-report.html" class="blog-post">
-                        <div class="blog-date">
-                            <span class="day">18</span>
-                            <span class="month">03月</span>
-                        </div>
-                        <div class="blog-content">
-                            <h4>再保险行业日报 第2期 | 2026年03月18日（周三）</h4>
-                            <p>共 13 条新闻：7 条行业新闻，6 条科技前沿</p>
-                        </div>
-                        <i data-lucide="arrow-right" class="blog-arrow"></i>
-                    </a>
-                    <a href="/blog/2026/03/16-daily-report.html" class="blog-post">
-                        <div class="blog-date">
-                            <span class="day">16</span>
-                            <span class="month">03月</span>
-                        </div>
-                        <div class="blog-content">
-                            <h4>再保险行业日报 第1期 | 2026年03月16日（周一）</h4>
-                            <p>共 12 条新闻：6 条行业新闻，6 条科技前沿</p>
-                        </div>
-                        <i data-lucide="arrow-right" class="blog-arrow"></i>
-                    </a>
-                </div>
+
+                <a href="/blog/2026/03/22-daily-report.html" class="report-card">
+                    <div class="report-date">
+                        <span class="day">22</span>
+                        <span class="month">03月</span>
+                    </div>
+                    <div class="report-info">
+                        <h4>再保险行业日报 第6期 | 2026年03月22日（周日）</h4>
+                        <p>共 11 条新闻：5 条行业新闻，6 条科技前沿</p>
+                    </div>
+                    <i data-lucide="arrow-right" class="report-arrow" style="width:18px;height:18px;"></i>
+                </a>
+
+                <a href="/blog/2026/03/21-daily-report.html" class="report-card">
+                    <div class="report-date">
+                        <span class="day">21</span>
+                        <span class="month">03月</span>
+                    </div>
+                    <div class="report-info">
+                        <h4>再保险行业日报 第5期 | 2026年03月21日（周六）</h4>
+                        <p>共 10 条新闻：5 条行业新闻，5 条科技前沿</p>
+                    </div>
+                    <i data-lucide="arrow-right" class="report-arrow" style="width:18px;height:18px;"></i>
+                </a>
+
+                <a href="/blog/2026/03/20-daily-report.html" class="report-card">
+                    <div class="report-date">
+                        <span class="day">20</span>
+                        <span class="month">03月</span>
+                    </div>
+                    <div class="report-info">
+                        <h4>再保险行业日报 第4期 | 2026年03月20日（周五）</h4>
+                        <p>共 7 条新闻：3 条行业新闻，4 条科技前沿</p>
+                    </div>
+                    <i data-lucide="arrow-right" class="report-arrow" style="width:18px;height:18px;"></i>
+                </a>
+
+                <a href="/blog/2026/03/19-daily-report.html" class="report-card">
+                    <div class="report-date">
+                        <span class="day">19</span>
+                        <span class="month">03月</span>
+                    </div>
+                    <div class="report-info">
+                        <h4>再保险行业日报 第3期 | 2026年03月19日（周四）</h4>
+                        <p>共 15 条新闻：9 条行业新闻，6 条科技前沿</p>
+                    </div>
+                    <i data-lucide="arrow-right" class="report-arrow" style="width:18px;height:18px;"></i>
+                </a>
+
+                <a href="/blog/2026/03/18-daily-report.html" class="report-card">
+                    <div class="report-date">
+                        <span class="day">18</span>
+                        <span class="month">03月</span>
+                    </div>
+                    <div class="report-info">
+                        <h4>再保险行业日报 第2期 | 2026年03月18日（周三）</h4>
+                        <p>共 13 条新闻：7 条行业新闻，6 条科技前沿</p>
+                    </div>
+                    <i data-lucide="arrow-right" class="report-arrow" style="width:18px;height:18px;"></i>
+                </a>
+
+                <a href="/blog/2026/03/16-daily-report.html" class="report-card">
+                    <div class="report-date">
+                        <span class="day">16</span>
+                        <span class="month">03月</span>
+                    </div>
+                    <div class="report-info">
+                        <h4>再保险行业日报 第1期 | 2026年03月16日（周一）</h4>
+                        <p>共 12 条新闻：6 条行业新闻，6 条科技前沿</p>
+                    </div>
+                    <i data-lucide="arrow-right" class="report-arrow" style="width:18px;height:18px;"></i>
+                </a>
+
             </div>
         </section>
     </div>
 
     <!-- Footer -->
-    <footer class="report-footer" style="background:var(--bg-section); padding:24px; text-align:center; border-top:1px solid var(--border);">
-        <p style="font-size:0.88rem; color:var(--text-secondary);">© 2026 梦醒 · 用 AI 构建的知识平台</p>
-        <div style="display:flex; gap:20px; justify-content:center; margin-top:12px;">
-            <a href="https://github.com/guoleijie" target="_blank" style="color:var(--text-light); display:flex; align-items:center; gap:4px;">
-                <i data-lucide="github" style="width:16px;height:16px;"></i> GitHub
-            </a>
+    <footer class="site-footer">
+        <p>© 2026 梦醒 · AI 驱动的再保险行业知识平台</p>
+        <div style="margin-top: 8px;">
+            <a href="https://github.com/guoleijie">GitHub</a>
+            <span style="margin: 0 8px;">·</span>
+            <a href="mailto:roger_g@126.com">roger_g@126.com</a>
         </div>
     </footer>
 
-    <script src="/assets/js/main.js"></script>
-    <script>lucide.createIcons();</script>
+    <script>
+        // Lucide icons
+        lucide.createIcons();
+
+        // Nav scroll effect
+        window.addEventListener('scroll', () => {
+            document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 10);
+        });
+
+        // Mobile menu toggle
+        document.getElementById('menuToggle').addEventListener('click', () => {
+            document.getElementById('navLinks').classList.toggle('open');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('open');
+            });
+        });
+    </script>
 </body>
 </html>
