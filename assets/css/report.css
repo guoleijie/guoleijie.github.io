@@ -1,19 +1,26 @@
 /* 日报样式 - 与首页风格一致 */
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Ma+Shan+Zheng&display=swap');
 :root {
-  --bg-primary: #f8f6f3;
+  --bg-main: #faf8f4;
+  --bg-primary: #faf8f4;
   --bg-secondary: #ffffff;
   --bg-card: #ffffff;
-  --accent-primary: #e85d3a;
-  --accent-primary-light: #fef0eb;
-  --accent-secondary: #2b6cb0;
-  --accent-secondary-light: #ebf4ff;
+  --bg-section: #f5f3ee;
+  --bg-highlight: #fff8f0;
+  --accent-red: #c0392b;
+  --accent-primary: #c0392b;
+  --accent-primary-light: #fdf2f0;
+  --accent-blue: #2874a6;
+  --accent-secondary: #2874a6;
+  --accent-secondary-light: #eef5fb;
+  --accent-gold: #e67e22;
   --accent-green: #38a169;
   --accent-green-light: #f0fff4;
-  --text-primary: #2d3748;
-  --text-secondary: #718096;
-  --text-light: #a0aec0;
-  --border: #e2e8f0;
-  --shadow: 0 4px 20px rgba(0,0,0,0.06);
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-light: #999999;
+  --border: #e8e4de;
+  --shadow: 0 2px 12px rgba(0,0,0,0.05);
   --shadow-hover: 0 8px 30px rgba(0,0,0,0.1);
   --radius: 14px;
   --radius-sm: 8px;
@@ -32,7 +39,7 @@ html {
 
 body {
   font-size: 16px;
-  font-family: 'LXGW WenKai', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+  font-family: 'Noto Sans SC', sans-serif; font-weight: 400;
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.8;
@@ -40,6 +47,14 @@ body {
   overflow-x: hidden;
   padding-top: 56px;
 }
+
+h1 { font-family: 'ZCOOL KuaiLe', 'Smiley Sans', sans-serif; font-weight: 700; }
+h2 { font-family: 'Long Cang', 'ZCOOL KuaiLe', sans-serif; font-weight: 400; }
+h3 { font-family: 'ZCOOL KuaiLe', sans-serif; font-weight: 700; }
+h4 { font-family: 'Noto Sans SC', sans-serif; font-weight: 700; }
+.nav-logo { font-family: 'ZCOOL KuaiLe', sans-serif; }
+blockquote, .quote { font-family: 'Ma Shan Zheng', cursive; }
+
 
 a { color: inherit; text-decoration: none; }
 
@@ -85,7 +100,7 @@ nav.scrolled {
   gap: 8px;
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--accent-primary);
+  color: #333333;
   text-decoration: none;
 }
 
@@ -134,7 +149,7 @@ nav.scrolled {
 /* 移动端菜单按钮 */
 .menu-toggle {
   display: none;
-  background: rgba(232, 93, 58, 0.1);
+  background: rgba(192, 57, 43, 0.1);
   border: 2px solid var(--accent-primary);
   cursor: pointer;
   padding: 10px;
@@ -476,12 +491,12 @@ nav.scrolled {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  box-shadow: 0 4px 14px rgba(232, 93, 58, 0.25);
+  box-shadow: 0 4px 14px rgba(192, 57, 43, 0.25);
 }
 
 .stat-card:nth-child(2) {
   background: var(--accent-secondary);
-  box-shadow: 0 4px 14px rgba(43, 108, 176, 0.25);
+  box-shadow: 0 4px 14px rgba(40, 116, 166, 0.25);
 }
 
 .stat-card:nth-child(3) {
@@ -490,7 +505,7 @@ nav.scrolled {
 }
 
 .stat-card:nth-child(4) {
-  background: #718096;
+  background: var(--text-secondary);
   box-shadow: 0 4px 14px rgba(113, 128, 150, 0.25);
 }
 
@@ -534,12 +549,13 @@ nav.scrolled {
 .report-footer {
   margin-top: 24px;
   padding-top: 24px;
+  background: var(--bg-section);
   border-top: 2px solid var(--border);
 }
 
 .report-footer p {
   font-size: 14px;
-  color: var(--text-secondary);
+  color: var(--text-light);
   margin-bottom: 16px;
 }
 
@@ -570,7 +586,7 @@ nav.scrolled {
   color: white;
   border-color: var(--accent-primary);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(232, 93, 58, 0.3);
+  box-shadow: 0 6px 20px rgba(192, 57, 43, 0.3);
 }
 
 /* 新闻内容 */
@@ -664,13 +680,13 @@ nav.scrolled {
   font-size: 14px;
   font-weight: 600;
   transition: all 0.2s;
-  box-shadow: 0 2px 8px rgba(43, 108, 176, 0.25);
+  box-shadow: 0 2px 8px rgba(40, 116, 166, 0.25);
 }
 
 .news-url a:hover {
-  background: #2c5282;
+  background: #1f618d;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(43, 108, 176, 0.35);
+  box-shadow: 0 4px 12px rgba(40, 116, 166, 0.35);
 }
 
 .summary-text {

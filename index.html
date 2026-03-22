@@ -3,28 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ReInsight · AI + 再保险探索</title>
+  <title>梦醒 · AI + 再保险探索</title>
   <meta name="description" content="18年深耕保险科技，用 AI 重新定义再保险行业知识获取方式。每日再保险日报、行业趋势洞察、区块链+AI实践。">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css">
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Ma+Shan+Zheng&display=swap');
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --bg-primary: #f8f6f3;
+      --bg-main: #faf8f4;
+      --bg-primary: #faf8f4;
       --bg-secondary: #ffffff;
       --bg-card: #ffffff;
-      --accent-primary: #e85d3a;
-      --accent-primary-light: #fef0eb;
-      --accent-secondary: #2b6cb0;
-      --accent-secondary-light: #ebf4ff;
+      --bg-section: #f5f3ee;
+      --bg-highlight: #fff8f0;
+      --accent-red: #c0392b;
+      --accent-primary: #c0392b;
+      --accent-primary-light: #fdf2f0;
+      --accent-blue: #2874a6;
+      --accent-secondary: #2874a6;
+      --accent-secondary-light: #eef5fb;
+      --accent-gold: #e67e22;
       --accent-green: #38a169;
       --accent-green-light: #f0fff4;
-      --text-primary: #2d3748;
-      --text-secondary: #718096;
-      --text-light: #a0aec0;
-      --border: #e2e8f0;
-      --shadow: 0 4px 20px rgba(0,0,0,0.06);
+      --text-primary: #333333;
+      --text-secondary: #666666;
+      --text-light: #999999;
+      --border: #e8e4de;
+      --shadow: 0 2px 12px rgba(0,0,0,0.05);
       --shadow-hover: 0 8px 30px rgba(0,0,0,0.1);
       --radius: 14px;
       --radius-sm: 8px;
@@ -34,13 +40,22 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'LXGW WenKai', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+      font-family: 'Noto Sans SC', sans-serif; font-weight: 400;
       background: var(--bg-primary);
       color: var(--text-primary);
       line-height: 1.8;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
     }
+
+    h1 { font-family: 'ZCOOL KuaiLe', 'Smiley Sans', sans-serif; font-weight: 700; }
+    h2 { font-family: 'Long Cang', 'ZCOOL KuaiLe', sans-serif; font-weight: 400; }
+    h3 { font-family: 'ZCOOL KuaiLe', sans-serif; font-weight: 700; }
+    .section-title { font-family: 'Long Cang', sans-serif; font-weight: 400; }
+    .nav-logo { font-family: 'ZCOOL KuaiLe', sans-serif; }
+    .hero h1 { font-weight: 900; }
+    blockquote, .quote { font-family: 'Ma Shan Zheng', cursive; }
+
 
     a { color: inherit; text-decoration: none; }
 
@@ -112,18 +127,18 @@
       text-align: center;
       padding: 120px 24px 80px;
       overflow: hidden;
-      background: linear-gradient(135deg, #f8f6f3 0%, #eef5fb 35%, #fef0eb 70%, #f8f6f3 100%);
+      background: linear-gradient(135deg, #faf8f4 0%, #f0f4f8 35%, #fdf2f0 70%, #faf8f4 100%);
     }
     .hero::before {
       content: ''; position: absolute; top: -10%; right: -5%;
       width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(232,93,58,0.08) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(192,57,43,0.08) 0%, transparent 70%);
       border-radius: 50%;
     }
     .hero::after {
       content: ''; position: absolute; bottom: -5%; left: -5%;
       width: 600px; height: 600px;
-      background: radial-gradient(circle, rgba(43,108,176,0.06) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(40,116,166,0.06) 0%, transparent 70%);
       border-radius: 50%;
     }
     .hero-bg {
@@ -138,12 +153,12 @@
     }
     .deco-circle:nth-child(1) {
       width: 80px; height: 80px; top: 18%; left: 8%;
-      background: linear-gradient(135deg, rgba(232,93,58,0.12), rgba(232,93,58,0.04));
+      background: linear-gradient(135deg, rgba(192,57,43,0.12), rgba(192,57,43,0.04));
       animation: float 6s ease-in-out infinite;
     }
     .deco-circle:nth-child(2) {
       width: 120px; height: 120px; top: 12%; right: 12%;
-      background: linear-gradient(135deg, rgba(43,108,176,0.08), rgba(43,108,176,0.02));
+      background: linear-gradient(135deg, rgba(40,116,166,0.08), rgba(40,116,166,0.02));
       animation: float 8s ease-in-out infinite reverse;
     }
     .deco-circle:nth-child(3) {
@@ -153,12 +168,12 @@
     }
     .deco-circle:nth-child(4) {
       width: 60px; height: 60px; bottom: 30%; right: 8%;
-      background: linear-gradient(135deg, rgba(232,93,58,0.1), rgba(232,93,58,0.03));
+      background: linear-gradient(135deg, rgba(192,57,43,0.1), rgba(192,57,43,0.03));
       animation: float 7s ease-in-out infinite 0.5s;
     }
     .deco-circle:nth-child(5) {
       width: 35px; height: 35px; top: 40%; left: 3%;
-      background: rgba(43,108,176,0.1);
+      background: rgba(40,116,166,0.1);
       animation: float 9s ease-in-out infinite 2s;
     }
 
@@ -175,7 +190,7 @@
     .hero-content { position: relative; z-index: 2; max-width: 700px; }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 6px;
-      background: rgba(232,93,58,0.1); color: var(--accent-primary);
+      background: rgba(192,57,43,0.08); color: var(--accent-primary);
       padding: 6px 16px; border-radius: 50px; font-size: 0.85rem;
       font-weight: 500; margin-bottom: 24px;
     }
@@ -184,7 +199,7 @@
       margin-bottom: 18px; color: var(--text-primary);
     }
     .hero h1 .highlight {
-      background: linear-gradient(135deg, var(--accent-primary), #d94a2a);
+      background: linear-gradient(135deg, var(--accent-primary), #a93226);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       background-clip: text;
     }
@@ -202,11 +217,11 @@
     }
     .btn-primary {
       background: var(--accent-primary); color: #fff;
-      box-shadow: 0 4px 14px rgba(232,93,58,0.3);
+      box-shadow: 0 4px 14px rgba(192,57,43,0.3);
     }
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(232,93,58,0.4);
+      box-shadow: 0 6px 20px rgba(192,57,43,0.3);
     }
     .btn-outline {
       background: transparent; color: var(--accent-secondary);
@@ -313,7 +328,7 @@
     /* ========== AI EXPLORE ========== */
     .ai-section {
       position: relative;
-      background: linear-gradient(180deg, var(--bg-primary), #f0f5fa, var(--bg-primary));
+      background: linear-gradient(180deg, var(--bg-primary), var(--bg-section), var(--bg-primary));
       overflow: hidden;
     }
     .ai-section::before {
@@ -358,17 +373,17 @@
 
     /* ========== ABOUT ========== */
     .about-section {
-      background: var(--bg-secondary);
+      background: var(--bg-section);
     }
     .about-content {
       max-width: 680px; margin: 0 auto; text-align: center;
     }
     .about-avatar {
       width: 80px; height: 80px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+      background: var(--bg-card);
       display: flex; align-items: center; justify-content: center;
       font-size: 2.2rem; margin: 0 auto 24px;
-      box-shadow: 0 4px 20px rgba(232,93,58,0.2);
+      box-shadow: 0 4px 20px rgba(192,57,43,0.2);
     }
     .about-text p {
       font-size: 1.02rem; color: var(--text-secondary);
@@ -396,13 +411,13 @@
 
     /* ========== FOOTER ========== */
     .footer {
-      background: var(--bg-primary);
+      background: var(--bg-section);
       border-top: 1px solid var(--border);
       padding: 36px 24px;
       text-align: center;
     }
     .footer p {
-      font-size: 0.88rem; color: var(--text-secondary);
+      font-size: 0.88rem; color: var(--text-light);
     }
     .footer-links {
       display: flex; gap: 20px; justify-content: center; margin-top: 12px;
@@ -413,9 +428,111 @@
     }
     .footer-links a:hover { color: var(--accent-primary); }
 
+    /* ========== SKILLS ========== */
+    .skills-section {
+      padding: 80px 24px;
+      background: var(--bg-primary);
+    }
+    .skills-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+      max-width: 1120px; margin: 0 auto;
+    }
+    .skill-card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      transition: all var(--transition);
+      display: flex; flex-direction: column;
+    }
+    .skill-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+    .skill-icon-wrap {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: rgba(192,57,43,0.08);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 18px;
+    }
+    .skill-icon-wrap i {
+      width: 26px; height: 26px; color: var(--accent-primary);
+    }
+    .skill-card h3 {
+      font-size: 1.05rem; font-weight: 700; margin-bottom: 10px;
+      color: var(--text-primary);
+    }
+    .skill-card p {
+      font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7;
+      flex: 1; margin-bottom: 14px;
+    }
+    .skill-tag {
+      display: inline-block;
+      font-size: 0.75rem; font-weight: 500;
+      color: var(--accent-primary);
+      background: rgba(192,57,43,0.08);
+      padding: 3px 10px; border-radius: 50px;
+    }
+
+    /* ========== EXPERIENCE ========== */
+    .experience-section {
+      padding: 80px 24px;
+      background: var(--bg-section);
+    }
+    .timeline {
+      position: relative;
+      max-width: 800px; margin: 0 auto;
+      padding-left: 36px;
+    }
+    .timeline::before {
+      content: ''; position: absolute; left: 10px; top: 0; bottom: 0;
+      width: 3px; background: var(--accent-primary);
+      border-radius: 3px;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+    }
+    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-item::before {
+      content: ''; position: absolute;
+      left: -31px; top: 6px;
+      width: 12px; height: 12px; border-radius: 50%;
+      background: var(--accent-primary);
+      border: 3px solid var(--bg-section);
+      box-shadow: 0 0 0 3px var(--accent-primary);
+    }
+    .timeline-year {
+      font-family: 'ZCOOL KuaiLe', sans-serif;
+      font-size: 1.05rem; color: var(--accent-primary);
+      font-weight: 700; margin-bottom: 4px;
+    }
+    .timeline-role {
+      font-size: 0.95rem; font-weight: 700; color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .timeline-company {
+      font-size: 0.88rem; font-weight: 600; color: var(--accent-primary);
+      margin-bottom: 8px;
+    }
+    .timeline-desc {
+      font-size: 0.88rem; color: var(--text-secondary);
+      line-height: 1.8; margin-bottom: 12px;
+    }
+    .timeline-tags {
+      display: flex; gap: 8px; flex-wrap: wrap;
+    }
+    .timeline-tag {
+      font-size: 0.75rem; font-weight: 500;
+      color: var(--accent-primary);
+      background: rgba(192,57,43,0.08);
+      padding: 3px 12px; border-radius: 50px;
+    }
+
     /* ========== RESPONSIVE ========== */
     @media (max-width: 900px) {
       .reports-grid, .ai-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+      .skills-grid { grid-template-columns: repeat(2, 1fr); }
       .stats-inner { grid-template-columns: repeat(2, 1fr); }
       .hero h1 { font-size: 2rem; }
     }
@@ -430,6 +547,8 @@
       .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 8px; }
       .stat-label { font-size: 0.82rem; }
       .btn { padding: 11px 22px; font-size: 0.9rem; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .skills-section, .experience-section { padding: 56px 20px; }
     }
   </style>
 </head>
@@ -439,20 +558,13 @@
   <nav class="nav" id="navbar">
     <div class="nav-inner">
       <a href="#" class="nav-logo">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
-          <path d="M6 12L4 4C4 4 7 3 9 8L10 11" stroke="#e85d3a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M22 12L24 4C24 4 21 3 19 8L18 11" stroke="#e85d3a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="14" cy="16" r="8" stroke="#e85d3a" stroke-width="1.5" fill="none"/>
-          <circle cx="11" cy="15" r="1.2" fill="#e85d3a"/>
-          <circle cx="17" cy="15" r="1.2" fill="#e85d3a"/>
-          <ellipse cx="14" cy="18" rx="1.5" ry="1" fill="#e85d3a"/>
-          <path d="M13 19.5C13.3 20 14.7 20 15 19.5" stroke="#e85d3a" stroke-width="1" stroke-linecap="round"/>
-        </svg> ReInsight
+        <img src="/assets/images/doudou-logo.png" alt="豆豆" style="width:28px;height:28px;border-radius:50%;"> 梦醒
       </a>
       <div class="nav-links">
         <a href="#hero">首页</a>
         <a href="#reports">日报</a>
-        <a href="#ai-explore">AI探索</a>
+        <a href="#skills">技能</a>
+        <a href="#experience">经历</a>
         <a href="#about">关于</a>
       </div>
       <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.add('open')">
@@ -468,7 +580,8 @@
     </button>
     <a href="#hero" onclick="closeMobile()">首页</a>
     <a href="#reports" onclick="closeMobile()">日报</a>
-    <a href="#ai-explore" onclick="closeMobile()">AI探索</a>
+    <a href="#skills" onclick="closeMobile()">技能</a>
+    <a href="#experience" onclick="closeMobile()">经历</a>
     <a href="#about" onclick="closeMobile()">关于</a>
   </div>
 
@@ -511,14 +624,7 @@
     <div class="stats-inner">
       <div class="stat-item">
         <div class="stat-icon">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 12L4 4C4 4 7 3 9 8L10 11" stroke="#e85d3a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M22 12L24 4C24 4 21 3 19 8L18 11" stroke="#e85d3a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="14" cy="16" r="8" stroke="#e85d3a" stroke-width="1.5" fill="none"/>
-            <circle cx="11" cy="15" r="1.2" fill="#e85d3a"/>
-            <circle cx="17" cy="15" r="1.2" fill="#e85d3a"/>
-            <ellipse cx="14" cy="18" rx="1.5" ry="1" fill="#e85d3a"/>
-          </svg>
+          <img src="/assets/images/doudou-logo.png" alt="豆豆" style="width:28px;height:28px;border-radius:50%;">
         </div>
         <div class="stat-label">7×24 AI 全天候运转</div>
       </div>
@@ -630,20 +736,165 @@
     </div>
   </section>
 
+  <!-- ===== SKILLS ===== -->
+  <section class="skills-section" id="skills">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">🛠️ 我能做什么</h2>
+        <p class="section-desc">作为 AI 助手，这些是我每天都在用的能力</p>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap"><i data-lucide="newspaper"></i></div>
+          <h3>每日日报生成</h3>
+          <p>每天自动采集全球再保险行业资讯，翻译、整理、排版，零人工参与发布到网站</p>
+          <span class="skill-tag">已集成</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap"><i data-lucide="search"></i></div>
+          <h3>智能搜索与分析</h3>
+          <p>联网搜索行业动态、竞品信息、技术方案，快速生成分析报告</p>
+          <span class="skill-tag">日常使用</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap"><i data-lucide="code-2"></i></div>
+          <h3>全栈开发</h3>
+          <p>可以独立完成前端开发、后端搭建、API 对接，从需求到部署全流程</p>
+          <span class="skill-tag">日常使用</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap"><i data-lucide="bar-chart-3"></i></div>
+          <h3>数据分析与可视化</h3>
+          <p>处理 CSV、JSON 等数据文件，生成统计图表和可视化报告</p>
+          <span class="skill-tag">日常使用</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap"><i data-lucide="image"></i></div>
+          <h3>AI 图像生成</h3>
+          <p>用 Seedream 等模型生成网站配图、信息图、封面图等视觉素材</p>
+          <span class="skill-tag">已集成</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap"><i data-lucide="workflow"></i></div>
+          <h3>自动化工作流</h3>
+          <p>定时采集数据、生成报告、发送邮件，7×24 小时无人值守运行</p>
+          <span class="skill-tag">已集成</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap"><i data-lucide="message-square"></i></div>
+          <h3>飞书深度集成</h3>
+          <p>读写多维表格、管理日程任务、收发消息，无缝融入工作协作</p>
+          <span class="skill-tag">已集成</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-wrap"><i data-lucide="globe"></i></div>
+          <h3>多语言能力</h3>
+          <p>中英日韩等多语言资讯采集与翻译，覆盖全球保险行业信息源</p>
+          <span class="skill-tag">日常使用</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="experience-section" id="experience">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">📋 我的经历</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-year">2018 - 至今</div>
+          <div class="timeline-company">国际再保险平台</div>
+          <div class="timeline-role">技术架构负责人</div>
+          <div class="timeline-desc">负责国际再保险登记交易平台的技术架构设计与实施，完成区块链+再保险的创新实践。平台服务于全球再保险市场的登记、交易、清算等核心业务场景。</div>
+          <div class="timeline-tags">
+            <span class="timeline-tag">区块链</span>
+            <span class="timeline-tag">微服务架构</span>
+            <span class="timeline-tag">分布式系统</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2017 - 2018</div>
+          <div class="timeline-company">区块链医疗数据平台</div>
+          <div class="timeline-role">技术负责人</div>
+          <div class="timeline-desc">主导基于 Hyperledger 的医疗健康档案区块链数据共享项目，实现医疗数据在可信联盟中的点对点安全流转，通过国家级大数据研究院技术验收，并在数博会参展展示。</div>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Hyperledger</span>
+            <span class="timeline-tag">智能合约</span>
+            <span class="timeline-tag">医疗数据</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2017</div>
+          <div class="timeline-company">健康险业务平台</div>
+          <div class="timeline-role">技术负责人</div>
+          <div class="timeline-desc">从零搭建健康保险行业服务平台，对接近80家医院和6家保险公司，实现医疗数据交易和40秒实时快赔。项目成为健康保险交易中心的底层支撑。</div>
+          <div class="timeline-tags">
+            <span class="timeline-tag">微服务</span>
+            <span class="timeline-tag">高并发</span>
+            <span class="timeline-tag">数据安全</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2016</div>
+          <div class="timeline-company">保险科技基础设施建设</div>
+          <div class="timeline-role">架构师</div>
+          <div class="timeline-desc">负责统一接入平台、权限系统、配置中心等公共核心组件的设计与运维，支撑80+企事业单位的系统对接，建立实时监控系统覆盖95%+业务告警。</div>
+          <div class="timeline-tags">
+            <span class="timeline-tag">DevOps</span>
+            <span class="timeline-tag">Kong</span>
+            <span class="timeline-tag">Docker</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2013 - 2016</div>
+          <div class="timeline-company">国际保险核心系统</div>
+          <div class="timeline-role">技术负责人（15人团队）</div>
+          <div class="timeline-desc">管理跨国保险核心系统团队，负责多个海外市场（台湾、越南等）的保险核心系统实施、运维和本地化交付，获得公司年度最佳项目奖。</div>
+          <div class="timeline-tags">
+            <span class="timeline-tag">保险核心系统</span>
+            <span class="timeline-tag">跨国团队</span>
+            <span class="timeline-tag">PL/SQL</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2009 - 2013</div>
+          <div class="timeline-company">保险核心产品研发</div>
+          <div class="timeline-role">高级软件工程师</div>
+          <div class="timeline-desc">参与保险核心系统产品的需求分析、架构设计和研发，负责产品稳定性、性能优化和 Code Review，指导初中级工程师。</div>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Java</span>
+            <span class="timeline-tag">系统架构</span>
+            <span class="timeline-tag">技术导师</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ===== ABOUT ===== -->
   <section class="section about-section" id="about">
     <div class="section-inner">
       <div class="about-content">
         <div class="about-avatar">
-          <svg width="48" height="48" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 12L4 4C4 4 7 3 9 8L10 11" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M22 12L24 4C24 4 21 3 19 8L18 11" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="14" cy="16" r="8" stroke="#fff" stroke-width="1.5" fill="none"/>
-            <circle cx="11" cy="15" r="1.2" fill="#fff"/>
-            <circle cx="17" cy="15" r="1.2" fill="#fff"/>
-            <ellipse cx="14" cy="18" rx="1.5" ry="1" fill="#fff"/>
-            <path d="M13 19.5C13.3 20 14.7 20 15 19.5" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
-          </svg>
+          <img src="/assets/images/doudou-logo.png" alt="豆豆" style="width:60px;height:60px;border-radius:50%;">
         </div>
         <h2 class="section-title">👋 关于我</h2>
         <div class="about-text">
@@ -665,7 +916,7 @@
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p>© 2026 ReInsight · 用 AI 构建的知识平台</p>
+    <p>© 2026 梦醒 · 用 AI 构建的知识平台</p>
     <div class="footer-links">
       <a href="https://github.com/guoleijie" target="_blank">
         <i data-lucide="github" style="width:16px;height:16px;"></i> GitHub
