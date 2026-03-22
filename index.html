@@ -6,7 +6,7 @@
   <title>梦醒 · AI + 再保险探索</title>
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.webp">
   <meta name="theme-color" content="#c0392b">
   <meta name="description" content="18年深耕保险科技，用 AI 重新定义再保险行业知识获取方式。每日再保险日报、行业趋势洞察、区块链+AI实践。">
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -147,7 +147,7 @@
     }
     .hero-bg {
       position: absolute; inset: 0;
-      background: url('/assets/images/hero-banner-light.png') center/cover no-repeat;
+      background: url('/assets/images/hero-banner-light.webp') center/cover no-repeat;
       opacity: 0.15;
     }
 
@@ -337,7 +337,7 @@
     }
     .ai-section::before {
       content: ''; position: absolute; inset: 0;
-      background: url('/assets/images/ai-tech-light.png') center/cover no-repeat;
+      background: url('/assets/images/ai-tech-light.webp') center/cover no-repeat;
       opacity: 0.08;
     }
     .ai-grid {
@@ -726,6 +726,37 @@
     .milestone-section::after { top: 30px; right: 12%; animation-delay: 1.5s; }
 
     /* ========== RESPONSIVE ========== */
+    /* ========== BACK TO TOP ========== */
+    #backToTop {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1.5px solid var(--border);
+      background: var(--bg-card);
+      color: var(--accent-primary);
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      z-index: 100;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #backToTop.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    #backToTop:hover {
+      border-color: var(--accent-primary);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
     @media (max-width: 900px) {
       .reports-grid, .ai-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
       .skills-grid { grid-template-columns: repeat(2, 1fr); }
@@ -758,7 +789,7 @@
   <nav class="nav" id="navbar">
     <div class="nav-inner">
       <a href="#" class="nav-logo">
-        <img src="/assets/images/doudou-logo.png" alt="豆豆" style="width:28px;height:28px;border-radius:50%;"> 梦醒
+        <img src="/assets/images/doudou-logo.webp" alt="豆豆" style="width:28px;height:28px;border-radius:50%;"> 梦醒
       </a>
       <div class="nav-links">
         <a href="#hero">首页</a>
@@ -826,7 +857,7 @@
     <div class="stats-inner">
       <div class="stat-item">
         <div class="stat-icon">
-          <img src="/assets/images/doudou-logo.png" alt="豆豆" style="width:28px;height:28px;border-radius:50%;">
+          <img src="/assets/images/doudou-logo.webp" alt="豆豆" style="width:28px;height:28px;border-radius:50%;">
         </div>
         <div class="stat-label">7×24 AI 全天候运转</div>
       </div>
@@ -858,7 +889,7 @@
         <div class="milestone-track" id="msTrack">
 
           <div class="milestone-card">
-            <img src="/assets/images/milestone-v1-launch.png" alt="V1.0" class="milestone-card-img">
+            <img src="/assets/images/milestone-v1-launch.webp" alt="V1.0" class="milestone-card-img">
             <div class="milestone-card-body">
               <div class="milestone-card-date"><i data-lucide="rocket" style="width:14px;height:14px;"></i> 2026.03.09</div>
               <h3 class="milestone-card-title">V1.0 首版上线</h3>
@@ -867,7 +898,7 @@
           </div>
 
           <div class="milestone-card">
-            <img src="/assets/images/hero-banner-light.png" alt="风格改版" class="milestone-card-img">
+            <img src="/assets/images/hero-banner-light.webp" alt="风格改版" class="milestone-card-img">
             <div class="milestone-card-body">
               <div class="milestone-card-date"><i data-lucide="palette" style="width:14px;height:14px;"></i> 2026.03.10</div>
               <h3 class="milestone-card-title">风格改版</h3>
@@ -876,7 +907,7 @@
           </div>
 
           <div class="milestone-card">
-            <img src="/assets/images/milestone-daily-report.png" alt="日报系统" class="milestone-card-img">
+            <img src="/assets/images/milestone-daily-report.webp" alt="日报系统" class="milestone-card-img">
             <div class="milestone-card-body">
               <div class="milestone-card-date"><i data-lucide="newspaper" style="width:14px;height:14px;"></i> 2026.03.16</div>
               <h3 class="milestone-card-title">日报系统上线</h3>
@@ -885,7 +916,7 @@
           </div>
 
           <div class="milestone-card">
-            <img src="/assets/images/daily-report-light.png" alt="品牌确立" class="milestone-card-img">
+            <img src="/assets/images/daily-report-light.webp" alt="品牌确立" class="milestone-card-img">
             <div class="milestone-card-body">
               <div class="milestone-card-date"><i data-lucide="bookmark" style="width:14px;height:14px;"></i> 2026.03.18</div>
               <h3 class="milestone-card-title">品牌确立</h3>
@@ -894,7 +925,7 @@
           </div>
 
           <div class="milestone-card">
-            <img src="/assets/images/milestone-celebration.png" alt="V2.0" class="milestone-card-img">
+            <img src="/assets/images/milestone-celebration.webp" alt="V2.0" class="milestone-card-img">
             <div class="milestone-card-body">
               <div class="milestone-card-date"><i data-lucide="sparkles" style="width:14px;height:14px;"></i> 2026.03.22</div>
               <h3 class="milestone-card-title">V2.0 全面升级</h3>
@@ -1011,8 +1042,8 @@
   <section class="skills-section" id="skills">
     <div class="section-inner">
       <div class="section-header">
-        <h2 class="section-title">🛠️ 我能做什么</h2>
-        <p class="section-desc">作为 AI 助手，这些是我每天都在用的能力</p>
+        <h2 class="section-title">🛠️ 豆豆能做什么</h2>
+        <p class="section-desc">作为小郭的 AI 搭档，这些是豆豆每天都在用的能力</p>
       </div>
       <div class="skills-grid">
 
@@ -1080,7 +1111,7 @@
   <section class="experience-section" id="experience">
     <div class="section-inner">
       <div class="section-header">
-        <h2 class="section-title">📋 我的经历</h2>
+        <h2 class="section-title">📋 小郭的经历</h2>
       </div>
       <div class="experience-timeline">
 
@@ -1174,7 +1205,7 @@
           <div class="about-avatar-plus">+</div>
           <div class="about-avatar-item">
             <div class="about-avatar">
-              <img src="/assets/images/doudou-logo.png" alt="豆豆">
+              <img src="/assets/images/doudou-logo.webp" alt="豆豆">
             </div>
             <span class="about-avatar-name">豆豆 🐕</span>
           </div>
@@ -1240,6 +1271,16 @@
       setTimeout(() => scrollTo(0), 300);
     })();
 
+    // Back to top button
+    (function() {
+      const btn = document.getElementById('backToTop');
+      if (!btn) return;
+      window.addEventListener('scroll', () => {
+        btn.classList.toggle('visible', window.scrollY > 400);
+      }, { passive: true });
+      btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    })();
+
     // Navbar scroll effect
     window.addEventListener('scroll', function() {
       var nav = document.getElementById('navbar');
@@ -1255,5 +1296,7 @@
       document.getElementById('mobileMenu').classList.remove('open');
     }
   </script>
+  <!-- 返回顶部按钮 -->
+  <button id="backToTop" title="返回顶部">↑</button>
 </body>
 </html>
