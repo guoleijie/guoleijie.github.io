@@ -343,12 +343,43 @@
   // Auto-init on load
   document.addEventListener('DOMContentLoaded', function() {
     applyLang(getLang());
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.lang === getLang());
+    var lang = getLang();
+    // Set correct flag on load
+    var flag = document.getElementById('langFlag');
+    if (flag) {
+      flag.src = lang === 'zh' ? 'https://flagcdn.com/w40/cn.png' : 'https://flagcdn.com/w40/gb.png';
+    }
+    // Set active states
+    document.querySelectorAll('.lang-option').forEach(function(opt) {
+      opt.classList.toggle('active', opt.dataset.lang === lang);
     });
   });
 
   // Expose globally
-  window.setLang = setLang;
-  window.getLang = getLang;
+  window.setLang = function(lang) {
+    localStorage.setItem('lang', lang);
+    applyLang(lang);
+    var flag = document.getElementById('langFlag');
+    if (flag) {
+      flag.src = lang === 'zh' ? 'https://flagcdn.com/w40/cn.png' : 'https://flagcdn.com/w40/gb.png';
+      flag.alt = lang === 'zh' ? 'CN' : 'EN';
+    }
+    document.querySelectorAll('.lang-option').forEach(function(opt) {
+      opt.classList.toggle('active', opt.dataset.lang === lang);
+    });
+    var dd = document.getElementById('langDropdown');
+    if (dd) dd.classList.remove('open');
+  };
+  window.toggleLangMenu = function() {
+    var dd = document.getElementById('langDropdown');
+    if (dd) dd.classList.toggle('open');
+  };
+  window.getLang = function() {
+    return localStorage.getItem('lang') || 'zh';
+  };
+  // Close dropdown on outside click
+  document.addEventListener('click', function(e) {
+    var dd = document.getElementById('langDropdown');
+    if (dd && !dd.contains(e.target)) dd.classList.remove('open');
+  });
 })();
