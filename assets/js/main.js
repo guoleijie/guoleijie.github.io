@@ -62,7 +62,7 @@ window.addEventListener('scroll', () => {
         width: 48px;
         height: 48px;
         border-radius: 50%;
-        background: #c0392b;
+        background: #e85d3a;
         color: white;
         border: none;
         cursor: pointer;
