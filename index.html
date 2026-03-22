@@ -551,68 +551,121 @@
       padding: 3px 12px; border-radius: 50px;
     }
 
-    /* ========== MILESTONE ========== */
+    /* ========== MILESTONE TIMELINE ========== */
     .milestone-section {
       background: var(--bg-primary);
-      padding: 60px 24px;
+      padding: 80px 24px;
       position: relative;
       overflow: hidden;
     }
     .milestone-inner {
-      max-width: 800px;
+      max-width: 960px;
       margin: 0 auto;
+    }
+    .milestone-header {
       text-align: center;
+      margin-bottom: 56px;
     }
-    .milestone-badge {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: linear-gradient(135deg, rgba(192,57,43,0.1), rgba(230,126,34,0.1));
-      color: var(--accent-primary);
-      padding: 8px 20px; border-radius: 50px; font-size: 0.9rem;
-      font-weight: 700; margin-bottom: 24px;
-      border: 1.5px solid rgba(192,57,43,0.15);
-    }
-    .milestone-image-wrapper {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 28px;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.12);
-      max-width: 100%;
-    }
-    .milestone-image-wrapper img {
-      display: block;
-      width: 100%;
-      max-width: 560px;
-      height: auto;
-      border-radius: 20px;
-    }
-    .milestone-text h2 {
+    .milestone-header h2 {
       font-family: 'Long Cang', sans-serif;
-      font-size: 1.6rem;
-      color: var(--text-primary);
-      margin-bottom: 16px;
+      font-size: 1.8rem;
+      margin-bottom: 12px;
     }
-    .milestone-text p {
-      font-size: 0.95rem;
+    .milestone-header p {
       color: var(--text-secondary);
-      line-height: 1.9;
-      max-width: 600px;
-      margin: 0 auto 12px;
+      font-size: 1rem;
     }
-    .milestone-meta {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      margin-top: 24px;
-      flex-wrap: wrap;
+    .timeline {
+      position: relative;
+      max-width: 820px;
+      margin: 0 auto;
+      padding-left: 0;
     }
-    .milestone-meta-item {
-      display: flex; align-items: center; gap: 6px;
-      font-size: 0.85rem; color: var(--text-light);
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--accent-primary);
+      transform: translateX(-50%);
+      border-radius: 3px;
     }
-    .milestone-meta-item strong {
+    .tl-item {
+      position: relative;
+      width: 45%;
+      margin-bottom: 48px;
+      opacity: 0;
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+    .tl-item:nth-child(1) { animation-delay: 0.1s; margin-left: 0; }
+    .tl-item:nth-child(2) { animation-delay: 0.2s; margin-left: auto; }
+    .tl-item:nth-child(3) { animation-delay: 0.3s; margin-left: 0; }
+    .tl-item:nth-child(4) { animation-delay: 0.4s; margin-left: auto; }
+    .tl-item:nth-child(5) { animation-delay: 0.5s; margin-left: 0; }
+    .tl-item:last-child { margin-bottom: 0; }
+    .tl-item::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #fff;
+      border: 3px solid var(--accent-primary);
+      box-shadow: 0 0 0 4px rgba(192,57,43,0.15);
+      z-index: 2;
+    }
+    .tl-item:nth-child(odd)::before { right: -32px; }
+    .tl-item:nth-child(even)::before { left: -32px; }
+    .tl-card {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all var(--transition);
+      border: 1px solid var(--border);
+    }
+    .tl-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--accent-primary);
+    }
+    .tl-card-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .tl-card-body {
+      padding: 20px 24px;
+    }
+    .tl-date {
+      font-family: 'ZCOOL KuaiLe', sans-serif;
+      font-size: 0.85rem;
       color: var(--accent-primary);
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .tl-title {
+      font-family: 'ZCOOL KuaiLe', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .tl-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     /* Sparkle animation */
     @keyframes sparkle {
@@ -633,6 +686,11 @@
       .skills-grid { grid-template-columns: repeat(2, 1fr); }
       .stats-inner { grid-template-columns: repeat(2, 1fr); }
       .hero h1 { font-size: 2rem; }
+      /* Timeline: on tablet, stack to left */
+      .timeline::before { left: 20px; }
+      .tl-item { width: calc(100% - 50px); margin-left: 50px !important; }
+      .tl-item::before { left: -37px !important; right: auto !important; }
+      .tl-item:nth-child(odd)::before, .tl-item:nth-child(even)::before { left: -37px; }
     }
     @media (max-width: 640px) {
       .nav-links { display: none; }
@@ -746,20 +804,67 @@
   <!-- ===== MILESTONE ===== -->
   <section class="milestone-section" id="milestone">
     <div class="milestone-inner">
-      <div class="milestone-badge">🎉 里程碑 · 2026.03.22</div>
-      <div class="milestone-image-wrapper">
-        <img src="/assets/images/milestone-celebration.png" alt="豆豆庆祝网站上线">
+      <div class="milestone-header">
+        <h2>🚀 里程碑</h2>
+        <p>从第一行代码到今天的全面升级，记录我们的每一步</p>
       </div>
-      <div class="milestone-text">
-        <h2>🐕🚀 从零到上线，我们一起做到了！</h2>
-        <p>从第一个像素到最后一行代码，这个网站是<strong>小郭</strong>和<strong>豆豆</strong>一起完成的。经过 5 轮设计迭代，从深色科技风到明亮温暖风，从空页面到日报系统完整上线 — 今天，我们庆祝这个里程碑！</p>
-        <p>日报是豆豆写的，图片是豆豆画的，代码也是豆豆写的。小郭负责方向把控、需求定义和最终验收。这就是人机协作的力量 💪</p>
-      </div>
-      <div class="milestone-meta">
-        <div class="milestone-meta-item">🔄 <strong>5轮</strong> 设计迭代</div>
-        <div class="milestone-meta-item">📰 <strong>6期</strong> 日报已发布</div>
-        <div class="milestone-meta-item">🎨 <strong>AI生成</strong> 视觉素材</div>
-        <div class="milestone-meta-item">🛠️ <strong>全栈</strong> 前后端开发</div>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-card">
+            <img src="/assets/images/milestone-v1-launch.png" alt="V1.0 首版上线" class="tl-card-img">
+            <div class="tl-card-body">
+              <div class="tl-date"><i data-lucide="rocket" style="width:14px;height:14px;"></i> 2026.03.09</div>
+              <h3 class="tl-title">V1.0 首版上线</h3>
+              <p class="tl-desc">从零开始，豆豆用 AI 搭建了第一个版本的网站，包括基础首页和个人简介。第一次把代码推送到 GitHub Pages。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-card">
+            <img src="/assets/images/hero-banner-light.png" alt="风格改版" class="tl-card-img">
+            <div class="tl-card-body">
+              <div class="tl-date"><i data-lucide="palette" style="width:14px;height:14px;"></i> 2026.03.10</div>
+              <h3 class="tl-title">风格改版</h3>
+              <p class="tl-desc">参考 sanwan.ai 的设计风格，全面调整配色和字体，引入 Lucide 图标库，确定明亮温暖的视觉方向。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-card">
+            <img src="/assets/images/milestone-daily-report.png" alt="日报系统上线" class="tl-card-img">
+            <div class="tl-card-body">
+              <div class="tl-date"><i data-lucide="newspaper" style="width:14px;height:14px;"></i> 2026.03.16</div>
+              <h3 class="tl-title">日报系统上线</h3>
+              <p class="tl-desc">上线每日再保险行业日报自动生成功能，从信息采集、翻译、整理到发布全流程 AI 自动化。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-card">
+            <img src="/assets/images/daily-report-light.png" alt="品牌确立" class="tl-card-img">
+            <div class="tl-card-body">
+              <div class="tl-date"><i data-lucide="bookmark" style="width:14px;height:14px;"></i> 2026.03.18</div>
+              <h3 class="tl-title">品牌确立</h3>
+              <p class="tl-desc">网站命名为「梦醒」，日报持续迭代优化，移动端适配完善，开始形成稳定的内容输出节奏。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-card">
+            <img src="/assets/images/milestone-celebration.png" alt="V2.0 全面升级" class="tl-card-img">
+            <div class="tl-card-body">
+              <div class="tl-date"><i data-lucide="sparkles" style="width:14px;height:14px;"></i> 2026.03.22</div>
+              <h3 class="tl-title">V2.0 全面升级</h3>
+              <p class="tl-desc">经过 5 轮设计迭代，新增豆豆专属 Logo、技能展示、经历时间线、里程碑板块。关于我改为「关于我们」，全面体现人机协作理念。</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
