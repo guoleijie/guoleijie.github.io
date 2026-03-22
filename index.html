@@ -529,6 +529,82 @@
       padding: 3px 12px; border-radius: 50px;
     }
 
+    /* ========== MILESTONE ========== */
+    .milestone-section {
+      background: var(--bg-primary);
+      padding: 60px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .milestone-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .milestone-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: linear-gradient(135deg, rgba(192,57,43,0.1), rgba(230,126,34,0.1));
+      color: var(--accent-primary);
+      padding: 8px 20px; border-radius: 50px; font-size: 0.9rem;
+      font-weight: 700; margin-bottom: 24px;
+      border: 1.5px solid rgba(192,57,43,0.15);
+    }
+    .milestone-image-wrapper {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 28px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+      max-width: 100%;
+    }
+    .milestone-image-wrapper img {
+      display: block;
+      width: 100%;
+      max-width: 560px;
+      height: auto;
+      border-radius: 20px;
+    }
+    .milestone-text h2 {
+      font-family: 'Long Cang', sans-serif;
+      font-size: 1.6rem;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+    .milestone-text p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.9;
+      max-width: 600px;
+      margin: 0 auto 12px;
+    }
+    .milestone-meta {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+    .milestone-meta-item {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 0.85rem; color: var(--text-light);
+    }
+    .milestone-meta-item strong {
+      color: var(--accent-primary);
+    }
+    /* Sparkle animation */
+    @keyframes sparkle {
+      0%, 100% { opacity: 0; transform: scale(0); }
+      50% { opacity: 1; transform: scale(1); }
+    }
+    .milestone-section::before,
+    .milestone-section::after {
+      content: '✨'; position: absolute; font-size: 1.2rem;
+      animation: sparkle 3s ease-in-out infinite;
+    }
+    .milestone-section::before { top: 20px; left: 10%; animation-delay: 0s; }
+    .milestone-section::after { top: 30px; right: 12%; animation-delay: 1.5s; }
+
     /* ========== RESPONSIVE ========== */
     @media (max-width: 900px) {
       .reports-grid, .ai-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
@@ -562,6 +638,7 @@
       </a>
       <div class="nav-links">
         <a href="#hero">首页</a>
+        <a href="#milestone">里程碑</a>
         <a href="#reports">日报</a>
         <a href="#skills">技能</a>
         <a href="#experience">经历</a>
@@ -579,6 +656,7 @@
       <i data-lucide="x" style="width:28px;height:28px;"></i>
     </button>
     <a href="#hero" onclick="closeMobile()">首页</a>
+    <a href="#milestone" onclick="closeMobile()">里程碑</a>
     <a href="#reports" onclick="closeMobile()">日报</a>
     <a href="#skills" onclick="closeMobile()">技能</a>
     <a href="#experience" onclick="closeMobile()">经历</a>
@@ -595,8 +673,8 @@
     <div class="deco-circle"></div>
 
     <div class="hero-content">
-      <div class="hero-badge">✨ 用 AI 连接世界</div>
-      <h1><span class="highlight">AI + 再保险</span>，我在探索的边界</h1>
+      <div class="hero-badge">✨ AI + 再保险，我们一起探索</div>
+      <h1><span class="highlight">AI + 再保险</span>，我们一起探索的边界</h1>
       <p class="subtitle">18年深耕保险科技，用 AI 重新定义行业知识获取方式</p>
       <div class="hero-buttons">
         <a href="/blog/2026/03/22-daily-report.html" class="btn btn-primary">
@@ -639,6 +717,27 @@
       <div class="stat-item">
         <div class="stat-icon">🌏</div>
         <div class="stat-label">国际再保险平台架构师</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MILESTONE ===== -->
+  <section class="milestone-section" id="milestone">
+    <div class="milestone-inner">
+      <div class="milestone-badge">🎉 里程碑 · 2026.03.22</div>
+      <div class="milestone-image-wrapper">
+        <img src="/assets/images/milestone-celebration.png" alt="豆豆庆祝网站上线">
+      </div>
+      <div class="milestone-text">
+        <h2>🐕🚀 从零到上线，我们一起做到了！</h2>
+        <p>从第一个像素到最后一行代码，这个网站是<strong>Roger</strong>和<strong>豆豆</strong>一起完成的。经过 5 轮设计迭代，从深色科技风到明亮温暖风，从空页面到日报系统完整上线 — 今天，我们庆祝这个里程碑！</p>
+        <p>日报是豆豆写的，图片是豆豆画的，代码也是豆豆写的。Roger 负责方向把控、需求定义和最终验收。这就是人机协作的力量 💪</p>
+      </div>
+      <div class="milestone-meta">
+        <div class="milestone-meta-item">🔄 <strong>5轮</strong> 设计迭代</div>
+        <div class="milestone-meta-item">📰 <strong>6期</strong> 日报已发布</div>
+        <div class="milestone-meta-item">🎨 <strong>AI生成</strong> 视觉素材</div>
+        <div class="milestone-meta-item">🛠️ <strong>全栈</strong> 前后端开发</div>
       </div>
     </div>
   </section>
@@ -898,9 +997,9 @@
         </div>
         <h2 class="section-title">👋 关于我</h2>
         <div class="about-text">
-          <p>我是一个在保险科技领域摸爬滚打了18年的架构师，最近被 AI 彻底迷住了。</p>
+          <p>你好，我是 <strong>Roger</strong>，一个在保险科技领域摸爬滚打了18年的架构师。旁边这位是 <strong>豆豆</strong> 🐕，我的 AI 搭档。</p>
           <p>完成过国际再保险登记交易平台的建设（区块链 + 再保险），现在正在探索 AI 能为这个行业带来什么。</p>
-          <p>这个网站是我用 AI 搭建的实验场 — 日报是 AI 写的，图片是 AI 画的，代码也是 AI 写的。我就是那个提需求和验收的「甲方」。</p>
+          <p>这个网站是我们俩一起搭的 — 日报是豆豆写的，图片是豆豆画的，代码也是豆豆写的。我负责提需求和方向把控，豆豆负责全力输出。人机协作，就是我们的工作方式 🤝</p>
         </div>
         <div class="about-contacts">
           <a href="mailto:roger_g@126.com" class="contact-btn">
@@ -916,7 +1015,7 @@
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p>© 2026 梦醒 · 用 AI 构建的知识平台</p>
+    <p>© 2026 梦醒 · Roger & 豆豆 共同构建 · 用 AI 连接世界 🐕</p>
     <div class="footer-links">
       <a href="https://github.com/guoleijie" target="_blank">
         <i data-lucide="github" style="width:16px;height:16px;"></i> GitHub
