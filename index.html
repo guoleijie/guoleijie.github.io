@@ -52,7 +52,7 @@
     }
   }
   </script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@1.0.1"></script>
   <script src="/assets/js/i18n.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@300;400;500;700;900&family=Ma+Shan+Zheng&display=swap');
@@ -873,6 +873,44 @@
       .timeline-tag { font-size: 0.7rem; padding: 2px 10px; }
     }
   </style>
+  <!-- Schema.org 结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "梦醒",
+        "url": "https://guoleijie.github.io/",
+        "description": "18年深耕保险科技，用AI重新定义再保险行业知识获取方式。每日再保险日报、行业趋势洞察。",
+        "inLanguage": "zh-CN",
+        "publisher": {
+          "@id": "https://guoleijie.github.io/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://guoleijie.github.io/#person",
+        "name": "郭磊劼",
+        "url": "https://guoleijie.github.io/",
+        "jobTitle": "国际再保险平台技术架构负责人",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "上海国际再保险登记交易中心"
+        },
+        "knowsAbout": ["再保险", "保险科技", "区块链", "人工智能", "分布式系统", "微服务架构"],
+        "sameAs": ["https://github.com/guoleijie"]
+      }
+    ]
+  }
+  </script>
+
+
+  <!-- Google Search Console 验证（需替换为实际验证码） -->
+  <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE"> -->
+
+  <!-- Baidu 站长验证（需替换为实际验证码） -->  
+  <!-- <meta name="baidu-site-verification" content="YOUR_VERIFICATION_CODE"> -->
 </head>
 <body>
 
