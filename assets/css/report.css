@@ -783,3 +783,10 @@ nav.scrolled {
     display: none;
   }
 }
+
+/* Giscus 评论区域 - 与日报内容对齐 */
+.giscus-wrapper {
+    max-width: 860px;
+    margin: 2rem auto 0;
+    padding: 0 1.5rem;
+}
