@@ -4,7 +4,25 @@
     zh: {
       // Nav
       nav_home: '首页', nav_milestone: '里程碑', nav_reports: '日报',
-      nav_skills: '技能', nav_experience: '经历', nav_ai_explore: 'AI探索', nav_about: '关于',
+      nav_skills: '技能', nav_research: '研究·洞察·思考', nav_experience: '经历', nav_ai_explore: 'AI探索', nav_about: '关于',
+
+      // AI Explore
+      ai_title: '🤖 AI 探索',
+      ai_subtitle: 'AI 驱动的再保险行业专业化能力建设',
+
+      // Research
+      research_title: '💡 研究·洞察·思考<br><span style="font-size:0.55em;color:var(--text-light);font-family:\'Noto Sans SC\',sans-serif;font-weight:400;">仅个人研究，不代表平台观点</span>',
+
+      // Milestone - Research
+      ms_research_title: '研究·洞察·思考',
+      ms_research_desc: '新增研究洞察板块，展示再保险行业思考与 PPT 演示，首批上线三份研究成果。',
+
+      // Experience - AI
+      exp_ai_year: '2025 - 至今',
+      exp_ai_company: 'AI + 再保险探索',
+      exp_ai_role: 'AI 应用探索者',
+      exp_ai_desc: '深入探索 AI 在再保险行业的创新应用，涵盖智能体（Agent）、大语言模型、自动化日报生成等领域，推动行业数字化转型与智能化升级。',
+      tag_ai: 'AI 智能体', tag_llm: '大语言模型', tag_insurtech: '保险科技',
 
       // Hero
       hero_badge: '✨ AI + 再保险，我们一起探索',
@@ -73,6 +91,49 @@
       ai_card3_title: '区块链 + AI',
       ai_card3_desc: '将区块链的可信数据与 AI 的智能分析深度融合。在再保险登记交易、智能合约、数据共享中实现信任与效率的统一。',
       ai_card3_link: '了解实践',
+
+      // AI Explore - SIRE Skills
+      ai_sire_title: '上海国际再保险登记交易中心 Skills 模块',
+      ai_sire_desc: '基于 SIRE 官方规章制度炼化的三个维度 Skills，为业务人员、技术人员和 AI 智能体提供专业指导。',
+      ai_sire_business: '业务人员：',
+      ai_sire_business_items: '费用计算、准入条件、交易流程、K4系数',
+      ai_sire_tech: '技术人员：',
+      ai_sire_tech_items: '系统对接、API访问、数据安全、审计清单',
+      ai_sire_agent: 'AI智能体：',
+      ai_sire_agent_items: 'Function Calling、系统约束、决策逻辑',
+      ai_sire_link: '查看 GitHub 仓库 →',
+
+      // AI Explore - PACT
+      ai_pact_title: 'PACT: 再保险市场多智能体谈判协议',
+      ai_pact_desc: '标准化多智能体通信框架，通过战略性信息披露策略实现再保险合约自主谈判。',
+      ai_pact_tag_unreleased: '暂未发布',
+      ai_pact_tag_personal: '仅个人研究',
+      ai_pact_contributions_title: '四项贡献：',
+      ai_pact_contrib_1: '形式化再保险合约谈判的多维度状态空间',
+      ai_pact_contrib_2: '战略性披露策略架构（激励相容 + 收敛保证）',
+      ai_pact_contrib_3: '跨巨灾、区域、混合险种的多场景实证',
+      ai_pact_contrib_4: '开源模拟环境',
+      ai_pact_innovation_title: '关键创新 — Revelation Gate：',
+      ai_pact_innovation_desc: '不是全透明也不是全保密，而是学习何时披露多少信息，平衡建立信任与保留筹码，基于贝叶斯说服理论。',
+      ai_pact_conclusion_title: '核心结论：',
+      ai_pact_conclusion_desc: '战略部分披露优于完全透明和完全保密，优于传统经纪人中介模式。基于自博弈强化学习训练。',
+
+      // Research Cards
+      research_card1_title: '新质生产力驱动下的全球再保险治理新范式',
+      research_card1_desc: '智能体时代下的再保险行业赋能与价值重塑思考',
+      research_card1_tag1: '再保险',
+      research_card1_tag2: '智能体',
+      research_card1_tag3: '行业治理',
+      research_card2_title: '驭变未来：以 Harness Engineering 重塑再保险生态',
+      research_card2_desc: '基于上海国际再保险登记交易中心建设的融合发展机遇',
+      research_card2_tag1: '再保险',
+      research_card2_tag2: 'Harness Engineering',
+      research_card2_tag3: '融合发展',
+      research_card3_title: '驱动未来的再保险交易：SIRE Skills 平台架构',
+      research_card3_desc: '上海国际再保险登记交易中心智能化操作指南与智能体解析',
+      research_card3_tag1: 'SIRE Skills',
+      research_card3_tag2: '平台架构',
+      research_card3_tag3: '智能体',
 
       // Skills
       skills_title: '🛠️ 豆豆能做什么',
@@ -153,7 +214,25 @@
     en: {
       // Nav
       nav_home: 'Home', nav_milestone: 'Milestones', nav_reports: 'Reports',
-      nav_skills: 'Skills', nav_experience: 'Experience', nav_ai_explore: 'AI Explore', nav_about: 'About',
+      nav_skills: 'Skills', nav_research: 'Research & Insights', nav_experience: 'Experience', nav_ai_explore: 'AI Explore', nav_about: 'About',
+
+      // AI Explore
+      ai_title: '🤖 AI Explore',
+      ai_subtitle: 'AI-driven professional capability building for the reinsurance industry',
+
+      // Research
+      research_title: '💡 Research & Insights<br><span style="font-size:0.55em;color:var(--text-light);font-family:var(--font-body);font-weight:400;">Personal research only, not representing platform views</span>',
+
+      // Milestone - Research
+      ms_research_title: 'Research & Insights',
+      ms_research_desc: 'New research section showcasing reinsurance insights and presentations. First batch: three research outputs.',
+
+      // Experience - AI
+      exp_ai_year: '2025 - Present',
+      exp_ai_company: 'AI + Reinsurance Exploration',
+      exp_ai_role: 'AI Application Explorer',
+      exp_ai_desc: 'Exploring innovative AI applications in the reinsurance industry, covering AI Agents, large language models, automated daily report generation, and driving digital transformation.',
+      tag_ai: 'AI Agents', tag_llm: 'LLMs', tag_insurtech: 'InsurTech',
 
       // Hero
       hero_badge: '✨ AI + Reinsurance, Let\'s Explore Together',
@@ -222,6 +301,49 @@
       ai_card3_title: 'Blockchain + AI',
       ai_card3_desc: 'Deep integration of blockchain\'s trusted data with AI\'s intelligent analytics. Achieving trust and efficiency in reinsurance registration, smart contracts, and data sharing.',
       ai_card3_link: 'See Practice',
+
+      // AI Explore - SIRE Skills
+      ai_sire_title: 'Shanghai International Reinsurance Exchange Skills Module',
+      ai_sire_desc: 'Three-dimensional Skills distilled from SIRE official regulations, providing professional guidance for business users, technical teams, and AI agents.',
+      ai_sire_business: 'Business: ',
+      ai_sire_business_items: 'Fee calculation, eligibility criteria, transaction workflows, K4 coefficients',
+      ai_sire_tech: 'Technical: ',
+      ai_sire_tech_items: 'System integration, API access, data security, audit checklists',
+      ai_sire_agent: 'AI Agents: ',
+      ai_sire_agent_items: 'Function Calling, system constraints, decision logic',
+      ai_sire_link: 'View GitHub Repository →',
+
+      // AI Explore - PACT
+      ai_pact_title: 'PACT: Multi-Agent Negotiation Protocol for Reinsurance Markets',
+      ai_pact_desc: 'Standardized multi-agent communication framework enabling autonomous reinsurance contract negotiation through strategic information disclosure.',
+      ai_pact_tag_unreleased: 'Not Yet Released',
+      ai_pact_tag_personal: 'Personal Research Only',
+      ai_pact_contributions_title: 'Four Contributions:',
+      ai_pact_contrib_1: 'Formalized multi-dimensional state space for reinsurance contract negotiation',
+      ai_pact_contrib_2: 'Strategic disclosure architecture (incentive compatibility + convergence guarantees)',
+      ai_pact_contrib_3: 'Multi-scenario empirical studies across catastrophe, regional, and mixed lines',
+      ai_pact_contrib_4: 'Open-source simulation environment',
+      ai_pact_innovation_title: 'Key Innovation — Revelation Gate:',
+      ai_pact_innovation_desc: 'Neither full transparency nor full secrecy, but learning when and how much to disclose—balancing trust-building with strategic leverage, based on Bayesian persuasion theory.',
+      ai_pact_conclusion_title: 'Core Conclusion:',
+      ai_pact_conclusion_desc: 'Strategic partial disclosure outperforms both full transparency and full secrecy, and exceeds traditional broker-mediated models. Trained via self-play reinforcement learning.',
+
+      // Research Cards
+      research_card1_title: 'A New Paradigm for Global Reinsurance Governance Driven by New Quality Productive Forces',
+      research_card1_desc: 'Reflections on industry empowerment and value transformation in the era of AI agents',
+      research_card1_tag1: 'Reinsurance',
+      research_card1_tag2: 'Agents',
+      research_card1_tag3: 'Governance',
+      research_card2_title: 'Harnessing the Future: Reshaping Reinsurance Ecosystem via Harness Engineering',
+      research_card2_desc: 'Integration opportunities based on the Shanghai International Reinsurance Exchange development',
+      research_card2_tag1: 'Reinsurance',
+      research_card2_tag2: 'Harness Engineering',
+      research_card2_tag3: 'Integration',
+      research_card3_title: 'Powering Future Reinsurance Transactions: SIRE Skills Platform Architecture',
+      research_card3_desc: 'Intelligent operation guide and AI agent analysis for the Shanghai International Reinsurance Exchange',
+      research_card3_tag1: 'SIRE Skills',
+      research_card3_tag2: 'Platform Architecture',
+      research_card3_tag3: 'AI Agents',
 
       // Skills
       skills_title: '🛠️ What Doudou Can Do',
@@ -325,7 +447,14 @@
     // Text content
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
-      if (t[key] !== undefined) el.textContent = t[key];
+      if (t[key] !== undefined) {
+        // If element has class 'data-i18n-span', use innerHTML
+        if (el.classList.contains('data-i18n-span')) {
+          el.innerHTML = t[key];
+        } else {
+          el.textContent = t[key];
+        }
+      }
     });
 
     // HTML content
