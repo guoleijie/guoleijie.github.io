@@ -407,6 +407,53 @@
     }
     .report-link:hover { gap: 8px; }
 
+    /* ========== AI EXPLORE ========== */
+    .ai-section {
+      position: relative;
+      background: var(--bg-section);
+      overflow: hidden;
+    }
+    .ai-grid {
+      position: relative; z-index: 2;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;
+    }
+    .ai-card {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      box-shadow: var(--shadow);
+      transition: all var(--transition);
+      border: 1px solid var(--border);
+    }
+    .ai-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--accent-primary);
+    }
+    .ai-card-icon {
+      font-size: 2.2rem; margin-bottom: 18px;
+      display: inline-block;
+    }
+    .ai-card h3 {
+      font-size: 1.15rem; font-weight: 700; margin-bottom: 12px;
+    }
+    .ai-card p {
+      font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;
+      margin-bottom: 18px;
+    }
+    .ai-card-link {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 0.88rem; font-weight: 600; color: var(--accent-secondary);
+      transition: gap var(--transition);
+    }
+    .ai-card-link:hover { gap: 8px; }
+    .ai-card-tags {
+      display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;
+    }
+    .ai-card-tag {
+      font-size: 0.75rem; font-weight: 500; padding: 4px 12px; border-radius: 50px;
+    }
+
     /* ========== ABOUT ========== */
     .about-section {
       background: var(--bg-section);
@@ -879,6 +926,7 @@
         <a href="#milestone" data-i18n="nav_milestone">里程碑</a>
         <a href="#reports" data-i18n="nav_reports">日报</a>
         <a href="#skills" data-i18n="nav_skills">技能</a>
+        <a href="#ai-explore" data-i18n="nav_ai_explore">AI探索</a>
         <a href="#research" data-i18n="nav_research">研究·洞察·思考</a>
         <a href="#experience" data-i18n="nav_experience">经历</a>
         <a href="#about" data-i18n="nav_about">关于</a>
@@ -912,6 +960,7 @@
     <a href="#milestone" onclick="closeMobile()" data-i18n="nav_milestone">里程碑</a>
     <a href="#reports" onclick="closeMobile()" data-i18n="nav_reports">日报</a>
     <a href="#skills" onclick="closeMobile()" data-i18n="nav_skills">技能</a>
+    <a href="#ai-explore" onclick="closeMobile()" data-i18n="nav_ai_explore">AI探索</a>
     <a href="#research" onclick="closeMobile()" data-i18n="nav_research">研究·洞察·思考</a>
     <a href="#experience" onclick="closeMobile()" data-i18n="nav_experience">经历</a>
     <a href="#about" onclick="closeMobile()" data-i18n="nav_about">关于</a>
@@ -1181,6 +1230,38 @@
           <p><span data-i18n="sk8_desc">中英日韩等多语言资讯采集与翻译，覆盖全球保险行业信息源</span></p>
           <span class="skill-tag" data-i18n="sk8_tag">日常使用</span>
         </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AI EXPLORE ===== -->
+  <section class="section ai-section" id="ai-explore">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="ai_title">🤖 AI 探索</h2>
+        <p class="section-desc"><span data-i18n="ai_subtitle">AI 驱动的再保险行业专业化能力建设</span></p>
+      </div>
+      <div class="ai-grid">
+
+        <a href="https://github.com/guoleijie/ire-doc-skills" target="_blank" rel="noopener" style="text-decoration:none;display:flex;flex-direction:column;">
+          <div class="ai-card">
+            <div class="ai-card-icon">🏛️</div>
+            <h3>上海国际再保险登记交易中心 Skills 模块</h3>
+            <p>基于 SIRE 官方规章制度炼化的三个维度 Skills，为业务人员、技术人员和 AI 智能体提供专业指导。</p>
+            <div class="ai-card-tags">
+              <span class="ai-card-tag" style="color:var(--accent-primary);background:var(--accent-primary-light);">sire-business</span>
+              <span class="ai-card-tag" style="color:var(--accent-secondary);background:var(--accent-secondary-light);">sire-tech</span>
+              <span class="ai-card-tag" style="color:var(--accent-green);background:var(--accent-green-light);">sire-agent</span>
+            </div>
+            <div style="margin-bottom:12px;font-size:0.88rem;color:var(--text-light);">
+              <strong>业务人员：</strong>费用计算、准入条件、交易流程、K4系数<br>
+              <strong>技术人员：</strong>系统对接、API访问、数据安全、审计清单<br>
+              <strong>AI智能体：</strong>Function Calling、系统约束、决策逻辑
+            </div>
+            <span class="ai-card-link">查看 GitHub 仓库 →</span>
+          </div>
+        </a>
 
       </div>
     </div>
