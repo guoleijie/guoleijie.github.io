@@ -407,52 +407,6 @@
     }
     .report-link:hover { gap: 8px; }
 
-    /* ========== AI EXPLORE ========== */
-    .ai-section {
-      position: relative;
-      background: linear-gradient(180deg, var(--bg-primary), var(--bg-section), var(--bg-primary));
-      overflow: hidden;
-    }
-    .ai-section::before {
-      content: ''; position: absolute; inset: 0;
-      background: url('/assets/images/ai-tech-light.webp') center/cover no-repeat;
-      opacity: 0.08;
-    }
-    .ai-grid {
-      position: relative; z-index: 2;
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
-    }
-    .ai-card {
-      background: var(--bg-card);
-      border-radius: var(--radius);
-      padding: 36px 28px;
-      box-shadow: var(--shadow);
-      transition: all var(--transition);
-      border: 1px solid var(--border);
-    }
-    .ai-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-hover);
-      border-color: var(--accent-primary);
-    }
-    .ai-card-icon {
-      font-size: 2.2rem; margin-bottom: 18px;
-      display: inline-block;
-    }
-    .ai-card h3 {
-      font-size: 1.15rem; font-weight: 700; margin-bottom: 12px;
-    }
-    .ai-card p {
-      font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;
-      margin-bottom: 18px;
-    }
-    .ai-card-link {
-      display: inline-flex; align-items: center; gap: 4px;
-      font-size: 0.88rem; font-weight: 600; color: var(--accent-secondary);
-      transition: gap var(--transition);
-    }
-    .ai-card-link:hover { gap: 8px; }
-
     /* ========== ABOUT ========== */
     .about-section {
       background: var(--bg-section);
@@ -927,7 +881,6 @@
         <a href="#skills" data-i18n="nav_skills">技能</a>
         <a href="#research" data-i18n="nav_research">研究·洞察·思考</a>
         <a href="#experience" data-i18n="nav_experience">经历</a>
-        <a href="#ai-explore" data-i18n="nav_ai_explore">AI探索</a>
         <a href="#about" data-i18n="nav_about">关于</a>
         <div class="lang-dropdown" id="langDropdown">
           <button class="lang-toggle" onclick="toggleLangMenu()">
@@ -961,7 +914,6 @@
     <a href="#skills" onclick="closeMobile()" data-i18n="nav_skills">技能</a>
     <a href="#research" onclick="closeMobile()" data-i18n="nav_research">研究·洞察·思考</a>
     <a href="#experience" onclick="closeMobile()" data-i18n="nav_experience">经历</a>
-    <a href="#ai-explore" onclick="closeMobile()" data-i18n="nav_ai_explore">AI探索</a>
     <a href="#about" onclick="closeMobile()" data-i18n="nav_about">关于</a>
     <div style="display:flex;gap:12px;margin-top:12px;">
       <button class="lang-option" data-lang="zh" onclick="setLang('zh');closeMobile()" style="padding:8px 20px;border-radius:50px;border:1.5px solid var(--border);background:var(--bg-card);cursor:pointer;font-family:inherit;font-size:0.9rem;display:flex;align-items:center;gap:8px;">
@@ -990,7 +942,6 @@
         <a href="/blog/2026/04/12-daily-report.html" class="btn btn-primary">
           <i data-lucide="newspaper" style="width:18px;height:18px;"></i> <span data-i18n="hero_btn_reports">查看日报</span>
         </a>
-        <a href="#ai-explore" class="btn btn-outline">
           <i data-lucide="compass" style="width:18px;height:18px;"></i> <span data-i18n="hero_btn_learn">了解更多</span>
         </a>
       </div>
@@ -1165,43 +1116,6 @@
     </div>
   </section>
 
-  <!-- ===== AI EXPLORE ===== -->
-  <section class="section ai-section" id="ai-explore">
-    <div class="section-inner">
-      <h2 class="section-title" data-i18n="ai_title">🤖 AI 如何改变再保险</h2>
-      <p class="section-desc"><span data-i18n="ai_subtitle">从信息获取到趋势洞察，AI 正在重新定义保险科技的工作方式</span></p>
-      <div class="ai-grid">
-
-        <div class="ai-card">
-          <div class="ai-card-icon">📰</div>
-          <h3 data-i18n="ai_card1_title">智能日报生成</h3>
-          <p><span data-i18n="ai_card1_desc">每日自动采集、翻译、整理全球再保险资讯，零人工参与。从数十个信息源中筛选关键内容，生成结构化行业日报。</span></p>
-          <a href="#reports" class="ai-card-link">
-            <span data-i18n="ai_card1_link">查看效果</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
-          </a>
-        </div>
-
-        <div class="ai-card">
-          <div class="ai-card-icon">📊</div>
-          <h3 data-i18n="ai_card2_title">行业趋势洞察</h3>
-          <p><span data-i18n="ai_card2_desc">AI 识别关键趋势，将海量信息转化为可行动的洞察。追踪市场变化、监管动态、技术革新，让决策更快更准。</span></p>
-          <a href="#reports" class="ai-card-link">
-            <span data-i18n="ai_card2_link">了解更多</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
-          </a>
-        </div>
-
-        <div class="ai-card">
-          <div class="ai-card-icon">🤝</div>
-          <h3 data-i18n="ai_card3_title">区块链 + AI</h3>
-          <p><span data-i18n="ai_card3_desc">将区块链的可信数据与 AI 的智能分析深度融合。在再保险登记交易、智能合约、数据共享中实现信任与效率的统一。</span></p>
-          <a href="#about" class="ai-card-link">
-            <span data-i18n="ai_card3_link">了解实践</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
 
   <!-- ===== SKILLS ===== -->
   <section class="skills-section" id="skills">
