@@ -163,7 +163,22 @@ def update_blog_list(data: dict, date_str: str):
     month_header = f'<h3>📅 {y}年{int(m):02d}月</h3>'
     month_pos = html.find(month_header)
     if month_pos == -1:
-        print(f"  ⚠ 月份 {y}年{m}月 不存在，需手动处理")
+        # 月份标题不存在，自动创建新的月份区块
+        print(f"  ➕ 月份 {y}年{m}月 不存在，自动创建")
+        new_month_block = f'''            <div class="month-group">
+                <h3>📅 {y}年{int(m):02d}月</h3>
+
+{new_card}
+
+            </div>'''
+        # 在第一个 month-group 之前插入
+        first_month = html.find('<div class="month-group">')
+        if first_month == -1:
+            print("  ✗ 未找到任何月份区块")
+            return
+        html = html[:first_month] + new_month_block + "\n" + html[first_month:]
+        list_file.write_text(html, encoding="utf-8")
+        print(f"  ✓ 新月份 {y}年{m}月 已创建并插入第{issue_num}期")
         return
 
     # 在该月份的第一个 <a href="/blog/ 前插入
