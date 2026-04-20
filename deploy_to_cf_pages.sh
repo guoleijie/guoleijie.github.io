@@ -23,6 +23,6 @@ echo "🚀 正在部署到 Cloudflare Pages..."
 unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY all_proxy ALL_PROXY
 
 export CLOUDFLARE_API_TOKEN="$TOKEN"
-npx wrangler pages deploy "$SITE_DIR" --project-name="$PROJECT_NAME" --commit-dirty=true 2>&1
+npx wrangler pages deploy "$SITE_DIR" --project-name="$PROJECT_NAME" --branch=main --commit-dirty=true 2>&1
 
 echo "✅ CF Pages 部署完成"
