@@ -988,7 +988,7 @@
       <h1 data-i18n-html="hero_title"><span class="highlight">AI + 再保险</span>，我们一起探索的边界</h1>
       <p class="subtitle" data-i18n="hero_subtitle">18年深耕保险科技，用 AI 重新定义行业知识获取方式</p>
       <div class="hero-buttons">
-        <a href="/blog/2026/04/27-daily-report.html" class="btn btn-primary">
+        <a href="/blog/daily-report.html" class="btn btn-primary">
           <i data-lucide="newspaper" style="width:18px;height:18px;"></i> <span data-i18n="hero_btn_reports">查看日报</span>
         </a>
           <i data-lucide="compass" style="width:18px;height:18px;"></i> <span data-i18n="hero_btn_learn">了解更多</span>
@@ -1115,48 +1115,10 @@
     <div class="section-inner">
       <h2 class="section-title" data-i18n="reports_title">📰 每日行业日报</h2>
       <p class="section-desc"><span data-i18n="reports_subtitle">每日自动采集、翻译、整理全球再保险行业资讯</span></p>
-      <div class="reports-grid">
-
-        <a href="/blog/2026/04/27-daily-report.html" class="report-card">
-          <div class="report-date">
-            <i data-lucide="calendar" style="width:14px;height:14px;"></i> <span>2026年4月27日</span>
-          </div>
-          <h3>再保险日报 · 第37期 | 2026年04月27日（周一）</h3>
-          <ul class="report-summary">
-            <li>Top Gold Stocks To Watch Now - April 26th - MarketBeat</li>
-            <li>8306.T - | Stock Price & Latest News - Reuters</li>
-            <li>AI Is Not Failing. What Executives Need To Know About AI Workflows. - Forbes</li>
-          </ul>
-          <span class="report-link"><span data-i18n="reports_read_more">阅读全文</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span>
-        </a>
-
-<a href="/blog/2026/04/25-daily-report.html" class="report-card">
-          <div class="report-date">
-            <i data-lucide="calendar" style="width:14px;height:14px;"></i> <span>2026年4月24日</span>
-          </div>
-          <h3>再保险日报 · 第36期 | 2026年04月24日（周五）</h3>
-          <ul class="report-summary">
-            <li>前瑞信团队计划设立10亿美元数据中心保险风险基金 - 保险杂志</li>
-            <li>普华永道支付1.66亿美元和解恒大审计调查 - 保险杂志</li>
-            <li>Hashgraph与RiskStream合作推动1万亿美元保险市场数据代币化 - 金融科技时报</li>
-          </ul>
-          <span class="report-link"><span data-i18n="reports_read_more">阅读全文</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span>
-        </a>
-
-<a href="/blog/2026/04/23-daily-report.html" class="report-card">
-          <div class="report-date">
-            <i data-lucide="calendar" style="width:14px;height:14px;"></i> <span>2026年4月23日</span>
-          </div>
-          <h3>再保险日报 · 第35期 | 2026年04月23日（周四）</h3>
-          <ul class="report-summary">
-            <li>财产险行业动态：2026年4月22日 - PropertyCasualty360</li>
-            <li>WR伯克利创下一季度运营收入纪录 - 保险杂志</li>
-            <li>保险行业推出新的AI学徒计划 - 保险时报</li>
-          </ul>
-          <span class="report-link"><span data-i18n="reports_read_more">阅读全文</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span>
-        </a>
-
-
+      <div class="reports-grid" id="reportsGrid">
+        <!-- 加载中骨架 -->
+        <div class="report-card" style="opacity:0.5;"><div class="report-date"><i data-lucide="calendar" style="width:14px;height:14px;"></i> <span>加载中...</span></div><h3>再保险日报 · 加载中</h3><ul class="report-summary"><li>正在获取最新日报...</li></ul><span class="report-link"><span data-i18n="reports_read_more">阅读全文</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span></div>
+      </div>
       <div style="text-align:center; margin-top:32px;">
         <a href="/blog/index.html" class="btn btn-outline">
           <i data-lucide="layout-grid" style="width:18px;height:18px;"></i> <span data-i18n="reports_view_all">查看全部日报</span>
@@ -1538,6 +1500,38 @@
     function closeMobile() {
       document.getElementById('mobileMenu').classList.remove('open');
     }
+
+    // ===== 动态加载日报卡片 =====
+    (async function() {
+      const grid = document.getElementById('reportsGrid');
+      if (!grid) return;
+      const WEEKDAYS = ['周日','周一','周二','周三','周四','周五','周六'];
+      function fmtDate(d) {
+        const dt = new Date(d + 'T00:00:00+08:00');
+        return `${dt.getFullYear()}年${String(dt.getMonth()+1).padStart(2,'0')}月${String(dt.getDate()).padStart(2,'0')}日（${WEEKDAYS[dt.getDay()]}）`;
+      }
+      function cardHTML(date, issue, data) {
+        const items = [].concat(data.industry_news_cn||[], data.tech_news_cn||[]).slice(0,3);
+        const lis = items.map(i => `<li>${i.display_title || i.title || ''}</li>`).join('');
+        return `<a href="/blog/daily-report.html?date=${date}" class="report-card"><div class="report-date"><i data-lucide="calendar" style="width:14px;height:14px;"></i> <span>${fmtDate(date).slice(0,11)}</span></div><h3>再保险日报 · 第${issue}期 | ${fmtDate(date)}</h3><ul class="report-summary">${lis}</ul><span class="report-link"><span data-i18n="reports_read_more">阅读全文</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span></a>`;
+      }
+      try {
+        const m = await (await fetch('/data/manifest.json')).json();
+        const sorted = [...m.available_dates].sort().reverse();
+        const dates = sorted.slice(0,3);
+        const results = await Promise.allSettled(dates.map(d => fetch(`/data/daily_report_${d}_cn.json`).then(r=>r.json())));
+        let html = '';
+        dates.forEach((date, i) => {
+          const issue = sorted.length - sorted.indexOf(date);
+          const data = results[i].status === 'fulfilled' ? results[i].value : {industry_news_cn:[],tech_news_cn:[]};
+          html += cardHTML(date, issue, data);
+        });
+        grid.innerHTML = html;
+        lucide.createIcons();
+      } catch(e) {
+        grid.innerHTML = '<p style="text-align:center;color:var(--text-light);grid-column:1/-1;">日报加载失败，请刷新重试</p>';
+      }
+    })();
   </script>
   <!-- 返回顶部按钮 -->
   <button id="backToTop" data-i18n-title="back_to_top" title="返回顶部">↑</button>
