@@ -1,0 +1,95 @@
+{
+  "date": "2026-04-12",
+  "generated_time": "2026-04-12 06:00:42",
+  "total_news": 10,
+  "industry_news_count": 4,
+  "tech_news_count": 6,
+  "industry_news_cn": [
+    {
+      "title": "Don't Get Burned By Rising Insurance Premiums: Fight Back With These Tips - InsuranceNewsNet",
+      "category": "industry",
+      "relevance": 5.0,
+      "url": "https://insurancenewsnet.com/oarticle/dont-get-burned-by-rising-insurance-premiums-fight-back-with-these-tips",
+      "description": "# Don't Get Burned By Rising Insurance Premiums: Fight Back With These Tips - Insurance News | InsuranceNewsNet. HomeNow reading INN Insider News. INN Insider News RSSGet our newsletter. 14 seconds ago INN Insider News. ## Advisor News. ## Annuity News. *   Best's Special Report: Analysis Shows Dras...",
+      "title_cn": "避免被不断上涨的保险费率所灼伤：这些技巧可以帮助您反击",
+      "display_title": "避免被不断上涨的保险费率所灼伤：这些技巧可以帮助您反击",
+      "display_desc": "InsuranceNewsNet报道了保险费率持续上涨的趋势，分析了如何通过有效策略应对保费增加问题，为投保人提供实用的成本控制建议。",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "Sens. Urge CFTC To Probe 'Unusual' Oil Trading Patterns - Law360",
+      "category": "industry",
+      "relevance": 10.0,
+      "url": "https://www.law360.com/articles/2464289",
+      "description": "# Law360 Authority. ## The Practice of Law. Access to Justice   Aerospace & Defense   Appellate   Asset Management   Banking   Bankruptcy   Benefits   California   Cannabis   Capital Markets   Class Action   Colorado   Commercial Contracts   Competition   Compliance   Connecticut   Construction   Co...",
+      "title_cn": "参议员敦促CFTC调查'异常'的石油交易模式",
+      "display_title": "参议员敦促CFTC调查'异常'的石油交易模式",
+      "display_desc": "多位参议员敦促美国商品期货交易委员会(CFTC)调查石油市场中的异常交易模式，涉及金融衍生品市场规则执行问题。",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "Immigration Appeals Rule Challenge Put On Hold - Law360",
+      "category": "industry",
+      "relevance": 9.0,
+      "url": "https://www.law360.com/articles/2464024",
+      "description": "# Law360 Authority. ## The Practice of Law. Access to Justice   Aerospace & Defense   Appellate   Asset Management   Banking   Bankruptcy   Benefits   California   Cannabis   Capital Markets   Class Action   Colorado   Commercial Contracts   Competition   Compliance   Connecticut   Construction   Co...",
+      "title_cn": "移民上诉规则挑战被推迟审理",
+      "display_title": "移民上诉规则挑战被推迟审理",
+      "display_desc": "Law360报道了移民相关法律上诉规则的挑战案件被推迟审理的情况，涉及法律程序和移民政策变化的影响。",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "Rosen Law Firm Encourages CleanCore Solutions, Inc. Investors to - The National Law Review",
+      "category": "industry",
+      "relevance": 4.0,
+      "url": "https://natlawreview.com/press-releases/rosen-law-firm-encourages-cleancore-solutions-inc-investors-inquire-about",
+      "description": "### Rosen Law Firm Encourages CleanCore Solutions, Inc. Investors to Inquire About Securities Class Action Investigation – ZONE. ### Rosen Law Firm Encourages CleanCore Solutions, Inc. Investors to Inquire About Securities Class Action Investigation – ZONE. NEW YORK--(BUSINESS WIRE)--Why:Rosen F...",
+      "title_cn": "Rosen律师事务所敦促CleanCore Solutions投资者咨询证券集体诉讼调查",
+      "display_title": "Rosen律师事务所敦促CleanCore Solutions投资者咨询证券集体诉讼调查",
+      "display_desc": "Rosen律师事务所向CleanCore Solutions Inc.的投资者发出通知，鼓励他们咨询关于证券集体诉讼调查的相关信息。",
+      "category_cn": "行业新闻",
+      "number": 4
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Anthropic Model Sparks Fed-Wall Street Alarm Over AI Cyber Risk - InsuranceNewsNet",
+      "category": "tech",
+      "relevance": 95.0,
+      "url": "https://insurancenewsnet.com/oarticle/anthropic-model-sparks-fed-wall-street-alarm-over-ai-cyber-risk",
+      "description": "# Anthropic Model Sparks Fed-Wall Street Alarm Over AI Cyber Risk - Insurance News | InsuranceNewsNet. HomeNow reading INN Insider News. INN Insider News RSSGet our newsletter. 1 minute ago INN Insider News. Federal regulators and top Wall Street executives held urgent discussions this week over the...",
+      "title_cn": "Anthropic模型引发联邦政府和华尔街对AI网络风险的警惕",
+      "display_title": "Anthropic模型引发联邦政府和华尔街对AI网络风险的警惕",
+      "display_desc": "Anthropic的AI模型引发了美国联邦监管机构和华尔街高层对AI网络安全风险的紧急关注，监管部门与金融界就AI技术风险评估进行了深入讨论。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "Q1 2026 European Venture Report - PitchBook",
+      "category": "tech",
+      "relevance": 1.0,
+      "url": "https://pitchbook.com/news/reports/q1-2026-european-venture-report",
+      "description": "# European Venture Report. **AI mega-rounds, venture debt resilience, and fundraising recovery define Q1 2026**. European venture capital made a strong start to 2026, with AI accounting for an unprecedented share of total deal value—well ahead of expectations heading into the year. Mega-rounds from ...",
+      "title_cn": "2026年第一季度欧洲风险投资报告",
+      "display_title": "2026年第一季度欧洲风险投资报告",
+      "display_desc": "PitchBook报告显示2026年第一季度欧洲风险投资强劲开局，AI交易额创历史新高，大型融资轮次显示出风险债务的韧性特征。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "MiCA vs. SEC: Why Europe Became the Global 'Safe Harbor' for Crypto in 2026 - InsuranceNewsNet",
+      "category": "tech",
+      "relevance": 3.0,
+      "url": "https://insurancenewsnet.com/oarticle/mica-vs-sec-why-europe-became-the-global-safe-harbor-for-crypto-in-2026",
+      "description": "SEC: Why Europe Became the Global 'Safe Harbor' for Crypto in 2026 - Insurance News | InsuranceNewsNet. HomeNow reading INN Insider News. Insider News RSSGet our newsletter. 1 minute ago INN Insider News. This article is available to **Insider Pro subscribers only.**Sign in or register to be an ...",
+      "title_cn": "MiCA vs SEC：2026年欧洲为何成为全球加密货币'避风港'",
+      "display_title": "MiCA vs SEC：2026年欧洲为何成为全球加密货币'避风港'",
+      "display_desc": "相比SEC的严格监管，MiCA法规使欧洲在2026年成为加密货币行业的全球'避风港'，吸引了大量区块链企业和投资。",
+      "category_cn": "科技前沿",
+      "number": 3
+    }
+  ]
+}

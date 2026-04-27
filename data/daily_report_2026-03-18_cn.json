@@ -1,0 +1,167 @@
+{
+  "date": "2026-03-18",
+  "generated_time": "2026-03-18 06:00:00",
+  "total_news": 13,
+  "industry_news_count": 7,
+  "tech_news_count": 6,
+  "industry_news_cn": [
+    {
+      "title": "IUA launches Futures platform to support new London talent - Insurance Times",
+      "category": "industry",
+      "relevance": 41.0,
+      "url": "https://www.insurancetimes.co.uk/news/iua-launches-futures-platform-to-support-new-london-talent/1458029.article",
+      "description": "",
+      "title_cn": "IUA推出Futures平台，支持伦敦保险新人才培养",
+      "display_title": "IUA推出Futures平台，支持伦敦保险新人才培养",
+      "display_desc": "国际承保人协会（IUA）推出全新的Futures平台，旨在吸引和培养伦敦保险市场的年轻人才。",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "Carrick Group appoints new head of governance - Insurance Times",
+      "category": "industry",
+      "relevance": 35.0,
+      "url": "https://www.insurancetimes.co.uk/news/carrick-group-appoints-new-head-of-governance/1458034.article",
+      "description": "",
+      "title_cn": "Carrick集团任命新治理负责人",
+      "display_title": "Carrick集团任命新治理负责人",
+      "display_desc": "Carrick集团宣布任命新的治理负责人，加强公司治理结构。",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "People Moves: HW Kaufman Group Names Hattaway President of RB Jones; Rokstone Hires QBE North America Casualty Leader Lill - Insurance Journal",
+      "category": "industry",
+      "relevance": 22.0,
+      "url": "https://www.insurancejournal.com/news/national/2026/03/17/862103.htm",
+      "description": "People Moves: HW Kaufman Group Names Hattaway President of RB Jones; Rokstone Hires QBE North America Casualty Leader Lill.",
+      "title_cn": "人事变动：HW Kaufman集团任命Hattaway为RB Jones总裁；Rokstone挖角QBE北美意外险负责人Lill",
+      "display_title": "人事变动：HW Kaufman集团任命Hattaway为RB Jones总裁；Rokstone挖角QBE北美意外险负责人Lill",
+      "display_desc": "HW Kaufman集团任命Hattaway为RB Jones总裁。RB Jones是一家为经纪人、代理人和批发商提供专业风险保障解决方案的管理型总承保人。同时Rokstone从QBE北美挖角意外险负责人Lill。",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "Investor Rights Law Firm Investigating Proposed Mergers and Acquisitions - National Today",
+      "category": "industry",
+      "relevance": 16.0,
+      "url": "https://nationaltoday.com/us/ny/new-york/news/2026/03/17/investor-rights-law-firm-investigating-proposed-mergers-and-acquisitions/",
+      "description": "Halper Sadeh LLC is investigating several proposed mergers and acquisitions involving National Storage Affiliates Trust, Urgent.ly, Esquire Financial Holdings, and Barinthus Biotherapeutics plc.",
+      "title_cn": "投资者权益律所调查多起拟议并购交易",
+      "display_title": "投资者权益律所调查多起拟议并购交易",
+      "display_desc": "投资者权益律所Halper Sadeh LLC正在调查多起拟议并购交易，涉及National Storage Affiliates Trust、Urgent.ly、Esquire Financial Holdings和Barinthus Biotherapeutics等公司。",
+      "category_cn": "行业新闻",
+      "number": 4
+    },
+    {
+      "title": "Seventeen Group announces double acquisition - Insurance Times",
+      "category": "industry",
+      "relevance": 15.0,
+      "url": "https://www.insurancetimes.co.uk/news/seventeen-group-announces-double-acquisition/1458027.article",
+      "description": "",
+      "title_cn": "Seventeen集团宣布双重收购计划",
+      "display_title": "Seventeen集团宣布双重收购计划",
+      "display_desc": "Seventeen集团宣布同时收购两家公司，进一步扩大业务版图。",
+      "category_cn": "行业新闻",
+      "number": 5
+    },
+    {
+      "title": "MGA sector still in growth phase - Mike Keating - Insurance Times",
+      "category": "industry",
+      "relevance": 7.0,
+      "url": "https://www.insurancetimes.co.uk/news/mga-sector-still-in-growth-phase-mike-keating/1458013.article",
+      "description": "",
+      "title_cn": "MGA行业仍处于增长阶段 - Mike Keating观点",
+      "display_title": "MGA行业仍处于增长阶段 - Mike Keating观点",
+      "display_desc": "Mike Keating表示管理型总代理（MGA）行业仍处于增长阶段，未来发展前景广阔。",
+      "category_cn": "行业新闻",
+      "number": 6
+    },
+    {
+      "title": "MGA Rokstone announces three senior promotions - Insurance Times",
+      "category": "industry",
+      "relevance": 4.0,
+      "url": "https://www.insurancetimes.co.uk/news/mga-rokstone-announces-three-senior-promotions/1458031.article",
+      "description": "",
+      "title_cn": "MGA Rokstone宣布三项高管晋升",
+      "display_title": "MGA Rokstone宣布三项高管晋升",
+      "display_desc": "管理型总代理Rokstone宣布三项高级管理人员晋升，体现公司人才战略。",
+      "category_cn": "行业新闻",
+      "number": 7
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "AI Hyperscalers Shadow Borrowing Bolsters Private Credit Risks - Insurance Journal",
+      "category": "tech",
+      "relevance": 48.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/03/17/862128.htm",
+      "description": "Investment in AI infrastructure via off-balance sheet debt is increasing the exposure of insurers and private credit funds to hyperscalers.",
+      "title_cn": "AI超大规模企业的影子借贷加剧私人信贷风险",
+      "display_title": "AI超大规模企业的影子借贷加剧私人信贷风险",
+      "display_desc": "国际清算银行官员警告，通过表外债务投资AI基础设施正增加保险公司和私人信贷基金对超大规模企业的风险敞口。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "Transcarent Partners with Bluespine to Launch Payment Integrity Category for Self-Insured Employers - HIT Consultant",
+      "category": "tech",
+      "relevance": 10.0,
+      "url": "https://hitconsultant.net/2026/03/17/transcarent-bluespine-ai-payment-integrity-medical-overbilling/",
+      "description": "Traditional medical claims audits rely on periodic, manual reviews of small claim samples. Bluespine utilizes a proprietary AI platform to analyze 100 percent of medical and pharmacy claims.",
+      "title_cn": "Transcarent与Bluespine合作，AI平台实现自保雇主100%医疗理赔自动审核",
+      "display_title": "Transcarent与Bluespine合作，AI平台实现自保雇主100%医疗理赔自动审核",
+      "display_desc": "传统医疗理赔审计依赖对小样本的定期人工审核。Bluespine利用专有AI平台分析100%的医疗和药房理赔，验证其是否符合雇主特定的福利计划文件。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "OBBBA: From Compliance Crisis to Digital Transformation Catalyst - HIT Consultant",
+      "category": "tech",
+      "relevance": 68.0,
+      "url": "https://hitconsultant.net/2026/03/17/obbba-compliance-crisis-digital-transformation-catalyst/",
+      "description": "As coverage loss threatens access, digital entry points can transform from a scheduling application to a vital resource for managing coverage transitions.",
+      "title_cn": "OBBBA：从合规危机转变为数字化转型催化剂",
+      "display_title": "OBBBA：从合规危机转变为数字化转型催化剂",
+      "display_desc": "随着医疗保障流失威胁就医渠道，数字化入口可以从预约工具升级为保障覆盖转换和患者教育的核心资源。当以患者目标为导向进行设计时，数字前门成为安全网。",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "Blockchain in Agriculture Market to Surpass USD 7.37 billion by 2033 - global-agriculture.com",
+      "category": "tech",
+      "relevance": 31.0,
+      "url": "https://www.global-agriculture.com/ag-tech-research-news/blockchain-in-agriculture-market-to-surpass-usd-7-37-billion-by-2033/",
+      "description": "The global blockchain in agriculture market size reached USD 0.38 billion in 2024.",
+      "title_cn": "农业区块链市场预计2033年将突破73.7亿美元",
+      "display_title": "农业区块链市场预计2033年将突破73.7亿美元",
+      "display_desc": "据Growth Market Reports报告，2024年全球农业区块链市场规模已达3.8亿美元，得益于食品供应链对透明度和可追溯性需求的不断增长，预计2033年将突破73.7亿美元。",
+      "category_cn": "科技前沿",
+      "number": 4
+    },
+    {
+      "title": "Apply for your enhanced Premium Trial - Insurance Times",
+      "category": "tech",
+      "relevance": 71.0,
+      "url": "https://www.insurancetimes.co.uk/free-trial",
+      "description": "",
+      "title_cn": "Insurance Times推出增强版高级试用服务",
+      "display_title": "Insurance Times推出增强版高级试用服务",
+      "display_desc": "Insurance Times提供增强版高级试用订阅，为保险行业从业者提供更深入的资讯服务。",
+      "category_cn": "科技前沿",
+      "number": 5
+    },
+    {
+      "title": "Markel makes two senior hires to boost UK distribution capability - Insurance Times",
+      "category": "tech",
+      "relevance": 65.0,
+      "url": "https://www.insurancetimes.co.uk/news/markel-makes-two-senior-hires-to-boost-uk-distribution-capability/1458030.article",
+      "description": "",
+      "title_cn": "Markel招聘两名高管以加强英国分销能力",
+      "display_title": "Markel招聘两名高管以加强英国分销能力",
+      "display_desc": "Markel公司宣布两项高级管理人员招聘，旨在加强其英国市场的分销和业务拓展能力。",
+      "category_cn": "科技前沿",
+      "number": 6
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再保险行业日报 | 梦醒</title>
+    <meta name="description" content="每日自动生成再保险行业日报，涵盖行业新闻与科技前沿">
+    <meta property="og:title" content="再保险行业日报 | 梦醒">
+    <meta property="og:description" content="每日自动生成再保险行业日报，涵盖行业新闻与科技前沿">
+    <meta property="og:type" content="article">
+    <link rel="stylesheet" href="/assets/css/report.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="progress-bar"></div>
+    <nav>
+        <a href="/" class="nav-logo">
+            <img src="/assets/images/doudou-logo.webp" alt="豆豆" style="width:28px;height:28px;border-radius:50%;">
+            <span>梦醒</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle">
+            <i data-lucide="menu"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/">首页</a></li>
+            <li><a href="/blog/">博客</a></li>
+            <li><a href="/blog/daily-report.html">日报</a></li>
+        </ul>
+    </nav>
+
+    <article class="daily-report">
+        <div id="loading" style="text-align:center;padding:60px 0;">
+            <div style="font-size:2rem;margin-bottom:16px;">📰</div>
+            <p>正在加载日报数据...</p>
+        </div>
+        <div id="error" style="display:none;text-align:center;padding:60px 0;">
+            <div style="font-size:2rem;margin-bottom:16px;">😔</div>
+            <h2>日报未找到</h2>
+            <p id="error-msg" style="color:#666;margin-top:12px;"></p>
+            <a href="/blog/daily-report.html" style="display:inline-block;margin-top:16px;padding:8px 20px;background:#c0392b;color:#fff;border-radius:8px;">查看最新日报</a>
+        </div>
+        <div id="content" style="display:none;"></div>
+    </article>
+
+    <script>
+    (async function() {
+        const params = new URLSearchParams(location.search);
+        let date = params.get('date');
+
+        // Get available dates from manifest
+        let availableDates = [];
+        try {
+            const manifest = await fetch('/data/manifest.json');
+            const m = await manifest.json();
+            availableDates = m.available_dates || [];
+            if (!date) date = m.latest;
+        } catch(e) {}
+
+        if (!date) {
+            showError('无法加载日报索引');
+            return;
+        }
+
+        // Load data
+        try {
+            const resp = await fetch('/data/daily_report_' + date + '_cn.json');
+            if (!resp.ok) throw new Error('404');
+            const data = await resp.json();
+            renderReport(data, availableDates);
+        } catch(e) {
+            showError(date + ' 的日报暂未发布');
+            return;
+        }
+
+        function showError(msg) {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('error').style.display = 'block';
+            document.getElementById('error-msg').textContent = msg;
+            document.getElementById('content').style.display = 'none';
+        }
+
+        function formatDate(dateStr) {
+            const d = new Date(dateStr + 'T00:00:00+08:00');
+            const y = d.getFullYear();
+            const m = String(d.getMonth()+1).padStart(2,'0');
+            const day = String(d.getDate()).padStart(2,'0');
+            return y + '年' + m + '月' + day + '日';
+        }
+
+        function formatDateShort(dateStr) {
+            return dateStr.replace(/-/g, '.');
+        }
+
+        function navigateDate(offset) {
+            const idx = availableDates.indexOf(date);
+            const newIdx = idx + offset;
+            if (newIdx >= 0 && newIdx < availableDates.length) {
+                location.href = '/blog/daily-report.html?date=' + availableDates[newIdx];
+            }
+        }
+
+        function getPrevDate() {
+            const idx = availableDates.indexOf(date);
+            return idx > 0 ? availableDates[idx - 1] : null;
+        }
+        function getNextDate() {
+            const idx = availableDates.indexOf(date);
+            return idx < availableDates.length - 1 ? availableDates[idx + 1] : null;
+        }
+
+        function renderReport(data, dates) {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+
+            // SEO
+            document.title = '再保险日报 - ' + formatDateShort(data.date) + ' | 梦醒';
+            document.querySelector('meta[name="description"]').content = formatDate(data.date) + '再保险行业日报 - AI自动采集整理全球再保险资讯';
+            document.querySelector('meta[property="og:title"]').content = '再保险日报 - ' + data.date + ' | 梦醒';
+
+            const prev = getPrevDate();
+            const next = getNextDate();
+
+            let html = '';
+
+            // Date nav
+            html += '<div class="date-nav" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">';
+            html += prev ? '<a href="/blog/daily-report.html?date=' + prev + '" class="date-nav-btn" style="display:inline-flex;align-items:center;gap:4px;padding:6px 14px;border:1px solid #e8e4de;border-radius:8px;font-size:0.9rem;transition:0.2s;"><i data-lucide="chevron-left" style="width:16px;height:16px;"></i>' + formatDateShort(prev) + '</a>' : '<span></span>';
+            html += '<span style="font-size:0.85rem;color:#999;">📅 ' + data.date + '</span>';
+            html += next ? '<a href="/blog/daily-report.html?date=' + next + '" class="date-nav-btn" style="display:inline-flex;align-items:center;gap:4px;padding:6px 14px;border:1px solid #e8e4de;border-radius:8px;font-size:0.9rem;transition:0.2s;">' + formatDateShort(next) + '<i data-lucide="chevron-right" style="width:16px;height:16px;"></i></a>' : '<span></span>';
+            html += '</div>';
+
+            // Header
+            html += '<header class="report-header">';
+            html += '<h1>📰 再保险行业日报 - ' + formatDateShort(data.date) + '</h1>';
+            html += '<div class="report-meta">';
+            html += '<span class="date"><i data-lucide="calendar"></i> ' + formatDate(data.date) + '</span>';
+            html += '<span class="weekday"><i data-lucide="clock"></i> 生成于 ' + (data.generated_time || '') + '</span>';
+            html += '</div>';
+            html += '</header>';
+
+            // Stats
+            html += '<div style="display:flex;gap:12px;margin:20px 0;flex-wrap:wrap;">';
+            html += '<span style="background:#fdf2f0;color:#c0392b;padding:4px 14px;border-radius:20px;font-size:0.85rem;">📰 共 ' + data.total_news + ' 条</span>';
+            html += '<span style="background:#eef5fb;color:#2874a6;padding:4px 14px;border-radius:20px;font-size:0.85rem;">🏢 行业 ' + (data.industry_news_count || 0) + ' 条</span>';
+            html += '<span style="background:#f0fff4;color:#38a169;padding:4px 14px;border-radius:20px;font-size:0.85rem;">🔬 科技 ' + (data.tech_news_count || 0) + ' 条</span>';
+            html += '</div>';
+
+            // Industry news
+            if (data.industry_news_cn && data.industry_news_cn.length > 0) {
+                html += '<section class="report-section">';
+                html += '<h2><i data-lucide="newspaper"></i> 行业新闻</h2>';
+                html += '<div class="news-content">';
+                data.industry_news_cn.forEach(function(n) {
+                    html += renderNewsItem(n);
+                });
+                html += '</div></section>';
+            }
+
+            // Tech news
+            if (data.tech_news_cn && data.tech_news_cn.length > 0) {
+                html += '<section class="report-section">';
+                html += '<h2><i data-lucide="cpu"></i> 科技前沿</h2>';
+                html += '<div class="news-content">';
+                data.tech_news_cn.forEach(function(n) {
+                    html += renderNewsItem(n);
+                });
+                html += '</div></section>';
+            }
+
+            // Bottom nav
+            html += '<div class="date-nav" style="display:flex;justify-content:space-between;align-items:center;margin-top:30px;padding-top:20px;border-top:1px solid #e8e4de;">';
+            html += prev ? '<a href="/blog/daily-report.html?date=' + prev + '" style="display:inline-flex;align-items:center;gap:4px;padding:8px 16px;background:#f5f3ee;border-radius:8px;font-size:0.9rem;"><i data-lucide="chevron-left" style="width:16px;height:16px;"></i> 上一期</a>' : '<span></span>';
+            html += next ? '<a href="/blog/daily-report.html?date=' + next + '" style="display:inline-flex;align-items:center;gap:4px;padding:8px 16px;background:#f5f3ee;border-radius:8px;font-size:0.9rem;">下一期 <i data-lucide="chevron-right" style="width:16px;height:16px;"></i></a>' : '<span></span>';
+            html += '</div>';
+
+            document.getElementById('content').innerHTML = html;
+
+            // Re-init icons
+            if (window.lucide) lucide.createIcons();
+
+            // Re-init nav scroll
+            initNav();
+        }
+
+        function renderNewsItem(n) {
+            let h = '<div class="news-item">';
+            h += '<div class="news-title"><a href="' + n.url + '" target="_blank">' + (n.display_title || n.title_cn || n.title) + '</a></div>';
+            h += '<div class="news-description">' + (n.display_desc || '') + '</div>';
+            if (n.relevance) {
+                h += '<div class="news-meta">相关性: ' + n.relevance + '%</div>';
+            }
+            h += '<a href="' + n.url + '" class="news-link" target="_blank">阅读全文 →</a>';
+            h += '</div>';
+            return h;
+        }
+
+        function initNav() {
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', function() {
+                nav.classList.toggle('scrolled', window.scrollY > 10);
+            });
+            const toggle = document.getElementById('menuToggle');
+            const links = document.getElementById('navLinks');
+            if (toggle && links) {
+                toggle.addEventListener('click', function() {
+                    links.style.display = links.style.display === 'flex' ? '' : 'flex';
+                });
+            }
+            // Progress bar
+            const bar = document.querySelector('.progress-bar');
+            window.addEventListener('scroll', function() {
+                const h = document.documentElement.scrollHeight - window.innerHeight;
+                bar.style.width = h > 0 ? (window.scrollY / h * 100) + '%' : '0%';
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

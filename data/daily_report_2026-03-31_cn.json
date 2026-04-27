@@ -1,0 +1,143 @@
+{
+  "date": "2026-03-31",
+  "generated_time": "2026-03-31 06:01:08",
+  "total_news": 11,
+  "industry_news_count": 5,
+  "tech_news_count": 6,
+  "industry_news_cn": [
+    {
+      "title": "Three ways the Corebridge/Equitable merger could shake up the annuity market - InsuranceNewsNet",
+      "category": "industry",
+      "relevance": 14.0,
+      "url": "https://insurancenewsnet.com/innarticle/corebridge-equitable-merger-what-will-it-do-to-the-annuity-market",
+      "description": "The news of the Corebridge/Equitable merger provided shocks through the life and annuity markets. The merger creates a behemoth in the annuity space (combined 10%-11% of the total annuity market, according to LIMRA and Wink Inc.), potentially leapfrogging Athene and supplemented with broad life offe...",
+      "title_cn": "Corebridge/Equitable合并可能重塑年金市场的三种方式 - InsuranceNewsNet",
+      "display_title": "Corebridge/Equitable合并可能重塑年金市场",
+      "display_desc": "Corebridge与Equitable的合并消息震动寿险和年金市场。合并创造了年金市场的巨头（根据LIMRA和Wink Inc.数据，合计占整个年金市场的10%-11%），可能超越Athene并辅以广泛的寿险业务。",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "Average van insurance premiums begin to rise - insurancetimes.co.uk",
+      "category": "industry",
+      "relevance": 59.0,
+      "url": "https://www.insurancetimes.co.uk/news/average-van-insurance-premiums-begin-to-rise/1458137.article",
+      "description": "",
+      "title_cn": "平均货车保险费率开始上涨 - insurancetimes.co.uk",
+      "display_title": "平均货车保险费率开始上涨",
+      "display_desc": "数据显示货车保险平均保费呈现上涨趋势，这可能反映了风险成本的上升和保险市场的调整。",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "WTW promotes for leader of new P&C business - Insurance Times",
+      "category": "industry",
+      "relevance": 28.0,
+      "url": "https://www.insurancetimes.co.uk/news/wtw-promotes-for-leader-of-new-pandc-business/1458141.article",
+      "description": "",
+      "title_cn": "WTW提拔新的财产险业务负责人 - Insurance Times",
+      "display_title": "WTW提拔新的财产险业务负责人",
+      "display_desc": "保险经纪公司WTW宣布任命新的财产险业务负责人，这反映了公司在财险业务领域的战略调整和人才布局。",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "Previously flooded homeowners paying 121% more for cover - Insurance Times",
+      "category": "industry",
+      "relevance": 4.0,
+      "url": "https://www.insurancetimes.co.uk/news/previously-flooded-homeowners-paying-121-more-for-cover/1458142.article",
+      "description": "",
+      "title_cn": "曾经被淹房主保险费上涨121% - Insurance Times",
+      "display_title": "曾经被淹房主保险费上涨121%",
+      "display_desc": "数据显示，经历过洪灾的房主现在需要支付比正常情况高121%的保险费，这反映了气候变化对保险定价的重大影响。",
+      "category_cn": "行业新闻",
+      "number": 4
+    },
+    {
+      "title": "IG Group's Strategic Assessment Introduces Binary Revaluation Risk Alongside the Allure of a Prudent Share Repurchase - Bitget",
+      "category": "industry",
+      "relevance": 3.0,
+      "url": "https://www.bitget.com/amp/news/detail/12560605315999",
+      "description": "IG Group's Strategic Assessment Introduces Binary Revaluation Risk Alongside the Allure of a Prudent Share Repurchase. # IG Group's Strategic Assessment Introduces Binary Revaluation Risk Alongside the Allure of a Prudent Share Repurchase. ## IG Group: Navigating Portfolio Strategy Amid Buybacks and...",
+      "title_cn": "IG集团的战略评估引入二元重估风险，审慎股票回购的吸引力 - Bitget",
+      "display_title": "IG集团战略评估引入二元重估风险",
+      "display_desc": "IG集团的战略评估引入了二元重估风险，同时谨慎的股票回购计划也展现了公司的资本管理策略。这反映了投资组合管理中的风险平衡和回报优化。",
+      "category_cn": "行业新闻",
+      "number": 5
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Martin Schultheiss: Uinsure accelerates AI investment in support of vision 'to change the way insurance is bought in the UK' - Insurance Times",
+      "category": "tech",
+      "relevance": 62.0,
+      "url": "https://www.insurancetimes.co.uk/analysis/martin-schultheiss-uinsure-accelerates-ai-investment-in-support-of-vision-to-change-the-way-insurance-is-bought-in-the-uk/1458087.article",
+      "description": "",
+      "title_cn": "Martin Schultheiss：Uinsure加速AI投资，支持改变英国保险购买方式的愿景 - Insurance Times",
+      "display_title": "Uinsure加速AI投资改变英国保险购买方式",
+      "display_desc": "Uinsure公司CEO Martin Schultheiss宣布加速人工智能投资，目标是彻底改变英国消费者购买保险的方式，推动保险业的数字化转型。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "Africa's Biggest City Takes Out $7.5 Million Flood-Risk Policy - Insurance Journal",
+      "category": "tech",
+      "relevance": 28.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/03/30/863869.htm",
+      "description": "### Featured Stories. * AccuWeather Hurricane Forecast: 11-16 Named Storms. Email This   Subscribe to Newsletter. Unlike traditional insurance, this type of policy uses pre-agreed triggers, such as satellite-detected flood height, to release funds automatically, without requiring damage assessments....",
+      "title_cn": "非洲最大城市购买750万美元洪水风险保单 - Insurance Journal",
+      "display_title": "非洲最大城市购买750万美元洪水风险保单",
+      "display_desc": "非洲最大城市购买了750万美元的洪水风险保险，采用参数化保险模式，通过卫星检测洪水高度等预设触发器自动释放资金，无需 Damage评估，体现了保险科技的创新发展。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "Ex-Blackstone staffers raise $25 million for startup Valinor, which aims to put private credit on the blockchain - Fortune",
+      "category": "tech",
+      "relevance": 93.0,
+      "url": "https://fortune.com/2026/03/30/valinor-seed-round-25-million-crypto-private-credit-blackstone-staffers/",
+      "description": "# Ex-Blackstone staffers raise $25 million for startup Valinor, which aims to put private信用 on the blockchain. The startup Valinor aims to change this, and, on Monday, the company announced that it's raised $25 million to put private credit on the blockchain. \"I think what these guys are doing ...",
+      "title_cn": "前Blackstone员工为初创公司Valinor筹集2500万美元，旨在将私人信贷置于区块链上 - Fortune",
+      "display_title": "前Blackstone员工为区块链初创公司筹集2500万",
+      "display_desc": "前Blackstone员工创立的Valinor公司成功筹集2500万美元，目标是将私人信贷业务转移到区块链平台上，这标志着金融科技与传统信贷领域的重要融合。",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "People Moves: WTW Makes Structural, Leadership Changes to EMEA Regional Operations; Carpenter Taps FloodFlash's Bartholomew as Head of Parametric Advisory - Insurance Journal",
+      "category": "tech",
+      "relevance": 69.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/03/30/863890.htm",
+      "description": "* AccuWeather Hurricane Forecast: 11-16 Named Storms. * Chubb Outlines $20B Gulf Reinsurance Facility. Email This   Subscribe to Newsletter. **WTW Makes Structural and Leadership Changes to EMEA Regional Operations**. Insurance broker **WTW** announced structural and strategic changes to the EMEA re...",
+      "title_cn": "人事变动：WTW对EMEA区域业务进行结构性领导层调整；Carpenter任命FloodFlash的Bartholomew为参数化顾问负责人 - Insurance Journal",
+      "display_title": "WTW调整EMEA区域业务领导层",
+      "display_desc": "保险经纪巨头WTW宣布对EMEA区域业务进行重大结构性调整，同时Carpenter公司任命FloodFlash的Bartholomew为参数化保险顾问负责人，反映保险业领导层重组趋势。",
+      "category_cn": "科技前沿",
+      "number": 4
+    },
+    {
+      "title": "Atec Group appoints new chief technical officer - Insurance Times",
+      "category": "tech",
+      "relevance": 99.0,
+      "url": "https://www.insurancetimes.co.uk/news/atec-group-appoints-new-chief-technical-officer/1458140.article",
+      "description": "",
+      "title_cn": "Atec Group任命新的首席技术官 - Insurance Times",
+      "display_title": "Atec Group任命新的首席技术官",
+      "display_desc": "Atec Group宣布任命新的首席技术官，这显示了公司在技术战略和数字化转型方面的重视，为保险科技发展注入新动力。",
+      "category_cn": "科技前沿",
+      "number": 5
+    },
+    {
+      "title": "Self-Driving Networks Automate Enterprise Network Operations - Let's Data Science",
+      "category": "tech",
+      "relevance": 2.0,
+      "url": "https://letsdatascience.com/news/self-driving-networks-automate-enterprise-network-operations-d663695a",
+      "description": "# Self-Driving Networks Automate Enterprise Network Operations. Enterprise networking vendors and operators are adopting self-driving networks—infrastructure that embeds AI to detect, reason, and act autonomously, the article reports on March 30, 2026. It highlights platforms like HPE Mist AI and Gr...",
+      "title_cn": "自动驾驶网络实现企业网络运营自动化 - Let's Data Science",
+      "display_title": "自动驾驶网络实现企业网络运营自动化",
+      "display_desc": "企业网络供应商和运营商正在采用自动驾驶网络技术，这种嵌入AI的基础设施能够自主检测、推理和行动，代表网络管理智能化的重要突破，包括HPE Mist AI等平台的应用。",
+      "category_cn": "科技前沿",
+      "number": 6
+    }
+  ]
+}

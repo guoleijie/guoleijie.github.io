@@ -1,0 +1,143 @@
+{
+  "date": "2026-04-17",
+  "generated_time": "2026-04-17 13:46:31",
+  "total_news": 11,
+  "industry_news_count": 5,
+  "tech_news_count": 6,
+  "industry_news_cn": [
+    {
+      "title": "Florida Home Insurer Olympus Enters Catastrophe Bond Market - Insurance Journal",
+      "category": "industry",
+      "relevance": 81.0,
+      "url": "https://www.insurancejournal.com/news/southeast/2026/04/17/866025.htm",
+      "description": "# Florida Home Insurer Olympus Enters Catastrophe Bond Market. Florida home insurer Olympus Insurance Co. announced it has expanded its risk transfer capabilities with a successful debut in the catastrophe bond market, completing its first-ever issuance through the newly established Abacab Re Ltd. T...",
+      "title_cn": "佛罗里达家庭保险公司奥林匹斯进入巨灾债券市场",
+      "display_title": "佛罗里达家庭保险公司奥林匹斯进入巨灾债券市场",
+      "display_desc": "佛罗里达家庭保险公司奥林匹斯宣布成功进入巨灾债券市场，首次通过新成立的Abacab再保险有限公司发行债券，扩展了风险转移能力。",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "O’Melveny Expands Dallas M&A Practice With BakerHostetler Duo - Bloomberg Law News",
+      "category": "industry",
+      "relevance": 11.0,
+      "url": "https://news.bloomberglaw.com/business-and-practice/omelveny-expands-dallas-m-a-practice-with-bakerhostetler-duo",
+      "description": "# O’Melveny Expands Dallas M&A Practice With BakerHostetler Duo. April 16, 2026, 5:28 PM UTC. Ryan Gorsche and Katie Legband O’Brien joined O’Melveny as partners in its mergers & acquisitions practice and private equity group in Dallas, the firm announced Thursday. Gorsche represents private and pub...",
+      "title_cn": "奥默尔维尼通过与贝克豪特勒 duo 扩展达拉斯并购业务",
+      "display_title": "奥默尔维尼通过与贝克豪特勒 duo 扩展达拉斯并购业务",
+      "display_desc": "4月16日，奥默尔维尼宣布瑞安·戈尔什和凯蒂·莱格班德·奥布莱恩加入公司达拉斯并购业务和私募股权团队，担任合伙人。",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "Viewpoint: Japan’s $550B Bet on America—What it Means for the US Insurance Market - Insurance Journal",
+      "category": "industry",
+      "relevance": 15.0,
+      "url": "https://www.insurancejournal.com/news/national/2026/04/17/866310.htm",
+      "description": "Toyota’s battery plant in North Carolina, now under construction at a cost of several billion dollars, is an example of how that investment translates into insurable risk: construction programs, operational property, workers’ compensation, and liability all require coverage across the full commercia...",
+      "title_cn": "观点：日本5500亿美元押注美国——对美国保险市场的意义",
+      "display_title": "观点：日本5500亿美元押注美国——对美国保险市场的意义",
+      "display_desc": "丰田在北卡罗来纳州的电池工厂投资数十亿美元，这种投资转化为可保风险：建筑项目、运营财产、工人补偿和责任保险都需要覆盖整个商业周期。",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "Everywhen chief executive to retire at end of 2026 - Insurance Times",
+      "category": "industry",
+      "relevance": 6.0,
+      "url": "https://www.insurancetimes.co.uk/news/everywhen-chief-executive-to-retire-at-end-of-2026/1458290.article",
+      "description": "",
+      "title_cn": "Everywhen首席执行官将于2026年底退休",
+      "display_title": "Everywhen首席执行官将于2026年底退休",
+      "display_desc": "Everywhen公司宣布其首席执行官将于2026年底退休，公司将面临领导层变更。",
+      "category_cn": "行业新闻",
+      "number": 4
+    },
+    {
+      "title": "Mamdani turns to rising insurance costs for NYC affordable and rent-stabilized housing - InsuranceNewsNet",
+      "category": "industry",
+      "relevance": 0.0,
+      "url": "https://insurancenewsnet.com/oarticle/mamdani-turns-to-rising-insurance-costs-for-nyc-affordable-and-rent-stabilized-housing",
+      "description": "# Mamdani turns to rising insurance costs for NYC affordable and rent-stabilized housing - Insurance News | InsuranceNewsNet. HomeNow reading INN Insider News. INN Insider News RSSGet our newsletter. 8 minutes ago INN Insider News. # Mamdani turns to rising insurance costs for NYC affordable and ren...",
+      "title_cn": "马姆达尼应对纽约市可负担住房和租金稳定化住房的保险成本上升",
+      "display_title": "马姆达尼应对纽约市可负担住房的保险成本上升",
+      "display_desc": "马姆达尼关注纽约市可负担住房和租金稳定化住房面临的保险成本上升问题，需要寻找解决方案。",
+      "category_cn": "行业新闻",
+      "number": 5
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Bank of England Says it Is Testing AI Risks to Financial Ssystem - Insurance Journal",
+      "category": "tech",
+      "relevance": 100.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/04/17/866194.htm",
+      "description": "# Bank of England Says it Is Testing AI Risks to Financial Ssystem. The Bank of England is testing the risks to the financial system caused by AI by conducting scenario analysis and simulations, the central bank said in a letter published by lawmakers on Thursday. The BoE said it disagreed with an a...",
+      "title_cn": "英格兰银行表示正在测试人工智能对金融系统的风险",
+      "display_title": "英格兰银行测试人工智能对金融系统的风险",
+      "display_desc": "英格兰银行正在通过情景分析和模拟测试人工智能对金融系统的风险，该行表示不同意某些观点并正在进行全面的风险评估。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "AI and life insurance: Fast today, unpredictable tomorrow - InsuranceNewsNet",
+      "category": "tech",
+      "relevance": 99.0,
+      "url": "https://insurancenewsnet.com/innarticle/ai-and-life-insurance-fast-today-unpredictable-tomorrow",
+      "description": "# AI and life insurance: Fast today, unpredictable tomorrow - Insurance News | InsuranceNewsNet. Artificial intelligence is changing life insurance underwriting by making simple processes faster. \"Carriers are still very much experimenting with how to bring AI into the underwriting process,\" said Mi...",
+      "title_cn": "人工智能与寿险：今天快速，明天不可预测",
+      "display_title": "人工智能改变寿险核保：今天快速，明天不可预测",
+      "display_desc": "人工智能正在改变寿险核保，使简单流程更快。保险公司仍在尝试如何将AI引入核保过程，面临着技术整合和风险管理的挑战。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "White House to give US agencies Anthropic Mythos access - iTnews",
+      "category": "tech",
+      "relevance": 12.0,
+      "url": "https://www.itnews.com.au/news/white-house-to-give-us-agencies-anthropic-mythos-access-625129",
+      "description": "## White House to give US agencies Anthropic Mythos access ## Westpac hires a chief AI innovation officer ## Super funds seek to coordinate sector's cyber threat response ## Essential Energy turns to AI for safety inspections ## Uplifting security in the Indo Pacific. The US government is planning t...",
+      "title_cn": "白宫将给予美国机构Anthropic Mythos访问权限",
+      "display_title": "白宫将给予美国机构Anthropic Mythos访问权限",
+      "display_desc": "美国政府计划给予多个美国机构访问Anthropic Mythos的权限，这标志着AI技术在政府安全领域的应用正在扩展。",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "Lloyd's Insurers Draw Up Governance Rules For AI Adoption - Law360",
+      "category": "tech",
+      "relevance": 15.0,
+      "url": "https://www.law360.com/amp/articles/2466083",
+      "description": "* Practice Groups of the Year. * Titans of the Plaintiffs Bar. * Sign up for our newsletters. # Lloyd's Insurers Draw Up Governance Rules For AI Adoption. April 16, 2026, 1:16 PM BST. Nine out of 10 Lloyd's of London insurers are working on their own governance rules for artificial intelligence, the...",
+      "title_cn": "劳合社保险公司制定人工智能采用治理规则",
+      "display_title": "劳合社保险公司制定人工智能治理规则",
+      "display_desc": "劳合社伦敦保险公司的十分之九正在制定各自的人工智能治理规则，显示出行业对AI治理的重视程度正在提高。",
+      "category_cn": "科技前沿",
+      "number": 4
+    },
+    {
+      "title": "The Fintech Landscape of the Kingdom of Jordan in 2026 - The Fintech Times",
+      "category": "tech",
+      "relevance": 57.0,
+      "url": "https://thefintechtimes.com/the-fintech-landscape-of-the-kingdom-of-jordan-in-2026/",
+      "description": "#### *The Kingdom of Jordan’s fintech landscape in 2026 presents a narrative the Middle Eastern country has been trying to advance as part of its wider digital and economic development.*. Jordan’s fintech journey reflects a country leveraging digital innovation not out of abundance, but necessity. J...",
+      "title_cn": "2026年约旦王国金融科技格局",
+      "display_title": "2026年约旦金融科技发展格局",
+      "display_desc": "约旦的金融科技发展反映了该国如何利用数字创新来推动更广泛的数字和经济发展，体现出技术应用的紧迫性和必要性。",
+      "category_cn": "科技前沿",
+      "number": 5
+    },
+    {
+      "title": "Asia’s marine insurers face rising losses from climate labour risks - Asian Business Review",
+      "category": "tech",
+      "relevance": 30.0,
+      "url": "https://asianbusinessreview.com/insurance/in-focus/asias-marine-insurers-face-rising-losses-climate-labour-risks",
+      "description": "Marine insurers in Asia need to strengthen risk advisory, pricing and underwriting strategies as environmental, labour, technology and geopolitical pressures reshape the sector, according to a new report by QBE Asia, part of QBE Insurance Group Limited. The report, Braving New Worlds: The QBE Marine...",
+      "title_cn": "亚洲海洋保险公司面临气候劳工风险带来的损失上升",
+      "display_title": "亚洲海洋保险公司应对气候和劳工风险挑战",
+      "display_desc": "根据QBE亚洲的新报告，亚洲海洋保险公司需要加强风险咨询、定价和承保策略，以应对环境、劳工、技术和地缘政治压力对行业的重塑。",
+      "category_cn": "科技前沿",
+      "number": 6
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "date": "2026-04-25",
+  "generated_time": "2026-04-25 05:01:01",
+  "total_news": 9,
+  "industry_news_count": 4,
+  "tech_news_count": 5,
+  "industry_news": [
+    {
+      "title": "High Five: Catch up on the biggest stories this week - Insurance Times",
+      "title_cn": "本周保险业五大重要新闻回顾",
+      "display_title": "本周保险业五大重要新闻回顾",
+      "display_desc": "Insurance Times盘点本周保险行业最具影响力的五条新闻，涵盖市场动态、监管变化和行业趋势。",
+      "category_cn": "行业新闻",
+      "number": 1,
+      "category": "industry",
+      "relevance": 53.0,
+      "url": "https://www.insurancetimes.co.uk/news/high-five-catch-up-on-the-biggest-stories-this-week/1458369.article"
+    },
+    {
+      "title": "This week’s biggest M&A stories - Insurance Times",
+      "title_cn": "本周最大并购交易汇总",
+      "display_title": "本周最大并购交易汇总",
+      "display_desc": "Insurance Times汇总本周保险行业最重要的并购交易，分析交易背后的战略逻辑和市场影响。",
+      "category_cn": "行业新闻",
+      "number": 2,
+      "category": "industry",
+      "relevance": 33.0,
+      "url": "https://www.insurancetimes.co.uk/news/this-weeks-biggest-manda-stories/1458372.article"
+    },
+    {
+      "title": "The biggest people moves this week - Insurance Times",
+      "title_cn": "本周保险业人事变动盘点",
+      "display_title": "本周保险业人事变动盘点",
+      "display_desc": "Insurance Times盘点本周保险行业重要人事变动，追踪高管跳槽、任命和退休等关键动态。",
+      "category_cn": "行业新闻",
+      "number": 3,
+      "category": "industry",
+      "relevance": 57.0,
+      "url": "https://www.insurancetimes.co.uk/news/the-biggest-people-moves-this-week/1458368.article"
+    },
+    {
+      "title": "Ageas and Saga launch new product as part of 20-year partnership - Insurance Times",
+      "title_cn": "Ageas与Saga推出新产品，延续20年合作",
+      "display_title": "Ageas与Saga推出新产品，延续20年合作",
+      "display_desc": "Ageas和Saga作为长期合作伙伴，在20年合作关系基础上推出全新保险产品，进一步深化战略合作。",
+      "category_cn": "行业新闻",
+      "number": 4,
+      "category": "industry",
+      "relevance": 4.0,
+      "url": "https://www.insurancetimes.co.uk/news/ageas-and-saga-launch-new-product-as-part-of-20-year-partnership/1458360.article"
+    }
+  ],
+  "tech_news": [
+    {
+      "title": "China’s 360 Hunts Software Flaws With AI, Echoing Mythos - Insurance Journal",
+      "title_cn": "中国360公司用AI猎捕软件漏洞，类似Mythos模式",
+      "display_title": "中国360公司用AI猎捕软件漏洞，类似Mythos模式",
+      "display_desc": "360数字安全集团近期宣布开发AI驱动的'漏洞发现Agent'，已发现近1000个此前未知的软件漏洞，包括微软Office和OpenClaw框架中的安全缺陷。",
+      "category_cn": "科技前沿",
+      "number": 1,
+      "category": "tech",
+      "relevance": 59.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/04/24/867181.htm"
+    },
+    {
+      "title": "UK Financial Sector Prepared for Mythos and Others, Says BoE Co-Chaired Group - Insurance Journal",
+      "title_cn": "英国金融业已为Mythos等前沿AI模型做好准备",
+      "display_title": "英国金融业已为Mythos等前沿AI模型做好准备",
+      "display_desc": "英格兰银行及金融服务业代表表示，英国金融行业已为Anthropic的Mythos人工智能模型及其他前沿AI技术的发展做好准备。",
+      "category_cn": "科技前沿",
+      "number": 2,
+      "category": "tech",
+      "relevance": 49.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/04/24/867178.htm"
+    },
+    {
+      "title": "Data management as the foundation for insurance digital transformation - PropertyCasualty360",
+      "title_cn": "数据管理是保险业数字化转型的基石",
+      "display_title": "数据管理是保险业数字化转型的基石",
+      "display_desc": "随着保险公司推进数字化转型和人工智能应用，高质量数据的重要性日益凸显。这是成功实施AI技术的前提条件。",
+      "category_cn": "科技前沿",
+      "number": 3,
+      "category": "tech",
+      "relevance": 100.0,
+      "url": "https://www.propertycasualty360.com/amp/2026/04/24/data-management-as-the-foundation-for-insurance-digital-transformation/"
+    },
+    {
+      "title": "UnitedHealthcare, Aetna, Cigna tout progress to standardize prior authorization as part of industry-wide commitment - Fierce Healthcare",
+      "title_cn": "联合健康、安泰、信诺推进预授权标准化",
+      "display_title": "联合健康、安泰、信诺推进预授权标准化",
+      "display_desc": "美国主要健康保险公司联合推进预授权流程标准化，作为行业范围内提升医疗服务效率的重要承诺。",
+      "category_cn": "科技前沿",
+      "number": 4,
+      "category": "tech",
+      "relevance": 3.0,
+      "url": "https://www.fiercehealthcare.com/payers/unitedhealthcare-aetna-tout-progress-standardize-prior-authorization-part-industry-wide"
+    },
+    {
+      "title": "4 in 5 Filipino women say caregiving role halts financial security building - Asian Business Review",
+      "title_cn": "八成菲律宾女性因照护角色阻碍财务安全建设",
+      "display_title": "八成菲律宾女性因照护角色阻碍财务安全建设",
+      "display_desc": "数据显示，尽管女性对管理日常开支充满信心，但缺乏应对意外事件的保险安全网。Sun Life指出73%的理财顾问为女性。",
+      "category_cn": "科技前沿",
+      "number": 5,
+      "category": "tech",
+      "relevance": 22.0,
+      "url": "https://asianbusinessreview.com/insurance/news/4-in-5-filipino-women-say-caregiving-role-halts-financial-security-building"
+    }
+  ],
+  "industry_news_cn": [
+    {
+      "title": "High Five: Catch up on the biggest stories this week - Insurance Times",
+      "title_cn": "本周保险业五大重要新闻回顾",
+      "display_title": "本周保险业五大重要新闻回顾",
+      "display_desc": "Insurance Times盘点本周保险行业最具影响力的五条新闻，涵盖市场动态、监管变化和行业趋势。",
+      "category_cn": "行业新闻",
+      "number": 1,
+      "category": "industry",
+      "relevance": 53.0,
+      "url": "https://www.insurancetimes.co.uk/news/high-five-catch-up-on-the-biggest-stories-this-week/1458369.article"
+    },
+    {
+      "title": "This week’s biggest M&A stories - Insurance Times",
+      "title_cn": "本周最大并购交易汇总",
+      "display_title": "本周最大并购交易汇总",
+      "display_desc": "Insurance Times汇总本周保险行业最重要的并购交易，分析交易背后的战略逻辑和市场影响。",
+      "category_cn": "行业新闻",
+      "number": 2,
+      "category": "industry",
+      "relevance": 33.0,
+      "url": "https://www.insurancetimes.co.uk/news/this-weeks-biggest-manda-stories/1458372.article"
+    },
+    {
+      "title": "The biggest people moves this week - Insurance Times",
+      "title_cn": "本周保险业人事变动盘点",
+      "display_title": "本周保险业人事变动盘点",
+      "display_desc": "Insurance Times盘点本周保险行业重要人事变动，追踪高管跳槽、任命和退休等关键动态。",
+      "category_cn": "行业新闻",
+      "number": 3,
+      "category": "industry",
+      "relevance": 57.0,
+      "url": "https://www.insurancetimes.co.uk/news/the-biggest-people-moves-this-week/1458368.article"
+    },
+    {
+      "title": "Ageas and Saga launch new product as part of 20-year partnership - Insurance Times",
+      "title_cn": "Ageas与Saga推出新产品，延续20年合作",
+      "display_title": "Ageas与Saga推出新产品，延续20年合作",
+      "display_desc": "Ageas和Saga作为长期合作伙伴，在20年合作关系基础上推出全新保险产品，进一步深化战略合作。",
+      "category_cn": "行业新闻",
+      "number": 4,
+      "category": "industry",
+      "relevance": 4.0,
+      "url": "https://www.insurancetimes.co.uk/news/ageas-and-saga-launch-new-product-as-part-of-20-year-partnership/1458360.article"
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "China’s 360 Hunts Software Flaws With AI, Echoing Mythos - Insurance Journal",
+      "title_cn": "中国360公司用AI猎捕软件漏洞，类似Mythos模式",
+      "display_title": "中国360公司用AI猎捕软件漏洞，类似Mythos模式",
+      "display_desc": "360数字安全集团近期宣布开发AI驱动的'漏洞发现Agent'，已发现近1000个此前未知的软件漏洞，包括微软Office和OpenClaw框架中的安全缺陷。",
+      "category_cn": "科技前沿",
+      "number": 1,
+      "category": "tech",
+      "relevance": 59.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/04/24/867181.htm"
+    },
+    {
+      "title": "UK Financial Sector Prepared for Mythos and Others, Says BoE Co-Chaired Group - Insurance Journal",
+      "title_cn": "英国金融业已为Mythos等前沿AI模型做好准备",
+      "display_title": "英国金融业已为Mythos等前沿AI模型做好准备",
+      "display_desc": "英格兰银行及金融服务业代表表示，英国金融行业已为Anthropic的Mythos人工智能模型及其他前沿AI技术的发展做好准备。",
+      "category_cn": "科技前沿",
+      "number": 2,
+      "category": "tech",
+      "relevance": 49.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/04/24/867178.htm"
+    },
+    {
+      "title": "Data management as the foundation for insurance digital transformation - PropertyCasualty360",
+      "title_cn": "数据管理是保险业数字化转型的基石",
+      "display_title": "数据管理是保险业数字化转型的基石",
+      "display_desc": "随着保险公司推进数字化转型和人工智能应用，高质量数据的重要性日益凸显。这是成功实施AI技术的前提条件。",
+      "category_cn": "科技前沿",
+      "number": 3,
+      "category": "tech",
+      "relevance": 100.0,
+      "url": "https://www.propertycasualty360.com/amp/2026/04/24/data-management-as-the-foundation-for-insurance-digital-transformation/"
+    },
+    {
+      "title": "UnitedHealthcare, Aetna, Cigna tout progress to standardize prior authorization as part of industry-wide commitment - Fierce Healthcare",
+      "title_cn": "联合健康、安泰、信诺推进预授权标准化",
+      "display_title": "联合健康、安泰、信诺推进预授权标准化",
+      "display_desc": "美国主要健康保险公司联合推进预授权流程标准化，作为行业范围内提升医疗服务效率的重要承诺。",
+      "category_cn": "科技前沿",
+      "number": 4,
+      "category": "tech",
+      "relevance": 3.0,
+      "url": "https://www.fiercehealthcare.com/payers/unitedhealthcare-aetna-tout-progress-standardize-prior-authorization-part-industry-wide"
+    },
+    {
+      "title": "4 in 5 Filipino women say caregiving role halts financial security building - Asian Business Review",
+      "title_cn": "八成菲律宾女性因照护角色阻碍财务安全建设",
+      "display_title": "八成菲律宾女性因照护角色阻碍财务安全建设",
+      "display_desc": "数据显示，尽管女性对管理日常开支充满信心，但缺乏应对意外事件的保险安全网。Sun Life指出73%的理财顾问为女性。",
+      "category_cn": "科技前沿",
+      "number": 5,
+      "category": "tech",
+      "relevance": 22.0,
+      "url": "https://asianbusinessreview.com/insurance/news/4-in-5-filipino-women-say-caregiving-role-halts-financial-security-building"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "date": "2026-03-24",
+  "generated_time": "2026-03-24 06:00:25",
+  "total_news": 11,
+  "industry_news_count": 7,
+  "tech_news_count": 4,
+  "industry_news_cn": [
+    {
+      "title": "Tokio Marine to Form Partnership With Berkshire Hathaway, Initially Selling 2.49% Stake - Insurance Journal",
+      "category": "industry",
+      "relevance": 86.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/03/23/862897.htm",
+      "description": "Berkshire Hathaway Inc. will invest 287.4 billion yen ($1.8 billion) in insurer Tokio Marine Holdings Inc., ramping up the US conglomerate's exposure to the Japanese market. The latest deal shows Berkshire is eager to win a slice of Japan's thriving insurance business, an increasingly attractive market.",
+      "title_cn": "东京海上日动与伯克希尔哈撒韦达成战略合作，初始出售2.49%股权",
+      "display_title": "东京海上日动与伯克希尔哈撒韦达成战略合作，初始出售2.49%股权",
+      "display_desc": "伯克希尔哈撒韦将斥资2874亿日元（约18亿美元）收购东京海上日动控股2.49%股权，大幅提升其在日本保险市场的布局。此项交易表明巴菲特旗下集团正积极抢占日本蓬勃发展的保险业务市场份额，日本保险市场日益成为全球投资者的战略焦点。",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "Berkshire Hathaway to Acquire Stake in Japan's Tokio Marine - WSJ",
+      "category": "industry",
+      "relevance": 23.0,
+      "url": "https://www.wsj.com/business/berkshire-hathaway-to-acquire-stake-in-japans-tokio-marine-c53dbfd5",
+      "description": "Berkshire Hathaway to Acquire Stake in Japan's Tokio Marine. Tokio Marine said National Indemnity wouldn't acquire more than 9.9% of the company without prior approval from its board. Warren Buffett's conglomerate continues to expand its Japanese insurance portfolio.",
+      "title_cn": "伯克希尔哈撒韦收购日本东京海上日动股权",
+      "display_title": "伯克希尔哈撒韦收购日本东京海上日动股权",
+      "display_desc": "华尔街日报报道伯克希尔哈撒韦收购东京海上日动股权事宜。东京海上日动表示，未经董事会事先批准，国民赔偿公司持股比例不会超过9.9%。巴菲特的商业帝国持续扩大其在日本保险领域的投资版图。",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "UK home insurers expected to fall back into the red in 2026 - Insurance Times",
+      "category": "industry",
+      "relevance": 77.0,
+      "url": "https://www.insurancetimes.co.uk/news/uk-home-insurers-expected-to-fall-back-into-the-red-in-2026/1458077.article",
+      "description": "",
+      "title_cn": "英国房屋保险公司预计2026年将再次陷入亏损",
+      "display_title": "英国房屋保险公司预计2026年将再次陷入亏损",
+      "display_desc": "受极端天气事件频发和理赔成本持续上升影响，英国房屋保险市场面临严峻挑战。行业分析预计2026年英国家庭保险商综合赔付率将恶化，整体行业利润率承压，多家主要保险公司可能重新出现承保亏损。",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "Bartlett James acquires commercial broker as it looks to 'strengthen roots' across UK - Insurance Times",
+      "category": "industry",
+      "relevance": 32.0,
+      "url": "https://www.insurancetimes.co.uk/news/bartlett-james-acquires-commercial-broker-as-it-looks-to-strengthen-roots-across-uk/1458075.article",
+      "description": "",
+      "title_cn": "Bartlett James收购商业保险经纪商，深化英国市场布局",
+      "display_title": "Bartlett James收购商业保险经纪商，深化英国市场布局",
+      "display_desc": "英国保险经纪公司Bartlett James宣布收购一家商业保险经纪机构，旨在强化其在全国范围内的业务根基和市场覆盖。此次并购是该公司区域扩张战略的重要一步，将进一步增强其在商业保险领域的服务能力和市场竞争力。",
+      "category_cn": "行业新闻",
+      "number": 4
+    },
+    {
+      "title": "Wildfires, Storms, Floods Account for Record 92% of Global Insured Losses: Swiss Re - Insurance Journal",
+      "category": "industry",
+      "relevance": 99.0,
+      "url": "https://www.insurancejournal.com/news/national/2026/03/23/863087.htm",
+      "description": "Wildfires, severe convective storms and floods — also known as secondary perils — accounted for a record 92% of total global natural catastrophe insured losses of US$107 billion in 2025, according to Swiss Re Institute. Wildfires set a new loss record after the Palisades and Eaton fires in Los Angeles.",
+      "title_cn": "瑞士再保险：野火、风暴和洪水占全球保险损失创纪录的92%",
+      "display_title": "瑞士再保险：野火、风暴和洪水占全球保险损失创纪录的92%",
+      "display_desc": "瑞士再保险研究所最新报告显示，2025年全球自然灾害保险损失总额达1070亿美元，其中野火、强对流风暴和洪水等次生灾害占比高达92%，创历史新高。洛杉矶帕利塞兹和伊顿野火灾难刷新了单次火灾损失纪录，凸显了气候变化对保险行业的深远影响。",
+      "category_cn": "行业新闻",
+      "number": 5
+    },
+    {
+      "title": "KeyCity Capital: Investors Suffer Losses on KCAP RE Funds - carlsonlaw.com",
+      "category": "industry",
+      "relevance": 10.0,
+      "url": "https://www.carlsonlaw.com/keycity-lasater-capital-investment-losses/",
+      "description": "Investors who suffered losses in funds managed by Lasater Capital, LLC, previously known as KeyCity Capital, may have recovery options. An investor lawsuit alleges that KeyCity/Lasater Capital and its managing partner fraudulently misrepresented the project's financial health and their own investment.",
+      "title_cn": "KeyCity Capital投资者在房地产基金中遭受损失",
+      "display_title": "KeyCity Capital投资者在房地产基金中遭受损失",
+      "display_desc": "KeyCity Capital（现更名为Lasater Capital）管理的基金投资者遭受损失，投资者诉讼指控该公司及其管理合伙人虚假陈述项目财务状况和自身投资情况。受损投资者可能存在法律追偿途径。",
+      "category_cn": "行业新闻",
+      "number": 6
+    },
+    {
+      "title": "Chinese Insurer Ping An's Offshore Unit Reconsiders US Exposure - Insurance Journal",
+      "category": "industry",
+      "relevance": 5.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/03/23/862871.htm",
+      "description": "The overseas investment arm of China's Ping An Insurance (Group) Company is reconsidering its exposure to the US as the Iran war fuels waves of volatility. The key question is how much and whether you continue to invest in the US market.",
+      "title_cn": "中国平安海外投资部门重新评估美国市场风险敞口",
+      "display_title": "中国平安海外投资部门重新评估美国市场风险敞口",
+      "display_desc": "中国平安保险集团海外投资部门正在重新评估其在美国市场的风险敞口，伊朗战争引发的持续市场波动成为关键考量因素。平安方面表示，核心问题在于继续投资美国市场的规模和必要性。",
+      "category_cn": "行业新闻",
+      "number": 7
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Preparing for an AI Native Future - Insurance Journal",
+      "category": "tech",
+      "relevance": 99.0,
+      "url": "https://www.insurancejournal.com/magazines/mag-features/2026/03/23/862411.htm",
+      "description": "But to unlock AI's full potential, carriers first need to navigate shifting workforce dynamics, modernize outdated legacy systems, and overcome their tech-scoping problem, said panelists during a recent webinar from Federato. While insurers typically shed business during a hard market cycle, as the market begins to soften, AI could be the key differentiator.",
+      "title_cn": "为AI原生未来做好准备：保险业数字化转型路径",
+      "display_title": "为AI原生未来做好准备：保险业数字化转型路径",
+      "display_desc": "Federato最新网络研讨会探讨保险业如何全面拥抱人工智能。行业专家指出，保险公司要释放AI的全部潜力，必须应对劳动力结构变化、现代化陈旧系统以及技术定位问题三大挑战。随着保险市场由硬市场转向软市场周期，AI将成为关键的差异化竞争优势。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "AI returns depend on redesigning job roles - Ericson Chan - Insurance Times",
+      "category": "tech",
+      "relevance": 99.0,
+      "url": "https://www.insurancetimes.co.uk/news/ai-returns-depend-on-redesigning-job-roles-ericson-chan/1458065.article",
+      "description": "",
+      "title_cn": "Ericson Chan：AI投资回报取决于重新设计岗位职责",
+      "display_title": "Ericson Chan：AI投资回报取决于重新设计岗位职责",
+      "display_desc": "保险科技领域知名专家Ericson Chan指出，保险企业在AI技术上的投资回报率与岗位职责的重新设计直接相关。单纯引入AI工具不足以产生预期效益，必须从根本上重新思考工作流程和员工角色定位，将AI能力与业务需求深度融合。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "10 Most innovative U.S. states - PropertyCasualty360",
+      "category": "tech",
+      "relevance": 100.0,
+      "url": "https://www.propertycasualty360.com/2026/03/23/10-most-innovative-us-states/",
+      "description": "Insurance industry technology spending is expected to increase by $173 billion in 2026, Forrester reports, which is up 7.8% relative to 2025. Due to this increase in tech investment, the insurance industry is likely to account for 6% of total tech spending in the U.S. this year.",
+      "title_cn": "2026年美国最具创新力十大州：保险科技投资激增",
+      "display_title": "2026年美国最具创新力十大州：保险科技投资激增",
+      "display_desc": "Forrester研究报告显示，2026年保险业技术支出预计增长1730亿美元，同比增长7.8%。受此推动，保险行业今年将占美国科技总支出的6%。报告还评出了全美最具创新力的十大州，为行业科技发展提供了区域参考。",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "Chubb Outlines Structure of $20B Gulf Reinsurance Facility, Now Including Liability Cover - Insurance Journal",
+      "category": "tech",
+      "relevance": 4.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/03/23/863026.htm",
+      "description": "Chubb outlined the structure of the new $20 billion maritime reinsurance facility, created to provide marine war risk insurance for ships sailing through the Strait of Hormuz — which has been effectively closed to shipping since the start of the war with Iran. (DFC), which on March 11 announced Chubb would administer the facility.",
+      "title_cn": "安达保险公布200亿美元海湾再保险设施结构，新增责任险覆盖",
+      "display_title": "安达保险公布200亿美元海湾再保险设施结构，新增责任险覆盖",
+      "display_desc": "安达保险（Chubb）详细披露了新设立的200亿美元海上再保险设施的组织架构，该设施旨在为通过霍尔木兹海峡航行的船舶提供海上战争风险保险。自伊朗战争爆发以来，该海峡已实质上对航运关闭。美国国际开发金融公司此前已指定安达保险负责管理该设施。",
+      "category_cn": "科技前沿",
+      "number": 4
+    }
+  ]
+}

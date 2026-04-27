@@ -1,0 +1,155 @@
+{
+  "date": "2026-04-15",
+  "generated_time": "2026-04-15 06:00:37",
+  "total_news": 12,
+  "industry_news_count": 8,
+  "tech_news_count": 4,
+  "industry_news_cn": [
+    {
+      "title": "Data Centers Offer a Potential $10 Billion Windfall for Insurers - Insurance Journal",
+      "category": "industry",
+      "relevance": 86.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/04/14/865754.htm",
+      "description": "# Data Centers Offer a Potential $10 Billion Windfall for Insurers. Soaring demand for insurance coverage related to data center construction is creating a \"meaningful growth opportunity\" for the industry, outstripping some traditional insurance markets, according to S&P Global Ratings. \"Demand for ...",
+      "title_cn": "数据中心为保险公司带来100亿美元潜在收益 - Insurance Journal",
+      "display_title": "数据中心为保险公司带来100亿美元潜在收益",
+      "display_desc": "S&P全球评级报告显示，数据中心建设相关的保险需求激增，为保险业创造\"巨大的增长机会\"，并超过了传统保险市场的发展速度，为再保险公司带来新的发展机遇。",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "Hamilton Establishes Casualty Reinsurance Sidecar – Company Announcement - Financial Times",
+      "category": "industry",
+      "relevance": 83.0,
+      "url": "https://markets.ft.com/data/announce/detail?dockey=600-202604141630BIZWIRE_USPRX____20260414_BW090355-1",
+      "description": "As part of Hamilton's continued investment in its third-party capital offerings, it will draw upon the expertise of Tristan Latarche, who has been promoted to Senior Vice President of Hamilton ILS. As part of Hamilton's continued investment in its third-party capital offerings, it will draw upon the...",
+      "title_cn": "汉密尔顿成立意外险再保险侧车 - 公司公告 - 金融时报",
+      "display_title": "汉密尔顿成立意外险再保险侧车",
+      "display_desc": "汉密尔顿继续在第三方资本业务中投资，将从Tristan Latarche的专业知识中受益，他已被晋升为汉密尔顿ILLS高级副总裁。这一举措将强化公司在意外险再保险领域的市场地位。",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "Lilly makes preclinical ADC specialist CrossBridge its latest acquisition in vague $300M deal - Fierce Biotech",
+      "category": "industry",
+      "relevance": 2.0,
+      "url": "https://www.fiercebiotech.com/biotech/eli-lilly-lassoes-texas-adc-specialist-crossbridge-bio-300m",
+      "description": "# Lilly makes preclinical ADC specialist CrossBridge its latest acquisition in vague $300M deal. Eli Lilly antibody drug conjugates mergers and acquisitions Deals Biotech. This time, Lilly has returned to antibody-drug conjugates (ADCs), scooping up Houston, Texas-based CrossBridge Bio and its pipel...",
+      "title_cn": "礼来模糊收购ADC专家CrossBridge，交易额3亿美元 - Fierce Biotech",
+      "display_title": "礼来模糊收购ADC专家CrossBridge，交易额3亿美元",
+      "display_desc": "礼来公司重新关注抗体药物偶联物(ADC)领域，以3亿美元的模糊交易收购了位于德克萨斯州休斯顿的CrossBridge生物公司。此次收购将加强礼来在ADC药物开发方面的能力。",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "(Re)insurer reveals new permanent office in Manchester - Insurance Times",
+      "category": "industry",
+      "relevance": 88.0,
+      "url": "https://www.insurancetimes.co.uk/news/reinsurer-reveals-new-permanent-office-in-manchester/1458264.article",
+      "description": "",
+      "title_cn": "(再)保险公司宣布在曼彻斯特设立永久办公室 - Insurance Times",
+      "display_title": "(再)保险公司宣布在曼彻斯特设立永久办公室",
+      "display_desc": "某再保险公司在曼彻斯特设立新的永久办公室，这显示了公司对英国再保险市场的重视，将进一步加强在欧洲地区的影响力和服务能力。",
+      "category_cn": "行业新闻",
+      "number": 4
+    },
+    {
+      "title": "Profits climb for Covéa despite GWP drop - Insurance Times",
+      "category": "industry",
+      "relevance": 53.0,
+      "url": "https://www.insurancetimes.co.uk/news/profits-climb-for-covea-despite-gwp-drop/1458276.article",
+      "description": "",
+      "title_cn": "Covéa保费收入下降但利润增长 - Insurance Times",
+      "display_title": "Covéa保费收入下降但利润增长",
+      "display_desc": "尽管Covéa公司保费总收入有所下降，但利润却实现增长。这表明公司通过有效的成本控制和风险调整策略，在保费下行压力下仍能保持良好的盈利能力。",
+      "category_cn": "行业新闻",
+      "number": 5
+    },
+    {
+      "title": "Centura Consulting Services Advises Property Owners on Casualty Loss Tax Deductions - Yahoo Finance UK",
+      "category": "industry",
+      "relevance": 16.0,
+      "url": "https://uk.finance.yahoo.com/news/centura-consulting-services-advises-property-140000850.html",
+      "description": "# Centura Consulting Services Advises Property Owners on Casualty Loss Tax Deductions. The Southern California-based consultancy helps property owners nationwide identify, document and evaluate casualty loss deductions for tax relief under federal and state tax law. Under IRC §165, owners of propert...",
+      "title_cn": "Centura咨询服务为财产所有者提供意外损失税收减免建议 - Yahoo财经 UK",
+      "display_title": "Centura咨询服务为财产所有者提供意外损失税收减免建议",
+      "display_desc": "这家位于南加州的咨询公司帮助全国范围内的财产所有者根据联邦和州税法，识别、记录和评估意外损失税收减免。这项服务对保险理赔后的税务优化具有重要价值。",
+      "category_cn": "行业新闻",
+      "number": 6
+    },
+    {
+      "title": "Stable Coins Versus Banks: The Battle Over Interest Rates - InsuranceNewsNet",
+      "category": "industry",
+      "relevance": 22.0,
+      "url": "https://insurancenewsnet.com/oarticle/stable-coins-versus-banks-the-battle-over-interest-rates",
+      "description": "# Stable Coins Versus Banks: The Battle Over Interest Rates - Insurance News | InsuranceNewsNet. HomeNow reading INN Insider News. INN Insider News RSSGet our newsletter. 1 minute ago INN Insider News. ## Advisor News. ## Annuity News. *   Best's Special Report: Analysis Shows Drastic Shift in Life ...",
+      "title_cn": "稳定币与银行：利率之争 - 保险新闻网",
+      "display_title": "稳定币与银行：利率之争",
+      "display_desc": "稳定币与传统银行在利率政策上的竞争日益激烈。这场利率战可能影响保险公司的投资策略和资产管理模式，再保险行业需要密切关注这一数字货币与传统金融体系的博弈。",
+      "category_cn": "行业新闻",
+      "number": 7
+    },
+    {
+      "title": "Architecture plays a role in mitigating climate risk - InsuranceNewsNet",
+      "category": "industry",
+      "relevance": 4.0,
+      "url": "https://insurancenewsnet.com/innarticle/architecture-plays-a-role-in-mitigating-climate-risk",
+      "description": "# Architecture plays a role in mitigating climate risk - Insurance News | InsuranceNewsNet. The implications are staggering: if a building can't withstand the realities of climate extremes, it may become increasingly difficult to protect, insure, finance or even occupy. This crisis poses a central q...",
+      "title_cn": "建筑学在降低气候风险中发挥作用 - 保险新闻网",
+      "display_title": "建筑学在降低气候风险中发挥作用",
+      "display_desc": "建筑设计对应对气候极端事件至关重要。如果建筑物无法承受气候现实，保护、保险、融资或占用都将变得困难。这一挑战需要保险业与建筑业的深度合作，共同应对气候变化带来的风险。",
+      "category_cn": "行业新闻",
+      "number": 8
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Novidea Named a Finalist in the PC360 Insurance Luminaries for Excellence in Tech Innovation - The Manila Times",
+      "category": "tech",
+      "relevance": 100.0,
+      "url": "https://www.manilatimes.net/2026/04/15/tmt-newswire/globenewswire/novidea-named-a-finalist-in-the-pc360-insurance-luminaries-for-excellence-in-tech-innovation/2320357",
+      "description": "Novidea Named a Finalist in the PC360 Insurance Luminaries for Excellence in Tech Innovation. # Novidea Named a Finalist in the PC360 Insurance Luminaries for Excellence in Tech Innovation. Boston, USA, April 14, 2026 (GLOBE NEWSWIRE) -- Novidea, creator of the unified, cloud-native insurance manage...",
+      "title_cn": "Novidea入围PC360保险科技创新杰出奖 - 马尼拉时报",
+      "display_title": "Novidea入围PC360保险科技创新杰出奖",
+      "display_desc": "Novidea凭借统一的云原保险管理平台入围PC360保险科技创新杰出奖，这表明公司在保险科技领域的创新成果获得了行业认可，为再保险行业的技术创新树立了标杆。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "Novidea Named a Finalist in the PC360 Insurance Luminaries for Excellence in Tech Innovation - Yahoo Finance Singapore",
+      "category": "tech",
+      "relevance": 100.0,
+      "url": "https://sg.finance.yahoo.com/news/novidea-named-finalist-pc360-insurance-165300429.html",
+      "description": "# Novidea Named a Finalist in the PC360 Insurance Luminaries for Excellence in Tech Innovation. Boston, USA, April 14, 2026 (GLOBE NEWSWIRE) -- Novidea, creator of the unified, cloud-native insurance management platform, today announced that it has been named a finalist in the 2026 PropertyCasualty3...",
+      "title_cn": "Novidea入围PC360保险科技创新杰出奖 - 雅虎财经新加坡",
+      "display_title": "Novidea入围PC360保险科技创新杰出奖",
+      "display_desc": "Novidea公司宣布其统一的云原保险管理平台入围2026年PC360保险科技创新杰出奖，这凸显了保险科技在再保险领域的快速发展，以及数字化转型对行业创新的推动作用。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "Novidea Named a Finalist in the PC360 Insurance Luminaries for Excellence in Tech Innovation - Financial-News.co.uk",
+      "category": "tech",
+      "relevance": 48.0,
+      "url": "https://www.financial-news.co.uk/novidea-named-a-finalist-in-the-pc360-insurance-luminaries-for-excellence-in-tech-innovation/",
+      "description": "#### Novidea Named a Finalist in the PC360 Insurance Luminaries for Excellence in Tech Innovation. # Novidea Named a Finalist in the PC360 Insurance Luminaries for Excellence in Tech Innovation. Novidea, creator of the unified, cloud-native insurance management platform, today announced that it has ...",
+      "title_cn": "Novidea入围PC360保险科技创新杰出奖 - 英国财经新闻",
+      "display_title": "Novidea入围PC360保险科技创新杰出奖",
+      "display_desc": "Novidea宣布其统一的云原保险管理平台入围2026年PC360保险科技创新杰出奖，这反映了保险科技在全球范围内的重要地位，以及技术创新对保险行业发展的深远影响。",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "Capacity constraints likely as annual data centre investment set to top £230bn - Insurance Times",
+      "category": "tech",
+      "relevance": 12.0,
+      "url": "https://www.insurancetimes.co.uk/news/capacity-constraints-likely-as-annual-data-centre-investment-set-to-top-230bn/1458273.article",
+      "description": "",
+      "title_cn": "年度数据中心投资预计超过2300亿英镑，容量限制可能加剧 - Insurance Times",
+      "display_title": "年度数据中心投资预计超过2300亿英镑",
+      "display_desc": "随着年度数据中心投资预计超过2300亿英镑，行业可能面临容量限制的挑战。这一趋势将对数据中心保险市场产生重要影响，再保险公司需要关注相关风险和机会。",
+      "category_cn": "科技前沿",
+      "number": 4
+    }
+  ]
+}

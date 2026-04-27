@@ -1,0 +1,131 @@
+{
+  "date": "2026-04-04",
+  "generated_time": "2026-04-04 06:00:38",
+  "total_news": 10,
+  "industry_news_count": 4,
+  "tech_news_count": 6,
+  "industry_news_cn": [
+    {
+      "title": "CFTC Accelerates Prediction Market Fight With New State Lawsuits - Bloomberg Law News",
+      "category": "industry",
+      "relevance": 25.0,
+      "url": "https://news.bloomberglaw.com/securities-law/cftc-accelerates-prediction-market-fight-with-new-state-lawsuits",
+      "description": "# CFTC Accelerates Prediction Market Fight With New State Lawsuits. April 3, 2026, 5:57 PM UTC. Federal regulators escalated the legal fight over who should control the rapidly growing prediction market industry by suing states cracking down on the platforms, signaling a new front that could push th...",
+      "title_cn": "CFTC加速对预测市场的法律斗争，对州提起新诉讼 - 彭博法律新闻",
+      "display_title": "CFTC加速对预测市场的法律斗争，对州提起新诉讼",
+      "display_desc": "联邦监管机构对控制快速增长的预测市场行业的法律斗争升级，通过起诉打击这些平台的州，这可能开启一个新战线，预计将对该行业产生重大影响。",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "Inland Marine Insurance: A Competitive, Resilient Market - InsuranceNewsNet",
+      "category": "industry",
+      "relevance": 9.0,
+      "url": "https://insurancenewsnet.com/oarticle/inland-marine-insurance-a-competitive-resilient-market",
+      "description": "# Inland Marine Insurance: A Competitive, Resilient Market. By William Nibbelin, Head of Industry Data and Actuarial Research, Triple-I The U.S. inland marine insurance industry is celebrating 20 consecutive years of underwriting profitability, with a net combined ratio of 84.2 in 2024. According to...",
+      "title_cn": "内陆水险：具有竞争力的弹性市场 - 保险新闻网",
+      "display_title": "内陆水险：具有竞争力的弹性市场",
+      "display_desc": "美国内陆水险行业连续20年实现承保盈利，2024年综合比率为84.2。数据显示该行业展现出强劲的抗风险能力和竞争优势，为保险业提供了宝贵的经验。",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "What a $10.5B Merger Could Mean for the Self-Storage Industry - Inside Self-Storage",
+      "category": "industry",
+      "relevance": 6.0,
+      "url": "https://www.insideselfstorage.com/acquisitions-buying/iss-blog-self-storage-giants-unite-what-the-10-5b-merger-of-public-storage-and-nsat-may-mean-for-the-greater-industry",
+      "description": "# ISS BLOG – Self-Storage Giants Unite: What the $10.5B Merger of Public Storage and NSAT May Mean for the Greater Industry. The $10.5 billion acquisition of National Storage Affiliates Trust by Public Storage Inc. has sent ripples of interest and anxiety throughout the self-storage industry. In thi...",
+      "title_cn": "105亿美元并购对自存储行业意味着什么 - 自存储内幕",
+      "display_title": "105亿美元并购对自存储行业意味着什么",
+      "display_desc": "Public Storage Inc.以105亿美元收购National Storage Affiliates Trust的交易在整个自存储行业引发关注和担忧。这一大型并购可能对行业格局和竞争态势产生深远影响。",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "Ted Moynihan takes up global leadership of Oliver Wyman - Consultancy.uk",
+      "category": "industry",
+      "relevance": 6.0,
+      "url": "https://www.consultancy.uk/news/43670/ted-moynihan-takes-up-global-leadership-of-oliver-wyman",
+      "description": "***Professional services firm Marsh has announced the appointment of its new CEO of Marsh Management Consulting and Oliver Wyman. Marsh and Oliver Wyman are part of Marsh McLennan is a New York-based professional services conglomerate, offering clients access to insurance brokerage, risk management,...",
+      "title_cn": "Ted Moynihan担任Oliver Wyman全球领导职位 - 咨询业.uk",
+      "display_title": "Ted Moynihan担任Oliver Wyman全球领导职位",
+      "display_desc": "专业服务公司Marsh宣布任命Ted Moynihan为Marsh管理咨询和Oliver Wyman的新CEO。这标志着全球保险经纪和风险管理领域的重要领导层变动。",
+      "category_cn": "行业新闻",
+      "number": 4
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "How AI helps insurance defense attorneys keep pace with clients - Thomson Reuters Legal Solutions",
+      "category": "tech",
+      "relevance": 36.0,
+      "url": "https://legal.thomsonreuters.com/blog/ai-is-transforming-insurance-and-the-law-firms-that-serve-it-must-keep-pace/",
+      "description": "# AI is transforming insurance — and the law firms that serve it must keep pace. * Insurance defense firms must meet carrier clients operating at AI speed with matching capabilities. For the lawyers who defend those carriers, the implications are immediate — and the expectation is clear: clients ope...",
+      "title_cn": "AI如何帮助保险辩护律师跟上客户步伐 - 汤森路透法律解决方案",
+      "display_title": "AI如何帮助保险辩护律师跟上客户步伐",
+      "display_desc": "人工智能正在改变保险业，服务保险公司的律师事务所必须保持同步。保险公司客户正在以AI速度运营，辩护律师需要匹配相应能力来满足客户需求。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "The institutional knowledge gap in insurance: Why AI isn't the silver bullet - InsuranceNewsNet",
+      "category": "tech",
+      "relevance": 27.0,
+      "url": "https://insurancenewsnet.com/innarticle/the-institutional-knowledge-gap-in-insurance-why-ai-isnt-the-silver-bullet",
+      "description": "# The institutional knowledge gap in insurance: Why AI isn't the silver bullet. The insurance industry is facing an unprecedented wave of retirements, accompanied by a significant loss of institutional knowledge. This shift will inevitably lead to an institutional knowledge gap or the loss of experi...",
+      "title_cn": "保险业的机构知识鸿沟：为什么AI不是万能药 - 保险新闻网",
+      "display_title": "保险业的机构知识鸿沟：为什么AI不是万能药",
+      "display_desc": "保险业正面临前所未有的退休浪潮，伴随大量机构知识流失。这一转变将不可避免地导致机构知识鸿沟，AI技术虽然重要但无法完全替代人类经验。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "Murex and Quant Partner to Embed Digital Assets into Core Capital Markets Infrastructure - thefintechtimes.com",
+      "category": "tech",
+      "relevance": 4.0,
+      "url": "https://thefintechtimes.com/murex-and-quant-partner-to-embed-digital-assets-into-core-capital-markets-infrastructure/",
+      "description": "* Murex and Quant Partner to Embed Digital Assets into Core Capital Markets Infrastructure. # Murex and Quant Partner to Embed Digital Assets into Core Capital Markets Infrastructure. The collaboration integrates Quant's infrastructure into Murex's widely used MX.3 platform, bringing institutional-g...",
+      "title_cn": "Murex与Quant合作将数字资产嵌入核心资本市场基础设施 - 金融科技时报",
+      "display_title": "Murex与Quant合作将数字资产嵌入核心资本市场基础设施",
+      "display_desc": "Murex和Quant达成合作，将数字资产嵌入核心资本市场基础设施。这一合作将Quant的基础设施集成到Murex广泛使用的MX.3平台，为机构投资者提供更好的数字资产服务。",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "MARA Mining Company Cut 15% of Its Workforce Amid a Shift to AI and Digital Infrastructure - incrypted",
+      "category": "tech",
+      "relevance": 4.0,
+      "url": "https://incrypted.com/en/mara-mining-company-cut-15-of-its-workforce-amid-a-shift-to-ai-and-digital-infrastructure/",
+      "description": "# MARA Mining Company Cut 15% of Its Workforce Amid a Shift to AI and Digital Infrastructure. * *The Bitcoin miner cut 15% of its team as it restructures the business around AI.*. Public Bitcoin miner MARA Holdings announced it is cutting roughly 15% of its workforce as part of a strategic business ...",
+      "title_cn": "MARA矿业公司向AI和数字基础设施转型期间裁员15% - incrypted",
+      "display_title": "MARA矿业公司向AI和数字基础设施转型期间裁员15%",
+      "display_desc": "比特币矿机公司MARA Holdings宣布战略重组，裁减约15%的员工，推动业务向人工智能和数字基础设施转型。这是公司战略转型的重大调整。",
+      "category_cn": "科技前沿",
+      "number": 4
+    },
+    {
+      "title": "Century Huatong Launches the 2nd Digiloong Cup Global AI Innovation Competition - The National Law Review",
+      "category": "tech",
+      "relevance": 12.0,
+      "url": "https://natlawreview.com/press-releases/century-huatong-launches-2nd-digiloong-cup-global-ai-innovation-competition",
+      "description": "In addition to cash rewards, it has created a diversified characteristic reward system, providing participating teams with comprehensive empowerment from exposure, resources to capital and technology, allowing high-quality innovative projects to continue to receive development support after the comp...",
+      "title_cn": "世纪华通启动第二届迪龙杯全球人工智能创新大赛 - 国家法律评论",
+      "display_title": "世纪华通启动第二届迪龙杯全球人工智能创新大赛",
+      "display_desc": "世纪华通启动第二届迪龙杯全球人工智能创新大赛，除现金奖励外，还建立了多元化特色奖励系统，为参赛团队提供从曝光到资本技术的全方位赋能，支持高质量创新项目持续发展。",
+      "category_cn": "科技前沿",
+      "number": 5
+    },
+    {
+      "title": "Sandisk honoured at Malaysia International Business Awards 2026 with two wins - Asian Business Review",
+      "category": "tech",
+      "relevance": 1.0,
+      "url": "https://asianbusinessreview.com/co-written-partner/event-news/sandisk-honoured-malaysia-international-business-awards-2026-two-wins",
+      "description": "# Sandisk honoured at Malaysia International Business Awards 2026 with two wins. Sandisk triumphed at the Malaysia International Business Awards 2026, winning the Excellence Award - Manufacturing Technology and Initiative Award - Manufacturing Technology with its AI (artificial intelligence) innovat...",
+      "title_cn": "SanDisk在2026年马来西亚国际商业颁奖典礼上获得两项大奖 - 亚洲商业评论",
+      "display_title": "SanDisk在2026年马来西亚国际商业颁奖典礼上获得两项大奖",
+      "display_desc": "SanDisk在2026年马来西亚国际商业颁奖典礼上获得两项技术制造大奖，展示其在人工智能创新方面的卓越表现，体现了公司在科技制造领域的领导地位。",
+      "category_cn": "科技前沿",
+      "number": 6
+    }
+  ]
+}

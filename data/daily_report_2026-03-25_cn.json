@@ -1,0 +1,167 @@
+{
+  "date": "2026-03-25",
+  "generated_time": "2026-03-25 06:00:24",
+  "total_news": 13,
+  "industry_news_count": 7,
+  "tech_news_count": 6,
+  "industry_news_cn": [
+    {
+      "title": "Hong Kong insurance C-Suite pay hits $3m as affluent client focus drives 2026 hiring - Asian Business Review",
+      "category": "industry",
+      "relevance": 99.0,
+      "url": "https://asianbusinessreview.com/news/hong-kong-insurance-c-suite-pay-hits-3m-affluent-client-focus-drives-2026-hiring",
+      "description": "Hong Kong's insurance sector is expected to see steady hiring in 2026, driven by demand for high-net-worth (HNW) and ultra-high-net-worth (UHNW) clients, and by the industry's expansion into health, wellness, and investment services, according to the 2026 Hays Asia Salary Guide. Hiring is also rising in areas like actuarial, underwriting and claims.",
+      "title_cn": "香港保险业高管年薪突破300万美元，富裕客户需求驱动2026年招聘热潮",
+      "display_title": "香港保险业高管年薪突破300万美元，富裕客户需求驱动2026年招聘热潮",
+      "display_desc": "据2026年Hays亚洲薪资指南显示，香港保险业高管薪酬已突破300万美元。受高净值及超高净值客户需求增长驱动，加上行业向健康、养老和投资服务领域拓展，2026年香港保险业招聘保持稳健增长，精算、核保和理赔等岗位需求尤为旺盛。",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "HDI Global sees insurance revenue climb 5% in latest results - Insurance Times",
+      "category": "industry",
+      "relevance": 95.0,
+      "url": "https://www.insurancetimes.co.uk/news/hdi-global-sees-insurance-revenue-climb-5-in-latest-results/1458093.article",
+      "description": "",
+      "title_cn": "HDI Global最新业绩公布：保险收入同比增长5%",
+      "display_title": "HDI Global最新业绩公布：保险收入同比增长5%",
+      "display_desc": "德国保险巨头HDI Global发布最新财务业绩，保险业务收入实现5%的同比增长，显示出稳健的业务增长态势。HDI Global作为国际知名保险和再保险集团，其业绩表现反映了全球保险市场的整体向好趋势。",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "Louisiana law expands insurance cancellation protections - PropertyCasualty360",
+      "category": "industry",
+      "relevance": 94.0,
+      "url": "https://www.propertycasualty360.com/2026/03/24/louisiana-law-expands-insurance-cancellation-protections/",
+      "description": "Get expert insights and real-world perspectives from leading voices in the industry to help you make more informed decisions. In-depth coverage of the most significant issues shaping the industry.",
+      "title_cn": "路易斯安那州新法扩大保险合同取消保护范围",
+      "display_title": "路易斯安那州新法扩大保险合同取消保护范围",
+      "display_desc": "路易斯安那州通过新法案，进一步扩大了保险合同取消的消费者保护措施。该法案旨在限制保险公司在特定条件下单方面取消保单的权利，为投保人提供更强有力的法律保障，对财产险和意外险市场将产生深远影响。",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "Principal acquires Bristol-based broker to create £60m-plus GWP business - Insurance Times",
+      "category": "industry",
+      "relevance": 11.0,
+      "url": "https://www.insurancetimes.co.uk/news/principal-acquires-bristol-based-broker-to-create-60m-plus-gwp-business/1458083.article",
+      "description": "",
+      "title_cn": "Principal收购布里斯托经纪商，打造年保费超6000万英镑业务",
+      "display_title": "Principal收购布里斯托经纪商，打造年保费超6000万英镑业务",
+      "display_desc": "英国保险集团Principal宣布收购总部位于布里斯托的保险经纪商，合并后业务总保费收入（GWP）将超过6000万英镑。此次收购将进一步扩大Principal在英国保险经纪市场的份额和业务版图。",
+      "category_cn": "行业新闻",
+      "number": 4
+    },
+    {
+      "title": "The AA partners with insurance firm for tyre cover scheme - Insurance Times",
+      "category": "industry",
+      "relevance": 4.0,
+      "url": "https://www.insurancetimes.co.uk/news/the-aa-partners-with-insurance-firm-for-tyre-cover-scheme/1458098.article",
+      "description": "",
+      "title_cn": "英国AA汽车协会与保险公司合作推出轮胎保障计划",
+      "display_title": "英国AA汽车协会与保险公司合作推出轮胎保障计划",
+      "display_desc": "英国最大的汽车服务组织AA宣布与一家保险公司达成合作伙伴关系，联合推出全新的轮胎保障保险计划。该计划将为车主提供轮胎损坏和更换的保险保障，拓展了汽车保险市场的细分领域。",
+      "category_cn": "行业新闻",
+      "number": 5
+    },
+    {
+      "title": "New marine MGA launches into Lloyd's market - Insurance Times",
+      "category": "industry",
+      "relevance": 11.0,
+      "url": "https://www.insurancetimes.co.uk/news/new-marine-mga-launches-into-lloyds-market/1458097.article",
+      "description": "",
+      "title_cn": "新型海上保险MGA正式进入劳合社市场",
+      "display_title": "新型海上保险MGA正式进入劳合社市场",
+      "display_desc": "一家全新的海上保险管理型总代理（MGA）宣布正式进入伦敦劳合社市场开展业务。该MGA将专注于提供海上保险领域的专业承保服务，为劳合社市场带来新的竞争力和创新产品。",
+      "category_cn": "行业新闻",
+      "number": 6
+    },
+    {
+      "title": "Howden-owned MGA launches new credit risk insurance arm - Insurance Times",
+      "category": "industry",
+      "relevance": 2.0,
+      "url": "https://www.insurancetimes.co.uk/news/howden-owned-mga-launches-new-credit-risk-insurance-arm/1458091.article",
+      "description": "",
+      "title_cn": "Howden旗下MGA推出信用风险保险新业务线",
+      "display_title": "Howden旗下MGA推出信用风险保险新业务线",
+      "display_desc": "全球知名保险经纪集团Howden旗下的管理型总代理（MGA）宣布推出全新的信用风险保险业务部门。该部门将专注于为企业客户提供信用风险保障解决方案，进一步丰富Howden的业务矩阵。",
+      "category_cn": "行业新闻",
+      "number": 7
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Industry talent development must focus on three 'critical role clusters' – Aon - Insurance Times",
+      "category": "tech",
+      "relevance": 24.0,
+      "url": "https://www.insurancetimes.co.uk/news/industry-talent-development-must-focus-on-three-critical-role-clusters-aon/1458085.article",
+      "description": "This is according to a new report from insurance broker and risk advisor Aon, released on 20 March 2026 and titled Three Roles to Build Insurance's Next-Generation Workforce.",
+      "title_cn": "怡安报告：保险业人才培养需聚焦三大关键角色群",
+      "display_title": "怡安报告：保险业人才培养需聚焦三大关键角色群",
+      "display_desc": "怡安集团于2026年3月20日发布最新报告《构建保险业下一代人才队伍的三大关键角色》，指出保险行业的人才发展战略应聚焦三个关键角色集群。报告强调，随着行业数字化转型加速，技术驱动型人才和复合型风险管理人才的需求将持续攀升。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "Hong Kong finance firms deploy AI for strategy over efficiency: PwC - Asian Business Review",
+      "category": "tech",
+      "relevance": 22.0,
+      "url": "https://asianbusinessreview.com/information-technology/news/hong-kong-finance-firms-deploy-ai-strategy-over-efficiency-pwc",
+      "description": "Still, PwC said investment remains limited, with 61% of surveyed financial institutions allocating 10% or less of their technology budgets to AI, indicating a 30% to 40% gap against the global standard.",
+      "title_cn": "普华永道调查：香港金融机构AI应用偏向战略层面，投资力度仍存缺口",
+      "display_title": "普华永道调查：香港金融机构AI应用偏向战略层面，投资力度仍存缺口",
+      "display_desc": "普华永道最新调查显示，香港金融机构在AI应用上更注重战略部署而非效率提升。然而，AI投资力度仍然有限，61%的受访金融机构将10%或更少的技术预算分配给AI，与全球标准相比存在30%至40%的差距，表明香港金融业在AI投入方面仍有较大提升空间。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "NYSE Partners With Securitize to Develop 24/7 Tokenized Securities Platform - WSJ",
+      "category": "tech",
+      "relevance": 9.0,
+      "url": "https://www.wsj.com/finance/stocks/nyse-partners-with-securitize-to-develop-24-7-tokenized-securities-platform-871a4c7e",
+      "description": "Under the exchange's plan, stocks would trade as digital tokens. Wall Street players are accelerating their push into tokenized securities.",
+      "title_cn": "纽约证券交易所联手Securitize开发全天候代币化证券交易平台",
+      "display_title": "纽约证券交易所联手Securitize开发全天候代币化证券交易平台",
+      "display_desc": "纽约证券交易所宣布与数字资产公司Securitize合作，共同开发7x24小时代币化证券交易平台。根据交易所计划，股票将以数字代币形式进行交易。华尔街主要机构正加速布局代币化证券领域，预示着传统金融市场正在向区块链技术驱动的方向转型。",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "NYSE teams up with Securitize to develop tokenized securities platform - Reuters",
+      "category": "tech",
+      "relevance": 8.0,
+      "url": "https://www.reuters.com/business/nyse-teams-up-with-securitize-develop-tokenized-securities-platform-2026-03-24/",
+      "description": "The New York Stock Exchange, part of Intercontinental Exchange (ICE.N), announced a collaboration on Tuesday with digital asset company Securitize to help create tokenized versions of traditional securities.",
+      "title_cn": "路透社：纽交所与Securitize合作开发代币化证券平台",
+      "display_title": "路透社：纽交所与Securitize合作开发代币化证券平台",
+      "display_desc": "据路透社报道，洲际交易所旗下的纽约证券交易所于3月24日宣布与数字资产公司Securitize建立合作关系，共同推动传统证券的代币化。此举是华尔街主流机构加速拥抱区块链技术的重要信号，代币化证券有望实现更高效的交易结算和更广泛的投资者参与。",
+      "category_cn": "科技前沿",
+      "number": 4
+    },
+    {
+      "title": "Health system AI adoption surges in 2026 with execs reporting increased ROI: survey - Fierce Healthcare",
+      "category": "tech",
+      "relevance": 5.0,
+      "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/75-us-healthcare-systems-use-plan-use-ai-platform-2026",
+      "description": "The go-to market research firm's survey polled executives from 120 health systems. 75% of US healthcare systems use or plan to use AI platforms in 2026.",
+      "title_cn": "调查显示：2026年美国医疗系统AI采用率激增，75%已使用或计划使用AI平台",
+      "display_title": "调查显示：2026年美国医疗系统AI采用率激增，75%已使用或计划使用AI平台",
+      "display_desc": "一项针对120个美国医疗系统高管的调查显示，2026年美国医疗系统AI采用率大幅攀升，75%的医疗机构已在使用或计划使用AI平台。受访高管普遍报告AI投资回报率正在增加，AI在医疗影像诊断、临床决策支持和运营效率提升方面展现出显著价值。",
+      "category_cn": "科技前沿",
+      "number": 5
+    },
+    {
+      "title": "Prior Authorization at a Crossroads: Meeting CMS-0057 While Reducing Operational Burden - Fierce Healthcare",
+      "category": "tech",
+      "relevance": 3.0,
+      "url": "https://www.fiercehealthcare.com/premium/webinar/1376654",
+      "description": "ZeOmega will showcase its AI-driven Prior Authorization solution, designed to automate authorization intake, digitize medical policies and clinical guidelines into executable decision trees, and enable faster, more consistent UM decisions.",
+      "title_cn": "AI驱动预授权解决方案：在满足CMS-0057监管要求的同时降低运营负担",
+      "display_title": "AI驱动预授权解决方案：在满足CMS-0057监管要求的同时降低运营负担",
+      "display_desc": "医疗科技公司ZeOmega展示其AI驱动的预授权解决方案，该方案可自动化授权受理流程，将医疗政策和临床指南数字化为可执行决策树，实现更快、更一致的医疗管理决策。该方案帮助医疗机构在满足CMS-0057新监管要求的同时，有效降低运营负担。",
+      "category_cn": "科技前沿",
+      "number": 6
+    }
+  ]
+}

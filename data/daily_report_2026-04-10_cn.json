@@ -1,0 +1,155 @@
+{
+  "date": "2026-04-10",
+  "generated_time": "2026-04-10 06:00:53",
+  "total_news": 12,
+  "industry_news_count": 7,
+  "tech_news_count": 5,
+  "industry_news_cn": [
+    {
+      "title": "Smaller insurers may 'exit' motor sector if market falls into red - Insurance Times",
+      "category": "industry",
+      "relevance": 100.0,
+      "url": "https://www.insurancetimes.co.uk/news/smaller-insurers-may-exit-motor-sector-if-market-falls-into-red/1458221.article",
+      "description": "",
+      "title_cn": "小型保险公司若市场陷入亏损可能退出车险业务",
+      "display_title": "小型保险公司若市场陷入亏损可能退出车险业务",
+      "display_desc": "如果车险市场继续陷入亏损状态，小型保险公司可能会考虑完全退出车险业务领域，这可能导致市场结构发生重大变化。",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "Arch Insurance UK promotes for new head of casualty - Insurance Times",
+      "category": "industry",
+      "relevance": 95.0,
+      "url": "https://www.insurancetimes.co.uk/news/arch-insurance-uk-promotes-for-new-head-of-casualty/1458233.article",
+      "description": "",
+      "title_cn": "Arch保险英国公司提拔新的意外险负责人",
+      "display_title": "Arch保险英国公司提拔新的意外险负责人",
+      "display_desc": "Arch保险英国公司宣布提拔新的意外险业务负责人，这显示出公司在意外险领域的战略布局和人才储备计划。",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "Axa snaps up ex-DLG leader for new general insurance business - Insurance Times",
+      "category": "industry",
+      "relevance": 13.0,
+      "url": "https://www.insurancetimes.co.uk/news/axa-snaps-up-ex-dlg-leader-for-new-general-insurance-business/1458232.article",
+      "description": "",
+      "title_cn": "Axa收购前DLG领导层发展新通用保险业务",
+      "display_title": "Axa收购前DLG领导层发展新通用保险业务",
+      "display_desc": "Axa保险公司收购了前DLG公司的领导层人才，旨在发展新的通用保险业务，这表明公司在寻求业务多元化发展。",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "Financial Services Roundup: Market Talk - WSJ",
+      "category": "industry",
+      "relevance": 97.0,
+      "url": "https://www.wsj.com/business/financial-services-roundup-market-talk-0603e101",
+      "description": "# Financial Services Roundup: Market Talk - WSJ. https://www.wsj.com/business/financial-services-roundup-market-talk-0603e101. \"Despite recent market volatility, the 7-year area of the BTP curve has been quite smooth,\" the fixed income strategist says. 0350 GMT – QBE Insurance is well-placed to capt...",
+      "title_cn": "金融服务综述：市场动态 - 华尔街日报",
+      "display_title": "金融服务综述：市场动态 - 华尔街日报",
+      "display_desc": "尽管近期市场波动，但固定收益策略师表示BTP曲线的7年期区域相当平稳，QBE保险在市场中有良好的定位。这反映了再保险市场相对稳定的状况。",
+      "category_cn": "行业新闻",
+      "number": 4
+    },
+    {
+      "title": "The Fidelis Partnership Launches Capital Solutions Business, Led by Howden's Gammoh - Insurance Journal",
+      "category": "industry",
+      "relevance": 1.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/04/09/865165.htm",
+      "description": "# The Fidelis Partnership Launches Capital Solutions Business, Led by Howden's Gammoh. Pine Walk, the specialist MGA平台 of The Fidelis Partnership (TFP), has launched a new capital solutions business called Mezura Capital Partners. Headquartered in Bermuda, Mezura Capital will focus on deliver...",
+      "title_cn": "Fidelis合作公司推出资本解决方案业务，由Howden的Gammoh领导",
+      "display_title": "Fidelis合作公司推出资本解决方案业务，由Howden的Gammoh领导",
+      "display_desc": "Fidelis合作公司旗下的专业MGA平台Pine Walk推出新的资本解决方案业务Mezura Capital Partners，总部位于百慕大，专注于为保险行业提供资本解决方案。",
+      "category_cn": "行业新闻",
+      "number": 5
+    },
+    {
+      "title": "Axa XL promotes for new head of motor underwriting for UK and Lloyd's - Insurance Times",
+      "category": "industry",
+      "relevance": 3.0,
+      "url": "https://www.insurancetimes.co.uk/news/axa-xl-promotes-for-new-head-of-motor-underwriting-for-uk-and-lloyds/1458236.article",
+      "description": "",
+      "title_cn": "Axa XL提拔英国和劳合社车险承保新负责人",
+      "display_title": "Axa XL提拔英国和劳合社车险承保新负责人",
+      "display_desc": "Axa XL公司任命新的车险承保负责人，负责英国和劳合社市场的车险业务，这显示公司在欧洲市场的重要战略布局。",
+      "category_cn": "行业新闻",
+      "number": 6
+    },
+    {
+      "title": "California Workers' Comp Bureau Upping Fee for Special Inspections - Insurance Journal",
+      "category": "industry",
+      "relevance": 2.0,
+      "url": "https://www.insurancejournal.com/news/west/2026/04/09/864843.htm",
+      "description": "* Old Republic Opens New Specialty Property Insurer. # California Workers' Comp Bureau Upping Fee for Special Inspections. The Workers' Compensation Insurance Rating Bureau of California will increase the fee for special inspections from $200 to $500 per location inspected. Special Inspections, cond...",
+      "title_cn": "加州劳工赔偿局提高特殊检查费用",
+      "display_title": "加州劳工赔偿局提高特殊检查费用",
+      "display_desc": "加州劳工赔偿保险评级局宣布将特殊检查费用从每个地点200美元提高到500美元，这将影响加州劳工赔偿保险市场的运作成本和监管效率。",
+      "category_cn": "行业新闻",
+      "number": 7
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Florida's Prestige Trucking Insurance Acquires Mulligan, an AI Automation Platform - Insurance Journal",
+      "category": "tech",
+      "relevance": 100.0,
+      "url": "https://www.insurancejournal.com/news/southeast/2026/04/09/865144.htm",
+      "description": "* Old Republic Opens New Specialty Property Insurer. # Florida's Prestige Trucking Insurance Acquires Mulligan, an AI Automation Platform. Prestige Trucking Insurance, a retail brokerage and parent company of CSMV Underwriters, has continued its expansion with the acquisition of Mulligan, an artific...",
+      "title_cn": "佛罗里达Prestige Trucking Insurance收购AI自动化平台Mulligan",
+      "display_title": "佛罗里达Prestige Trucking Insurance收购AI自动化平台Mulligan",
+      "display_desc": "作为零售经纪人和CSMV承保人的母公司，Prestige Trucking Insurance通过收购Mulligan的人工智能自动化平台继续扩张，这是再保险科技发展的重要趋势。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "AI notetaker lawsuit exposes potential business liabilities - PropertyCasualty360",
+      "category": "tech",
+      "relevance": 95.0,
+      "url": "https://www.propertycasualty360.com/2026/04/09/ai-notetaker-lawsuit-exposes-potential-business-liabilities/",
+      "description": "Get expert insights and real-world perspectives from leading voices in the industry to help you make more informed decisions. In-depth coverage of the most significant issues shaping the industry. ## Special Reports /. # AI notetaker lawsuit exposes potential business liabilities. News April 09, 202...",
+      "title_cn": "AI会议记录软件诉讼暴露潜在业务责任风险",
+      "display_title": "AI会议记录软件诉讼暴露潜在业务责任风险",
+      "display_desc": "AI会议记录软件的法律诉讼暴露了企业在使用AI技术时可能面临的责任和合规风险，这对再保险行业的AI应用提出了重要警示。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "Swiss banks launch sandbox for CHF stablecoin - FinTech Futures",
+      "category": "tech",
+      "relevance": 50.0,
+      "url": "https://www.fintechfutures.com/blockchain-crypto-digital-assets/swiss-banks-chf-stablecoin-sandbox",
+      "description": "Stablecoins, Crypto, Digital Assets & BlockchainImage 20: Swiss banks launch sandbox for CHF stablecoin #### Swiss banks launch sandbox for CHF stablecoin by Cameron Emanuel-Burns Apr 09, 2026Stablecoins, Crypto, Digital Assets & BlockchainImage 21: Swift advances shared ledger for tokenised deposit...",
+      "title_cn": "瑞士银行推出瑞郎稳定币沙盒测试",
+      "display_title": "瑞士银行推出瑞郎稳定币沙盒测试",
+      "display_desc": "瑞士银行推出瑞郎稳定币沙盒测试项目，为稳定币和数字资产的创新应用提供了安全的环境测试平台，这对保险科技发展有重要参考价值。",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "ServiceNow moves beyond the sidecar AI era, giving customers a complete AI-native experience across all products and packages - ServiceNow",
+      "category": "tech",
+      "relevance": 41.0,
+      "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-moves-beyond-the-sidecar-AI-era-giving-customers-a-complete-AI-native-experience-across-all-products-and-packages/default.aspx",
+      "description": "*   ### ServiceNow AI Platform Automate processes and develop, run, and manage applications. *   ### ServiceNow AI Platform Automate business processes, streamline app development, and manage digital infrastructure. This shift enables organizations to accelerate their AI ambitions and help ensure th...",
+      "title_cn": "ServiceNow超越AI外挂时代，为所有产品包提供完整AI原生体验",
+      "display_title": "ServiceNow超越AI外挂时代，为所有产品包提供完整AI原生体验",
+      "display_desc": "ServiceNow宣布超越AI外挂时代，为客户提供跨所有产品和套件的完整AI原生体验，这将加速保险行业的数字化转型进程。",
+      "category_cn": "科技前沿",
+      "number": 4
+    },
+    {
+      "title": "Briefing: Why brokers in 2026 should be judged on quality – not just price - Insurance Times",
+      "category": "tech",
+      "relevance": 15.0,
+      "url": "https://www.insurancetimes.co.uk/analysis/briefing-why-brokers-in-2026-should-be-judged-on-quality-not-just-price/1458230.article",
+      "description": "Inevitably this drives a focus on price, with clients seeking to manage their costs base, brokers aiming to retain or win business and insurers pursuing volume. **Read: Briefing: AI and commercial insurance broking – existential threat or strategic opportunity?**. As geopolitical and economic uncert...",
+      "title_cn": "简报：2026年经纪商应基于质量而非价格进行评判",
+      "display_title": "简报：2026年经纪商应基于质量而非价格进行评判",
+      "display_desc": "随着地缘政治和经济不确定性增加，经纪商在2026年应更注重服务质量而非价格竞争，AI技术在商业保险经纪中既是挑战也是机遇。",
+      "category_cn": "科技前沿",
+      "number": 5
+    }
+  ]
+}

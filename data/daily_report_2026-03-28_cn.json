@@ -1,0 +1,107 @@
+{
+  "date": "2026-03-28",
+  "generated_time": "2026-03-28 06:01:12",
+  "total_news": 11,
+  "industry_news_count": 5,
+  "tech_news_count": 6,
+  "industry_news_cn": [
+    {
+      "title": "The biggest people moves this week - Insurance Times",
+      "category": "industry",
+      "relevance": 56.0,
+      "url": "https://www.insurancetimes.co.uk/news/the-biggest-people-moves-this-week/1458133.article",
+      "description": "",
+      "title_cn": "本周最大人事变动 - 保险时报",
+      "display_title": "本周最大人事变动 - 保险时报",
+      "display_desc": "本周保险行业发生了最重要的人事任命和职位变动。",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "High Five: Catch up on the biggest stories this week - Insurance Times",
+      "category": "industry",
+      "relevance": 47.0,
+      "url": "https://www.insurancetimes.co.uk/news/high-five-catch-up-on-the-biggest-stories-this-week/1458132.article",
+      "description": "",
+      "title_cn": "五大亮点：回顾本周最大新闻故事 - 保险时报",
+      "display_title": "五大亮点：回顾本周最大新闻故事 - 保险时报",
+      "display_desc": "本周保险行业最值得关注的五大重要新闻事件和趋势。",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "Three Roles to Build Insurance's Next-Generation Workforce - aon.com",
+      "category": "industry",
+      "relevance": 25.0,
+      "url": "https://www.aon.com/en/insights/articles/building-insurances-next-generation-workforce",
+      "description": "#### As automation, climate risk, and shifting workforce expectations reshape insurance, building a future-fit talent strategy is now the industry's defining challenge. Today, profitable growth in insurance is driven by more than just market share — it requires building adaptable, high-performing te...",
+      "title_cn": "构建保险下一代劳动力的三大角色 - AON",
+      "display_title": "构建保险下一代劳动力的三大角色 - AON",
+      "display_desc": "自动化、气候风险和劳动力期望的转变正在重塑保险业，构建未来人才战略已成为行业的首要挑战。",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "Policy Expert posts strong results 'despite a challenging insurance market' - Insurance Times",
+      "category": "industry",
+      "relevance": 15.0,
+      "url": "https://www.insurancetimes.co.uk/news/policy-expert-posts-strong-results-despite-a-challenging-insurance-market/1458131.article",
+      "description": "",
+      "title_cn": "政策专家在挑战性保险市场背景下取得强劲业绩 - 保险时报",
+      "display_title": "政策专家在挑战性保险市场背景下取得强劲业绩 - 保险时报",
+      "display_desc": "尽管面临挑战性的保险市场环境，Policy Expert仍取得了强劲的业绩表现。",
+      "category_cn": "行业新闻",
+      "number": 4
+    },
+    {
+      "title": "Commercial property owners feel unprepared for severe weather - PropertyCasualty360",
+      "category": "industry",
+      "relevance": 9.0,
+      "url": "https://www.propertycasualty360.com/amp/2026/03/27/commercial-property-owners-feel-unprepared-for-severe-weather/",
+      "description": "# Commercial property owners feel unprepared for severe weather. Property owners say severe weather and natural disasters are their top risk now and for the next five years. Nearly two-thirds of commercial property stakeholders say they're very or extremely concerned about severe weather risks, but ...",
+      "title_cn": "商业物业业主对恶劣天气准备不足 - 财产意外险360",
+      "display_title": "商业物业业主对恶劣天气准备不足 - 财产意外险360",
+      "display_desc": "商业物业业主表示，恶劣天气和自然灾害是他们目前和未来五年的最大风险，近三分之二的商业物业利益相关者对此表示严重担忧。",
+      "category_cn": "行业新闻",
+      "number": 5
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Notch raises $30 million Series A to expand AI platform for regulated industries - ynetnews",
+      "category": "tech",
+      "relevance": 35.0,
+      "url": "https://www.ynetnews.com/business/article/hycrbaqowe",
+      "description": "## Headline-led funding round will support company's US expansion as Notch scales software designed to help insurers, brokers and financial institutions automate customer-facing and back-office workflows while maintaining compliance, oversight and auditability. The company said the new funding will ...",
+      "title_cn": "Notch完成3000万美元A轮融资，扩展受监管行业的AI平台 - Ynet新闻",
+      "display_title": "Notch完成3000万美元A轮融资，扩展受监管行业的AI平台 - Ynet新闻",
+      "display_desc": "Notch获得A轮3000万美元融资，支持其美国扩张，该平台帮助保险公司、经纪人和金融机构实现客户服务和后端工作流程自动化。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "Lawsuit Alleges Microbetting Product by DraftKings, FanDuel, NFL Leads to Addiction - Insurance Journal",
+      "category": "tech",
+      "relevance": 26.0,
+      "url": "https://www.insurancejournal.com/news/east/2026/03/27/863775.htm",
+      "description": "* AccuWeather Hurricane Forecast: 11-16 Named Storms. * Chubb Outlines $20B Gulf Reinsurance Facility. Email This   Subscribe to Newsletter. On one occasion, his VIP host sent Thompson a $500 bottle of champagne. \"By coordinating their use of immersive marketing, AI, cloud computing, and algorithms ...",
+      "title_cn": "诉讼指控DraftKings、FanDuel和NFL的微博产品成瘾 - 保险杂志",
+      "display_title": "诉讼指控DraftKings、FanDuel和NFL的微博产品成瘾 - 保险杂志",
+      "display_desc": "诉讼指控DraftKings、FanDuel和NFL的微博产品导致用户成瘾，这些公司使用了沉浸式营销、AI、云计算和算法技术。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "Digital, Financial Inclusion and the Rise of Fintech in Benin - The Fintech Times",
+      "category": "tech",
+      "relevance": 6.0,
+      "url": "https://thefintechtimes.com/digital-financial-inclusion-and-the-rise-of-fintech-in-benin/",
+      "description": "* Digital, Financial Inclusion and the Rise of Fintech in Benin. # Digital, Financial Inclusion and the Rise of Fintech in Benin. While Benin's fintech ecosystem remains relatively small, the convergence of mobile connectivity, regulatory reform and digital economic development is beginning to resha...",
+      "title_cn": "贝宁的数字化、金融包容和金融科技兴起 - 金融科技时报",
+      "display_title": "贝宁的数字化、金融包容和金融科技兴起 - 金融科技时报",
+      "display_desc": "尽管贝宁的金融科技生态系统相对较小，但移动连接、监管改革和数字经济发展的融合正在重塑该国的金融服务格局。",
+      "category_cn": "科技前沿",
+      "number": 3
+    }
+  ]
+}

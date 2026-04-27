@@ -1,0 +1,143 @@
+{
+  "date": "2026-03-26",
+  "generated_time": "2026-03-26 06:00:25",
+  "total_news": 11,
+  "industry_news_count": 5,
+  "tech_news_count": 6,
+  "industry_news_cn": [
+    {
+      "title": "Chaucer, Ceto Launch Lloyd's Marine MGA, Underwriting With Real-Time Vessel Data - Insurance Journal",
+      "category": "industry",
+      "relevance": 99.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/03/25/863407.htm",
+      "description": "# Chaucer, Ceto Launch Lloyd's Marine MGA, Underwriting With Real-Time Vessel Data. Under the arrangement, Ceto is authorized to bind marine hull risks on behalf of Chaucer's Lloyd's syndicate, with additional capacity provided by Tokio Marine Kiln (TMK), a leading insurer and member of the Tokio Marine group.",
+      "title_cn": "Chaucer与Ceto联合成立劳合社海事管理总代理，利用实时船舶数据进行承保",
+      "display_title": "Chaucer与Ceto联合成立劳合社海事管理总代理，利用实时船舶数据进行承保",
+      "display_desc": "Chaucer与Ceto合作在劳合社市场推出新型海事管理总代理（MGA），授权Ceto代表Chaucer的劳合社辛迪加承保远洋船舶险，并获Tokio Marine Kiln提供额外承保能力。该合作引入实时船舶数据驱动承保决策，标志着劳合社海事保险业务数字化承保的重要创新，有望提升海事风险评估精度和承保效率。",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "Smartstop Self Storage And AXCS Capital Form Strategic Joint Venture To Provide Bridge Debt And Preferred Equity Capital Across The Self-Storage Sector - TradingView",
+      "category": "industry",
+      "relevance": 11.0,
+      "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN40C11D:0-smartstop-self-storage-and-axcs-capital-form-strategic-joint-venture-to-provide-bridge-debt-and-preferred-equity-capital-across-the-self-storage-sector/",
+      "description": "# Smartstop Self Storage And AXCS Capital Form Strategic Joint Venture To Provide Bridge Debt And Preferred Equity Capital Across The Self-Storage Sector. RefinitivLess than 1 min read.",
+      "title_cn": "Smartstop Self Storage与AXCS Capital成立合资企业，为自助仓储行业提供过桥债务和优先股资金",
+      "display_title": "Smartstop与AXCS Capital成立合资企业，为自助仓储行业提供过桥融资",
+      "display_desc": "Smartstop Self Storage与AXCS Capital宣布成立战略合作合资企业，旨在为全美自助仓储行业提供过桥债务和优先股权融资。该合资企业将整合双方在房地产金融领域的资源优势，填补自助仓储行业在债务重组和资本结构调整中的融资空白。",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "JBA Risk Management scales global flood model to meet evolving risk - Insurance Times",
+      "category": "industry",
+      "relevance": 10.0,
+      "url": "https://www.insurancetimes.co.uk/news/jba-risk-management-scales-global-flood-model-to-meet-evolving-risk/1458094.article",
+      "description": "",
+      "title_cn": "JBA风险管理公司扩展全球洪水模型以应对不断演变的风险",
+      "display_title": "JBA风险管理公司扩展全球洪水模型以应对不断演变的风险",
+      "display_desc": "JBA Risk Management宣布对其全球洪水风险模型进行大规模升级扩展，以更好地应对气候变化带来的洪水风险演变。更新后的模型将覆盖更多地理区域，提升洪水预测精度，为保险公司和再保险公司提供更准确的风险定价和承保决策支持。",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "Financial Services Roundup: Market Talk - WSJ",
+      "category": "industry",
+      "relevance": 8.0,
+      "url": "https://www.wsj.com/finance/banking/financial-services-roundup-market-talk-d440d887",
+      "description": "# Financial Services Roundup: Market Talk - WSJ. KBW Nasdaq Bank Index 154.49 0.73%.",
+      "title_cn": "华尔街日报金融服务综述：市场动态",
+      "display_title": "华尔街日报金融服务综述：市场动态",
+      "display_desc": "华尔街日报金融服务板块市场综述，涵盖银行业、保险业和金融服务业的最新市场动态。KBW纳斯达克银行指数报154.49点，上涨0.73%，反映金融服务板块整体表现稳健。",
+      "category_cn": "行业新闻",
+      "number": 4
+    },
+    {
+      "title": "Capping vet prescription fees will 'make it easier' for insurers to price competitively - Insurance Times",
+      "category": "industry",
+      "relevance": 3.0,
+      "url": "https://www.insurancetimes.co.uk/news/capping-vet-prescription-fees-will-make-it-easier-for-insurers-to-price-competitively/1458105.article",
+      "description": "",
+      "title_cn": "限制兽医处方费上限将使保险公司更有竞争力地定价",
+      "display_title": "限制兽医处方费上限将使保险公司更有竞争力地定价",
+      "display_desc": "英国宠物保险行业迎来政策利好，限制兽医处方费上限的措施将帮助保险公司更准确地预测理赔成本，从而制定更有竞争力的保险产品定价策略。此举有望降低宠物保险保费，扩大市场覆盖面。",
+      "category_cn": "行业新闻",
+      "number": 5
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Tech Update: Renaissance Unveils AI Upgrade to Its Member Platform - Insurance Journal",
+      "category": "tech",
+      "relevance": 100.0,
+      "url": "https://www.insurancejournal.com/news/national/2026/03/25/863294.htm",
+      "description": "Independent agency network Renaissance said it made a major enhancement to its member platform, calling it the industry's only fully integrated, artificial intelligence-enabled ecosystem built specifically for independent agencies.",
+      "title_cn": "技术更新：Renaissance发布会员平台AI重大升级",
+      "display_title": "Renaissance发布会员平台AI重大升级",
+      "display_desc": "独立保险代理网络Renaissance宣布对其会员平台进行重大AI升级，推出业内首个专为独立代理机构打造的全面集成人工智能生态系统。该平台整合了AI驱动的业务流程管理、客户关系维护和理赔处理功能，为独立代理机构提供一站式智能化运营解决方案，显著提升运营效率和客户服务体验。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "Chief executive remains 'sceptical' over insurers' ability to integrate startup acquisitions - Insurance Times",
+      "category": "tech",
+      "relevance": 98.0,
+      "url": "https://www.insurancetimes.co.uk/news/chief-executive-remains-sceptical-over-insurers-ability-to-integrate-startup-acquisitions/1458089.article",
+      "description": "",
+      "title_cn": "首席执行官对保险公司整合初创企业收购的能力表示怀疑",
+      "display_title": "保险业高管质疑保险公司整合科技初创企业的能力",
+      "display_desc": "一位保险业首席执行官公开表达了对大型保险公司收购科技初创企业后整合能力的担忧。他指出，尽管保险公司在保险科技领域频繁出手收购，但多数收购后的整合效果不佳，技术协同效应难以实现，组织文化冲突是主要障碍。这一观点引发行业对保险科技并购策略的深度反思。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "Monument and Midnight Bring Tokenised Deposits into UK Retail Banking - The Fintech Times",
+      "category": "tech",
+      "relevance": 52.0,
+      "url": "https://thefintechtimes.com/monument-and-midnight-bring-tokenised-deposits-into-uk-retail-banking/",
+      "description": "* Monument and Midnight Bring Tokenised Deposits into UK Retail Banking. Monument, the UK digital bank focused on mass-affluent customers, is partnering with blockchain infrastructure provider Midnight to tokenise deposits.",
+      "title_cn": "Monument与Midnight将代币化存款引入英国零售银行业",
+      "display_title": "Monument与Midnight将代币化存款引入英国零售银行业",
+      "display_desc": "英国数字银行Monument与区块链基础设施提供商Midnight达成合作，将代币化存款技术引入英国零售银行业务。通过将传统银行存款转化为区块链代币，客户可享受更高透明度和灵活性的资金管理体验，标志着英国银行业在区块链技术应用方面迈出重要一步。",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "Insurers face 13.8% IT surge as legacy systems drag - Asian Business Review",
+      "category": "tech",
+      "relevance": 99.0,
+      "url": "https://asianbusinessreview.com/insurance/in-focus/insurers-face-138-it-surge-legacy-systems-drag",
+      "description": "The insurance industry will likely have the largest increase in information technology (IT) budget spending this year, as financial institutions are entering 2026 with competing technology priorities.",
+      "title_cn": "保险公司面临13.8%的IT预算激增，遗留系统拖累数字化转型",
+      "display_title": "保险公司面临13.8%的IT预算激增，遗留系统拖累数字化转型",
+      "display_desc": "研究报告显示，保险业2026年IT预算支出预计增长13.8%，增幅居金融行业首位。寿险和健康险领域预算增长最为显著，主要驱动因素包括遗留系统升级、AI技术部署和数字化基础设施建设。然而，老旧系统的维护成本持续攀升，严重制约了保险公司的创新效率和数字化转型步伐。",
+      "category_cn": "科技前沿",
+      "number": 4
+    },
+    {
+      "title": "AI in drug discovery and development: news watch - pharmaphorum",
+      "category": "tech",
+      "relevance": 1.0,
+      "url": "https://pharmaphorum.com/news/ai-drug-discovery-and-development-news-watch",
+      "description": "**Recent developments in the biopharma AI world include a big financing for Verily, plus news from Zealand Pharma, Latent Labs, Insilico, and BMS/insitro.**",
+      "title_cn": "AI药物研发动态追踪：Verily获大额融资，多家药企布局AI",
+      "display_title": "AI药物研发动态：Verily获大额融资，多家药企布局AI",
+      "display_desc": "生物医药AI领域最新动态汇总：Verily获得重大融资，Zealand Pharma在马萨诸塞州剑桥设立新研究总部，Latent Labs、Insilico和BMS/insitro等公司在AI药物发现和开发方面均有新进展。AI技术正加速重塑药物研发流程，从靶点发现到临床试验设计。",
+      "category_cn": "科技前沿",
+      "number": 5
+    },
+    {
+      "title": "Towards end-to-end automation of AI research - Nature",
+      "category": "tech",
+      "relevance": 1.0,
+      "url": "https://www.nature.com/articles/s41586-026-10265-5",
+      "description": "To assess The AI Scientist in the same setting in which human-authored papers are evaluated, we conducted an experiment where we submitted generated papers to a workshop at the International Conference on Learning Representations (ICLR).",
+      "title_cn": "迈向AI研究端到端自动化：AI Scientist实验论文被ICLR接收",
+      "display_title": "迈向AI研究端到端自动化：Nature发表AI Scientist研究成果",
+      "display_desc": "Nature发表最新研究探讨AI研究的端到端自动化。研究人员将AI Scientist生成的论文提交至ICLR国际学习表征大会进行评审，在与人类作者论文相同的评审标准下进行实验评估。该研究标志着AI自主科研能力的重大突破，为未来AI辅助科学研究的范式提供了重要参考。",
+      "category_cn": "科技前沿",
+      "number": 6
+    }
+  ]
+}

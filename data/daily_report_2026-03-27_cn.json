@@ -1,0 +1,95 @@
+{
+  "date": "2026-03-27",
+  "generated_time": "2026-03-27 06:00:29",
+  "total_news": 7,
+  "industry_news_count": 1,
+  "tech_news_count": 6,
+  "industry_news_cn": [
+    {
+      "title": "Motorists reducing policy coverage as driving costs climb - Insurance Times",
+      "category": "industry",
+      "relevance": 62.0,
+      "url": "https://www.insurancetimes.co.uk/news/motorists-reducing-policy-coverage-as-driving-costs-climb/1458125.article",
+      "description": "",
+      "title_cn": "驾驶成本持续攀升，车主纷纷缩减保险覆盖范围",
+      "display_title": "驾驶成本持续攀升，车主纷纷缩减保险覆盖范围",
+      "display_desc": "随着燃油价格、维修费用及保险费率不断上涨，越来越多的车主选择降低保单覆盖范围以节省开支。Insurance Times报道指出，这一趋势可能对保险行业产生深远影响，风险暴露增加可能导致理赔频率上升，保险公司需重新评估定价策略。",
+      "category_cn": "行业新闻",
+      "number": 1
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Building a career in insurance and the value of staying power - HDI Global - Insurance Times",
+      "category": "tech",
+      "relevance": 82.0,
+      "url": "https://www.insurancetimes.co.uk/expert-views/building-a-career-in-insurance-and-the-value-of-staying-power-hdi-global/1457557.article",
+      "description": "",
+      "title_cn": "HDI Global：保险业职业发展与坚持的力量",
+      "display_title": "HDI Global：保险业职业发展与坚持的力量",
+      "display_desc": "HDI Global高管分享了在保险行业深耕的职业发展心得，强调了长期坚守和专业积累在保险领域的重要性。文章探讨了如何通过持续学习和适应行业变革来建立成功的保险职业生涯，为行业人才发展提供了宝贵经验。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "TechTalk: Enhanced underwriting prompts 'transformational stage' for insurance - Insurance Times",
+      "category": "tech",
+      "relevance": 38.0,
+      "url": "https://www.insurancetimes.co.uk/analysis/techtalk-enhanced-underwriting-prompts-transformational-stage-for-insurance/1458118.article",
+      "description": "",
+      "title_cn": "TechTalk：增强型核保技术推动保险业迈入转型新阶段",
+      "display_title": "TechTalk：增强型核保技术推动保险业迈入转型新阶段",
+      "display_desc": "Insurance Times的TechTalk专栏分析了增强型核保技术如何引领保险行业进入转型阶段。借助AI和大数据分析，保险公司能够更精准地评估风险、优化定价模型并提升客户体验，正在深刻改变传统核保流程和业务模式。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "Monument Bank to launch UK's first tokenised retail deposits programme - FinTech Futures",
+      "category": "tech",
+      "relevance": 7.0,
+      "url": "https://www.fintechfutures.com/tokenisation/monument-bank-to-launch-tokenised-retail-deposits-programme",
+      "description": "Monument Bank has announced plans to become the first UK bank to launch a tokenised retail deposits programme. The project is being run in partnership with blockchain company Midnight, with Monument planning to tokenise up to 250 million pounds of retail customer deposits in the first phase.",
+      "title_cn": "Monument Bank将推出英国首个代币化零售存款项目",
+      "display_title": "Monument Bank将推出英国首个代币化零售存款项目",
+      "display_desc": "Monument Bank宣布将成为英国首家推出代币化零售存款项目的银行。该项目与区块链公司Midnight合作，首阶段计划将高达2.5亿英镑的零售客户存款进行代币化。此举标志着英国金融业在区块链技术应用方面迈出重要一步。",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "Duck Creek Loss Control Named 2026 Insurance Luminary Finalist by PropertyCasualty360 - PR Newswire UK",
+      "category": "tech",
+      "relevance": 19.0,
+      "url": "https://www.prnewswire.co.uk/news-releases/duck-creek-loss-control-named-2026-insurance-luminary-finalist-by-propertycasualty360-302726325.html",
+      "description": "Duck Creek Technologies announced that its Duck Creek Loss Control solution has been named a 2026 Insurance Luminary Finalist by PropertyCasualty360.",
+      "title_cn": "Duck Creek Loss Control入选2026年PropertyCasualty360保险创新奖决赛",
+      "display_title": "Duck Creek Loss Control入选2026年PropertyCasualty360保险创新奖决赛",
+      "display_desc": "Duck Creek Technologies宣布其Duck Creek Loss Control解决方案被PropertyCasualty360评选为2026年保险创新奖决赛入围产品。该解决方案利用智能技术帮助财险和综合保险公司优化损失控制流程，提升风险管理和理赔效率。",
+      "category_cn": "科技前沿",
+      "number": 4
+    },
+    {
+      "title": "ESET Wins Four Global InfoSec Awards at RSAC 2026 - GlobeNewswire",
+      "category": "tech",
+      "relevance": 3.0,
+      "url": "https://www.globenewswire.com/news-release/2026/03/26/3263051/0/en/ESET-Wins-Four-Global-InfoSec-Awards-at-RSAC-2026.html",
+      "description": "ESET announced that it has won four Global InfoSec Awards from Cyber Defense Magazine at RSAC 2026.",
+      "title_cn": "ESET在RSAC 2026大会上斩获四项全球信息安全大奖",
+      "display_title": "ESET在RSAC 2026大会上斩获四项全球信息安全大奖",
+      "display_desc": "全球网络安全领军企业ESET在2026年RSA大会（RSAC 2026）上荣获Cyber Defense Magazine颁发的四项全球信息安全大奖。这些奖项彰显了ESET在网络威胁检测、端点安全和数据保护领域的技术领先地位。",
+      "category_cn": "科技前沿",
+      "number": 5
+    },
+    {
+      "title": "Poor management is driving workers away, report shows - HR Dive",
+      "category": "tech",
+      "relevance": 3.0,
+      "url": "https://www.hrdive.com/news/job-seekers-priorities-2026-q1/815895/",
+      "description": "A report from Aerotek shows a wide range of factors influencing the job search in Q1 2026. Fair wages and professional development opportunities are key retention factors.",
+      "title_cn": "调研报告：管理不善成人才流失主因，公平薪酬与发展机会是留人关键",
+      "display_title": "调研报告：管理不善成人才流失主因，公平薪酬与发展机会是留人关键",
+      "display_desc": "Aerotek发布的2026年第一季度就业调研报告显示，管理不善是导致员工离职的首要原因。报告同时指出，公平薪酬和专业发展及技能提升机会是留住员工的关键因素，29%的员工表示这些因素是他们在当前岗位持续工作的重要原因。",
+      "category_cn": "科技前沿",
+      "number": 6
+    }
+  ]
+}

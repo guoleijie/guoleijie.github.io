@@ -1,0 +1,143 @@
+{
+  "date": "2026-04-05",
+  "generated_time": "2026-04-05 06:00:53",
+  "total_news": 11,
+  "industry_news_count": 5,
+  "tech_news_count": 6,
+  "industry_news_cn": [
+    {
+      "title": "Trump Seeks $1.5T Military Budget as Iran War Burns Cash, Private Credit Breaks, and Nations Hoard Fuel - InsuranceNewsNet",
+      "category": "industry",
+      "relevance": 4.0,
+      "url": "https://insurancenewsnet.com/oarticle/trump-seeks-1-5t-military-budget-as-iran-war-burns-cash-private-credit-breaks-and-nations-hoard-fuel",
+      "description": "# Trump Seeks $1.5T Military Budget as Iran War Burns Cash, Private Credit Breaks, and Nations Hoard Fuel. US Politics Trump proposed a $1.5 trillion 2027 military budget, described as the largest in decades, with the War on Iran reportedly costing over $11 billion weekly. At a White House event, Tr...",
+      "title_cn": "特朗普寻求1.5万亿美元军费预算，伊朗战争消耗巨额资金，私人信贷崩溃，各国囤积燃料",
+      "display_title": "特朗普寻求1.5万亿美元军费预算",
+      "display_desc": "特朗普提议1.5万亿美元2027年军费预算，被描述为几十年来最大规模，据称伊朗战争每周消耗超过110亿美元。在白宫活动中，特朗普强调了国防需求与全球局势的关系。",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "The Insurance Contract Breakdown: Why Seniors Are Seeing Their Long‑Time Doctors Suddenly Out‑of‑Network - InsuranceNewsNet",
+      "category": "industry",
+      "relevance": 1.0,
+      "url": "https://insurancenewsnet.com/oarticle/the-insurance-contract-breakdown-why-seniors-are-seeing-their-long-time-doctors-suddenly-out-of-network",
+      "description": "# The Insurance Contract Breakdown: Why Seniors Are Seeing Their Long‑Time Doctors Suddenly Out‑of‑Network. If your doctor suddenly tells you, \"We no longer accept your insurance,\" you're not alone, and you're not imagining things. Across the country, seniors are discovering that trusted physicians ...",
+      "title_cn": "保险合同破裂：老年人为何突然发现长期医生不再接受他们的保险",
+      "display_title": "保险合同破裂：老年人面临医疗网络变化",
+      "display_desc": "如果医生突然告知\"我们不再接受您的保险\"，您并非孤单。全美各地的老年人正在发现他们信赖的医生突然退出保险网络，这反映了医疗保健系统的复杂性和保险合同的不稳定性。",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "Financial Stocks To Keep An Eye On – April 4th - InsuranceNewsNet",
+      "category": "industry",
+      "relevance": 16.0,
+      "url": "https://insurancenewsnet.com/oarticle/financial-stocks-to-keep-an-eye-on-april-4th",
+      "description": "# Financial Stocks To Keep An Eye On – April 4th. JPMorgan Chase & Co., Robinhood Markets, Coinbase Global, Mastercard, Bank of America, Visa, and Citigroup are the seven Financial stocks to watch today, according to MarketBeat's stock screener tool. Financial stocks are shares of companies that pro...",
+      "title_cn": "值得关注的金融股——4月4日",
+      "display_title": "值得关注金融股：摩根大通等七大股",
+      "display_desc": "根据MarketBeat股票筛选工具，今天值得关注的七只金融股包括摩根大通、Robinhood Markets、Coinbase Global、万事达、美国银行、Visa和花旗集团。这些金融股表现反映了市场对金融机构的信心。",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "DOJ Says Block On Maryland Detention Center Not Warranted - Law360",
+      "category": "industry",
+      "relevance": 0.0,
+      "url": "https://www.law360.com/articles/2461556",
+      "description": "# Law360 Authority. ## The Practice of Law. Access to Justice   Aerospace & Defense   Appellate   Asset Management   Banking   Bankruptcy   Benefits   California   Cannabis   Capital Markets   Class Action   Colorado   Commercial Contracts   Competition   Compliance   Connecticut   Construction   Co...",
+      "title_cn": "司法部称马里兰拘留中心的封锁并不合理",
+      "display_title": "司法部对马里兰拘留中心封锁表态",
+      "display_desc": "美国司法部表示对马里兰拘留中心的封锁要求缺乏合理依据，这一决定涉及复杂的法律程序和监管考量，反映了法律系统对基础设施管理的严格审查。",
+      "category_cn": "行业新闻",
+      "number": 4
+    },
+    {
+      "title": "Go to court and lose out on £9bn car finance redress scheme, says FCA boss - Financial Times",
+      "category": "industry",
+      "relevance": 3.0,
+      "url": "https://www.ft.com/content/1b2db60f-df18-4e39-ba87-a9b9188bbd22?syn-25a6b1a6=1",
+      "description": "* Go to court and lose out on £9bn car finance redress scheme, says FCA boss on x (opens in a new window). * Go to court and lose out on £9bn car finance redress scheme, says FCA boss on facebook (opens in a new window). * Go to court and lose out on £9bn car finance redress scheme, says FCA boss on...",
+      "title_cn": "FCA负责人称：去法院将错失90亿英镑汽车金融赔偿计划",
+      "display_title": "FCA警告诉讼将影响90亿英镑赔偿",
+      "display_desc": "英国金融行为监管局负责人警告消费者，如果选择诉讼途径将可能错失价值90亿英镑的汽车金融赔偿计划，这涉及到消费者权益保护与金融监管的重要平衡。",
+      "category_cn": "行业新闻",
+      "number": 5
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Generali Hong Kong Automates Health Claims with CoverGo's AI Agent - The Fintech Times",
+      "category": "tech",
+      "relevance": 41.0,
+      "url": "https://thefintechtimes.com/?p=132325",
+      "description": "# Generali Hong Kong Automates Health Claims with CoverGo's AI Agent. #### ***Generali Hong Kong** has partnered with global insurtech platform **CoverGo** to deploy a new Intelligent Document Processing (IDP) AI Agent. The technological deployment is designed to heavily automate the insurer's healt...",
+      "title_cn": "Generali香港与CoverGo合作，使用AI代理自动化健康理赔",
+      "display_title": "Generali香港引入AI自动化健康理赔系统",
+      "display_desc": "Generali香港与全球保险科技平台CoverGo合作，部署新的智能文档处理AI代理，旨在大幅自动化保险商的健康理赔流程，这将显著提升理赔效率和客户体验。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "Investing in the AI mega-theme: risks and opportunities for investors - Financial Times",
+      "category": "tech",
+      "relevance": 8.0,
+      "url": "https://www.ft.com/partnercontent/janus-henderson/investing-in-the-ai-mega-theme-risks-and-opportunities-for-investors.html?utm_source=TW&utm_medium=investing&utm_content=paid",
+      "description": "# Investing in the AI mega-theme: risks and opportunities for investors. AI is no longer just a question for equities investors, as typically conservatively funded mega-cap tech companies are tapping debt capital markets at record levels. First, the reason AI has been one of the main drivers for the...",
+      "title_cn": "投资AI超级主题：投资者的风险与机遇",
+      "display_title": "AI超级主题：投资风险与机遇分析",
+      "display_desc": "AI已不仅是股票投资者的问题，通常保守融资的大型科技公司正以前所未有的水平进入债务资本市场。AI已成为市场主要驱动因素之一，为投资者带来新的机遇与挑战。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "Deloitte Consulting appoints Carmen Whateley as partner in Financial Services practice - Consultancy.co.za",
+      "category": "tech",
+      "relevance": 7.0,
+      "url": "https://www.consultancy.co.za/news/amp/2462/deloitte-consulting-appoints-carmen-whateley-as-partner-in-financial-services-practice",
+      "description": "# Deloitte Consulting appoints Carmen Whateley as partner in Financial Services practice. ***Big Four firm Deloitte has strengthened its consulting business with Carmen Whateley, who joins the company in its Johannesburg office.***. The new partner brings close to 30 years of experience in consultin...",
+      "title_cn": "德勤咨询任命Carmen Whateley为金融服务业务合伙人",
+      "display_title": "德勤任命金融服务新合伙人",
+      "display_desc": "四大会计师事务所之一的德勤咨询任命Carmen Whateley为金融服务业务合伙人，她将在约翰内斯堡办公室任职，拥有近30年的咨询经验，这将加强德勤在金融服务领域的能力。",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "Automation Anywhere Positions Itself Around AI-Era Workforce Transformation - TipRanks",
+      "category": "tech",
+      "relevance": 0.0,
+      "url": "https://www.tipranks.com/news/private-companies/automation-anywhere-positions-itself-around-ai-era-workforce-transformation",
+      "description": "# Automation Anywhere Positions Itself Around AI-Era Workforce Transformation. According to a recent LinkedIn post from Automation Anywhere, the company is drawing investor attention to an article in the World Economic Forum authored by its Chief Impact Officer, Neeti Mehta Shukla. * Discover top-pe...",
+      "title_cn": "Automation Anywhere围绕AI时代劳动力转型进行定位",
+      "display_title": "Automation Anywhere聚焦AI时代劳动力转型",
+      "display_desc": "根据Automation Anywhere最近领英帖文，该公司正引导投资者关注其首席影响官Neeti Mehta Shukla在世界经济论坛发表的文章，专注于AI时代的劳动力转型战略。",
+      "category_cn": "科技前沿",
+      "number": 4
+    },
+    {
+      "title": "ROSEN, A RANKED AND LEADING LAW FIRM, Encourages Snowflake Inc. Investors to Secure Counsel ... - Bluefield Daily Telegraph",
+      "category": "tech",
+      "relevance": 0.0,
+      "url": "https://www.bdtonline.com/news/nation_world/rosen-a-ranked-and-leading-law-firm-encourages-snowflake-inc-investors-to-secure-counsel/article_cb36ac11-b929-5065-9907-e36327be3076.html",
+      "description": "* ROSEN, A RANKED AND LEADING LAW FIRM, Encourages Snowflake Inc. Investors to Secure Counsel ... - Bluefield Daily Telegraph * ROS...",
+      "title_cn": "ROSEN鼓励Snowflake投资者寻求法律咨询",
+      "display_title": "知名律所建议Snowflake投资者寻求法律咨询",
+      "display_desc": "知名律师事务所ROSEN鼓励Snowflake公司的投资者寻求法律咨询，这反映了在复杂法律环境中投资者权益保护的重要性，以及对科技企业合规风险的警惕。",
+      "category_cn": "科技前沿",
+      "number": 5
+    },
+    {
+      "title": "Nets G Malachi Smith signs multi-year contract - Reuters",
+      "category": "tech",
+      "relevance": 0.0,
+      "url": "https://www.reuters.com/sports/nets-g-malachi-smith-signs-multi-year-contract--flm-2026-04-04/",
+      "description": "April 4, 2026 4:46 PM UTC Updated 1 hour ago. Gregory Fisher-Imagn Images Purchase Licensing Rights, opens in a new tab. Our Standards: The Thomson Reuters Trust Principles., opens in a new tab. * About Reuters, opens in a new tab. * Advertise with Us, opens in a new tab. * Reuter...",
+      "title_cn": "篮网G Malachi Smith签署多年合同",
+      "display_title": "篮网签约Malachi Smith多年合同",
+      "display_desc": "篮网队后卫Malachi Smith签署了多年合同，这一决定体现了球队在阵容建设方面的策略，也为年轻球员的职业发展提供了重要机会。",
+      "category_cn": "科技前沿",
+      "number": 6
+    }
+  ]
+}

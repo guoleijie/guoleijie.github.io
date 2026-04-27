@@ -1,0 +1,131 @@
+{
+  "date": "2026-03-21",
+  "generated_time": "2026-03-21 06:00:25",
+  "total_news": 10,
+  "industry_news_count": 5,
+  "tech_news_count": 5,
+  "industry_news_cn": [
+    {
+      "title": "People on the move in the P&C insurance industry: March 20, 2026 - PropertyCasualty360",
+      "category": "industry",
+      "relevance": 100.0,
+      "url": "https://www.propertycasualty360.com/amp/2026/03/20/people-on-the-move-in-the-pc-insurance-industry-march-20-2026/",
+      "description": "The latest insurance industry personnel news from Nauto, DUAL Group, Texas Department of Insurance and more. Nauto Inc. appointed Daniel Grimwood-Bird as head of Insurance. DUAL Group appointed Ed Ashby as chief exec...",
+      "title_cn": "财产险行业人事变动速递：2026年3月20日",
+      "display_title": "财产险行业人事变动速递：2026年3月20日",
+      "display_desc": "多家财产险公司发布最新人事任命。Nauto公司任命Daniel Grimwood-Bird为保险业务负责人；DUAL集团任命Ed Ashby为首席执行官；德克萨斯州保险部等多家机构也有重要人事变动，反映行业人才流动持续活跃。",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "'Market does not need another moonshot' - industry reacts as Lloyd's 'sunsets' Blueprint Two - Insurance Times",
+      "category": "industry",
+      "relevance": 100.0,
+      "url": "https://www.insurancetimes.co.uk/news/market-does-not-need-another-moonshot-industry-reacts-as-lloyds-sunsets-blueprint-two/1458061.article",
+      "description": "",
+      "title_cn": "市场不需要又一次登月计划：劳合社终止Blueprint Two引发行业反响",
+      "display_title": "市场不需要又一次登月计划：劳合社终止Blueprint Two引发行业反响",
+      "display_desc": "劳合社宣布结束其第二阶段蓝图(Blueprint Two)战略，引发市场广泛关注。业内人士认为，市场当前更需要的是务实稳健的发展策略，而非又一个宏大却不切实际的愿景计划。此举反映出劳合社在数字化转型中的战略调整思路。",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "High Five: Catch up on the biggest stories this week - Insurance Times",
+      "category": "industry",
+      "relevance": 100.0,
+      "url": "https://www.insurancetimes.co.uk/news/high-five-catch-up-on-the-biggest-stories-this-week/1458071.article",
+      "description": "",
+      "title_cn": "本周五大热点新闻回顾",
+      "display_title": "本周五大热点新闻回顾",
+      "display_desc": "Insurance Times梳理本周保险行业最受关注的五条重大新闻，涵盖市场动态、监管政策、企业战略等关键领域，为从业者提供快速了解行业脉搏的途径。",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "New MGAs should choose between distribution advantage and underwriting insight - Insurance Times",
+      "category": "industry",
+      "relevance": 12.0,
+      "url": "https://www.insurancetimes.co.uk/news/new-mgas-should-choose-between-distribution-advantage-and-underwriting-insight/1458051.article",
+      "description": "",
+      "title_cn": "新兴MGA应在渠道优势和承保洞察之间做出战略选择",
+      "display_title": "新兴MGA应在渠道优势和承保洞察之间做出战略选择",
+      "display_desc": "随着管理型总代理(MGA)市场持续扩张，业内专家建议新兴MGA机构应在分销渠道优势和承保专业洞察之间明确自身定位，聚焦核心竞争能力，以在日益激烈的市场竞争中实现差异化发展。",
+      "category_cn": "行业新闻",
+      "number": 4
+    },
+    {
+      "title": "Ecclesiastical increases profit before tax to £84.6m in 2025 - Insurance Times",
+      "category": "industry",
+      "relevance": 4.0,
+      "url": "https://www.insurancetimes.co.uk/news/ecclesiastical-increases-profit-before-tax-to-846m-in-2025/1458066.article",
+      "description": "",
+      "title_cn": "Ecclesiastical 2025年税前利润增至8460万英镑",
+      "display_title": "Ecclesiastical 2025年税前利润增至8460万英镑",
+      "display_desc": "英国保险公司Ecclesiastical公布2025年业绩，税前利润增长至8460万英镑，展现了稳健的经营表现和良好的承保盈利能力。",
+      "category_cn": "行业新闻",
+      "number": 5
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Insurance fraud sector exemplifies the 'good and bad uses of AI' - Insurance Times",
+      "category": "tech",
+      "relevance": 99.0,
+      "url": "https://www.insurancetimes.co.uk/analysis/insurance-fraud-sector-exemplifies-the-good-and-bad-uses-of-ai/1458054.article",
+      "description": "The insurance counter fraud sector is on the frontline of a rapidly changing technological environment that presents both new risks and opportunities. As it grapples with how to effectively deploy new artificial intelligence (AI) to...",
+      "title_cn": "保险反欺诈领域：AI善用与恶用的典型缩影",
+      "display_title": "保险反欺诈领域：AI善用与恶用的典型缩影",
+      "display_desc": "保险反欺诈行业正处于技术变革的前沿阵地，人工智能(AI)既带来新机遇也引入新风险。行业正在积极探索如何有效部署AI技术提升反欺诈能力，同时应对AI被滥用于制造更复杂欺诈手段的挑战，堪称AI双刃剑效应的最佳注脚。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "AI with arms: What OpenClaw signals for the future of insurance - PropertyCasualty360",
+      "category": "tech",
+      "relevance": 99.0,
+      "url": "https://www.propertycasualty360.com/amp/2026/03/20/ai-with-arms-what-openclaw-signals-for-the-future-of-insurance/",
+      "description": "While OpenClaw may not be ready for prime time in insurance, a growing number of agentic AI solutions designed specifically for the industry are already helping agencies streamline operations. Many of the agentic AI tools emerging in...",
+      "title_cn": "有行动力的AI：OpenClaw如何预示保险业的未来",
+      "display_title": "有行动力的AI：OpenClaw如何预示保险业的未来",
+      "display_desc": "虽然OpenClaw在保险行业的正式应用尚需时日，但越来越多专为保险行业设计的智能体AI(Agentic AI)解决方案已在帮助保险机构优化运营流程。这些新兴AI工具能够自主执行多步骤任务，标志着保险行业从自动化向自主化智能的跨越。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "FirstRand Bank adopts JP Morgan's Kinexys for blockchain treasury management - FinTech Futures",
+      "category": "tech",
+      "relevance": 94.0,
+      "url": "https://www.fintechfutures.com/blockchain-crypto-digital-assets/firstrand-bank-adopts-jp-morgans-kinexys",
+      "description": "The bank will leverage programmable payments on Kinexys Digital Payments to enhance group treasury operations. FirstRand Bank has become the first institution in South Africa to adopt Kinexys - the blockchain platform operated by JP Morgan - for programmable, 24/7, near real-time US dollar transactions.",
+      "title_cn": "南非FirstRand银行采用摩根大通Kinexys区块链资金管理平台",
+      "display_title": "南非FirstRand银行采用摩根大通Kinexys区块链资金管理平台",
+      "display_desc": "南非FirstRand银行成为该国首家采用摩根大通Kinexys区块链平台的金融机构，将利用其可编程支付功能实现7x24小时近实时美元交易，显著提升集团资金运营效率。此举标志着区块链技术在非洲金融基础设施中的实际落地。",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "Florida homeowners were forced into a new insurance company. Whistleblowers say it siphoned millions in profits. - CBS News",
+      "category": "tech",
+      "relevance": 36.0,
+      "url": "https://www.cbsnews.com/projects/2026/03/20/florida-insurance/",
+      "description": "Chris Johnson, chairman of Trident's board, wrote that this kind of reinsurance contract is a commonly used vehicle by many carriers to plug holes in their reinsurance program but did not respond to specific questions about the flow of money through Triton Re.",
+      "title_cn": "佛罗里达屋主被迫转投新保险公司，举报人称其挪用数百万利润",
+      "display_title": "佛罗里达屋主被迫转投新保险公司，举报人称其挪用数百万利润",
+      "display_desc": "CBS调查报道揭露佛罗里达州保险市场乱象：屋主被强制转入一家新保险公司，举报人称该公司通过复杂的再保险合约结构将数百万利润转移至关联再保险实体Triton Re，引发对再保险合约透明度和监管漏洞的深度关注。",
+      "category_cn": "科技前沿",
+      "number": 4
+    },
+    {
+      "title": "Arch Insurance International launches new IP consortium at Lloyd's - Insurance Times",
+      "category": "tech",
+      "relevance": 16.0,
+      "url": "https://www.insurancetimes.co.uk/news/arch-insurance-international-launches-new-ip-consortium-at-lloyds/1458062.article",
+      "description": "",
+      "title_cn": "Arch保险国际在劳合社推出新型知识产权联合体",
+      "display_title": "Arch保险国际在劳合社推出新型知识产权联合体",
+      "display_desc": "Arch保险国际公司在劳合社市场推出全新的知识产权(IP)保险联合体，旨在为科技企业和创新机构提供知识产权风险保障，填补了知识产权保险领域的重要空白。",
+      "category_cn": "科技前沿",
+      "number": 5
+    }
+  ]
+}

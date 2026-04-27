@@ -1,0 +1,95 @@
+{
+  "date": "2026-04-14",
+  "generated_time": "2026-04-14 06:00:55",
+  "total_news": 7,
+  "industry_news_count": 3,
+  "tech_news_count": 4,
+  "industry_news_cn": [
+    {
+      "title": "Surge in hedge fund money transforms an old insurance market - PropertyCasualty360",
+      "category": "industry",
+      "relevance": 100.0,
+      "url": "https://www.propertycasualty360.com/amp/2026/04/13/surge-in-hedge-fund-money-transforms-an-old-insurance-market/",
+      "description": "Reinsurers face an erosion of their pricing power as private capital floods the market. Allocations to catastrophe bonds and other insurance-linked securities popular among hedge funds and institutional investors rose 18% to reach a record $136 billion last year, according to data provided by broker...",
+      "title_cn": "对冲基金激增重塑传统保险市场",
+      "display_title": "对冲基金激增重塑传统保险市场",
+      "display_desc": "再保险公司面临定价能力下降，私人资本大量涌入市场。数据显示，对冲基金和机构投资者对巨灾债券和其他保险关联证券的配置去年增长18%，达到创纪录的1360亿美元。",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "Hedge Fund Money Is Reshaping a 180-Year-Old Insurance Model - Insurance Journal",
+      "category": "industry",
+      "relevance": 100.0,
+      "url": "https://www.insurancejournal.com/news/national/2026/04/13/865443.htm",
+      "description": "Alternative investment managers are pouring unprecedented sums of money into the market for property cover, and reshaping a 180-year-old reinsurance model in the process. Allocations to catastrophe bonds and other insurance-linked securities popular among hedge funds and institutional investors rose...",
+      "title_cn": "对冲基金资金重塑180年保险模式",
+      "display_title": "对冲基金资金重塑180年保险模式",
+      "display_desc": "另类投资管理公司正将前所未有的资金注入财产保险市场，重塑有着180年历史的再保险模式。对冲基金和机构投资者对巨灾债券等保险关联证券的配置持续增长。",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "Asia and European insurers lead as US peers lose $226b in market cap - Asian Business Review",
+      "category": "industry",
+      "relevance": 84.0,
+      "url": "https://asianbusinessreview.com/insurance/in-focus/asia-and-european-insurers-lead-us-peers-lose-226b-in-market-cap",
+      "description": "Asian and European insurers take over in terms of market capitalisation, amidst a structural repricing of healthcare and life insurance risk in the first three months of the year (Q1 2026). The market capitalisation of the world's 25 largest insurers is fracturing along regional lines as US managed-...",
+      "title_cn": "亚欧保险公司领先，美国同行市值损失2260亿美元",
+      "display_title": "亚欧保险公司领先，美国同行市值损失2260亿美元",
+      "display_desc": "亚洲和欧洲保险公司主导市值排名，2026年第一季度医疗和寿险风险结构性重新定价期间表现突出。全球最大25家保险公司的市值正在按区域分化，美国保险公司管理面临挑战。",
+      "category_cn": "行业新闻",
+      "number": 3
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Cyber risk firm warns insurers not to view AI simply as 'risk multiplier' - Insurance Times",
+      "category": "tech",
+      "relevance": 100.0,
+      "url": "https://www.insurancetimes.co.uk/news/cyber-risk-firm-warns-insurers-not-to-view-ai-simply-as-risk-multiplier/1458260.article",
+      "description": "",
+      "title_cn": "网络安全公司警告保险公司不要将AI简单视为风险放大器",
+      "display_title": "网络安全公司警告保险公司不要将AI简单视为风险放大器",
+      "display_desc": "网络安全公司警告保险业者不应将人工智能仅仅视为风险放大器，而是要积极利用AI技术提升风险管理能力，避免过于保守的风险态度。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "From buzzword to business tool: How independent agents are putting AI to work - PropertyCasualty360",
+      "category": "tech",
+      "relevance": 99.0,
+      "url": "https://www.propertycasualty360.com/amp/2026/04/13/from-buzzword-to-business-tool-how-independent-agents-are-putting-ai-to-work/",
+      "description": "# From buzzword to business tool: How independent agents are putting AI to work. According to the Big \"I\" Agents Council for Technology Tech Trends Report, two-thirds of independent insurance agencies plan to ramp up their use of AI in the next 12 months. Two activities where AI can make a real diff...",
+      "title_cn": "从流行词到商业工具：独立代理人如何应用AI",
+      "display_title": "从流行词到商业工具：独立代理人如何应用AI",
+      "display_desc": "根据美国保险代理人技术委员会技术趋势报告，三分之二的独立保险机构计划在未来12个月内加大AI使用力度。AI在客户服务和风险评估两个领域发挥重要作用。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "HSBC: Advancing Blockchain for Institutional Payments - FinTech Magazine",
+      "category": "tech",
+      "relevance": 65.0,
+      "url": "https://fintechmagazine.com/news/hsbc-advancing-blockchain-for-institutional-payments",
+      "description": "HSBC has successfully tested tokenised deposits on Canton, demonstrating secure atomic settlement and advancing digital interoperability. Through its Global Payments Solutions (GPS) business, HSBC tested how tokenised deposits could interact with other digital assets on Canton-enabled applications, ...",
+      "title_cn": "汇丰银行推进区块链在机构支付中的应用",
+      "display_title": "汇丰银行推进区块链在机构支付中的应用",
+      "display_desc": "汇丰银行在Canton平台上成功测试代币化存款，展示了安全原子结算并推进数字互操作性。通过全球支付解决方案业务，汇丰测试了代币化存款如何在Canton应用中与其他数字资产交互。",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "Who's using what in P&C insurance: April 13, 2026 - PropertyCasualty360",
+      "category": "tech",
+      "relevance": 48.0,
+      "url": "https://www.propertycasualty360.com/amp/2026/04/13/whos-using-what-in-pc-insurance-april-13-2026/",
+      "description": "# Who's using what in P&C insurance: April 13, 2026. Insurance technology news from Genpact and Guardian. **Genpact** and **Parallel Web Systems** have partnered to leverage Parallel's AI-native web agents and web search tools, available through application programming interface (API) technology and...",
+      "title_cn": "财产险科技应用动态：2026年4月13日",
+      "display_title": "财产险科技应用动态：2026年4月13日",
+      "display_desc": "Genpact与Parallel Web Systems合作，利用Parallel的AI原生网页代理和网络搜索工具。通过API技术，保险科技正在改变财产险行业的业务流程和客户服务模式。",
+      "category_cn": "科技前沿",
+      "number": 4
+    }
+  ]
+}

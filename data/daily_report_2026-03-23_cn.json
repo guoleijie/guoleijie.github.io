@@ -1,0 +1,155 @@
+{
+  "date": "2026-03-23",
+  "generated_time": "2026-03-23 06:00:23",
+  "total_news": 12,
+  "industry_news_count": 6,
+  "tech_news_count": 6,
+  "industry_news_cn": [
+    {
+      "title": "Cincinnati Financial Corporation $CINF Shares Acquired by Swiss Life Asset Management Ltd - InsuranceNewsNet",
+      "category": "industry",
+      "relevance": 90.0,
+      "url": "https://insurancenewsnet.com/oarticle/cincinnati-financial-corporation-cinf-shares-acquired-by-swiss-life-asset-management-ltd",
+      "description": "Swiss Life Asset Management Ltd lifted its position in Cincinnati Financial Corporation (NASDAQ:CINF) by 240.3% during the 3rd quarter, according to its most recent filing with the Securities and Exchange Commission.",
+      "title_cn": "瑞士人寿资产管理大幅增持辛辛那提金融公司股份",
+      "display_title": "瑞士人寿资产管理大幅增持辛辛那提金融公司股份",
+      "display_desc": "瑞士人寿资产管理有限公司在第三季度将其持有的辛辛那提金融公司（NASDAQ:CINF）股份大幅增持240.3%，根据其向美国证券交易委员会提交的最新文件显示。此举反映了国际保险资产管理机构对美国财险市场前景的持续看好。",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "Persistent Iran war, energy price surge set to sway wavering stocks - TradingView",
+      "category": "industry",
+      "relevance": 1.0,
+      "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L6N408166:0-persistent-iran-war-energy-price-surge-set-to-sway-wavering-stocks/",
+      "description": "Persistent Iran war, energy price surge set to sway wavering stocks.",
+      "display_desc": "伊朗战争持续，能源价格飙升，市场波动加剧。斯洛文尼亚因加油站燃油耗尽已开始限制燃油购买量。持续的地缘政治紧张局势对全球保险和再保险市场带来重大影响，尤其是财产险和能源险领域面临更大的理赔压力。",
+      "title_cn": "伊朗战争持续叠加能源价格飙升冲击全球市场",
+      "display_title": "伊朗战争持续叠加能源价格飙升冲击全球市场",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "From Lifetime Employment To Distributed Income - Forbes",
+      "category": "industry",
+      "relevance": 3.0,
+      "url": "https://www.forbes.com/sites/henriktotterman/2026/03/22/from-lifetime-employment-to-distributed-income/",
+      "description": "Households structured their financial lives around a concentrated wage stream backed by institutions that appeared durable. In the 1970s, a vice president at a large industrial firm typically relied on a single employer for nearly all of their earned income and much of their career.",
+      "title_cn": "从终身雇佣到分布式收入：家庭财务管理模式的变革",
+      "display_title": "从终身雇佣到分布式收入：家庭财务管理模式的变革",
+      "display_desc": "福布斯文章探讨家庭收入结构从依赖单一雇主工资向多元化分布式收入转变的趋势。这种变化对保险行业具有深远影响，传统基于雇佣关系的保险产品设计需要重新思考，灵活就业者和自由职业者的保险保障需求日益增长。",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "MNDY DEADLINE ALERT: Faruqi & Faruqi, LLP Reminds monday.com (MNDY) Investors of Securities Class Action Deadline on May 11, 2026 - PR Newswire",
+      "category": "industry",
+      "relevance": 4.0,
+      "url": "https://www.prnewswire.com/news-releases/mndy-deadline-alert-faruqi--faruqi-llp-reminds-mondaycom-mndy-investors-of-securities-class-action-deadline-on-may-11-2026-302720135.html",
+      "description": "Faruqi & Faruqi, LLP reminds monday.com (MNDY) investors of securities class action deadline on May 11, 2026.",
+      "title_cn": "monday.com投资者证券集体诉讼截止日期提醒：5月11日",
+      "display_title": "monday.com投资者证券集体诉讼截止日期提醒：5月11日",
+      "display_desc": "Faruqi & Faruqi律师事务所提醒monday.com（MNDY）投资者，针对该公司的证券集体诉讼截止日期为2026年5月11日。遭受损失的投资者被鼓励直接联系律师事务所了解详情和参与诉讼。",
+      "category_cn": "行业新闻",
+      "number": 4
+    },
+    {
+      "title": "NAVN DEADLINE ALERT: Faruqi & Faruqi, LLP Reminds Navan (NAVN) Investors of Securities Class Action Deadline on April 24, 2026 - PR Newswire",
+      "category": "industry",
+      "relevance": 4.0,
+      "url": "https://www.prnewswire.com/news-releases/navn-deadline-alert-faruqi--faruqi-llp-reminds-navan-navn-investors-of-securities-class-action-deadline-on-april-24-2026-302720265.html",
+      "description": "Faruqi & Faruqi, LLP reminds Navan (NAVN) investors of securities class action deadline on April 24, 2026.",
+      "title_cn": "Navan投资者证券集体诉讼截止日期提醒：4月24日",
+      "display_title": "Navan投资者证券集体诉讼截止日期提醒：4月24日",
+      "display_desc": "Faruqi & Faruqi律师事务所提醒Navan（NAVN）投资者，针对该公司的证券集体诉讼截止日期为2026年4月24日。遭受损失的投资者应在截止日期前联系律师事务所以保护自身权益。",
+      "category_cn": "行业新闻",
+      "number": 5
+    },
+    {
+      "title": "When health insurance costs $2,500 per month, families make tough choices - KUOW",
+      "category": "industry",
+      "relevance": 0.0,
+      "url": "https://www.kuow.org/stories/when-health-insurance-costs-2-500-per-month-families-make-tough-choices",
+      "description": "Parveen Vohra and Ken Warner had an expensive year in 2025. They needed a new roof and a boiler the same year as two surgeries.",
+      "title_cn": "当每月健康保险费高达2500美元，家庭面临艰难抉择",
+      "display_title": "当每月健康保险费高达2500美元，家庭面临艰难抉择",
+      "display_desc": "美国健康保险费用持续攀升，部分家庭每月需支付高达2500美元的保险费。高昂的医疗成本与保险费用叠加，迫使许多家庭在医疗保障和基本生活开支之间做出艰难取舍，反映出美国医疗体系深层次的问题。",
+      "category_cn": "行业新闻",
+      "number": 6
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Allure Security Raises $17M Series B Amid Surge in AI Impersonation - technotrenz.com",
+      "category": "tech",
+      "relevance": 2.0,
+      "url": "https://technotrenz.com/news/allure-security-raises-17m/",
+      "description": "Allure Security Raises $17M Series B Amid Surge in AI Impersonation, bringing total funding to $43M, led by Riverside Acceleration Capital.",
+      "title_cn": "AI模仿攻击激增，网络安全公司Allure Security完成1700万美元B轮融资",
+      "display_title": "AI模仿攻击激增，网络安全公司Allure Security完成1700万美元B轮融资",
+      "display_desc": "波士顿网络安全公司Allure Security完成1700万美元B轮融资，总融资额达4300万美元。本轮由Riverside Acceleration Capital领投。随着AI驱动的身份模仿和网络钓鱼攻击急剧增加，网络安全成为保险科技和再保险行业高度关注的领域。",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "Recap: Europe's top funding rounds this week (16 -22 March) - The Next Web",
+      "category": "tech",
+      "relevance": 1.0,
+      "url": "https://thenextweb.com/news/europes-top-funding-rounds-week-16-22-march",
+      "description": "Montis VC reached a 50 million euro first close for a new fund focused on European startups in energy transition, industrial tech, and AI. Parallel raised a $20 million Series A led by Index Ventures.",
+      "title_cn": "欧洲本周融资回顾：Montis VC首期5000万欧元基金落地",
+      "display_title": "欧洲本周融资回顾：Montis VC首期5000万欧元基金落地",
+      "display_desc": "Montis VC首期聚焦欧洲能源转型、工业科技和AI领域初创企业的基金完成5000万欧元首次交割。巴黎AI医疗账单和编码初创公司Parallel完成2000万美元A轮融资，由Index Ventures领投，距其上次融资不到一年时间。",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "African Nation of Cabo Verde and its Fintech Ecosystem in 2026 - The Fintech Times",
+      "category": "tech",
+      "relevance": 6.0,
+      "url": "https://thefintechtimes.com/african-nation-of-cabo-verde-and-its-fintech-ecosystem-in-2026/",
+      "description": "In 2026, fintech in Cabo Verde is less about scale and more about strategic positioning within a rapidly evolving digital economy.",
+      "title_cn": "2026年佛得角金融科技生态系统全景",
+      "display_title": "2026年佛得角金融科技生态系统全景",
+      "display_desc": "佛得角在2026年的金融科技发展重点在于战略定位而非规模扩张，依托国家数字化转型战略，在快速发展的数字经济中寻求突破。该国的金融科技基础设施建设为新兴市场的保险科技发展提供了重要参考。",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "US, Germany, Canada disrupt botnets - iTnews",
+      "category": "tech",
+      "relevance": 5.0,
+      "url": "https://www.itnews.com.au/news/us-germany-canada-disrupt-botnets-624497",
+      "description": "US, Germany, Canada disrupt botnets. CanisterWorm supply chain malware attacks npm.",
+      "title_cn": "美徳加三国联合打击僵尸网络，CanisterWorm攻击npm供应链",
+      "display_title": "美徳加三国联合打击僵尸网络，CanisterWorm攻击npm供应链",
+      "display_desc": "美国、德国和加拿大联合执法行动成功瓦解多个僵尸网络。与此同时，名为CanisterWorm的供应链恶意软件正针对npm包管理器发起攻击。网络安全威胁持续升级，对保险行业的数字化转型和数据安全提出了更高要求。",
+      "category_cn": "科技前沿",
+      "number": 4
+    },
+    {
+      "title": "Oscar Health Stock Hits $12.63: Tech-Driven Healthcare Innovation Persists Despite Losses - InsuranceNewsNet",
+      "category": "tech",
+      "relevance": 87.0,
+      "url": "https://insurancenewsnet.com/oarticle/oscar-health-stock-hits-12-63-tech-driven-healthcare-innovation-persists-despite-losses",
+      "description": "Oscar Health, Inc., a prominent health insurance company based in New York, has been making significant strides in the healthcare sector with tech-driven innovation.",
+      "title_cn": "Oscar Health股价达12.63美元：科技驱动医疗创新持续推进",
+      "display_title": "Oscar Health股价达12.63美元：科技驱动医疗创新持续推进",
+      "display_desc": "总部位于纽约的健康保险公司Oscar Health在医疗健康领域持续推进科技驱动型创新。尽管公司仍处于亏损状态，但其技术赋能的医疗健康模式正在改变传统保险行业格局，为保险科技领域树立了重要标杆。",
+      "category_cn": "科技前沿",
+      "number": 5
+    },
+    {
+      "title": "2025 Banking & Finance Visionaries - Los Angeles Times",
+      "category": "tech",
+      "relevance": 17.0,
+      "url": "https://www.latimes.com/b2b/business-visionaries/banking-finance/2025",
+      "description": "2025 Banking & Finance Visionaries featuring Bank of America workforce development, Zeitview AI inspection platform, Mitra EV fleet electrification.",
+      "title_cn": "2025年银行与金融行业创新者榜单发布",
+      "display_title": "2025年银行与金融行业创新者榜单发布",
+      "display_desc": "洛杉矶时报发布2025年银行与金融行业创新者榜单，亮点包括：美国银行投入4000万美元用于劳动力发展、Zeitview获得6000万美元融资推进AI检测平台、Mitra EV获得2700万美元融资推动商用车队电动化转型，以及Largo收购E-Pol等金融科技并购动态。",
+      "category_cn": "科技前沿",
+      "number": 6
+    }
+  ]
+}
