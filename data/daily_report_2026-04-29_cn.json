@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-29",
+  "generated_time": "2026-04-29 05:01:00",
+  "total_news": 13,
+  "industry_news_count": 7,
+  "tech_news_count": 6,
+  "industry_news": [
+    {
+      "title": "Three insurance reform bills advance in California Senate - PropertyCasualty360",
+      "category": "industry",
+      "relevance": 56.0,
+      "url": "https://www.propertycasualty360.com/2026/04/28/three-insurance-reform-bills-advance-in-california-senate/",
+      "description": "Get expert insights and real-world perspectives from leading voices in the industry to help you make more informed decisions. In-depth coverage of the most significant issues shaping the industry. ## Special Reports /. # Three insurance reform bills advance in California Senate. News April 28, 2026 ..."
+    },
+    {
+      "title": "JMG Group breaks £500m annual GWP barrier - Insurance Times",
+      "category": "industry",
+      "relevance": 31.0,
+      "url": "https://www.insurancetimes.co.uk/news/jmg-group-breaks-500m-annual-gwp-barrier/1458402.article"
+    },
+    {
+      "title": "Lloyd’s insurer Apollo appoints head for new S&E offering - Insurance Times",
+      "category": "industry",
+      "relevance": 19.0,
+      "url": "https://www.insurancetimes.co.uk/news/lloyds-insurer-apollo-appoints-head-for-new-sande-offering/1458395.article"
+    },
+    {
+      "title": "The gap between policy awareness and investor conversations - InsuranceNewsNet",
+      "category": "industry",
+      "relevance": 8.0,
+      "url": "https://insurancenewsnet.com/innarticle/the-gap-between-policy-awareness-and-investor-conversations",
+      "description": "# The gap between policy awareness and investor conversations - Insurance News | InsuranceNewsNet. The survey shows that despite heightened concern about potential changes to Social Security, Medicare and tax policy, many investors – even those working with financial professionals – are unclear abou..."
+    },
+    {
+      "title": "Cyber Insurance Data Gives CISOs New Ammo for Budget Talks - SecurityWeek",
+      "category": "industry",
+      "relevance": 2.0,
+      "url": "https://www.securityweek.com/cyber-insurance-data-gives-cisos-new-ammo-for-budget-talks/",
+      "description": "Boards may ignore alerts, but they listen to losses: new data from Resilience links security gaps directly to financial impact. Through its insurance service, Resilience can directly relate financial loss to specific cybersecurity events and their likely occurrence, allowing CISOs to present technic..."
+    },
+    {
+      "title": "The data gap has narrowed in commercial property – LexisNexis - Insurance Times",
+      "category": "industry",
+      "relevance": 17.0,
+      "url": "https://www.insurancetimes.co.uk/expert-views/the-data-gap-has-narrowed-in-commercial-property-lexisnexis/1458170.article"
+    },
+    {
+      "title": "North Carolina Settles on 10% Dwelling Insurance Rate Increase Over 2 Years - Insurance Journal",
+      "category": "industry",
+      "relevance": 10.0,
+      "url": "https://www.insurancejournal.com/news/southeast/2026/04/28/867535.htm",
+      "description": "# North Carolina Settles on 10% Dwelling Insurance Rate Increase Over 2 Years. North Carolina’s insurance commissioner has negotiated a 10% increase in average rates for dwelling insurance, for rental and non-owner-occupied properties, over the next two years. The North Carolina Rate Bureau, represe..."
+    }
+  ],
+  "tech_news": [
+    {
+      "title": "Marsh Risk Unveils AI-Powered Risk Companion Suite - Insurance Journal",
+      "category": "tech",
+      "relevance": 34.0,
+      "url": "https://www.insurancejournal.com/news/national/2026/04/28/867527.htm",
+      "description": "# Marsh Risk Unveils AI-Powered Risk Companion Suite. Marsh Risk, a business of Marsh, announced the launch of Risk Companion, the next iteration of its digital solutions suite designed to help clients effectively and efficiently manage unique risks. Risk Companion is enabled by an AI-powered analyt..."
+    },
+    {
+      "title": "Register: Risky Future AI Tools for Commercial Auto, Telematics & Fleet Risks on April 29 - Insurance Journal",
+      "category": "tech",
+      "relevance": 34.0,
+      "url": "https://www.insurancejournal.com/news/national/2026/04/28/867592.htm",
+      "description": "# Register: Risky Future AI Tools for Commercial Auto, Telematics & Fleet Risks on April 29. Insurance Journal’s Risky Future series is hosting the “Commercial Auto, Telematics & Fleet Risks” Demo Day, a series of free AI tool demonstrations designed exclusively for Commercial Auto Carriers, Fleet U..."
+    },
+    {
+      "title": "In Profile: John O’Connor CEO, RealFi - The Fintech Times",
+      "category": "tech",
+      "relevance": 7.0,
+      "url": "https://thefintechtimes.com/in-profile-john-oconnor-ceo-realfi/",
+      "description": "For companies working in this area, the challenge is not just putting assets on-chain, but building structures that can link crypto liquidity with real-world credit markets in a way that is credible and sustainable. In this week’s *In Profile*, **John O’Connor,** CEO of **RealFi,** which builds yiel..."
+    },
+    {
+      "title": "Bed Bath & Beyond narrows loss, posts first sales growth in 19 quarters - Chain Store Age",
+      "category": "tech",
+      "relevance": 6.0,
+      "url": "https://chainstoreage.com/bed-bath-beyond-narrows-loss-posts-first-sales-growth-19-quarters",
+      "description": "# Bed Bath & Beyond narrows loss, posts first sales growth in 19 quarters. Bed Bath & Beyond Inc.'s first-quarter net revenue rose 6.9% year over year to $248 million. Bed, Bath & Beyond reported a first-quarter net loss of $16 million, a $24 million improvement year-over-year. In January, Lemonis o..."
+    },
+    {
+      "title": "The Big Question: What is it ‘Time: To’ prioritise and achieve at the Biba Conference 2026? - Insurance Times",
+      "category": "tech",
+      "relevance": 99.0,
+      "url": "https://www.insurancetimes.co.uk/analysis/the-big-question-what-is-it-time-to-prioritise-and-achieve-at-the-biba-conference-2026/1458380.article",
+      "description": "Insurance Times asked industry figures what they were most looking forward to for this year’s Biba’s conference. It’s also time to innovate for emerging risks – from artificial intelligence (AI) and cyber to motor and geopolitics, the world is changing and it’s important for brokers to keep up to da..."
+    },
+    {
+      "title": "Quantum Photonic Computing Enhances Time-Series Prediction Accuracy - AZoOptics",
+      "category": "tech",
+      "relevance": 100.0,
+      "url": "https://www.futurefarming.com/tech-in-focus/how-autosteer-systems-are-becoming-smarter-and-more-connected/",
+      "description": "# Quantum Photonic Computing Enhances Time-Series Prediction Accuracy. Image 4: Study: Time-series forecasting with multiphoton quantum states and integrated photonics. _Study: Time-series forecasting with multiphoton quantum states and integrated photonics. A new study in_nPJ Quantum Information_ r..."
+    }
+  ]
+}
