@@ -1,0 +1,88 @@
+{
+  "date": "2026-04-30",
+  "generated_time": "2026-04-30 05:00:48",
+  "total_news": 11,
+  "industry_news_count": 5,
+  "tech_news_count": 6,
+  "industry_news": [
+    {
+      "title": "财险行业动态：2026年4月29日 - PropertyCasualty360",
+      "category": "industry",
+      "relevance": 100.0,
+      "url": "https://www.propertycasualty360.com/2026/04/29/around-the-pc-insurance-industry-april-29-2026/",
+      "description": "来自行业领军人物的专家见解和实际观点，助您做出更明智的决策。对塑造行业的重大议题进行深入报道。## 特别报道 /. # 财险行业动态：2026年4月29日。简讯 2026年4月29日..."
+    },
+    {
+      "title": "Travelers计划扩展加州房屋保险业务 - PropertyCasualty360",
+      "category": "industry",
+      "relevance": 100.0,
+      "url": "https://www.propertycasualty360.com/2026/04/29/travelers-plans-to-expand-calif-home-insurance-coverage/",
+      "description": "来自行业领军人物的专家见解和实际观点，助您做出更明智的决策。对塑造行业的重大议题进行深入报道。## 特别报道 /. # Travelers计划扩展加州业务。新闻 2026年4月29日上午10:28。"
+    },
+    {
+      "title": "观点：日韩保险机构将加速全球及美国市场并购 - Insurance Journal",
+      "category": "industry",
+      "relevance": 98.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/04/29/867671.htm",
+      "description": "惠誉评级（IFS \"A+\"/稳定）及日本生命保险公司。据惠誉测算，超过一半的惠誉评级保险公司在过去10年中进行了并购，主要交易价值约4.5万亿日元（约350亿美元），其中86%的投资集中在美国市场。"
+    },
+    {
+      "title": "雅诗兰黛公司就数据泄露集体诉讼达成和解 - Cosmetics Business",
+      "category": "industry",
+      "relevance": 3.0,
+      "url": "https://www.cosmeticsbusiness.com/est%C3%A9e-lauder-companies-reaches-settlement-in-data-breach",
+      "description": "# 雅诗兰黛公司就数据泄露集体诉讼达成和解。雅诗兰黛公司（ELC）已在加拿大就2023年两起数据泄露事件相关的集体诉讼达成和解。"
+    },
+    {
+      "title": "MGA Rokstone提拔新运营总监 - Insurance Times",
+      "category": "industry",
+      "relevance": 4.0,
+      "url": "https://www.insurancetimes.co.uk/news/mga-rokstone-promotes-for-new-head-of-operations/1458401.article",
+      "description": "管理型总代理（MGA）Rokstone宣布提拔新运营总监。"
+    }
+  ],
+  "tech_news": [
+    {
+      "title": "简报：保险公司在理赔中应重视人文关怀 - Insurance Times",
+      "category": "tech",
+      "relevance": 98.0,
+      "url": "https://www.insurancetimes.co.uk/analysis/briefing-insurers-need-to-remember-the-value-of-a-human-touch-in-claims/1458392.article",
+      "description": "# 简报：保险公司在理赔中应重视人文关怀。虽然AI对保险公司越来越有价值，但客户认为在理赔过程中保留人文关怀至关重要。随着保险公司面临加快理赔速度同时确保结果准确的压力，人工智能技术日益受到关注..."
+    },
+    {
+      "title": "Verisk受益于分析业务强劲需求，一季度业绩超预期 - Reuters",
+      "category": "tech",
+      "relevance": 13.0,
+      "url": "https://www.reuters.com/legal/litigation/verisk-beats-first-quarter-estimates-strong-demand-its-analytics-2026-04-29/",
+      "description": "路透社4月29日报道 - Verisk Analytics（VRSK.O）周三公布的第一季度业绩优于预期，主要得益于保险公司对其数据分析产品的强劲需求。"
+    },
+    {
+      "title": "塔塔咨询服务公司：AI驱动转型能否支撑持续增长？ - AD HOC NEWS",
+      "category": "tech",
+      "relevance": 5.0,
+      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/tata-consultancy-services-ltd-stock-ine001a01036-is-its-ai-driven/69256103",
+      "description": "随着TCS深入布局AI和云服务领域，需要评估这是否能为该股票在全球IT需求中定位持续增长。公司专注于以产品为中心的战略方向。"
+    },
+    {
+      "title": "Bridgepoint将收购iC Consult多数股权 - Finextra Research",
+      "category": "tech",
+      "relevance": 5.0,
+      "url": "https://www.finextra.com/newsarticle/47667/bridgepoint-to-acquire-majority-stake-in-ic-consult",
+      "description": "据声明，iC Consult将利用Bridgepoint的支持，专注于"加速国际扩张、强化管理服务产品、进一步发展"等战略目标。"
+    },
+    {
+      "title": "华为发布"四赢"模型赋能金融机构加速AI转型 - The Fintech Times",
+      "category": "tech",
+      "relevance": 12.0,
+      "url": "https://thefintechtimes.com/accelerate-ai-transformation-huawei-unveils-4-win-model-to-empower-financial-institutions/",
+      "description": "# 华为发布"四赢"模型赋能金融机构加速AI转型。这一方法旨在帮助金融机构更好地整合和扩展AI技术，于近期正式发布。"
+    },
+    {
+      "title": "机器之魂 - Hospitality Net",
+      "category": "tech",
+      "relevance": 6.0,
+      "url": "https://www.hospitalitynet.org/opinion/4132105/the-soul-of-the-machine",
+      "description": "Meta将员工工作流程捕获为AI训练数据的方法可能通过保存经验知识和专业技能来改变酒店运营，但也引发了重要的信任和治理问题。"
+    }
+  ]
+}
