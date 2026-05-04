@@ -1,0 +1,155 @@
+{
+  "date": "2026-03-07",
+  "generated_time": "2026-03-07 06:00:26",
+  "total_news": 12,
+  "industry_news_count": 6,
+  "tech_news_count": 6,
+  "industry_news_cn": [
+    {
+      "title": "High Five: Catch up on the biggest stories this week - Insurance Times",
+      "category": "industry",
+      "relevance": 100.0,
+      "url": "https://www.insurancetimes.co.uk/news/high-five-catch-up-on-the-biggest-stories-this-week/1457948.article",
+      "description": "",
+      "title_cn": "高五：了解本周最大的新闻 - 保险时报",
+      "display_title": "高五：了解本周最大的新闻 - 保险时报",
+      "display_desc": "",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "People: Alliant Names McMinn VP in Benefits Group - Insurance Journal",
+      "category": "industry",
+      "relevance": 43.0,
+      "url": "https://www.insurancejournal.com/news/southeast/2026/03/06/860860.htm",
+      "description": "* Zurich Insurance, Beazley Agree to $10.9B Cash Deal. # People: Alliant Names McMinn VP in Benefits Group. Alliant Insurance Services named Will McMinn, formerly an employee benefits consultant with USI Insurance, as vice president in Alliant’s employee benefits group. McMinn, with 20 years of expe...",
+      "title_cn": "人员：Alliant 任命 McMinn 为福利组副总裁 - 保险杂志",
+      "display_title": "人员：Alliant 任命 McMinn 为福利组副总裁 - 保险杂志",
+      "display_desc": "* Zurich Insurance、Beazley 同意 $10.9B 现金交易",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "Taxation With Representation: Slaughter And May, Kirkland - Law360",
+      "category": "industry",
+      "relevance": 4.0,
+      "url": "https://www.law360.com/insurance/articles/2449994?utm_source=rss&utm_medium=rss&utm_campaign=section",
+      "description": "# Law360. ## The Practice of Law. Access to Justice   Aerospace & Defense   Appellate   Asset Management   Banking   Bankruptcy   Benefits   California   Cannabis   Capital Markets   Class Action   Colorado   Commercial Contracts   Competition   Compliance   Connecticut   Construction   Consumer Pro...",
+      "title_cn": "代表税：Slaughter And May，柯克兰 - Law360",
+      "display_title": "代表税：Slaughter And May，柯克兰 - Law360",
+      "display_desc": "法律实践。诉诸司法 航空航天与国防上诉 资产管理 银行破产福利 加州大麻资本市场集体诉讼 科罗拉多州商业合同 竞争合规性 康涅狄格州建筑业 消费者专业",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "The Average American now spends nearly half their annual income on house bills - PropertyCasualty360",
+      "category": "industry",
+      "relevance": 60.0,
+      "url": "https://www.propertycasualty360.com/2026/03/06/the-average-american-now-spends-nearly-half-their-annual-income-on-house-bills/",
+      "description": "Get expert insights and real-world perspectives from leading voices in the industry to help you make more informed decisions. In-depth coverage of the most significant issues shaping the industry. ## Special Reports /. # The Average American now spends nearly half their annual income on house bills....",
+      "title_cn": "现在，普通美国人将其年收入的近一半用于住房账单 - PropertyCasualty360",
+      "display_title": "现在，普通美国人将其年收入的近一半用于住房账单 - PropertyCasualty360",
+      "display_desc": "从行业领先人士那里获取专家见解和现实世界的观点，帮助您做出更明智的决策。深入报道塑造行业的最重要问题。 #",
+      "category_cn": "行业新闻",
+      "number": 4
+    },
+    {
+      "title": "People on the move in the P&C insurance industry: March 6, 2026 - PropertyCasualty360",
+      "category": "industry",
+      "relevance": 55.0,
+      "url": "https://www.propertycasualty360.com/amp/2026/03/06/people-on-the-move-in-the-pc-insurance-industry-march-6-2026/",
+      "description": "# People on the move in the P&C insurance industry: March 6, 2026. The latest insurance industry personnel news from Liberty, Acrisure London Wholesale and Howden. **Liberty** appointed **Cynthia Sze** as chief executive officer, Hong Kong. She holds more than 25 years of insurance industry experien...",
+      "title_cn": "财产与意外伤害保险行业的流动人员：2026 年 3 月 6 日 - PropertyCasualty360",
+      "display_title": "财产与意外伤害保险行业的流动人员：2026 年 3 月 6 日 - PropertyCasualty360",
+      "display_desc": "财产与意外伤害保险行业人员流动：2026 年 3 月 6 日。来自 Liberty、Acrisure London Wholesale 和 Howden 的最新保险行业人员新闻。 **Liberty** 任命 **Cynthia Sze** 为香港首席执行官。她拥有超过25年的保险行业经验",
+      "category_cn": "行业新闻",
+      "number": 5
+    },
+    {
+      "title": "GL, Workers’ Comp Only Commercial Lines With Monthly Renewal Rate Increase: Ivans - Insurance Journal",
+      "category": "industry",
+      "relevance": 6.0,
+      "url": "https://www.insurancejournal.com/news/national/2026/03/06/860707.htm",
+      "description": "# GL, Workers’ Comp Only Commercial Lines With Monthly Renewal Rate Increase: Ivans. Month over month, premium renewal rates declined across all commercial lines of business except general liability and workers’ compensation, Ivans announced Thursday. Ivans found the general liability renewal rate i...",
+      "title_cn": "GL，仅限工人补偿的商业保险，每月续保费率增加：Ivans - 保险杂志",
+      "display_title": "GL，仅限工人补偿的商业保险，每月续保费率增加：Ivans - 保险杂志",
+      "display_desc": "GL，仅限工人补偿的商业线路，每月续订率增加：Ivans。伊万斯周四宣布，除一般责任险和工伤赔偿外，所有商业业务领域的保费续保率逐月下降。伊万斯发现一般责任续保率 i",
+      "category_cn": "行业新闻",
+      "number": 6
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "GC&C: Transforming IT in a Global Insurance Enterprise - FinTech Magazine",
+      "category": "tech",
+      "relevance": 38.0,
+      "url": "https://fintechmagazine.com/company-reports/gc-c-transforming-it-in-a-global-insurance-enterprise",
+      "description": "“Innovation is in our DNA, and Generali GC&C is accelerating its commitment to technological innovation and AI, investing in cutting‑edge solutions that fuel excellence, efficiency and sustainable value in the 2025–2027 strategic plan,” says Global Head of Operations & IT Matthew Richardson. Matthew...",
+      "title_cn": "GC&C：全球保险企业的 IT 转型 - FinTech Magazine",
+      "display_title": "GC&C：全球保险企业的 IT 转型 - FinTech Magazine",
+      "display_desc": "全球运营与 IT 主管 Matthew Richardson 表示：“创新是我们的基因，Generali GC&C 正在加速致力于技术创新和人工智能，投资尖端解决方案，在 2025-2027 年战略计划中推动卓越、效率和可持续价值。”马修",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "Inside Generali GC&C’s AI Underwriting Deployment - FinTech Magazine",
+      "category": "tech",
+      "relevance": 24.0,
+      "url": "https://fintechmagazine.com/articles/inside-generali-gc-cs-ai-underwriting-deployment",
+      "description": "Generali GC&C partnered with Sixfold for AI underwriting in cyber insurance, scaling capacity, cutting turnaround times by half, and improving risk focus. Generali Global Corporate & Commercial (GC&C) – the global business unit serving medium-to-large companies and brokers in over 180 countries – ne...",
+      "title_cn": "Generali GC&C 的人工智能承保部署内部 - 金融科技杂志",
+      "display_title": "Generali GC&C 的人工智能承保部署内部 - 金融科技杂志",
+      "display_desc": "Generali GC&C 与 Sixfold 合作，在网络保险领域进行人工智能承保，扩大容量，将周转时间缩短一半，并提高风险焦点。 Generali Global Corporate & Commercial (GC&C) – 为 180 多个国家的大中型公司和经纪商提供服务的全球业务部门 – ne",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "How Kraken Is Collapsing The Wall Between Crypto And Stock Markets - Forbes",
+      "category": "tech",
+      "relevance": 18.0,
+      "url": "https://www.forbes.com/sites/digital-assets/2026/03/05/how-kraken-is-collapsing-the-wall-between-crypto-and-stock-markets/",
+      "description": "Around the world, financial infrastructure is starting to converge as blockchain networks bring traditional assets into the same digital environment as cryptocurrencies. Exchanges that once focused purely on crypto trading are now experimenting with tokenized versions of stocks, bonds and other real...",
+      "title_cn": "Kraken 如何打破加密货币和股票市场之间的壁垒 - 福布斯",
+      "display_title": "Kraken 如何打破加密货币和股票市场之间的壁垒 - 福布斯",
+      "display_desc": "在世界各地，随着区块链网络将传统资产带入与加密货币相同的数字环境中，金融基础设施开始融合。曾经纯粹专注于加密货币交易的交易所现在正在尝试股票、债券和其他实物的代币化版本",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "Fleet Technology Business Case & Digital Innovation - Inbound Logistics",
+      "category": "tech",
+      "relevance": 22.0,
+      "url": "https://www.inboundlogistics.com/articles/making-the-business-case-amidst-the-rapid-proliferation-of-advanced-fleet-technology/",
+      "description": "Advanced powertrains, AI-driven analytics, connected vehicles, new safety systems, and digital platforms – all promising better visibility, lower costs, and improved uptime. Data is king in the fleet sector, and with AI’s ability to analyze data not just from a fleet’s own vehicles but from thousand...",
+      "title_cn": "车队技术商业案例和数字创新 - 入站物流",
+      "display_title": "车队技术商业案例和数字创新 - 入站物流",
+      "display_desc": "先进的动力系统、人工智能驱动的分析、联网车辆、新的安全系统和数字平台——所有这些都有望提供更好的可视性、更低的成本和更长的正常运行时间。数据在车队领域为王，人工智能不仅能够分析来自车队自己车辆的数据，还能够分析来自数千辆车辆的数据",
+      "category_cn": "科技前沿",
+      "number": 4
+    },
+    {
+      "title": "US government announces $20 billion plan for maritime reinsurance in Middle East - ICIS",
+      "category": "tech",
+      "relevance": 27.0,
+      "url": "https://www.icis.com/explore/resources/news/2026/03/06/11186462/us-government-announces-20-billion-plan-for-maritime-reinsurance-in-middle-east",
+      "description": "# US government announces $20 billion plan for maritime reinsurance in Middle East. US government announces $20 billion plan for maritime. The DFC is the international investment arm of. according to the DFC website. The DFC and the US Treasury Department will. flowing again to the world,” DFC CEO B...",
+      "title_cn": "美国政府宣布200亿美元的中东海事再保险计划 - ICIS",
+      "display_title": "美国政府宣布200亿美元的中东海事再保险计划 - ICIS",
+      "display_desc": "美国政府宣布200亿美元的中东海上再保险计划。美国政府宣布200亿美元的海事计划。 DFC 是国际投资机构。根据 DFC 网站。 DFC 和美国财政部将会这样做。再次流向世界”，DFC首席执行官B",
+      "category_cn": "科技前沿",
+      "number": 5
+    },
+    {
+      "title": "Reinsurers Triple Ship Insurance Costs After US Torpedo Attack - Insurance Journal",
+      "category": "tech",
+      "relevance": 24.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/03/06/860825.htm",
+      "description": "The worsening situation in the Persian Gulf remains the primary concern, said Hitesh Joshi, executive director with additional charge as chairman and managing director at GIC Re. As an immediate impact on the marine war-risk cover, “notices of cancellation are being issued by international marine un...",
+      "title_cn": "美国鱼雷袭击后，再保险公司的船舶保险费用增加了两倍 - 保险杂志",
+      "display_title": "美国鱼雷袭击后，再保险公司的船舶保险费用增加了两倍 - 保险杂志",
+      "display_desc": "GIC Re 执行董事兼董事长兼董事总经理希特什·乔希 (Hitesh Joshi) 表示，波斯湾局势的恶化仍然是主要问题。作为对海上战争险承保的直接影响，“国际海事联合国正在发布取消通知”",
+      "category_cn": "科技前沿",
+      "number": 6
+    }
+  ]
+}

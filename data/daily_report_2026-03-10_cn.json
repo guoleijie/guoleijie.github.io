@@ -1,0 +1,107 @@
+{
+  "date": "2026-03-10",
+  "generated_time": "2026-03-10 06:00:30",
+  "total_news": 8,
+  "industry_news_count": 3,
+  "tech_news_count": 5,
+  "industry_news_cn": [
+    {
+      "title": "People Moves: NFP Names Ross Head of Broking, West Region - Insurance Journal",
+      "category": "industry",
+      "relevance": 69.0,
+      "url": "https://www.insurancejournal.com/news/west/2026/03/09/859939.htm",
+      "description": "* Zurich Insurance, Beazley Agree to $10.9B Cash Deal. # People Moves: NFP Names Ross Head of Broking, West Region. With more than three decades in the commercial insurance industry, Ross has partnered with mid-market businesses across Southern California. Zurich Insurance and Beazley Agree to $10.9...",
+      "title_cn": "人员流动：NFP 任命 Ross 为西部地区经纪业务主管 - 保险杂志",
+      "display_title": "人员流动：NFP 任命 Ross 为西部地区经纪业务主管 - 保险杂志",
+      "display_desc": "* Zurich Insurance、Beazley 同意 $10.9B 现金交易",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "Tennessee’s The Plateau Group is Now Lumos Insurance - Insurance Journal",
+      "category": "industry",
+      "relevance": 9.0,
+      "url": "https://www.insurancejournal.com/news/southeast/2026/03/09/861146.htm",
+      "description": "# Tennessee’s The Plateau Group is Now Lumos Insurance. After 45 years under the name The Plateau Group, the Tennessee-based multi-line insurer now has a new name: Lumos Insurance. The firm, one of the few carriers to offer property insurance as well as life and health products, has focused for year...",
+      "title_cn": "田纳西州的 Plateau Group 现已更名为 Lumos Insurance - 保险杂志",
+      "display_title": "田纳西州的 Plateau Group 现已更名为 Lumos Insurance - 保险杂志",
+      "display_desc": "田纳西州的 The Plateau Group 现更名为 Lumos Insurance。这家位于田纳西州的多险种保险公司在使用 The Plateau Group 名称 45 年后，现在有了一个新名称：Lumos Insurance。该公司是为数不多的提供财产保险以及人寿和健康产品的保险公司之一，多年来一直专注于",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "A predictive model to assess liability in earthquake disasters - Nature",
+      "category": "industry",
+      "relevance": 26.0,
+      "url": "https://www.nature.com/articles/s44458-025-00028-0",
+      "description": "This essential condition—generator/damage—requires risk – R= GxD(A) – to be redefined as the combination of the triggering event (the seismic hazard G in our case), the consequences and damages (D) linked to an exposure model (human losses and population vulnerability, or economic losses and infrast...",
+      "title_cn": "评估地震灾害责任的预测模型 - Nature",
+      "display_title": "评估地震灾害责任的预测模型 - Nature",
+      "display_desc": "这一基本条件——发电机/损害——需要将风险 – R= GxD(A) – 重新定义为触发事件（本例中的地震灾害 G）、与暴露模型相关的后果和损害 (D)（人员损失和人口脆弱性，或经济损失和基础设施）的组合。",
+      "category_cn": "行业新闻",
+      "number": 3
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Two-Thirds of Independent Agencies Plan to Increase AI Use This Year, Survey Says - Insurance Journal",
+      "category": "tech",
+      "relevance": 40.0,
+      "url": "https://www.insurancejournal.com/magazines/mag-features/2026/03/09/860642.htm",
+      "description": "More than two-thirds of independent agencies plan to increase use of artificial intelligence in the next 12 months, though just 8% said AI is currently embedded in their daily workflows, according to a new report from The Big “I” Agents Council for Technology. In its annual tech trends report, ACT f...",
+      "title_cn": "调查显示，三分之二的独立机构计划今年增加人工智能的使用 - 保险杂志",
+      "display_title": "调查显示，三分之二的独立机构计划今年增加人工智能的使用 - 保险杂志",
+      "display_desc": "根据大“I”代理技术委员会的一份新报告，超过三分之二的独立机构计划在未来 12 个月内增加人工智能的使用，但只有 8% 的机构表示目前人工智能已嵌入其日常工作流程中。在其年度技术趋势报告中，ACT f",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "IAG prepares software engineering for AI - iTnews",
+      "category": "tech",
+      "relevance": 31.0,
+      "url": "https://www.itnews.com.au/news/iag-prepares-software-engineering-for-ai-624023?utm_source=feed&utm_medium=rss&utm_campaign=editors_picks",
+      "description": "Insurance Australia Group (IAG) has started working on ways to make its software engineering functions more AI driven, beginning with the way it builds and manages its APIs. The general insurer, which currently underwrites $17 billion worth of premium insurance in Australia and New Zealand, is in th...",
+      "title_cn": "IAG 为人工智能做好软件工程准备 - iTnews",
+      "display_title": "IAG 为人工智能做好软件工程准备 - iTnews",
+      "display_desc": "澳大利亚保险集团 (IAG) 已开始研究如何使其软件工程功能更加由人工智能驱动，首先是构建和管理 API 的方式。这家普通保险公司目前在澳大利亚和新西兰承保价值 170 亿澳元的保费保险，",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "People Moves: AXA XL Taps QBE's Weaver to Lead Energy, UK & Lloyd's; Aon Re Names Attard Head of Analytics; BHSI Appoints AIG's O'Broin for Transactional Liability - Insurance Journal",
+      "category": "tech",
+      "relevance": 40.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/03/09/861142.htm",
+      "description": "# People Moves: AXA XL Taps QBE’s Weaver to Lead Energy, UK & Lloyd’s; Aon Re Names Attard Head of Analytics; BHSI Appoints AIG’s O’Broin for Transactional Liability. This edition of International People Moves details appointments at AXA XL, Aon Reinsurance, and Berkshire Hathaway Specialty Insuranc...",
+      "title_cn": "人员流动：AXA XL 利用 QBE 的 Weaver 领导英国能源公司和劳合社； Aon Re Names Attard Head of Analytics; BHSI 任命 AIG 的 O'Broin 负责交易责任 - 保险杂志",
+      "display_title": "人员流动：AXA XL 利用 QBE 的 Weaver 领导英国能源公司和劳合社； Aon Re Names Attard Head of Analytics; BHSI 任命 AIG 的 O'Broin 负责交易责任 - 保险杂志",
+      "display_desc": "People Moves: AXA XL Taps QBE’s Weaver to Lead Energy, UK & Lloyd’s; Aon Re Names Attard Head of Analytics; BHSI 任命 AIG 的 O’Broin 负责交易责任。本期《International People Moves》详细介绍了 AXA XL、...",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "Acronis Releases 2025 ESG Report Highlighting Progress in Sustainability, Workforce Engagement, and Responsible Technology - StreetInsider",
+      "category": "tech",
+      "relevance": 28.0,
+      "url": "https://www.streetinsider.com/Globe+Newswire/Acronis+Releases+2025+ESG+Report+Highlighting+Progress+in+Sustainability%2C+Workforce+Engagement%2C+and+Responsible+Technology/26129237.html",
+      "description": "SCHAFFHAUSEN, Switzerland, March 09, 2026 (GLOBE NEWSWIRE) -- Acronis, a global leader in cyber protection, today announced the release of its 2025 Environmental, Social, and Governance (ESG) Report, highlighting the company’s ESG strategy, key initiatives, and measurable progress across global oper...",
+      "title_cn": "Acronis 发布 2025 年 ESG 报告，强调可持续发展、员工敬业度和负责任技术方面的进展 - StreetInsider",
+      "display_title": "Acronis 发布 2025 年 ESG 报告，强调可持续发展、员工敬业度和负责任技术方面的进展 - StreetInsider",
+      "display_desc": "瑞士沙夫豪森，2026 年 3 月 9 日 (环球通讯社) -- 全球网络保护领域的领导者 Acronis 今天宣布发布 2025 年环境、社会和治理 (ESG) 报告，重点介绍了公司的 ESG 战略、关键举措以及全球运营的可衡量进展",
+      "category_cn": "科技前沿",
+      "number": 4
+    },
+    {
+      "title": "Greek Oil Tanker Exits Hormuz Shipping Strait With Signal Off - Insurance Journal",
+      "category": "tech",
+      "relevance": 23.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/03/09/861098.htm",
+      "description": "# Greek Oil Tanker Exits Hormuz Shipping Strait With Signal Off. By Alex Longley and Alaric Nightingale | March 9, 2026. A ship hauling a million barrels of Saudi crude sailed through the Strait of Hormuz in recent days, one of the first big tankers to leave the Persian Gulf since traffic through th...",
+      "title_cn": "希腊油轮在信号关闭的情况下退出霍尔木兹海峡 - 保险杂志",
+      "display_title": "希腊油轮在信号关闭的情况下退出霍尔木兹海峡 - 保险杂志",
+      "display_desc": "希腊油轮在信号关闭的情况下驶出霍尔木兹海峡。作者：亚历克斯·朗利和阿拉里克·南丁格尔2026年3月9日，一艘装载100万桶沙特原油的船只近日驶过霍尔木兹海峡，这是自波斯湾通航以来第一批离开波斯湾的大型油轮之一。",
+      "category_cn": "科技前沿",
+      "number": 5
+    }
+  ]
+}

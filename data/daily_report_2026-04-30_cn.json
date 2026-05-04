@@ -1,6 +1,6 @@
 {
   "date": "2026-04-30",
-  "generated_time": "2026-04-30 09:45:39",
+  "generated_time": "2026-04-30 10:07:58",
   "total_news": 13,
   "industry_news_count": 7,
   "tech_news_count": 6,
@@ -11,11 +11,11 @@
       "relevance": 100.0,
       "url": "https://www.propertycasualty360.com/2026/04/29/around-the-pc-insurance-industry-april-29-2026/",
       "description": "Get expert insights and real-world perspectives from leading voices in the industry to help you make more informed decisions. In-depth coverage of the most significant issues shaping the industry. ## Special Reports /. # Around the P&C insurance industry: April 29, 2026. Quick Takes April 29, 2026 a...",
-      "number": 1,
-      "title_cn": "Around the P&C insurance industry: April 29, 2026 - PropertyCasualty360",
-      "display_title": "【INDUSTRY】Around the P&C insurance industry: April 29, 2026 ...",
-      "display_desc": "Travelers保险公司计划扩大在加利福尼亚州的家庭保险覆盖范围。这一举措反映了保险公司在自然灾害频发地区的策略调整，通过扩大承保范围来增强市场竞争力和服务能力。这一决定基于对加州房地产市场需求和风险评估的综合分析，旨在平衡风险敞口和业务增长目标。",
-      "category_cn": "行业新闻"
+      "title_cn": "财产与意外伤害保险行业概览：2026年4月29日 - PropertyCasualty360",
+      "display_title": "财产与意外伤害保险行业概览：2026年4月29日 - PropertyCasualty360",
+      "display_desc": "从行业领先人士那里获取专家见解和现实世界的观点，帮助您做出更明智的决策。深入报道塑造行业的最重要问题。 #",
+      "category_cn": "行业新闻",
+      "number": 1
     },
     {
       "title": "Travelers plans to expand Calif. home insurance coverage - PropertyCasualty360",
@@ -23,11 +23,11 @@
       "relevance": 100.0,
       "url": "https://www.propertycasualty360.com/2026/04/29/travelers-plans-to-expand-calif-home-insurance-coverage/",
       "description": "Get expert insights and real-world perspectives from leading voices in the industry to help you make more informed decisions. In-depth coverage of the most significant issues shaping the industry. ## Special Reports /. # Travelers plans to expand Calif. News April 29, 2026 at 10:28 AM. © Touchpoint ...",
-      "number": 2,
-      "title_cn": "Travelers plans to expand Calif. home insurance coverage - PropertyCasualty360",
-      "display_title": "【INDUSTRY】Travelers plans to expand Calif. home insurance co...",
-      "display_desc": "保险行业正处于技术变革的前沿，传统业务模式面临数字化转型挑战。消费者对保险产品透明度和服务便捷性的要求不断提高，促使保险公司重新设计客户体验流程。监管科技的发展为行业带来了新的机遇，同时也带来了合规成本增加的挑战。",
-      "category_cn": "行业新闻"
+      "title_cn": "Travelers 计划扩大加州房屋保险覆盖范围 - PropertyCasualty360",
+      "display_title": "Travelers 计划扩大加州房屋保险覆盖范围 - PropertyCasualty360",
+      "display_desc": "从行业领先人士那里获取专家见解和现实世界的观点，帮助您做出更明智的决策。深入报道塑造行业的最重要问题。 #",
+      "category_cn": "行业新闻",
+      "number": 2
     },
     {
       "title": "Viewpoint: Japan and Korea Insurers to Accelerate M&As in the US and Globally - Insurance Journal",
@@ -35,11 +35,11 @@
       "relevance": 70.0,
       "url": "https://www.insurancejournal.com/news/international/2026/04/29/867671.htm",
       "description": "(IFS “A+”/Stable ), and Nippon Life Insurance Co. More than half of the Fitch-rated insurers have conducted M&As in the past 10 years, with major deals valued at approximately JPY4.5 trillion (around US$35 billion), and 86% of these investments being U.S. based, according to Fitch’s calculations. Th...",
-      "number": 3,
-      "title_cn": "Viewpoint: Japan and Korea Insurers to Accelerate M&As in the US and Globally - Insurance Journal",
-      "display_title": "【INDUSTRY】Viewpoint: Japan and Korea Insurers to Accelerate ...",
-      "display_desc": "财产 casualty 保险行业正经历重要变革，数字化转型的压力促使公司重新评估业务模式。随着气候变化加剧，保险费率面临上调压力，同时客户对个性化服务和快速理赔的需求不断增加。监管框架的变化要求保险公司加强资本充足性管理，同时保持竞争力。",
-      "category_cn": "行业新闻"
+      "title_cn": "观点：日本和韩国保险公司将加速在美国和全球的并购 - 保险杂志",
+      "display_title": "观点：日本和韩国保险公司将加速在美国和全球的并购 - 保险杂志",
+      "display_desc": "（IFS“A+”/稳定）和日本人寿保险公司。根据惠誉的计算，超过一半的惠誉评级保险公司在过去 10 年进行了并购，主要交易价值约为 4.5 万亿日元（约合 350 亿美元），其中 86% 的投资位于美国。钍",
+      "category_cn": "行业新闻",
+      "number": 3
     },
     {
       "title": "Teva inks $700M Emalex buyout to bag near-approval Tourette drug - Fierce Biotech",
@@ -47,11 +47,11 @@
       "relevance": 12.0,
       "url": "https://www.fiercebiotech.com/biotech/teva-inks-700m-emalex-buyout-bag-near-approval-tourette-drug",
       "description": "Teva Pharmaceuticals Tourette syndrome mergers and acquisitions Emalex Biosciences Biotech Deals. Teva Pharmaceuticals has struck a deal to buy Emalex Biosciences for $700 million upfront, positioning the drugmaker to advance a Tourette syndrome candidate that is on the cusp of approval. On an earni...",
-      "number": 4,
-      "title_cn": "Teva inks $700M Emalex buyout to bag near-approval Tourette drug - Fierce Biotech",
-      "display_title": "【INDUSTRY】Teva inks $700M Emalex buyout to bag near-approval...",
-      "display_desc": "保险行业正处于技术变革的前沿，传统业务模式面临数字化转型挑战。消费者对保险产品透明度和服务便捷性的要求不断提高，促使保险公司重新设计客户体验流程。监管科技的发展为行业带来了新的机遇，同时也带来了合规成本增加的挑战。",
-      "category_cn": "行业新闻"
+      "title_cn": "Teva 斥资 7 亿美元收购 Emalex，收购即将获批的抽动秽语药物 - Fierce Biotech",
+      "display_title": "Teva 斥资 7 亿美元收购 Emalex，收购即将获批的抽动秽语药物 - Fierce Biotech",
+      "display_desc": "Teva Pharmaceuticals 抽动秽语综合征并购 Emalex Biosciences 生物技术交易。梯瓦制药 (Teva Pharmaceuticals) 已达成协议，以 7 亿美元预付款收购 Emalex Biosciences，使这家制药商能够推进即将获得批准的抽动秽语综合征候选药物。在挣钱上",
+      "category_cn": "行业新闻",
+      "number": 4
     },
     {
       "title": "Twenty One Capital Outlines Operating Plans to Build the Bitcoin Company - Weekly Voice",
@@ -59,11 +59,11 @@
       "relevance": 9.0,
       "url": "https://weeklyvoice.com/twenty-one-capital-outlines-operating-plans-to-build-the-bitcoin-company-2/",
       "description": "The Largest South Asian News Platforms since 1997. © 2025 The Weekly Voice LTD. # Twenty One Capital Outlines Operating Plans to Build the Bitcoin Company. By Weekly Voice editorial staff. AUSTIN, Texas–(BUSINESS WIRE)–Twenty One Capital, Inc. (“Twenty One”), a Bitcoin-native company, today provided...",
-      "number": 5,
-      "title_cn": "Twenty One Capital Outlines Operating Plans to Build the Bitcoin Company - Weekly Voice",
-      "display_title": "【INDUSTRY】Twenty One Capital Outlines Operating Plans to Bui...",
-      "display_desc": "保险行业正处于技术变革的前沿，传统业务模式面临数字化转型挑战。消费者对保险产品透明度和服务便捷性的要求不断提高，促使保险公司重新设计客户体验流程。监管科技的发展为行业带来了新的机遇，同时也带来了合规成本增加的挑战。",
-      "category_cn": "行业新闻"
+      "title_cn": "二十一资本概述了建立比特币公司的运营计划 - Weekly Voice",
+      "display_title": "二十一资本概述了建立比特币公司的运营计划 - Weekly Voice",
+      "display_desc": "自 1997 年以来最大的南亚新闻平台。© 2025 The Weekly Voice LTD",
+      "category_cn": "行业新闻",
+      "number": 5
     },
     {
       "title": "Russia Shadow Fleet Undeterred by Starmer’s Threat as Ships Keep Crossing UK Waters - Insurance Journal",
@@ -71,11 +71,11 @@
       "relevance": 7.0,
       "url": "https://www.insurancejournal.com/news/international/2026/04/29/867664.htm",
       "description": "# Russia Shadow Fleet Undeterred by Starmer’s Threat as Ships Keep Crossing UK Waters. Prime Minister Keir Starmer’s decision last month to let the British military board ships of Russia’s so‑called “shadow fleet” has had no clear impact on the number passing through UK waters, a Reuters analysis sh...",
-      "number": 6,
-      "title_cn": "Russia Shadow Fleet Undeterred by Starmer’s Threat as Ships Keep Crossing UK Waters - Insurance Journal",
-      "display_title": "【INDUSTRY】Russia Shadow Fleet Undeterred by Starmer’s Threat...",
-      "display_desc": "保险行业正处于技术变革的前沿，传统业务模式面临数字化转型挑战。消费者对保险产品透明度和服务便捷性的要求不断提高，促使保险公司重新设计客户体验流程。监管科技的发展为行业带来了新的机遇，同时也带来了合规成本增加的挑战。",
-      "category_cn": "行业新闻"
+      "title_cn": "俄罗斯影子舰队并未因斯塔默的威胁而畏惧，船只不断穿越英国水域 - 保险杂志",
+      "display_title": "俄罗斯影子舰队并未因斯塔默的威胁而畏惧，船只不断穿越英国水域 - 保险杂志",
+      "display_desc": "俄罗斯影子舰队没有被斯塔默的威胁吓倒，船只不断穿越英国水域。路透社分析称，英国首相基尔·斯塔默上个月决定让英国军队登上俄罗斯所谓“影子舰队”的船只，但这对通过英国水域的人数没有明显影响。",
+      "category_cn": "行业新闻",
+      "number": 6
     },
     {
       "title": "MGA Rokstone promotes for new head of operations - Insurance Times",
@@ -83,11 +83,11 @@
       "relevance": 4.0,
       "url": "https://www.insurancetimes.co.uk/news/mga-rokstone-promotes-for-new-head-of-operations/1458401.article",
       "description": "",
-      "number": 7,
-      "title_cn": "MGA Rokstone promotes for new head of operations - Insurance Times",
-      "display_title": "【INDUSTRY】MGA Rokstone promotes for new head of operations -...",
-      "display_desc": "保险行业正处于技术变革的前沿，传统业务模式面临数字化转型挑战。消费者对保险产品透明度和服务便捷性的要求不断提高，促使保险公司重新设计客户体验流程。监管科技的发展为行业带来了新的机遇，同时也带来了合规成本增加的挑战。",
-      "category_cn": "行业新闻"
+      "title_cn": "MGA Rokstone 晋升新运营主管 - Insurance Times",
+      "display_title": "MGA Rokstone 晋升新运营主管 - Insurance Times",
+      "display_desc": "",
+      "category_cn": "行业新闻",
+      "number": 7
     }
   ],
   "tech_news_cn": [
@@ -97,11 +97,11 @@
       "relevance": 98.0,
       "url": "https://www.insurancetimes.co.uk/analysis/briefing-insurers-need-to-remember-the-value-of-a-human-touch-in-claims/1458392.article",
       "description": "# Briefing: Insurers need to remember the value of a human touch in claims. While AI is becoming more valuable to insurance firms, customers feel it is essential that the human touch remains in claims. As insurers grapple with rising pressure to deliver faster while ensuring accurate outcomes, artif...",
-      "number": 1,
-      "title_cn": "Briefing: Insurers need to remember the value of a human touch in claims - Insurance Times",
-      "display_title": "【TECH】Briefing: Insurers need to remember the value of a...",
-      "display_desc": "人工智能技术在保险行业的应用日益广泛，从风险评估到自动化理赔处理。然而，客户仍认为在理赔过程中保持人工接触至关重要。保险公司需要在追求处理效率和确保准确性的同时，找到技术与人性化服务的平衡点。这一挑战促使公司重新思考客户服务策略和数字化转型的路径。",
-      "category_cn": "科技前沿"
+      "title_cn": "简报：保险公司需要记住索赔中人性化的价值 - Insurance Times",
+      "display_title": "简报：保险公司需要记住索赔中人性化的价值 - Insurance Times",
+      "display_desc": "简介：保险公司需要记住理赔中人性化的价值。虽然人工智能对保险公司来说变得越来越有价值，但客户认为理赔中保持人性化至关重要。随着保险公司努力应对不断增加的压力，要求更快地交付服务，同时确保准确的结果，artif",
+      "category_cn": "科技前沿",
+      "number": 1
     },
     {
       "title": "Bank of England to Curb Offshore Life Insurance Trades - Insurance Journal",
@@ -109,11 +109,11 @@
       "relevance": 3.0,
       "url": "https://www.insurancejournal.com/news/international/2026/04/29/867766.htm",
       "description": "The Bank of England’s regulatory arm on Wednesday set out plans to tighten the capital treatment of funded reinsurance, a type of deal in which life insurers pass on risk to offshore reinsurers. British life insurers will have to increase the amount of capital they hold against these transactions to...",
-      "number": 2,
-      "title_cn": "Bank of England to Curb Offshore Life Insurance Trades - Insurance Journal",
-      "display_title": "【TECH】Bank of England to Curb Offshore Life Insurance Tr...",
-      "display_desc": "金融科技创新正在改变保险行业的传统格局，从移动支付到基于行为的保险产品。云计算、物联网和大数据技术的融合为保险产品创新提供了新的可能性。科技公司与传统保险公司的合作正在创造更个性化、更高效的保险解决方案，满足现代消费者的多样化需求。",
-      "category_cn": "科技前沿"
+      "title_cn": "英格兰银行将限制离岸人寿保险交易 - 保险杂志",
+      "display_title": "英格兰银行将限制离岸人寿保险交易 - 保险杂志",
+      "display_desc": "英国央行监管部门周三制定了收紧融资再保险资本待遇的计划，在这种交易中，人寿保险公司将风险转移给离岸再保险公司。英国人寿保险公司将不得不增加针对这些交易持有的资本金额",
+      "category_cn": "科技前沿",
+      "number": 2
     },
     {
       "title": "Verisk beats first-quarter estimates on strong demand for its analytics - Reuters",
@@ -121,11 +121,11 @@
       "relevance": 7.0,
       "url": "https://www.reuters.com/legal/litigation/verisk-beats-first-quarter-estimates-strong-demand-its-analytics-2026-04-29/",
       "description": "REUTERS/Dado Ruvic/Illustration/File Photo Purchase Licensing Rights, opens new tab. April 29 (Reuters) - Verisk Analytics (VRSK.O), opens new tab reported better-than-expected results for the first quarter on Wednesday, driven by strong ​demand for its data analytics products used ‌by insurers to a...",
-      "number": 3,
-      "title_cn": "Verisk beats first-quarter estimates on strong demand for its analytics - Reuters",
-      "display_title": "【TECH】Verisk beats first-quarter estimates on strong dem...",
-      "display_desc": "数据分析和人工智能技术正在重塑保险业的价值链。保险公司通过分析大量数据来优化风险评估、定价策略和客户细分。这些技术工具帮助公司识别欺诈模式、提高承保准确性，并改善整体运营效率。数据驱动的决策正在成为保险公司的核心竞争力。",
-      "category_cn": "科技前沿"
+      "title_cn": "Verisk 因其分析需求强劲而超出第一季度预期 - 路透中文网",
+      "display_title": "Verisk 因其分析需求强劲而超出第一季度预期 - 路透中文网",
+      "display_desc": "REUTERS/Dado Ruvic/Illustration/File Photo 购买许可权，打开新选项卡。 4 月 29 日（路透社）- Verisk Analytics (VRSK.O) 打开新标签，周三报告第一季度业绩好于预期，原因是保险公司对其数据分析产品的强劲需求推动",
+      "category_cn": "科技前沿",
+      "number": 3
     },
     {
       "title": "Capital regime pressure hits Korean insurers' margins amidst rising claims - Asian Business Review",
@@ -133,11 +133,11 @@
       "relevance": 2.0,
       "url": "https://asianbusinessreview.com/insurance/in-focus/capital-regime-pressure-hits-korean-insurers-margins-amidst-rising-claims",
       "description": "# Capital regime pressure hits Korean insurers' margins amidst rising claims. South Korea’s insurers might see weaker profits in 2026 due to capitalisation pressure from the new capital regime despite stable contractual service margin (CSM) amortisation. Looking ahead, Fitch expects regulatory relie...",
-      "number": 4,
-      "title_cn": "Capital regime pressure hits Korean insurers' margins amidst rising claims - Asian Business Review",
-      "display_title": "【TECH】Capital regime pressure hits Korean insurers' marg...",
-      "display_desc": "金融科技创新正在改变保险行业的传统格局，从移动支付到基于行为的保险产品。云计算、物联网和大数据技术的融合为保险产品创新提供了新的可能性。科技公司与传统保险公司的合作正在创造更个性化、更高效的保险解决方案，满足现代消费者的多样化需求。",
-      "category_cn": "科技前沿"
+      "title_cn": "索赔上升，资本制度压力打击韩国保险公司的利润 - 亚洲商业评论",
+      "display_title": "索赔上升，资本制度压力打击韩国保险公司的利润 - 亚洲商业评论",
+      "display_desc": "由于索赔不断增加，资本制度压力打击了韩国保险公司的利润率。尽管合同服务边际 (CSM) 摊销稳定，但由于新资本制度带来的资本化压力，韩国保险公司 2026 年利润可能会下降。展望未来，惠誉预计监管放松",
+      "category_cn": "科技前沿",
+      "number": 4
     },
     {
       "title": "The Soul of the Machine - Hospitality Net",
@@ -145,11 +145,11 @@
       "relevance": 6.0,
       "url": "https://www.hospitalitynet.org/opinion/4132105/the-soul-of-the-machine",
       "description": "Meta's approach to capturing employee workflows as AI training data could transform hotel operations by preserving tribal knowledge and expertise, but raises significant trust and governance concerns. Hotels already operate on dense, system-mediated behavior: front-desk decisions in the PMS, rate ov...",
-      "number": 5,
-      "title_cn": "The Soul of the Machine - Hospitality Net",
-      "display_title": "【TECH】The Soul of the Machine - Hospitality Net...",
-      "display_desc": "人工智能技术在保险行业的应用日益广泛，从风险评估到自动化理赔处理。然而，客户仍认为在理赔过程中保持人工接触至关重要。保险公司需要在追求处理效率和确保准确性的同时，找到技术与人性化服务的平衡点。这一挑战促使公司重新思考客户服务策略和数字化转型的路径。",
-      "category_cn": "科技前沿"
+      "title_cn": "机器的灵魂 - 酒店网",
+      "display_title": "机器的灵魂 - 酒店网",
+      "display_desc": "Meta 将员工工作流程捕获为人工智能培训数据的方法可以通过保留部落知识和专业知识来改变酒店运营，但引起了重大的信任和治理问题。酒店已经在密集的、系统介导的行为上运营：PMS 中的前台决策、评分 ov",
+      "category_cn": "科技前沿",
+      "number": 5
     },
     {
       "title": "The Fintech Landscape of the Middle East: Kuwait in 2026 - The Fintech Times",
@@ -157,11 +157,11 @@
       "relevance": 58.0,
       "url": "https://thefintechtimes.com/the-fintech-landscape-of-the-middle-east-kuwait-in-2026/",
       "description": "Kuwait’s fintech evolution in 2026 reflects a country balancing two identities: a resource-rich, oil-dependent economy and an increasingly digital, services-driven financial system. Kuwait’s financial services sector is well-developed, characterised by strong banking institutions, high liquidity and...",
-      "number": 6,
-      "title_cn": "The Fintech Landscape of the Middle East: Kuwait in 2026 - The Fintech Times",
-      "display_title": "【TECH】The Fintech Landscape of the Middle East: Kuwait i...",
-      "display_desc": "金融科技创新正在改变保险行业的传统格局，从移动支付到基于行为的保险产品。云计算、物联网和大数据技术的融合为保险产品创新提供了新的可能性。科技公司与传统保险公司的合作正在创造更个性化、更高效的保险解决方案，满足现代消费者的多样化需求。",
-      "category_cn": "科技前沿"
+      "title_cn": "中东金融科技格局：2026 年的科威特 - Fintech Times",
+      "display_title": "中东金融科技格局：2026 年的科威特 - Fintech Times",
+      "display_desc": "科威特 2026 年金融科技的发展反映了一个平衡两个身份的国家：资源丰富、依赖石油的经济和日益数字化、服务驱动的金融体系。科威特金融服务业发达，银行机构实力雄厚，流动性高，",
+      "category_cn": "科技前沿",
+      "number": 6
     }
   ]
 }

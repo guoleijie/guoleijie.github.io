@@ -1,0 +1,131 @@
+{
+  "date": "2026-03-11",
+  "generated_time": "2026-03-11 06:03:30",
+  "total_news": 10,
+  "industry_news_count": 5,
+  "tech_news_count": 5,
+  "industry_news_cn": [
+    {
+      "title": "Laying down the law – Arag - Insurance Times",
+      "category": "industry",
+      "relevance": 29.0,
+      "url": "https://www.insurancetimes.co.uk/expert-views/laying-down-the-law-arag/1457556.article",
+      "description": "",
+      "title_cn": "制定法律——阿拉格 - 保险时报",
+      "display_title": "制定法律——阿拉格 - 保险时报",
+      "display_desc": "",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "Risk Theory Acquires New York City Property, Habitational MGA Roundhill Express - Insurance Journal",
+      "category": "industry",
+      "relevance": 32.0,
+      "url": "https://www.insurancejournal.com/news/east/2026/03/10/861282.htm",
+      "description": "# Risk Theory Acquires New York City Property, Habitational MGA Roundhill Express. Risk Theory, a specialty insurance platform, announced it has completed the acquisition of Roundhill Express, a specialized managing general agent (MGA) underwriting commercial habitational properties throughout New Y...",
+      "title_cn": "Risk Theory 收购纽约市房地产公司 Habitational MGA Roundhill Express - 保险杂志",
+      "display_title": "Risk Theory 收购纽约市房地产公司 Habitational MGA Roundhill Express - 保险杂志",
+      "display_desc": "Risk Theory 收购纽约市房产 Habitational MGA Roundhill Express。专业保险平台 Risk Theory 宣布已完成对 Roundhill Express 的收购，Roundhill Express 是一家承保纽约州商业住宅地产的专业管理总代理 (MGA)",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "Aon signs multiyear deal to transform delegated authority operations - Insurance Times",
+      "category": "industry",
+      "relevance": 6.0,
+      "url": "https://www.insurancetimes.co.uk/news/aon-signs-multiyear-deal-to-transform-delegated-authority-operations/1457963.article",
+      "description": "",
+      "title_cn": "怡安签署多年协议以转型授权运营 - 保险时报",
+      "display_title": "怡安签署多年协议以转型授权运营 - 保险时报",
+      "display_desc": "",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "Texas Disclosure 101: A survival guide for P&C agents and clients - InsuranceNewsNet",
+      "category": "industry",
+      "relevance": 6.0,
+      "url": "https://insurancenewsnet.com/innarticle/texas-disclosure-101-a-survival-guide-for-pc-agents-and-clients",
+      "description": "Earlier this year, a new law went into effect in Texas, requiring insurers to provide a reason for declining or canceling an auto or homeowners policy. “Making it standard practice for insurers to share this information benefits consumers by giving them clear insight into the factors influencing cov...",
+      "title_cn": "德克萨斯州披露 101：财产与意外险代理人和客户的生存指南 - InsuranceNewsNet",
+      "display_title": "德克萨斯州披露 101：财产与意外险代理人和客户的生存指南 - InsuranceNewsNet",
+      "display_desc": "今年早些时候，一项新法律在德克萨斯州生效，要求保险公司提供拒绝或取消汽车或房主保单的理由。 “让保险公司分享这些信息成为标准做法，可以让消费者清楚地了解影响保险的因素，从而使消费者受益。",
+      "category_cn": "行业新闻",
+      "number": 4
+    },
+    {
+      "title": "Rhode Island bill would ask insurers to recoup costs from Big Oil - PropertyCasualty360",
+      "category": "industry",
+      "relevance": 18.0,
+      "url": "https://www.propertycasualty360.com/amp/2026/03/10/rhode-island-bill-would-ask-insurers-to-recoup-costs-from-big-oil/",
+      "description": "### Rhode Island bill would ask insurers to recoup costs from Big Oil. The intent is to shift climate change-related losses from consumers to oil and gas companies. # Rhode Island bill would ask insurers to recoup costs from Big Oil. By **Corey Dahl**  | March 10, 2026 at 10:29 AM. The intent is to ...",
+      "title_cn": "罗德岛州法案将要求保险公司从大型石油公司收回成本 - PropertyCasualty360",
+      "display_title": "罗德岛州法案将要求保险公司从大型石油公司收回成本 - PropertyCasualty360",
+      "display_desc": "罗德岛州的法案将要求保险公司向大型石油公司收回成本。目的是将气候变化相关的损失从消费者转移到石油和天然气公司",
+      "category_cn": "行业新闻",
+      "number": 5
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Insurify’s Founders Discuss Evolution of Insurance Shopping With AI - Insurance Journal",
+      "category": "tech",
+      "relevance": 44.0,
+      "url": "https://www.insurancejournal.com/news/national/2026/03/10/861194.htm",
+      "description": "# Insurify’s Founders Discuss Evolution of Insurance Shopping With AI. Still, founder and CEO Snejina Zacharia told Insurance Journal, “Nobody would have predicted it—that what we thought was a tiny announcement would cause such an impact in the industry.”. Zacharia said the company has had several ...",
+      "title_cn": "Insurify 创始人讨论人工智能保险购物的演变 - 保险杂志",
+      "display_title": "Insurify 创始人讨论人工智能保险购物的演变 - 保险杂志",
+      "display_desc": "Insurify 创始人讨论人工智能保险购物的演变。尽管如此，创始人兼首席执行官 Snejina Zacharia 告诉《保险杂志》，“没有人会预料到——我们认为的一个微小的公告会对行业产生如此大的影响。”扎卡里亚说，该公司已经有几个",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "Register: Risky Future AI Tools for MGAs ‘Demo Day’ on March 11 - Insurance Journal",
+      "category": "tech",
+      "relevance": 23.0,
+      "url": "https://www.insurancejournal.com/news/national/2026/03/10/861319.htm",
+      "description": "# Register: Risky Future AI Tools for MGAs ‘Demo Day’ on March 11. Insurance Journal’s Risky Future series is hosting the “AI Tools for MGAs” Demo Day, a series of free AI tool demonstrations designed exclusively for managing general agencies. The latest online event offers MGAs an opportunity to ev...",
+      "title_cn": "注册：3 月 11 日面向 MGA 的“风险未来人工智能工具演示日” - Insurance Journal",
+      "display_title": "注册：3 月 11 日面向 MGA 的“风险未来人工智能工具演示日” - Insurance Journal",
+      "display_desc": "注册：3 月 11 日面向 MGA 的 Risky Future AI 工具“演示日”。《保险杂志》的 Risky Future 系列将举办“面向 MGA 的 AI 工具”演示日，这是一系列专为管理一般机构而设计的免费 AI 工具演示。最新的在线活动为 MGA 提供了一个机会",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "Beazley to Acquire kWh Analytics to Add to Renewable Energy Portfolios - Insurance Journal",
+      "category": "tech",
+      "relevance": 5.0,
+      "url": "https://www.insurancejournal.com/news/national/2026/03/10/861264.htm",
+      "description": "# Beazley to Acquire kWh Analytics to Add to Renewable Energy Portfolios. Specialty insurer Beazley said it has reached an agreement to acquire kWh Analytics. kWh Analytics, a managing general agency, combines data with advanced analytics to deliver insurance and risk management solutions for clean ...",
+      "title_cn": "Beazley 将收购 kWh Analytics 以增加可再生能源投资组合 - 保险杂志",
+      "display_title": "Beazley 将收购 kWh Analytics 以增加可再生能源投资组合 - 保险杂志",
+      "display_desc": "Beazley 将收购 kWh Analytics 以增加可再生能源投资组合。专业保险公司 Beazley 表示已达成协议，收购 kWh Analytics。 kWh Analytics 是一家管理总机构，将数据与高级分析相结合，为清洁能源提供保险和风险管理解决方案",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "Nearly half of surety bonding professionals worried AI will take their job - InsuranceNewsNet",
+      "category": "tech",
+      "relevance": 99.0,
+      "url": "https://insurancenewsnet.com/innarticle/nearly-half-of-surety-bonding-professionals-worried-ai-will-take-their-job",
+      "description": "But it has also led to concerns about job security as a new survey by Lance Surety Bonds found 41% of surety professionals are worried about roles being replaced. There’s the obvious one of AI replacing jobs, but there’s also uncertainty around what happens when technology becomes the main decision ...",
+      "title_cn": "近一半的担保专业人士担心人工智能会取代他们的工作 - InsuranceNewsNet",
+      "display_title": "近一半的担保专业人士担心人工智能会取代他们的工作 - InsuranceNewsNet",
+      "display_desc": "但这也引发了人们对工作保障的担忧，Lance Surety Bonds 的一项新调查发现，41% 的担保专业人员担心职位被取代。人工智能取代工作是显而易见的，但当技术成为主要决策时会发生什么也存在不确定性",
+      "category_cn": "科技前沿",
+      "number": 4
+    },
+    {
+      "title": "Vast Ship Clusters and Speeding Tankers Point to Hormuz Jamming - Insurance Journal",
+      "category": "tech",
+      "relevance": 59.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/03/10/861233.htm",
+      "description": "At least a dozen clusters of ships have appeared near the Strait of Hormuz, a likely sign of elevated electronic interference around the waterway that’s central to the US and Israeli war against Iran. The groups, which can number more than 200 vessels for some clusters, contain ships of all types, w...",
+      "title_cn": "巨大的船舶群和超速行驶的油轮表明霍尔木兹海峡受到干扰 - 保险杂志",
+      "display_title": "巨大的船舶群和超速行驶的油轮表明霍尔木兹海峡受到干扰 - 保险杂志",
+      "display_desc": "霍尔木兹海峡附近出现了至少十几艘船只，这可能是该水道周围电子干扰加剧的迹象，该水道是美国和以色列对伊朗战争的核心。这些集群的某些集群的船只数量可能超过 200 艘，包含各种类型的船只，",
+      "category_cn": "科技前沿",
+      "number": 5
+    }
+  ]
+}

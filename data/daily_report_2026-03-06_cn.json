@@ -1,0 +1,143 @@
+{
+  "date": "2026-03-06",
+  "generated_time": "2026-03-06 06:00:26",
+  "total_news": 11,
+  "industry_news_count": 6,
+  "tech_news_count": 5,
+  "industry_news_cn": [
+    {
+      "title": "Admiral’s UK motor business secured over £1bn of profit in 2025 - Insurance Times",
+      "category": "industry",
+      "relevance": 87.0,
+      "url": "https://www.insurancetimes.co.uk/news/admirals-uk-motor-business-secured-over-1bn-of-profit-in-2025/1457931.article",
+      "description": "",
+      "title_cn": "Admiral 的英国汽车业务 2025 年利润超过 10 亿英镑 - 《保险时报》",
+      "display_title": "Admiral 的英国汽车业务 2025 年利润超过 10 亿英镑 - 《保险时报》",
+      "display_desc": "",
+      "category_cn": "行业新闻",
+      "number": 1
+    },
+    {
+      "title": "Aviva’s UK and Ireland arm boosts operating profit by 52% and PL growth after DLG acquisition - Insurance Times",
+      "category": "industry",
+      "relevance": 9.0,
+      "url": "https://www.insurancetimes.co.uk/news/avivas-uk-and-ireland-arm-boosts-operating-profit-by-52-and-pl-growth-after-dlg-acquisition/1457928.article",
+      "description": "",
+      "title_cn": "收购 DLG 后，Aviva 英国和爱尔兰子公司营业利润提高 52%，损益增长 - Insurance Times",
+      "display_title": "收购 DLG 后，Aviva 英国和爱尔兰子公司营业利润提高 52%，损益增长 - Insurance Times",
+      "display_desc": "",
+      "category_cn": "行业新闻",
+      "number": 2
+    },
+    {
+      "title": "Policy Expert appoints ex-PIB leader as COO following Powell departure - Insurance Times",
+      "category": "industry",
+      "relevance": 9.0,
+      "url": "https://www.insurancetimes.co.uk/news/policy-expert-appoints-ex-pib-leader-as-coo-following-powell-departure/1457926.article",
+      "description": "",
+      "title_cn": "鲍威尔离职后，政策专家任命前 PIB 领导人为首席运营官 - 保险时报",
+      "display_title": "鲍威尔离职后，政策专家任命前 PIB 领导人为首席运营官 - 保险时报",
+      "display_desc": "",
+      "category_cn": "行业新闻",
+      "number": 3
+    },
+    {
+      "title": "Natural disasters propagate through intercity economic networks - Nature",
+      "category": "industry",
+      "relevance": 34.0,
+      "url": "https://www.nature.com/articles/s44284-026-00401-7",
+      "description": "# Natural disasters propagate through intercity economic networks. *Nature Cities* (2026)Cite this article. Geographical proximity risk assessment for natural disasters overlooks the role of intercity economic linkages. We showed that spillover effects of natural disasters on intercity economic netw...",
+      "title_cn": "自然灾害通过城际经济网络传播 - Nature",
+      "display_title": "自然灾害通过城际经济网络传播 - Nature",
+      "display_desc": "自然灾害通过城际经济网络传播。 *自然城市* (2026)引用这篇文章。自然灾害的地理邻近风险评估忽视了城际经济联系的作用。我们证明了自然灾害对城际经济网络的溢出效应",
+      "category_cn": "行业新闻",
+      "number": 4
+    },
+    {
+      "title": "London Marine Insurers Still Offering Middle East Cover as War Risk Rates Rise: Broker - Insurance Journal",
+      "category": "industry",
+      "relevance": 46.0,
+      "url": "https://www.insurancejournal.com/news/international/2026/03/05/860561.htm",
+      "description": "# London Marine Insurers Still Offering Middle East Cover as War Risk Rates Rise: Broker. Marine insurers in the London market continue to offer cover in the Middle East, despite rising war risk premiums driven by escalating conflict in the Gulf, insurance broker Gallagher’s Marine Divisional Direct...",
+      "title_cn": "随着战争风险率上升，伦敦海上保险公司仍在提供中东保险：经纪人 - 保险杂志",
+      "display_title": "随着战争风险率上升，伦敦海上保险公司仍在提供中东保险：经纪人 - 保险杂志",
+      "display_desc": "随着战争险利率上升，伦敦海上保险公司仍在提供中东保险：经纪人。保险经纪人 Gallagher 的 Marine Divisional Direct 表示，尽管海湾地区冲突升级导致战争险保费上涨，但伦敦市场的海上保险公司继续在中东提供保险",
+      "category_cn": "行业新闻",
+      "number": 5
+    },
+    {
+      "title": "Winners of InsuranceERM UK & Europe awards 2026 revealed - InsuranceERM",
+      "category": "industry",
+      "relevance": 8.0,
+      "url": "https://www.insuranceerm.com/news-comment/winners-of-insuranceerm-uk-and-europe-awards-2026-revealed.html",
+      "description": "The team at Canopius also won the risk team of the year. Owen Balmont from Admiral Group won young risk professional of the year, while Katie Garner at LCP picked up the actuarial professional of the year award. In addition to winning the young actuarial professional of the year title, it picked up ...",
+      "title_cn": "2026 年 InsuranceERM 英国和欧洲奖项获奖者揭晓 - InsuranceERM",
+      "display_title": "2026 年 InsuranceERM 英国和欧洲奖项获奖者揭晓 - InsuranceERM",
+      "display_desc": "Canopius 团队还赢得了年度风险团队奖。 Admiral Group 的 Owen Balmont 荣获年度年轻风险专业人士奖，LCP 的 Katie Garner 则荣获年度精算专业人士奖。除了赢得年度年轻精算专业人士称号外，它还获得了",
+      "category_cn": "行业新闻",
+      "number": 6
+    }
+  ],
+  "tech_news_cn": [
+    {
+      "title": "Five-Year Renewal of Collaboration between Shift Technology and AXA to accelerate AI-Powered Insurance Transformation - Weekly Voice",
+      "category": "tech",
+      "relevance": 100.0,
+      "url": "https://weeklyvoice.com/five-year-renewal-of-collaboration-between-shift-technology-and-axa-to-accelerate-ai-powered-insurance-transformation/",
+      "description": "# Five-Year Renewal of Collaboration between Shift Technology and AXA to accelerate AI-Powered Insurance Transformation. PARIS and BOSTON, March 5, 2026 /PRNewswire/ — Shift Technology**,** the leading AI platform for insurance, today announced the renewal of their strategic partnership agreement fo...",
+      "title_cn": "Shift Technology 与 AXA 续签五年合作，加速人工智能驱动的保险转型 - Weekly Voice",
+      "display_title": "Shift Technology 与 AXA 续签五年合作，加速人工智能驱动的保险转型 - Weekly Voice",
+      "display_desc": "Shift Technology 与 AXA 续签五年合作，加速人工智能驱动的保险转型。巴黎和波士顿，2026 年 3 月 5 日 /美通社/ — 领先的保险人工智能平台 Shift Technology**** 今天宣布续签战略合作伙伴协议",
+      "category_cn": "科技前沿",
+      "number": 1
+    },
+    {
+      "title": "Hollard Insurance pilots AI in claims division - iTnews",
+      "category": "tech",
+      "relevance": 99.0,
+      "url": "https://www.itnews.com.au/news/hollard-insurance-pilots-ai-in-claims-division-623940",
+      "description": "## Hollard Insurance pilots AI in claims division ## Health and Aged Care CISO retires ## Oracle plans thousands of job cuts ## Medibank uses data cloud to hit and maintain \"gold standard\" for marketing ## Google revamps app store billing, fee structure. Hollard Insurance Australia has started intro...",
+      "title_cn": "Hollard Insurance 在理赔部门试点人工智能 - iTnews",
+      "display_title": "Hollard Insurance 在理赔部门试点人工智能 - iTnews",
+      "display_desc": "Medibank 使用数据云来达到并维持营销的“黄金标准”#",
+      "category_cn": "科技前沿",
+      "number": 2
+    },
+    {
+      "title": "OneShield Expands AI Hub Platform with Specialty Insurance Provider, Reinforcing AI-Native Strategy for the Insurance Industry - InsuranceNewsNet",
+      "category": "tech",
+      "relevance": 26.0,
+      "url": "https://insurancenewsnet.com/oarticle/oneshield-expands-ai-hub-platform-with-specialty-insurance-provider-reinforcing-ai-native-strategy-for-the-insurance-industry",
+      "description": "OneShield, a leading provider of technology solutions for the property and casualty insurance industry, today announced that a Michigan-based specialty insurance provider has selected the OneShield AI Hub platform to power its next-generation insurance operations. OneShield’s AI Hub introduces agent...",
+      "title_cn": "OneShield 与专业保险提供商合作扩展 AI Hub 平台，强化保险行业的 AI 原生战略 - InsuranceNewsNet",
+      "display_title": "OneShield 与专业保险提供商合作扩展 AI Hub 平台，强化保险行业的 AI 原生战略 - InsuranceNewsNet",
+      "display_desc": "OneShield 是财产和意外伤害保险行业技术解决方案的领先提供商，今天宣布，一家总部位于密歇根州的专业保险提供商已选择 OneShield AI Hub 平台来为其下一代保险业务提供支持。 OneShield 的 AI Hub 推出代理",
+      "category_cn": "科技前沿",
+      "number": 3
+    },
+    {
+      "title": "Optum teams with Microsoft to expand AI-powered claims platform - Fierce Healthcare",
+      "category": "tech",
+      "relevance": 95.0,
+      "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/optum-teams-microsoft-expand-ai-powered-claims-platform",
+      "description": "# Optum teams with Microsoft to expand AI-powered claims platform. Optum Claims Management Microsoft Prior Authorization Health Tech Payers Providers AI and Machine Learning. Optum is building out its claims management platform, Real, with new provider-focused capabilities built in partnership with ...",
+      "title_cn": "Optum 与 Microsoft 合作扩展人工智能驱动的理赔平台 - Fierce Healthcare",
+      "display_title": "Optum 与 Microsoft 合作扩展人工智能驱动的理赔平台 - Fierce Healthcare",
+      "display_desc": "Optum 与 Microsoft 合作扩展人工智能驱动的理赔平台。 Optum 索赔管理 Microsoft 事先授权健康技术付款人提供人工智能和机器学习。 Optum 正在构建其理赔管理平台 Real，该平台与以下公司合作构建了以提供商为中心的新功能：",
+      "category_cn": "科技前沿",
+      "number": 4
+    },
+    {
+      "title": "How does Uala’s Expansion Support Insurance in LatAm? - FinTech Magazine",
+      "category": "tech",
+      "relevance": 46.0,
+      "url": "https://fintechmagazine.com/articles/how-does-ualas-expansion-support-insurance-in-latam",
+      "description": "Ualá has secured US$195m in a funding round led by Allianz X to scale its digital banking ecosystem and expand embedded insurance across Latin America. The Latin American neobank Ualá has secured US$195m in equity financing, marking a significant milestone in its mission to redefine financial servic...",
+      "title_cn": "Uala 的扩张如何支持拉丁美洲的保险业？ - 金融科技杂志",
+      "display_title": "Uala 的扩张如何支持拉丁美洲的保险业？ - 金融科技杂志",
+      "display_desc": "Ualá 在由 Allianz X 领投的一轮融资中获得了 1.95 亿美元，以扩大其数字银行生态系统并在整个拉丁美洲扩展嵌入式保险。拉丁美洲新银行 Ualá 获得 1.95 亿美元股权融资，标志着其重新定义金融服务使命的一个重要里程碑",
+      "category_cn": "科技前沿",
+      "number": 5
+    }
+  ]
+}
